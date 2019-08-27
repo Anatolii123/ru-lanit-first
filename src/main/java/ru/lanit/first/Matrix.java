@@ -3,6 +3,9 @@ package ru.lanit.first;
 import java.util.Scanner;
 
 public class Matrix implements java.io.Serializable {
+    private int a = 3;
+    private int b = 3;
+    private String filepath;
     private int[][] matrix;
     private int[][] tmatrix;
     {
@@ -20,32 +23,39 @@ public class Matrix implements java.io.Serializable {
     public int getA() {
         return a;
     }
-
     public void setA(int a) {
         this.a = a;
     }
+
     public int getB() {
         return b;
     }
-
     public void setB(int b) {
         this.b = b;
     }
+
+    public String getFilepath() {
+        return filepath;
+    }
+    public void setFilepath(String filepath) {
+        this.filepath = filepath;
+    }
+
     public int[][] getMatrix() {
         return matrix;
     }
-
     public void setMatrix(int[][] matrix) {
         this.matrix = matrix;
     }
+
     public int[][] getTM() {
         return tmatrix;
     }
-
     public void setTM(int[][] tmatrix) {
         this.matrix = tmatrix;
     }
-    void set () {
+
+    public void set () {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
         a = in.nextInt();
@@ -62,7 +72,7 @@ public class Matrix implements java.io.Serializable {
         }
     }
 
-    void show () {
+    public void show () {
         for(int i = 0;i < a; i++) {
             for(int j = 0; j < b; j++) {
                 System.out.print(matrix[i][j] + "\t");
@@ -71,7 +81,7 @@ public class Matrix implements java.io.Serializable {
         }
     }
 
-    void transpose() {
+    public void transpose() {
         tmatrix = new int[b][a];
         for (int i = 0; i < b; i++) {
             for (int j = 0; j < a; j++) {
@@ -82,6 +92,11 @@ public class Matrix implements java.io.Serializable {
         }
     }
 
-    private int a = 3;
-    private int b = 3;
+    public boolean isEmpty(){
+        if (getMatrix().length == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

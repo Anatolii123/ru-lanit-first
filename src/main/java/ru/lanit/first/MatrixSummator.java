@@ -1,36 +1,6 @@
 package ru.lanit.first;
 
 public class MatrixSummator extends Matrix  {
-//    private int[][] A;
-//    private int[][] B;
-//    private int[][] S;
-
-//    public int[][] getAM() {
-//        return A;
-//    }
-//    public void setAM(int[][] A) {
-//        this.A = A;
-//    }
-//
-//    public int[][] getBM() {
-//        return B;
-//    }
-//    public void setBM(int[][] B) {
-//        this.B = B;
-//    }
-//
-//    public int[][] getSM() {
-//        return S;
-//    }
-//
-//    public void sum() {
-//        if(A.length != B.length || A[0].length != B[0].length) {
-//            System.out.println("Матрицы разных размерностей!");
-//        }
-//        else {
-//            sumInternal(, );
-//        }
-//    }
 
     /**
      * Метод возвращает матрицу, являющуюся результатом суммирования this и переданной матрицы b
@@ -38,19 +8,19 @@ public class MatrixSummator extends Matrix  {
      * @param b матрица-слагаемое
      * @return сумма двух матриц
      */
-    public Matrix sum(Matrix b) {
-        //TODO добавить проверку возможности проведения операции
-        Matrix result = new Matrix();
+    public MatrixSummator sum(Matrix b) {
+        //TODO метод вот такой:
         if(this.getMatrix().length != b.getMatrix().length || this.getMatrix()[0].length != b.getMatrix()[0].length) {
             System.out.println("Матрицы разных размерностей!");
-        } else {
-
-            int[][] sum = sumInternal(this.getMatrix(), b.getMatrix());
-            result.setMatrix(sum);
-            result.setA(sum.length);
-            result.setB(sum[0].length);
-
+            return new MatrixSummator();
         }
+
+        int[][] sum = sumInternal(this.getMatrix(), b.getMatrix());
+
+        MatrixSummator result = new MatrixSummator();
+        result.setMatrix(sum);
+        result.setA(sum.length);
+        result.setB(sum[0].length);
         return result;
     }
 
