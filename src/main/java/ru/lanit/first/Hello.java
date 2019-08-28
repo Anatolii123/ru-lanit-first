@@ -1,6 +1,5 @@
 package ru.lanit.first;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Hello {
@@ -23,14 +22,17 @@ public class Hello {
 
 
         //Цикл по матрицам из списка. Ессли sum пуст, то вызываем set, параметры для него берём из
-        for (int i = 1; i < matrices.size(); i++) {
-            if (sum.isEmpty(sum)) {
-                sum.setMatrix(matrices.get(i-1).getMatrix());
-                sum.setA(matrices.get(i-1).getMatrix().length);
-                sum.setB(matrices.get(i-1).getMatrix()[0].length);
+        for(Matrix matrix : matrices){
+            if (sum.isEmpty()) {
+                sum.setMatrix(matrix.getMatrix());
+                sum.setA(matrix.getMatrix().length);
+                sum.setB(matrix.getMatrix()[0].length);
+                continue;
             }
-            sum = sum.sum(matrices.get(i));
+            sum = sum.sum(matrix);
             System.out.println();
+            System.out.println(matrix.hashCode());
         }
+
     }
 }
