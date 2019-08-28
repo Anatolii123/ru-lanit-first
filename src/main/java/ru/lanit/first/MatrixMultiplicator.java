@@ -2,18 +2,16 @@ package ru.lanit.first;
 
 public class MatrixMultiplicator extends Matrix {
 
-    public Matrix mult(Matrix b) {
-        Matrix result = new Matrix();
+    public MatrixMultiplicator mult(Matrix b) {
         if(this.getMatrix()[0].length != b.getMatrix().length) {
             System.out.println("Матрицы несогласованы!");
+            return new MatrixMultiplicator();
         }
-        else {
-            int[][] mult = multInternal(this.getMatrix(), b.getMatrix());
-            result.setMatrix(mult);
-            result.setA(mult.length);
-            result.setB(mult[0].length);
-
-        }
+        int[][] mult = multInternal(this.getMatrix(), b.getMatrix());
+        MatrixMultiplicator result = new MatrixMultiplicator();
+        result.setMatrix(mult);
+        result.setA(mult.length);
+        result.setB(mult[0].length);
         return result;
     }
 

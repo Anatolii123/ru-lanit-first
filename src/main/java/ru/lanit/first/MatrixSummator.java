@@ -16,7 +16,6 @@ public class MatrixSummator extends Matrix  {
         }
 
         int[][] sum = sumInternal(this.getMatrix(), b.getMatrix());
-
         MatrixSummator result = new MatrixSummator();
         result.setMatrix(sum);
         result.setA(sum.length);

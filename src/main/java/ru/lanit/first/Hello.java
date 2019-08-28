@@ -20,12 +20,17 @@ public class Hello {
         MatrixReader matrixR = new MatrixReader();
         List<Matrix> matrices = matrixR.readMatrix("D:\\matrix1.txt");
         MatrixSummator sum = new MatrixSummator();
-        System.out.println(sum.isEmpty(sum));
-//        for (int i = 1; i < matrices.size(); i++) {
-//            sum.sum(matrices.get(i-1));
-//        }
+
 
         //Цикл по матрицам из списка. Ессли sum пуст, то вызываем set, параметры для него берём из
-
+        for (int i = 1; i < matrices.size(); i++) {
+            if (sum.isEmpty(sum)) {
+                sum.setMatrix(matrices.get(i-1).getMatrix());
+                sum.setA(matrices.get(i-1).getMatrix().length);
+                sum.setB(matrices.get(i-1).getMatrix()[0].length);
+            }
+            sum.sum(matrices.get(i));
+        }
+        //sum.show();
     }
 }
