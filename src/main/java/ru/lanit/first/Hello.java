@@ -29,12 +29,8 @@ public class Hello {
                 sum.setA(matrices.get(i-1).getMatrix().length);
                 sum.setB(matrices.get(i-1).getMatrix()[0].length);
             }
-            sum.setMatrix(matrices.get(i-1).getMatrix());
-            sum.setA(matrices.get(i-1).getMatrix().length);
-            sum.setB(matrices.get(i-1).getMatrix()[0].length);
-            sum.sum(matrices.get(i));
+            sum = sum.sum(matrices.get(i));
             System.out.println();
         }
-        //sum.show();
     }
 }

@@ -12,7 +12,7 @@ public class MatrixSummator extends Matrix  {
         //TODO метод вот такой:
         if(this.getMatrix().length != b.getMatrix().length || this.getMatrix()[0].length != b.getMatrix()[0].length) {
             System.out.println("Матрицы разных размерностей!");
-            return new MatrixSummator();
+            return this;
         }
 
         int[][] sum = sumInternal(this.getMatrix(), b.getMatrix());
