@@ -20,7 +20,7 @@ public class Hello {
         MatrixReader matrixR = new MatrixReader();
         List<Matrix> matrices = matrixR.readMatrix("D:\\matrix1.txt");
         MatrixSummator sum = new MatrixSummator();
-
+        System.out.println(sum.isEmpty(sum));
 //        for (int i = 1; i < matrices.size(); i++) {
 //            sum.sum(matrices.get(i-1));
 //        }

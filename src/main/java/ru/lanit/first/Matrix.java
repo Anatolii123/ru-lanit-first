@@ -3,11 +3,10 @@ package ru.lanit.first;
 import java.util.Scanner;
 
 public class Matrix implements java.io.Serializable {
-    private int a = 3;
-    private int b = 3;
+    private int a;
+    private int b;
     private String filepath;
     private int[][] matrix;
-    private int[][] tmatrix;
     {
         //Динамический инициализатор
     }
@@ -48,13 +47,6 @@ public class Matrix implements java.io.Serializable {
         this.matrix = matrix;
     }
 
-    public int[][] getTM() {
-        return tmatrix;
-    }
-    public void setTM(int[][] tmatrix) {
-        this.matrix = tmatrix;
-    }
-
     public void set () {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
@@ -81,22 +73,10 @@ public class Matrix implements java.io.Serializable {
         }
     }
 
-    public void transpose() {
-        tmatrix = new int[b][a];
-        for (int i = 0; i < b; i++) {
-            for (int j = 0; j < a; j++) {
-                tmatrix[i][j] = matrix[j][i];
-                System.out.print(tmatrix[i][j] + "\t");
-            }
-            System.out.println();
-        }
-    }
-
-    public boolean isEmpty(){
-        if (getMatrix().length == 0) {
+    public boolean isEmpty(Matrix s){
+        if(s.a == 0 && s.b == 0 && s.filepath == null && s.matrix == null){
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }
