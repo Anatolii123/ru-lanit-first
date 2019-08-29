@@ -33,6 +33,7 @@ public class Hello {
             System.out.println();
             System.out.println(matrix.hashCode());
         }
+        sum.showMessage();
 
     }
 }

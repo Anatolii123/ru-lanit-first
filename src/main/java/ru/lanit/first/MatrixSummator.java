@@ -35,4 +35,9 @@ public class MatrixSummator extends Matrix  {
 
         return s;
     }
+
+    public void showMessage(){
+        System.out.println("Тут сообщение");
+    }
+
 }
