@@ -1,6 +1,8 @@
 package ru.lanit.first;
 
 public class Substance extends Matter {
+
+
     @Override
     public void printClass() {
         System.out.println("Substance");
