@@ -1,4 +1,4 @@
 package ru.lanit.first;
 
-public class NewClass1 {
+public class Substance {
 }
