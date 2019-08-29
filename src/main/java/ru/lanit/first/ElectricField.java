@@ -1,14 +1,14 @@
 package ru.lanit.first;
 
-public class QuarkGluonPlasma extends Substance {
+public class ElectricField extends ElectromagneticField {
     @Override
     public void printClass() {
-        System.out.println("Quark-Gluon Plasma");
+        System.out.println("Electric Field");
     }
 
     @Override
     public void printAncestor() {
-        System.out.println("Substance");
+        System.out.println("Electromagnetic Field");
         super.printAncestor();
     }
 

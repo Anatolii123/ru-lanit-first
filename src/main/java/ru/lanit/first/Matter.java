@@ -2,7 +2,16 @@ package ru.lanit.first;
 
 
 public class Matter {
-    public void printMessage() {
-        System.out.println("This is a matter.");
+    private String Science;
+    private boolean MathDescription;
+
+    public void printClass() {
+        System.out.println("Matter");
+    }
+    public void printAncestor() {
+        System.out.println("Object");
+    }
+    public void printDescendants() {
+        System.out.println("Substance, Field, QuantumFields, ObscurePhysicalNature");
     }
 }
