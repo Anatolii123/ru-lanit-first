@@ -1,7 +1,7 @@
 package ru.lanit.first;
 
 public enum Description {
-    Science("physics"),
+    Science(),
     MathDescription(true),
     Mass(10),
     State("solid"),
@@ -20,6 +20,7 @@ public enum Description {
     Description(int numDescription) {
         this.numDescription = numDescription;
     }
+    Description(){}
 
     public String getDescription() {
         return description;
