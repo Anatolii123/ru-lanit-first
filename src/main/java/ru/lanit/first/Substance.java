@@ -20,7 +20,7 @@ public class Substance extends Matter {
         System.out.println(Descendants.values());
     }
 
-    public static int Add(int a, int b) {
+    public static int addMass(int a, int b) {
         int c = a + b;
         return c;
     }

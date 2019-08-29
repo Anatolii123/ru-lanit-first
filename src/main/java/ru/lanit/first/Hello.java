@@ -35,5 +35,37 @@ public class Hello {
         }
         sum.showMessage();
 
+        Matter m = new Matter();
+        m.science = "physics";
+        Description de = Description.Science;
+
+        Description.valueOf("Science");
+
+        System.out.println(de.getDescription());
+
+    }
+}
+
+enum Description{
+    Science("physics"),
+    MathDescription("math"),
+    Mass("mass"),
+    State("state"),
+    Intensity("intensity");
+
+    private String description;
+
+    Description(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
