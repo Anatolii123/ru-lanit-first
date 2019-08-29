@@ -1,7 +1,8 @@
 package ru.lanit.first;
 
 public class Substance extends Matter {
-
+    protected int mass;
+    protected String state;
 
     @Override
     public void printClass() {
@@ -16,11 +17,19 @@ public class Substance extends Matter {
 
     @Override
     public void printDescendants() {
-        System.out.println("HadronSubstance, Antimatter, NeutronMatter, QuarkGluonPlasma");
+        System.out.println(Descendants.values());
     }
 
     public static int Add(int a, int b) {
         int c = a + b;
         return c;
     }
+
+    enum Descendants{
+        HadronSubstance,
+        Antimatter,
+        NeutronMatter,
+        QuarkGluonPlasma
+    }
+
 }

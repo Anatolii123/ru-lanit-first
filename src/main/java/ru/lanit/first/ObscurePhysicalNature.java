@@ -14,6 +14,11 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public void printDescendants() {
-        System.out.println("DarkMatter, DarkEnergy");
+        System.out.println(Descendants.values());
+    }
+
+    enum Descendants{
+        DarkMatter,
+        DarkEnergy
     }
 }

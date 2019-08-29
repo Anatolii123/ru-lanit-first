@@ -1,6 +1,8 @@
 package ru.lanit.first;
 
 public class Field extends Matter{
+    protected int intensity;
+
     @Override
     public void printClass() {
         System.out.println("Field");
@@ -14,7 +16,12 @@ public class Field extends Matter{
 
     @Override
     public void printDescendants() {
-        System.out.println("HadronSubstance");
+        System.out.println(Descendants.values());
+    }
+
+    enum Descendants{
+        ElectromagneticField,
+        GravitationalField
     }
 
 }
