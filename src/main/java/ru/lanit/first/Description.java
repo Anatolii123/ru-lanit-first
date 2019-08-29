@@ -1,24 +1,24 @@
 package ru.lanit.first;
 
-import java.io.Serializable;
-import java.util.List;
-
 public enum Description {
     Science("physics"),
     MathDescription(true),
-    Mass("mass"),
-    State("state"),
-    Intensity("intensity");
+    Mass(10),
+    State("solid"),
+    Intensity(100);
 
     private String description;
-    private boolean mathDescription;
-    private int mass;
+    private boolean boolDescription;
+    private int numDescription;
 
     Description(String description) {
         this.description = description;
     }
-    Description(boolean mathDescription) {
-        this.mathDescription = mathDescription;
+    Description(boolean boolDescription) {
+        this.boolDescription = boolDescription;
+    }
+    Description(int numDescription) {
+        this.numDescription = numDescription;
     }
 
     public String getDescription() {
