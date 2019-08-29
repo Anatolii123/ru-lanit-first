@@ -45,27 +45,3 @@ public class Hello {
 
     }
 }
-
-enum Description{
-    Science("physics"),
-    MathDescription("math"),
-    Mass("mass"),
-    State("state"),
-    Intensity("intensity");
-
-    private String description;
-
-    Description(String description) {
-        this.description = description;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-}
