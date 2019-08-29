@@ -1,11 +1,12 @@
 package ru.lanit.first;
 
 public enum Description {
-    Science(),
+    Science("physics"),
     MathDescription(true),
     Mass(10),
     State("solid"),
-    Intensity(100);
+    Intensity(100),
+    Nothing();
 
     private String description;
     private boolean boolDescription;
@@ -30,5 +31,9 @@ public enum Description {
     @Override
     public String toString() {
         return super.toString();
+    }
+
+    public static String constant() {
+        return Description.Science.toString();
     }
 }
