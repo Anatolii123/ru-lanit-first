@@ -34,6 +34,9 @@ public class Hello {
             System.out.println(matrix.hashCode());
         }
         sum.showMessage();
+        Matrix m;
+        m = new MatrixSummator();
+        m = new MatrixMultiplicator();
 
     }
 }
