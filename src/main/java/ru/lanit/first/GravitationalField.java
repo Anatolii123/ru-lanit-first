@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class GravitationalField extends Field {
+
+    private GravitationalField(){}
+
     @Override
     public void printClass() {
         System.out.println("Gravitational Field");
@@ -15,5 +18,10 @@ public class GravitationalField extends Field {
     @Override
     public void printDescendants() {
         System.out.println("No");
+    }
+
+    public static GravitationalField getInstanceOf(){
+        GravitationalField g = new GravitationalField();
+        return g;
     }
 }

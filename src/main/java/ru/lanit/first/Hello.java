@@ -35,13 +35,21 @@ public class Hello {
 //        }
 //        sum.showMessage();
 
-        //Matter m = new Matter();
-        Matter m = Matter.getInstanceOf();
+        Matter m = new Matter();
+        //Matter m = Matter.getInstanceOf();
+        for (Description d: Description.values()) {
+            if (d.equals(d)){
+                System.out.println(Description.valueOf(d.toString()));
+                System.out.println();
+            }
+        }
+        //GravitationalField g = new GravitationalField();
+        GravitationalField g2 = GravitationalField.getInstanceOf();
+
 //        m.science = Description.Science.getDescription();
 //        System.out.println(m.science);
 //        m.science = Description.Science.toString();
 //        System.out.println(Matter.getInstanceOf().science);
-//        System.out.println(Substance.addMass(2,3));
 //        System.out.println(Description.constant());
 
 

@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class ElectromagneticField extends Field {
+
+    private ElectromagneticField(){}
+
     @Override
     public void printClass() {
         System.out.println("Electromagnetic Field");
@@ -16,4 +19,10 @@ public class ElectromagneticField extends Field {
     public void printDescendants() {
         System.out.println("ElectricField, MagneticField");
     }
+
+    public static ElectromagneticField getInstanceOf(){
+        ElectromagneticField e = new ElectromagneticField();
+        return e;
+    }
+
 }
