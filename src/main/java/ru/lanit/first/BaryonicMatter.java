@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class BaryonicMatter extends HadronSubstance {
+
+    protected BaryonicMatter(){}
+
     @Override
     public void printClass() {
         System.out.println("Baryonic Matter");

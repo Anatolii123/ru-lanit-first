@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class HadronSubstance extends Substance {
+
+    protected HadronSubstance(){}
+
     @Override
     public void printClass() {
         System.out.println("Hadron substance");

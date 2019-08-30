@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Field extends Matter{
     protected int intensity;
 
+    protected Field(){}
+
     @Override
     public void printClass() {
         System.out.println("Field");
