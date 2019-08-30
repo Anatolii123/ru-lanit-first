@@ -14,7 +14,7 @@ public class Matter {
         System.out.println("Object");
     }
     public void printDescendants() {
-        System.out.println(Descendants.values());
+        System.out.println(MatterDescendants.values());
     }
 
     public static Matter getInstanceOf(){
@@ -30,11 +30,5 @@ public class Matter {
         return m;
     }
 
-    enum Descendants{
-        Substance,
-        Field,
-        QuantumFields,
-        ObscurePhysicalNature
-    }
 }
 

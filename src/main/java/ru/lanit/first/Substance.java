@@ -1,5 +1,7 @@
 package ru.lanit.first;
 
+import java.util.Scanner;
+
 public class Substance extends Matter {
     protected int mass;
     protected String state;
@@ -17,19 +19,16 @@ public class Substance extends Matter {
 
     @Override
     public void printDescendants() {
-        System.out.println(Descendants.values());
+        System.out.println(SubstanceDescendants.values());
     }
 
-    public static int addMass(int a, int b) {
-        int c = a + b;
-        return c;
+    public static Substance getInstanceOf(){
+        Substance s = new Substance();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите массу вещества: ");
+        s.mass = in.nextInt();
+        System.out.println("Введите агрегатное состояние вещества: ");
+        s.state = in.nextLine();
+        return s;
     }
-
-    enum Descendants{
-        HadronSubstance,
-        Antimatter,
-        NeutronMatter,
-        QuarkGluonPlasma
-    }
-
 }

@@ -1,5 +1,7 @@
 package ru.lanit.first;
 
+import java.util.Scanner;
+
 public class Field extends Matter{
     protected int intensity;
 
@@ -16,12 +18,15 @@ public class Field extends Matter{
 
     @Override
     public void printDescendants() {
-        System.out.println(Descendants.values());
+        System.out.println("ElectromagneticField, GravitationalField");
     }
 
-    enum Descendants{
-        ElectromagneticField,
-        GravitationalField
+    public static Field getInstanceOf(){
+        Field f = new Field();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите напряженность поля: ");
+        f.intensity = in.nextInt();
+        return f;
     }
 
 }
