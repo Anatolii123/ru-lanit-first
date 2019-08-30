@@ -40,6 +40,7 @@ public class Hello {
 
         for (Description d: Description.values()) {
             if (d.equals(d)){
+                System.out.println(d.getDescription());
                 System.out.println(Description.valueOf(d.toString()));
                 System.out.println();
             }
