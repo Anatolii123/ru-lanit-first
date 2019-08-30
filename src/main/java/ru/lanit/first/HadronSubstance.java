@@ -16,4 +16,9 @@ public class HadronSubstance extends Substance {
     public void printDescendants() {
         System.out.println("Baryonic Matter");
     }
+
+    public static HadronSubstance getInstanceOf(){
+        HadronSubstance h = new HadronSubstance();
+        return h;
+    }
 }

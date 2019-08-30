@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class ClassicalSubstance extends BaryonicMatter {
+
+    private ClassicalSubstance(){}
+
     @Override
     public void printClass() {
         System.out.println("Classical Substance");
@@ -15,5 +18,10 @@ public class ClassicalSubstance extends BaryonicMatter {
     @Override
     public void printDescendants() {
         System.out.println("No");
+    }
+
+    public static ClassicalSubstance getInstanceOf(){
+        ClassicalSubstance c = new ClassicalSubstance();
+        return c;
     }
 }

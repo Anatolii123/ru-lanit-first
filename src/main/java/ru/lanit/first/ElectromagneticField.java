@@ -2,7 +2,7 @@ package ru.lanit.first;
 
 public class ElectromagneticField extends Field {
 
-    private ElectromagneticField(){}
+    //private ElectromagneticField(){}
 
     @Override
     public void printClass() {

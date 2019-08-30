@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class QuantumFields extends Matter {
+
+    private QuantumFields(){}
+
     @Override
     public void printClass() {
         System.out.println("Quantum Fields");
@@ -15,5 +18,10 @@ public class QuantumFields extends Matter {
     @Override
     public void printDescendants() {
         System.out.println("No");
+    }
+
+    public static QuantumFields getInstanceOf(){
+        QuantumFields q = new QuantumFields();
+        return q;
     }
 }

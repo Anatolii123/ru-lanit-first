@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class QuarkGluonPlasma extends Substance {
+
+    private QuarkGluonPlasma(){}
+
     @Override
     public void printClass() {
         System.out.println("Quark-Gluon Plasma");
@@ -15,5 +18,10 @@ public class QuarkGluonPlasma extends Substance {
     @Override
     public void printDescendants() {
         System.out.println("No");
+    }
+
+    public static QuarkGluonPlasma getInstanceOf(){
+        QuarkGluonPlasma q = new QuarkGluonPlasma();
+        return q;
     }
 }
