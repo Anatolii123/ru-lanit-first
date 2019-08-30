@@ -43,8 +43,8 @@ public class Hello {
                 System.out.println();
             }
         }
-//        GravitationalField g = new GravitationalField();
-//        GravitationalField g2 = GravitationalField.getInstanceOf();
+        //GravitationalField g = new GravitationalField();
+        GravitationalField g2 = GravitationalField.getInstanceOf();
 //        Substance s = new Substance();
 //        Substance s = Substance.getInstanceOf();
 

@@ -7,9 +7,6 @@ public class Matter {
     protected String science;
     protected boolean mathDescription;
 
-    private Matter(){}
-
-
     public void printClass() {
         System.out.println("Matter");
     }
