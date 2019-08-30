@@ -41,8 +41,8 @@ public class Hello {
                 System.out.println();
             }
         }
-        GravitationalField g = new GravitationalField();
-        GravitationalField g2 = GravitationalField.getInstanceOf();
+        ElectricField e = new ElectricField();
+        ElectricField e2 = ElectricField.getInstanceOf();
 
 //        m.science = Description.Science.getDescription();
 //        System.out.println(m.science);

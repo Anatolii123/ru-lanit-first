@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
+import java.util.Scanner;
+
 public class ElectricField extends ElectromagneticField {
+    protected int intensity;
 
     private ElectricField(){}
 
@@ -22,6 +25,9 @@ public class ElectricField extends ElectromagneticField {
 
     public static ElectricField getInstanceOf(){
         ElectricField e = new ElectricField();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите напряженность поля: ");
+        e.intensity = in.nextInt();
         return e;
     }
 }
