@@ -40,13 +40,18 @@ public class Hello {
 
         for (Description d: Description.values()) {
             if (d.equals(d)){
-                System.out.println(d.getDescription());
-                System.out.println(Description.valueOf(d.toString()));
-                System.out.println();
+                //System.out.println(Description.getBy("physics"));
+                //System.out.println(Description.valueOf(d.toString()));
+                //System.out.println();
             }
         }
+        System.out.println(Description.getBy("physics"));
+        System.out.println(Description.getBy(10));
+        System.out.println(Description.getBy(false));
+        System.out.println();
+
         //ElectricField e = new ElectricField();
-        ElectricField e2 = ElectricField.getInstanceOf();
+        //ElectricField e2 = ElectricField.getInstanceOf();
 
 //        m.science = Description.Science.getDescription();
 //        System.out.println(m.science);
