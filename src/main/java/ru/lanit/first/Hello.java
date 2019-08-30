@@ -35,14 +35,15 @@ public class Hello {
 //        }
 //        sum.showMessage();
 
-        Matter m = new Matter();
-        m.science = Description.Science.getDescription();
-        //System.out.println(m.science);
-        m.science = Description.Science.toString();
-        System.out.println(Matter.getInstanceOf().science);
-        System.out.println(Substance.addMass(2,3));
-        System.out.println(Description.constant());
-        m = Matter.getInstanceOf();
+        //Matter m = new Matter();
+        Matter m = Matter.getInstanceOf();
+//        m.science = Description.Science.getDescription();
+//        System.out.println(m.science);
+//        m.science = Description.Science.toString();
+//        System.out.println(Matter.getInstanceOf().science);
+//        System.out.println(Substance.addMass(2,3));
+//        System.out.println(Description.constant());
+
 
     }
 }
