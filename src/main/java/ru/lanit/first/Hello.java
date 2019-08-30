@@ -35,7 +35,7 @@ public class Hello {
 //        }
 //        sum.showMessage();
 
-        Matter m = new Matter();
+        //Matter m = new Matter();
         //Matter m = Matter.getInstanceOf();
         for (Description d: Description.values()) {
             if (d.equals(d)){
@@ -43,8 +43,10 @@ public class Hello {
                 System.out.println();
             }
         }
-        //GravitationalField g = new GravitationalField();
-        GravitationalField g2 = GravitationalField.getInstanceOf();
+//        GravitationalField g = new GravitationalField();
+//        GravitationalField g2 = GravitationalField.getInstanceOf();
+//        Substance s = new Substance();
+//        Substance s = Substance.getInstanceOf();
 
 //        m.science = Description.Science.getDescription();
 //        System.out.println(m.science);

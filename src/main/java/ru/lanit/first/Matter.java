@@ -7,7 +7,8 @@ public class Matter {
     protected String science;
     protected boolean mathDescription;
 
-    protected Matter(){}
+    private Matter(){}
+
 
     public void printClass() {
         System.out.println("Matter");
@@ -20,7 +21,7 @@ public class Matter {
     }
 
     public static Matter getInstanceOf(){
-        Matter m = new Matter();
+        Matter m = new Matter(){};
         Scanner in = new Scanner(System.in);
         System.out.println("Введите название науки: ");
         m.science = in.nextLine();

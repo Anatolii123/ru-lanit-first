@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class NeutronMatter extends Substance {
+
+    private NeutronMatter(){}
+
     @Override
     public void printClass() {
         System.out.println("Neutron Matter");
@@ -15,5 +18,10 @@ public class NeutronMatter extends Substance {
     @Override
     public void printDescendants() {
         System.out.println("No");
+    }
+
+    public static NeutronMatter getInstanceOf(){
+        NeutronMatter n = new NeutronMatter();
+        return n;
     }
 }
