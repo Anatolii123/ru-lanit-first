@@ -36,7 +36,7 @@ public class Hello {
         }});
         System.out.println(list2);
         BaryonicMatter b = BaryonicMatter.getInstanceOf();
-
+        BaryonicMatter.BaryonicMatter2 b2 = new BaryonicMatter.BaryonicMatter2();
 
     }
 }

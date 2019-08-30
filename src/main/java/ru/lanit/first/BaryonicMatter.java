@@ -25,7 +25,7 @@ public class BaryonicMatter extends HadronSubstance {
         return b;
     }
 
-    class BaryonicMatter2 extends Substance {
+    public static class BaryonicMatter2 extends Substance {
 
         @Override
         public void printClass() {
