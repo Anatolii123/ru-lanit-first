@@ -7,6 +7,8 @@ public class Matter {
     protected String science;
     protected boolean mathDescription;
 
+    protected Matter(){}
+
     public void printClass() {
         System.out.println("Matter");
     }
@@ -29,6 +31,5 @@ public class Matter {
         m.mathDescription = false;
         return m;
     }
-
 }
 

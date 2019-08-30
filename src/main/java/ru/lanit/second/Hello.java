@@ -1,4 +1,7 @@
-package ru.lanit.first;
+package ru.lanit.second;
+
+import ru.lanit.first.Description;
+import ru.lanit.first.ElectricField;
 
 import java.util.List;
 
@@ -41,7 +44,7 @@ public class Hello {
                 System.out.println();
             }
         }
-        ElectricField e = new ElectricField();
+        //ElectricField e = new ElectricField();
         ElectricField e2 = ElectricField.getInstanceOf();
 
 //        m.science = Description.Science.getDescription();

@@ -6,6 +6,8 @@ public class Substance extends Matter {
     protected int mass;
     protected String state;
 
+    protected Substance(){}
+
     @Override
     public void printClass() {
         System.out.println("Substance");
