@@ -23,7 +23,7 @@ public class Substance extends Matter {
     }
 
     public static Substance getInstanceOf(){
-        Substance s = new Substance(){};
+        Substance s = new Substance();
         Scanner in = new Scanner(System.in);
         System.out.println("Введите массу вещества: ");
         s.mass = in.nextInt();
