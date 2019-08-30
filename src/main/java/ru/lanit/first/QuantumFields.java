@@ -25,7 +25,7 @@ public class QuantumFields extends Matter {
         return q;
     }
 
-    protected void printSentence(){
+    public void printSentence(){
         System.out.println("This is a Quantum Field.");
     }
 }

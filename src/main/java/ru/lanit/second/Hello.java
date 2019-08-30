@@ -47,6 +47,8 @@ public class Hello {
          */
         BaryonicMatter b = BaryonicMatter.getInstanceOf();
         BaryonicMatter.BaryonicMatter3 b3 = b.new BaryonicMatter3();
+        b3.printSentence();
+        b3.printSentence2();
 
         /**
          * Вложенный класс

@@ -25,7 +25,7 @@ public class BaryonicMatter extends HadronSubstance {
         return b;
     }
 
-    public void printSentence(){
+    private void printSentence2(){
         System.out.println("This is a BaryonicMatter.");
     }
 
@@ -50,8 +50,6 @@ public class BaryonicMatter extends HadronSubstance {
 
     public class BaryonicMatter3 extends QuantumFields { // todo унаследовать, например, от QuantumFields и сделть так, чтобы одновременно использовались методы BaryonicMatter и QuantumFields
 
-        private String b3 = new String();
-
         @Override
         public void printClass() {
             System.out.println("Baryonic Matter");
@@ -68,11 +66,9 @@ public class BaryonicMatter extends HadronSubstance {
             System.out.println("Classical Substance");
         }
 
-        @Override
-        public void printSentence(){
-
+        public void printSentence2() {
+            BaryonicMatter.this.printSentence2();
         }
-
     }
 
 }
