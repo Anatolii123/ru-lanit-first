@@ -24,4 +24,12 @@ public class Antimatter extends Substance {
         Antimatter a = new Antimatter();
         return a;
     }
+
+    public Double annihilate(Substance matter){
+        double energy = Math.pow(this.mass, 2);
+        this.mass = 0;
+        matter.mass = 0;
+
+        return energy;
+    }
 }

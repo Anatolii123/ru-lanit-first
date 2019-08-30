@@ -36,19 +36,26 @@ public class Substance extends Matter {
         return s;
     }
 
-    public class halfLife {
-        public Long getH() {
-            return halfLive;
-        }
-        public void setH(Long halfLive) {
-            Substance.this.halfLive = halfLive;
-        }
+    public static HalfLife getInstanceOfInner(){
+        Substance s = new Substance();
+        HalfLife h = s.new HalfLife();
+        return h;
     }
 
-    public static Substance.halfLife getInstanceOfInner(){
-        Substance s = new Substance();
-        Substance.halfLife h = s.new halfLife();
-        return h;
+    public HalfLife convertToInstanceHalfLive(){
+        return new HalfLife();
+    }
+
+    public class HalfLife {
+
+        public Long getHalfLife() {
+            return halfLive;
+        }
+
+        public void setHalfLife(Long halfLive) {
+            Substance.this.halfLive = halfLive;
+        }
+
     }
 
 }

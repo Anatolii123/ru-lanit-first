@@ -2,11 +2,12 @@ package ru.lanit.second;
 
 import ru.lanit.first.*;
 
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Hello {
+
     public static void main (String[] args) throws Exception {
 
         for (Description d: Description.values()) {
@@ -27,19 +28,22 @@ public class Hello {
 //        list.add(7);
 //        List<Integer> unmodifiableList = Collections.unmodifiableList(list);
 //        System.out.println(unmodifiableList);
-//        List<Integer> list2 = Collections.unmodifiableList(new ArrayList<Integer>() {
-//            {
-//                add(2);
-//                add(3);
-//                add(5);
-//                add(7);
-//            }
-//        });
 //
 //        System.out.println(list2);
 
         //Substance s = new Substance();
         //Matter s = Matter.getInstanceOf();
+
+        List<Integer> list2 = Collections.unmodifiableList(
+                new ArrayList<Integer>() {
+                    {
+                        add(2);
+                        add(3);
+                        add(5);
+                        add(7);
+                    }
+                });
+        list2.getClass();
 
 
         /**
@@ -55,9 +59,14 @@ public class Hello {
          */
         BaryonicMatter.BaryonicMatter2 b2 = new BaryonicMatter.BaryonicMatter2();
 
-        Substance.halfLife hal = Substance.getInstanceOfInner();
-        hal.setH(234L);
-        System.out.println(hal.getH());
+        Substance substance = Substance.getInstanceOf();
+        Substance.HalfLife halfLife = substance.convertToInstanceHalfLive();
+        halfLife.setHalfLife(512L);
+        System.out.println(halfLife.getHalfLife());
+
+        Substance.HalfLife hal = Substance.getInstanceOfInner();
+        hal.setHalfLife(234L);
+        System.out.println(hal.getHalfLife());
 
     }
 }
