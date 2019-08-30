@@ -35,18 +35,14 @@ public class Hello {
 //        }
 //        sum.showMessage();
 
-        //Matter m = new Matter();
-        //Matter m = Matter.getInstanceOf();
         for (Description d: Description.values()) {
             if (d.equals(d)){
                 System.out.println(Description.valueOf(d.toString()));
                 System.out.println();
             }
         }
-        //GravitationalField g = new GravitationalField();
+        GravitationalField g = new GravitationalField();
         GravitationalField g2 = GravitationalField.getInstanceOf();
-//        Substance s = new Substance();
-//        Substance s = Substance.getInstanceOf();
 
 //        m.science = Description.Science.getDescription();
 //        System.out.println(m.science);
