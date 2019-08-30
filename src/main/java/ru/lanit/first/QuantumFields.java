@@ -2,7 +2,7 @@ package ru.lanit.first;
 
 public class QuantumFields extends Matter {
 
-    private QuantumFields(){}
+    protected QuantumFields(){}
 
     @Override
     public void printClass() {
@@ -23,5 +23,9 @@ public class QuantumFields extends Matter {
     public static QuantumFields getInstanceOf(){
         QuantumFields q = new QuantumFields();
         return q;
+    }
+
+    protected void printSentence(){
+        System.out.println("This is a Quantum Field.");
     }
 }

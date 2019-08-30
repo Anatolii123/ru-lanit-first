@@ -6,6 +6,8 @@ public class Substance extends Matter {
     protected int mass;
     protected String state;
 
+    private Long halfLive; // todo реализовать внутренний класс, позволяющий работать с этим (get и set). Завести в Substance метод, возвращающий экземпляр внутреннего класса
+
     protected Substance(){}
 
     @Override
@@ -30,7 +32,23 @@ public class Substance extends Matter {
         System.out.println("Введите массу вещества: ");
         s.mass = in.nextInt();
         System.out.println("Введите агрегатное состояние вещества: ");
-        s.state = in.nextLine();
+        s.state = in.next();
         return s;
     }
+
+    public class halfLife {
+        public Long getH() {
+            return halfLive;
+        }
+        public void setH(Long halfLive) {
+            Substance.this.halfLive = halfLive;
+        }
+    }
+
+    public static Substance.halfLife getInstanceOfInner(){
+        Substance s = new Substance();
+        Substance.halfLife h = s.new halfLife();
+        return h;
+    }
+
 }

@@ -43,7 +43,7 @@ public enum Description {
     }
     public static Description getBy(String s){
         for (Description d: Description.values()){
-            if(d.getDescription() == s){
+            if(d.getDescription().equals(s)){
                 return d;
             }
         }
