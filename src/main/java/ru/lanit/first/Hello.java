@@ -42,6 +42,7 @@ public class Hello {
         System.out.println(m.science);
         System.out.println(Substance.addMass(2,3));
         System.out.println(Description.constant());
+        m = Matter.getInstanceOf();
 
     }
 }

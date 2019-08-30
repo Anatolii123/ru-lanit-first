@@ -14,6 +14,12 @@ public class Matter {
     public void printDescendants() {
         System.out.println(Descendants.values());
     }
+
+    public static Matter getInstanceOf(){
+        Matter m = new Matter();
+        return m;
+    }
+
     enum Descendants{
         Substance,
         Field,
