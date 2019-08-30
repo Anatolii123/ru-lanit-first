@@ -1,5 +1,6 @@
 package ru.lanit.first;
 
+import java.util.Scanner;
 
 public class Matter {
     protected String science;
@@ -17,6 +18,14 @@ public class Matter {
 
     public static Matter getInstanceOf(){
         Matter m = new Matter();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите название науки: ");
+        m.science = in.toString();
+        System.out.print("Можно ли математически описать: ");
+        if (in.toString() == "Да") {
+            m.mathDescription = true;
+        }
+        m.mathDescription = false;
         return m;
     }
 

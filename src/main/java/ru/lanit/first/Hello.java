@@ -39,7 +39,7 @@ public class Hello {
         m.science = Description.Science.getDescription();
         //System.out.println(m.science);
         m.science = Description.Science.toString();
-        System.out.println(m.science);
+        System.out.println(Matter.getInstanceOf().science);
         System.out.println(Substance.addMass(2,3));
         System.out.println(Description.constant());
         m = Matter.getInstanceOf();
