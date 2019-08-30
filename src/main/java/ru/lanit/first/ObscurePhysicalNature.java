@@ -1,6 +1,9 @@
 package ru.lanit.first;
 
 public class ObscurePhysicalNature extends Matter {
+
+    //private ObscurePhysicalNature(){}
+
     @Override
     public void printClass() {
         System.out.println("Obscure Physical Nature");

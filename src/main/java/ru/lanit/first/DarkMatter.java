@@ -16,4 +16,10 @@ public class DarkMatter extends ObscurePhysicalNature {
     public void printDescendants() {
         System.out.println("No");
     }
+
+    public static DarkMatter getInstanceOf(){
+        DarkMatter d = new DarkMatter();
+        return d;
+    }
+
 }

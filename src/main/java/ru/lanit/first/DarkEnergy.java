@@ -16,4 +16,9 @@ public class DarkEnergy extends ObscurePhysicalNature {
     public void printDescendants() {
         System.out.println("No");
     }
+
+    public static DarkEnergy getInstanceOf(){
+        DarkEnergy d = new DarkEnergy();
+        return d;
+    }
 }
