@@ -20,8 +20,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     @Override
     public String getClassName() {
-        String s = new String();
-        return s;
+        return "Quantum Fields";
     }
 
     @Override
@@ -48,11 +47,6 @@ public class QuantumFields extends Matter implements Physics, Informatics{
             quantumFields.get(q).printClass();
             System.out.println(quantumFields.containsKey(q));
         }
-    }
-
-    @Override
-    public void printClass() {
-        System.out.println("Quantum Fields");
     }
 
     @Override

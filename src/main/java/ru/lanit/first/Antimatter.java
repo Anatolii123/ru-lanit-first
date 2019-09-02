@@ -5,8 +5,8 @@ public class Antimatter extends Substance {
     private Antimatter(){}
 
     @Override
-    public void printClass() {
-        System.out.println("Antimatter");
+    public String getClassName() {
+        return "Antimatter";
     }
 
     @Override

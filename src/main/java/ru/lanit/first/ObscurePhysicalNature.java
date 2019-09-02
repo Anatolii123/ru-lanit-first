@@ -14,8 +14,7 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public String getClassName() {
-        String s = new String();
-        return s;
+        return "Obscure Physical Nature";
     }
 
     @Override
@@ -29,7 +28,7 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public void printClass() {
-        System.out.println("Obscure Physical Nature");
+        System.out.println(this.getClassName());
     }
 
     @Override

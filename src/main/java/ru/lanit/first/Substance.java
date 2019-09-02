@@ -26,8 +26,7 @@ public class Substance extends Matter implements Physics,Informatics {
 
     @Override
     public String getClassName() {
-       String s = new String();
-       return s;
+       return "Substance";
     }
 
     public Set<Philosophy> calculate(Philosophy substance) {
@@ -43,7 +42,7 @@ public class Substance extends Matter implements Physics,Informatics {
 
     @Override
     public void printClass() {
-        System.out.println("Substance");
+        System.out.println(this.getClassName());
     }
 
     @Override

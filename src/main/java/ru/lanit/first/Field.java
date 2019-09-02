@@ -25,8 +25,7 @@ public class Field extends Matter implements Physics, Informatics{
 
     @Override
     public String getClassName() {
-        String s = new String();
-        return s;
+        return "Field";
     }
 
     @Override
@@ -36,11 +35,6 @@ public class Field extends Matter implements Physics, Informatics{
             fields.add(new Field());
         }
         return fields;
-    }
-
-    @Override
-    public void printClass() {
-        System.out.println("Field");
     }
 
     @Override
