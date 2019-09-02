@@ -69,9 +69,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         return getClassName();
     }
 
-    public abstract String getClassName() {
-        return this.getClass().toString();
-    }
+    public abstract String getClassName();
 
     public abstract Set<Philosophy> calculate(Philosophy philosophy);
 

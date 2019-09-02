@@ -73,7 +73,7 @@ public class Hello {
 
         //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.
         List<HasOrdinal> matters = new ArrayList<HasOrdinal>(); // заполнить экземплярами разных классов потомков
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 15; i++) {
             int random = (int) (Math.random() * 5);
             switch (random) {
                 case 0:
