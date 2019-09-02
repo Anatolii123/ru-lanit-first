@@ -25,10 +25,10 @@ public class Field extends Matter{
 
     public void calculate() {
         List<Field> fields = new ArrayList<Field>();
-        for (int i=0;i<5;i++) {
+        for (int i = 0; i < 5; i++) {
             fields.add(new Field());
         }
-        for (Field f:fields) {
+        for (Field f : fields) {
             f.printClass();
         }
     }

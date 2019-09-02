@@ -2,12 +2,14 @@ package ru.lanit.first;
 
 import java.util.Scanner;
 
-abstract class Matter implements Informatics {
+public abstract class Matter implements Philosophy { // todo мне не очень нравится, что класс Материя реализует интерфейс Информация. Как-то не очень логично.
 
     protected String science;
     protected boolean mathDescription;
 
     protected Matter(){}
+
+    //TODO прошу добавить хотябы один "полезный" метод. Пример - шаблонный метод (см. ссылку)
 
     public abstract void printClass();
     public abstract void printAncestor();
