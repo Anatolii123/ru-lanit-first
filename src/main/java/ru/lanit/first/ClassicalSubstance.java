@@ -5,6 +5,11 @@ public class ClassicalSubstance extends BaryonicMatter {
     private ClassicalSubstance(){}
 
     @Override
+    public void setOrdinal() {
+        ordinal = 17;
+    }
+
+    @Override
     public String getClassName() {
         return "Classical Substance";
     }

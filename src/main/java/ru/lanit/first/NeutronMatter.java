@@ -5,8 +5,13 @@ public class NeutronMatter extends Substance {
     private NeutronMatter(){}
 
     @Override
-    public void printClass() {
-        System.out.println("Neutron Matter");
+    public void setOrdinal() {
+        ordinal = 10;
+    }
+
+    @Override
+    public String getClassName() {
+        return "Neutron Matter";
     }
 
     @Override
