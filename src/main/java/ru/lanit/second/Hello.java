@@ -44,8 +44,6 @@ public class Hello {
                     }
                 });
         list2.getClass();
-
-
 //        /**
 //         * Внутренний класс
 //         */

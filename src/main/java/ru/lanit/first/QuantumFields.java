@@ -3,7 +3,7 @@ package ru.lanit.first;
 import java.util.HashMap;
 import java.util.Map;
 
-public class QuantumFields extends Matter {
+public class QuantumFields extends Matter implements Physics, Informatics{
 
     protected QuantumFields(){}
 

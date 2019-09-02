@@ -13,6 +13,9 @@ public abstract class Matter implements Philosophy { // todo мне не оче�
     public void templateMethod() {
         reason();
         printClass();
+        printAncestor();
+        printDescendants();
+        conclusion();
 
     }
 
@@ -21,7 +24,7 @@ public abstract class Matter implements Philosophy { // todo мне не оче�
     }
 
     public void conclusion() {
-        System.out.println("It will end with a big collapse");
+        System.out.println("It will end with the Big collapse");
     }
 
     public abstract void printClass();
