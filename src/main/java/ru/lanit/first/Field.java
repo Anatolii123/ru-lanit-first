@@ -4,19 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Field extends Matter{
+public class Field extends Matter implements Physics, Informatics{
     protected int intensity;
 
-    public void mathDescription() {
-        System.out.println("It has.");
-    }
+    protected Field(){}
 
     public void force() {
         System.out.println("It has.");
-    }
-
-    public void reason() {
-        System.out.println("Unknown.");
     }
 
     public void amountOfInformation() {
@@ -32,8 +26,6 @@ public class Field extends Matter{
             f.printClass();
         }
     }
-
-    protected Field(){}
 
     @Override
     public void printClass() {

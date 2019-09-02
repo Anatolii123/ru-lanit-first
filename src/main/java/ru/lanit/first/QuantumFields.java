@@ -7,10 +7,6 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     protected QuantumFields(){}
 
-    public void mathDescription() {
-        System.out.println("It has.");
-    }
-
     public void force() {
         System.out.println("It has.");
     }

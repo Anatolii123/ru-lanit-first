@@ -3,24 +3,13 @@ package ru.lanit.first;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObscurePhysicalNature extends Matter {
+public class ObscurePhysicalNature extends Matter implements Mathematic {
 
     protected ObscurePhysicalNature(){}
 
-    public void mathDescription() {
-        System.out.println("It has not.");
-    }
-
-    public void force() {
-        System.out.println("It has.");
-    }
 
     public void reason() {
         System.out.println("Unknown.");
-    }
-
-    public void amountOfInformation() {
-        System.out.println("A few of!");
     }
 
     public void calculate() {

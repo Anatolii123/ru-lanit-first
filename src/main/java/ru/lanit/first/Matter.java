@@ -2,7 +2,7 @@ package ru.lanit.first;
 
 import java.util.Scanner;
 
-public abstract class Matter implements Philosophy { // todo мне не очень нравится, что класс Материя реализует интерфейс Информация. Как-то не очень логично.
+public abstract class Matter implements Philosophy, Mathematic { // todo мне не очень нравится, что класс Материя реализует интерфейс Информация. Как-то не очень логично.
 
     protected String science;
     protected boolean mathDescription;
@@ -15,8 +15,8 @@ public abstract class Matter implements Philosophy { // todo мне не оче�
         printClass();
         printAncestor();
         printDescendants();
+        calculate();
         conclusion();
-
     }
 
     public void reason() {
@@ -30,6 +30,7 @@ public abstract class Matter implements Philosophy { // todo мне не оче�
     public abstract void printClass();
     public abstract void printAncestor();
     public abstract void printDescendants();
+    public abstract void calculate();
 
 //    public static Matter getInstanceOf(){
 //        Matter m = new Matter();

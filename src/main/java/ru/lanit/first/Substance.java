@@ -11,10 +11,6 @@ public class Substance extends Matter implements Physics,Informatics {
 
     protected Substance(){}
 
-    public void mathDescription() {
-        System.out.println("It has.");
-    }
-
     public void force() {
         System.out.println("It has.");
     }

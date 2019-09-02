@@ -5,6 +5,7 @@ import ru.lanit.first.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class Hello {
 
@@ -66,15 +67,24 @@ public class Hello {
 //        hal.setHalfLife(234L);
 //        System.out.println(hal.getHalfLife());
 
-        Field f = Field.getInstanceOf();
-        f.calculate();
-        Substance s = Substance.getInstanceOf();
-        s.calculate();
-        QuantumFields q = QuantumFields.getInstanceOf();
-        q.calculate();
+//        Field f = Field.getInstanceOf();
+//        f.calculate();
+//        Substance s = Substance.getInstanceOf();
+//        s.calculate();
+//        QuantumFields q = QuantumFields.getInstanceOf();
+//        q.calculate();
+        Random random = new Random(6);
+        System.out.println(random);
 
         //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.
         List<Matter> matters = new ArrayList<Matter>(); // заполнить экземплярами разных классов потомков
+//        for (int i=0;i<5;i++) {
+//            Random random = new Random(6);
+//            switch (random) {
+//                case 1:
+//                    break;
+//            }
+//        }
         List<Physics> physics = new ArrayList<Physics>(); // такое (или наподобие) тоже было бы неплохо
         //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.
 
