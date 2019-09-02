@@ -9,7 +9,7 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public void setOrdinal() {
-        System.out.println("Hello");
+        ordinal = 3;
     }
 
     @Override

@@ -11,16 +11,8 @@ public class Substance extends Matter implements Physics,Informatics {
     protected Substance(){}
 
     @Override
-    public Integer getOrdinal() {
-        if(ordinal == null){
-            setOrdinal();
-        }
-        return ordinal;
-    }
-
-    @Override
     public void setOrdinal() {
-        System.out.println("Hello");
+        ordinal = 0;
     }
 
     @Override

@@ -9,18 +9,26 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     protected QuantumFields(){}
 
-    public void force() {
-        System.out.println("It has.");
+    @Override
+    public Integer getOrdinal() {
+        if(ordinal == null){
+            setOrdinal();
+        }
+        return ordinal;
     }
 
     @Override
     public void setOrdinal() {
-        System.out.println("Hello");
+        ordinal = 2;
     }
 
     @Override
     public String getClassName() {
         return "Quantum Fields";
+    }
+
+    public void force() {
+        System.out.println("It has.");
     }
 
     @Override

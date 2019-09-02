@@ -24,4 +24,9 @@ public class GravitationalField extends Field {
         GravitationalField g = new GravitationalField();
         return g;
     }
+
+    @Override
+    public void setOrdinal() {
+        ordinal = 4;
+    }
 }

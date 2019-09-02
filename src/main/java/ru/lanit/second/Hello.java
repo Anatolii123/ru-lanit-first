@@ -73,7 +73,7 @@ public class Hello {
 
         //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.
         List<HasOrdinal> matters = new ArrayList<HasOrdinal>(); // заполнить экземплярами разных классов потомков
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 5; i++) {
             int random = (int) (Math.random() * 5);
             switch (random) {
                 case 0:
@@ -100,14 +100,22 @@ public class Hello {
             }
         }
 
-        System.out.println();
-
-        System.out.println();
-
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
+        for (HasOrdinal m:matters) {
+            System.out.println(m.toString());
+        }
+        System.out.println();
 
-        //Collections.sort(); // todo отсортировать по getOrdinal()
+        Collections.sort(matters, new Comparator<HasOrdinal>() {
+            public int compare(HasOrdinal o1, HasOrdinal o2) {
+                return o1.getOrdinal().compareTo(o2.getOrdinal());
+            }
+        }); // todo отсортировать по getOrdinal()
+        for (HasOrdinal m:matters) {
+            System.out.println(m.toString());
+        }
+
 
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
