@@ -15,7 +15,7 @@ public class Field extends Matter{
     @Override
     public void printAncestor() {
         System.out.println("Matter");
-        super.printAncestor();
+        printAncestor();
     }
 
     @Override
