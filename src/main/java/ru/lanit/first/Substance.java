@@ -1,7 +1,8 @@
 package ru.lanit.first;
 
+import java.util.HashSet;
 import java.util.Stack;
-import java.util.Scanner;
+import java.util.Set;
 
 public class Substance extends Matter implements Physics,Informatics {
     protected int mass;
@@ -15,22 +16,31 @@ public class Substance extends Matter implements Physics,Informatics {
         System.out.println("It has.");
     }
 
-    public void reason() {
-        System.out.println("Big explosion.");
-    }
 
     public void amountOfInformation() {
         System.out.println("A lot of!");
     }
 
-    public void calculate() {
-        Stack<Substance> substancess = new Stack<Substance>();
+    @Override
+    public void setOrdinal() {
+        System.out.println("Hello");
+    }
+
+    @Override
+    public String getClassName() {
+       String s = new String();
+       return s;
+    }
+
+    public Set<Philosophy> calculate(Philosophy philosophy) {
+        Set<Philosophy> substancess = new HashSet<Philosophy>();
         for (int i=0;i<5;i++){
-            substancess.push(new Substance());
+            substancess.add(new Substance());
         }
-        while (!substancess.empty()){
-            substancess.pop().printClass();
+        while (!substancess.isEmpty()){
+            System.out.println(substancess);
         }
+        return substancess;
     }
 
     @Override

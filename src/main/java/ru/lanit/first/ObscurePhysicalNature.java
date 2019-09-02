@@ -8,7 +8,7 @@ public class ObscurePhysicalNature extends Matter implements Mathematic {
     protected ObscurePhysicalNature(){}
 
 
-    public void reason() {
+    public String reason() {
         System.out.println("Unknown.");
     }
 

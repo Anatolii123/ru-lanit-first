@@ -72,15 +72,16 @@ public class Hello {
 //        q.calculate();
 
         //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.
-        List<Matter> matters = new ArrayList<Matter>(); // заполнить экземплярами разных классов потомков
-        for (int i=0;i<5;i++) {
-            int random = (int) (Math.random()*5);
+        List<HasOrdinal> matters = new ArrayList<HasOrdinal>(); // заполнить экземплярами разных классов потомков
+        for (int i = 0; i < 15; i++) {
+            int random = (int) (Math.random() * 5);
             switch (random) {
                 case 0:
                     matters.add(Substance.getInstanceOf());
                     break;
                 case 1:
                     matters.add(Field.getInstanceOf());
+                    //
                     break;
                 case 2:
                     matters.add(QuantumFields.getInstanceOf());
@@ -99,25 +100,16 @@ public class Hello {
             }
         }
 
-        for (Matter m: matters) {
-            m.printClass();
-        }
         System.out.println();
-        ListIterator<Matter> it = matters.listIterator();
-        while (it.hasNext()) {
-            Matter m = it.next();
-            it.set(m);
-        }
 
-        while (it.hasPrevious()) {
-            Matter m = it.previous();
-            it.set(m);
-            m.printClass();
-        }
+        System.out.println();
 
-//        for (Matter m: matters) {
-//            m.printClass();
-//        }
+        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
+
+
+        //Collections.sort(); // todo отсортировать по getOrdinal()
+
+        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
         Set<Physics> physics = new HashSet<Physics>();
         // такое (или наподобие) тоже было бы неплохо

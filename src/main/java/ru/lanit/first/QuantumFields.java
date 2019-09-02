@@ -11,7 +11,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         System.out.println("It has.");
     }
 
-    public void reason() {
+    public String reason() {
         System.out.println("Unknown.");
     }
 
