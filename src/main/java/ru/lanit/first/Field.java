@@ -6,13 +6,7 @@ import java.util.HashSet;
 public class Field extends Matter implements Physics, Informatics{
     protected int intensity;
 
-    @Override
-    public Integer getOrdinal() {
-        if(ordinal == null){
-            setOrdinal();
-        }
-        return ordinal;
-    }
+    protected Field(){}
 
     @Override
     public void setOrdinal() {
@@ -23,8 +17,6 @@ public class Field extends Matter implements Physics, Informatics{
     public String getClassName() {
         return "Field";
     }
-
-    protected Field(){}
 
     public void force() {
         System.out.println("It has.");
