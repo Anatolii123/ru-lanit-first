@@ -3,7 +3,7 @@ package ru.lanit.first;
 import java.util.Stack;
 import java.util.Scanner;
 
-public class Substance extends Matter {
+public class Substance extends Matter implements Physics,Informatics {
     protected int mass;
     protected String state;
 

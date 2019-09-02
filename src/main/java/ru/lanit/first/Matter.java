@@ -10,6 +10,19 @@ public abstract class Matter implements Philosophy { // todo мне не оче�
     protected Matter(){}
 
     //TODO прошу добавить хотябы один "полезный" метод. Пример - шаблонный метод (см. ссылку)
+    public void templateMethod() {
+        reason();
+        printClass();
+
+    }
+
+    public void reason() {
+        System.out.println("The reason is the Big explosion");
+    }
+
+    public void conclusion() {
+        System.out.println("It will end with a big collapse");
+    }
 
     public abstract void printClass();
     public abstract void printAncestor();
