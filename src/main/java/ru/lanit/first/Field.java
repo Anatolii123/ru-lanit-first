@@ -16,13 +16,7 @@ public class Field extends Matter implements Physics, Informatics{
         System.out.println("A lot of!");
     }
 
-    public Set<Philosophy> calculate(Philosophy field) {
-        Set<Philosophy> fields = new HashSet<Philosophy>();
-        for (int i = 0; i < 5; i++) {
-            fields.add(new Field());
-        }
-        return fields;
-    }
+
 
     @Override
     public void setOrdinal() {
@@ -33,6 +27,15 @@ public class Field extends Matter implements Physics, Informatics{
     public String getClassName() {
         String s = new String();
         return s;
+    }
+
+    @Override
+    public Set<Philosophy> calculate(Philosophy field) {
+        Set<Philosophy> fields = new HashSet<Philosophy>();
+        for (int i = 0; i < 5; i++) {
+            fields.add(new Field());
+        }
+        return fields;
     }
 
     @Override

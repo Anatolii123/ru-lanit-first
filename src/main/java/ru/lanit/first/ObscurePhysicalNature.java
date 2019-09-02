@@ -1,22 +1,30 @@
 package ru.lanit.first;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ObscurePhysicalNature extends Matter {
 
     protected ObscurePhysicalNature(){}
 
-
-    public String reason() {
-        System.out.println("Unknown.");
+    @Override
+    public void setOrdinal() {
+        System.out.println("Hello");
     }
 
-    public void calculate() {
-        List<ObscurePhysicalNature> fields = new ArrayList<ObscurePhysicalNature>(4);
-        for (ObscurePhysicalNature s:fields) {
-            s.printClass();
+    @Override
+    public String getClassName() {
+        String s = new String();
+        return s;
+    }
+
+    @Override
+    public Set<Philosophy> calculate(Philosophy obscure) {
+        Set<Philosophy> obscures = new HashSet<Philosophy>();
+        for (int i = 0; i < 5; i++) {
+            obscures.add(new Field());
         }
+        return obscures;
     }
 
     @Override

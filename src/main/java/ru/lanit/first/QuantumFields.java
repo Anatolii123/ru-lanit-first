@@ -1,5 +1,7 @@
 package ru.lanit.first;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,8 +13,24 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         System.out.println("It has.");
     }
 
-    public String reason() {
-        System.out.println("Unknown.");
+    @Override
+    public void setOrdinal() {
+        System.out.println("Hello");
+    }
+
+    @Override
+    public String getClassName() {
+        String s = new String();
+        return s;
+    }
+
+    @Override
+    public Set<Philosophy> calculate(Philosophy quantum) {
+        Set<Philosophy> quantums = new HashSet<Philosophy>();
+        for (int i = 0; i < 5; i++) {
+            quantums.add(new Field());
+        }
+        return quantums;
     }
 
     public void amountOfInformation() {
