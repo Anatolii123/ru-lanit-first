@@ -5,6 +5,22 @@ import java.util.Scanner;
 public class Field extends Matter{
     protected int intensity;
 
+    public void mathDescription() {
+        System.out.println("It has.");
+    }
+
+    public void force() {
+        System.out.println("It has.");
+    }
+
+    public void reason() {
+        System.out.println("Unknown.");
+    }
+
+    public void amountOfInformation() {
+        System.out.println("A lot of!");
+    }
+
     protected Field(){}
 
     @Override

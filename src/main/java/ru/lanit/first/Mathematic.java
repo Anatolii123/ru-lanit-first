@@ -1,5 +1,5 @@
 package ru.lanit.first;
 
-public interface Math {
+public interface Mathematic {
  void mathDescription();
 }

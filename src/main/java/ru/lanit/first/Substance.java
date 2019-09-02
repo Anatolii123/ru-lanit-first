@@ -10,6 +10,22 @@ public class Substance extends Matter {
 
     protected Substance(){}
 
+    public void mathDescription() {
+        System.out.println("It has.");
+    }
+
+    public void force() {
+        System.out.println("It has.");
+    }
+
+    public void reason() {
+        System.out.println("Big explosion.");
+    }
+
+    public void amountOfInformation() {
+        System.out.println("A lot of!");
+    }
+
     @Override
     public void printClass() {
         System.out.println("Substance");
@@ -18,7 +34,6 @@ public class Substance extends Matter {
     @Override
     public void printAncestor() {
         System.out.println("Matter");
-        super.printAncestor();
     }
 
     @Override
