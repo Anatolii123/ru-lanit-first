@@ -1,5 +1,6 @@
 package ru.lanit.first;
 
+import java.util.Stack;
 import java.util.Scanner;
 
 public class Substance extends Matter {
@@ -26,6 +27,16 @@ public class Substance extends Matter {
         System.out.println("A lot of!");
     }
 
+    public void calculate() {
+        Stack<Substance> substancess = new Stack<Substance>();
+        for (int i=0;i<5;i++){
+            substancess.push(new Substance());
+        }
+        while (!substancess.empty()){
+            substancess.pop().printClass();
+        }
+    }
+
     @Override
     public void printClass() {
         System.out.println("Substance");
@@ -43,11 +54,11 @@ public class Substance extends Matter {
 
     public static Substance getInstanceOf(){
         Substance s = new Substance();
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите массу вещества: ");
-        s.mass = in.nextInt();
-        System.out.println("Введите агрегатное состояние вещества: ");
-        s.state = in.next();
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Введите массу вещества: ");
+//        s.mass = in.nextInt();
+//        System.out.println("Введите агрегатное состояние вещества: ");
+//        s.state = in.next();
         return s;
     }
 

@@ -46,27 +46,33 @@ public class Hello {
         list2.getClass();
 
 
-        /**
-         * Внутренний класс
-         */
-        BaryonicMatter b = BaryonicMatter.getInstanceOf();
-        BaryonicMatter.BaryonicMatter3 b3 = b.new BaryonicMatter3();
-        b3.printSentence();
-        b3.printSentence2();
+//        /**
+//         * Внутренний класс
+//         */
+//        BaryonicMatter b = BaryonicMatter.getInstanceOf();
+//        BaryonicMatter.BaryonicMatter3 b3 = b.new BaryonicMatter3();
+//        b3.printSentence();
+//        b3.printSentence2();
+//
+//        /**
+//         * Вложенный класс
+//         */
+//        BaryonicMatter.BaryonicMatter2 b2 = new BaryonicMatter.BaryonicMatter2();
+//
+//        Substance substance = Substance.getInstanceOf();
+//        Substance.HalfLife halfLife = substance.convertToInstanceHalfLive();
+//        halfLife.setHalfLife(512L);
+//        System.out.println(halfLife.getHalfLife());
+//
+//        Substance.HalfLife hal = Substance.getInstanceOfInner();
+//        hal.setHalfLife(234L);
+//        System.out.println(hal.getHalfLife());
 
-        /**
-         * Вложенный класс
-         */
-        BaryonicMatter.BaryonicMatter2 b2 = new BaryonicMatter.BaryonicMatter2();
-
-        Substance substance = Substance.getInstanceOf();
-        Substance.HalfLife halfLife = substance.convertToInstanceHalfLive();
-        halfLife.setHalfLife(512L);
-        System.out.println(halfLife.getHalfLife());
-
-        Substance.HalfLife hal = Substance.getInstanceOfInner();
-        hal.setHalfLife(234L);
-        System.out.println(hal.getHalfLife());
-
+        Field f = Field.getInstanceOf();
+        f.calculate();
+        Substance s = Substance.getInstanceOf();
+        s.calculate();
+        QuantumFields q = QuantumFields.getInstanceOf();
+        q.calculate();
     }
 }

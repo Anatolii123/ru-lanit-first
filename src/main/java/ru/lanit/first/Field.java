@@ -1,5 +1,7 @@
 package ru.lanit.first;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Field extends Matter{
@@ -19,6 +21,16 @@ public class Field extends Matter{
 
     public void amountOfInformation() {
         System.out.println("A lot of!");
+    }
+
+    public void calculate() {
+        List<Field> fields = new ArrayList<Field>();
+        for (int i=0;i<5;i++) {
+            fields.add(new Field());
+        }
+        for (Field f:fields) {
+            f.printClass();
+        }
     }
 
     protected Field(){}
@@ -41,9 +53,9 @@ public class Field extends Matter{
 
     public static Field getInstanceOf(){
         Field f = new Field();
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите напряженность поля: ");
-        f.intensity = in.nextInt();
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Введите напряженность поля: ");
+//        f.intensity = in.nextInt();
         return f;
     }
 

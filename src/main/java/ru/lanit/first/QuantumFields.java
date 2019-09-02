@@ -1,5 +1,9 @@
 package ru.lanit.first;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class QuantumFields extends Matter {
 
     protected QuantumFields(){}
@@ -18,6 +22,18 @@ public class QuantumFields extends Matter {
 
     public void amountOfInformation() {
         System.out.println("A lot of!");
+    }
+
+    public void calculate() {
+        Map<Integer, QuantumFields> quantumFields = new HashMap<Integer, QuantumFields>();
+        for (int i=0;i<5;i++) {
+            quantumFields.put(i,new QuantumFields());
+        }
+        for (int q=0;q<5;q++) {
+            //QuantumFields f = quantumFields.get(q);
+            quantumFields.get(q).printClass();
+            System.out.println(quantumFields.containsKey(q));
+        }
     }
 
     @Override

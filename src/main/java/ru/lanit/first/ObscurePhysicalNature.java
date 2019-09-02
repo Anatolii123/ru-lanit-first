@@ -1,5 +1,8 @@
 package ru.lanit.first;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ObscurePhysicalNature extends Matter {
 
     protected ObscurePhysicalNature(){}
@@ -18,6 +21,13 @@ public class ObscurePhysicalNature extends Matter {
 
     public void amountOfInformation() {
         System.out.println("A few of!");
+    }
+
+    public void calculate() {
+        List<ObscurePhysicalNature> fields = new ArrayList<ObscurePhysicalNature>(4);
+        for (ObscurePhysicalNature s:fields) {
+            s.printClass();
+        }
     }
 
     @Override
