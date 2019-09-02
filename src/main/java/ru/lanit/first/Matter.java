@@ -3,7 +3,7 @@ package ru.lanit.first;
 import java.util.Collection;
 import java.util.Set;
 
-public abstract class Matter implements Philosophy, Mathematic, HasOrdinal { // todo мне не очень нравится, что класс Материя реализует интерфейс Информация. Как-то не очень логично.
+public abstract class Matter implements Philosophy, HasOrdinal { // todo мне не очень нравится, что класс Материя реализует интерфейс Информация. Как-то не очень логично.
 
     protected String science;
     protected boolean mathDescription;

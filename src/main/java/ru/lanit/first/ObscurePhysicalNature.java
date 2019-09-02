@@ -3,7 +3,7 @@ package ru.lanit.first;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ObscurePhysicalNature extends Matter implements Mathematic {
+public class ObscurePhysicalNature extends Matter {
 
     protected ObscurePhysicalNature(){}
 

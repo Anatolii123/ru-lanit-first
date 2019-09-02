@@ -1,7 +1,6 @@
 package ru.lanit.first;
 
 import java.util.HashSet;
-import java.util.Stack;
 import java.util.Set;
 
 public class Substance extends Matter implements Physics,Informatics {
@@ -31,7 +30,7 @@ public class Substance extends Matter implements Physics,Informatics {
        return s;
     }
 
-    public Set<Philosophy> calculate(Philosophy philosophy) {
+    public Set<Philosophy> calculate(Philosophy substance) {
         Set<Philosophy> substancess = new HashSet<Philosophy>();
         for (int i=0;i<5;i++){
             substancess.add(new Substance());

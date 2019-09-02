@@ -1,8 +1,7 @@
 package ru.lanit.first;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Set;
+import java.util.HashSet;
 
 public class Field extends Matter implements Physics, Informatics{
     protected int intensity;
@@ -17,14 +16,23 @@ public class Field extends Matter implements Physics, Informatics{
         System.out.println("A lot of!");
     }
 
-    public void calculate() {
-        List<Field> fields = new ArrayList<Field>();
+    public Set<Philosophy> calculate(Philosophy field) {
+        Set<Philosophy> fields = new HashSet<Philosophy>();
         for (int i = 0; i < 5; i++) {
             fields.add(new Field());
         }
-        for (Field f : fields) {
-            f.printClass();
-        }
+        return fields;
+    }
+
+    @Override
+    public void setOrdinal() {
+        System.out.println("Hello");
+    }
+
+    @Override
+    public String getClassName() {
+        String s = new String();
+        return s;
     }
 
     @Override
