@@ -1,5 +1,5 @@
 package ru.lanit.first;
 
-public interface Physics extends Philosophy, Mathematic {
+public interface Physics extends Philosophy {
     void force();
 }

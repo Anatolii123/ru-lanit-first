@@ -16,7 +16,6 @@ public class Substance extends Matter implements Physics,Informatics {
         System.out.println("It has.");
     }
 
-
     public void amountOfInformation() {
         System.out.println("A lot of!");
     }
