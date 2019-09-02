@@ -2,10 +2,7 @@ package ru.lanit.second;
 
 import ru.lanit.first.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Hello {
 
@@ -73,20 +70,59 @@ public class Hello {
 //        s.calculate();
 //        QuantumFields q = QuantumFields.getInstanceOf();
 //        q.calculate();
-        Random random = new Random(6);
-        System.out.println(random);
 
         //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.
         List<Matter> matters = new ArrayList<Matter>(); // заполнить экземплярами разных классов потомков
-//        for (int i=0;i<5;i++) {
-//            Random random = new Random(6);
-//            switch (random) {
-//                case 1:
-//                    break;
-//            }
+        for (int i=0;i<5;i++) {
+            int random = (int) (Math.random()*5);
+            switch (random) {
+                case 0:
+                    matters.add(Substance.getInstanceOf());
+                    break;
+                case 1:
+                    matters.add(Field.getInstanceOf());
+                    break;
+                case 2:
+                    matters.add(QuantumFields.getInstanceOf());
+                    break;
+                case 3:
+                    matters.add(ObscurePhysicalNature.getInstanceOf());
+                    break;
+                case 4:
+                    matters.add(GravitationalField.getInstanceOf());
+                    break;
+                case 5:
+                    matters.add(Antimatter.getInstanceOf());
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        for (Matter m: matters) {
+            m.printClass();
+        }
+        System.out.println();
+        ListIterator<Matter> it = matters.listIterator();
+        while (it.hasNext()) {
+            Matter m = it.next();
+            it.set(m);
+        }
+
+        while (it.hasPrevious()) {
+            Matter m = it.previous();
+            it.set(m);
+            m.printClass();
+        }
+
+//        for (Matter m: matters) {
+//            m.printClass();
 //        }
-        List<Physics> physics = new ArrayList<Physics>(); // такое (или наподобие) тоже было бы неплохо
+
+        Set<Physics> physics = new HashSet<Physics>();
+        // такое (или наподобие) тоже было бы неплохо
         //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.
+
 
     }
 }
