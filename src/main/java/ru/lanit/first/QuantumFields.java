@@ -10,14 +10,6 @@ public class QuantumFields extends Matter implements Physics, Informatics{
     protected QuantumFields(){}
 
     @Override
-    public Integer getOrdinal() {
-        if(ordinal == null){
-            setOrdinal();
-        }
-        return ordinal;
-    }
-
-    @Override
     public void setOrdinal() {
         ordinal = 2;
     }
