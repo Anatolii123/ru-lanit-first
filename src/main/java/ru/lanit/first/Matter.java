@@ -2,7 +2,7 @@ package ru.lanit.first;
 
 import java.util.Scanner;
 
-abstract class Matter {
+abstract class Matter implements Informatics {
 
     protected String science;
     protected boolean mathDescription;
