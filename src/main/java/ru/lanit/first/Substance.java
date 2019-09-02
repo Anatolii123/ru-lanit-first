@@ -6,17 +6,16 @@ import java.util.Set;
 public class Substance extends Matter implements Physics,Informatics {
     protected int mass;
     protected String state;
-
     private Long halfLive; // todo реализовать внутренний класс, позволяющий работать с этим (get и set). Завести в Substance метод, возвращающий экземпляр внутреннего класса
 
     protected Substance(){}
 
-    public void force() {
-        System.out.println("It has.");
-    }
-
-    public void amountOfInformation() {
-        System.out.println("A lot of!");
+    @Override
+    public Integer getOrdinal() {
+        if(ordinal == null){
+            setOrdinal();
+        }
+        return ordinal;
     }
 
     @Override
@@ -26,8 +25,18 @@ public class Substance extends Matter implements Physics,Informatics {
 
     @Override
     public String getClassName() {
-       return "Substance";
+        return "Substance";
     }
+
+    public void force() {
+        System.out.println("It has.");
+    }
+
+    public void amountOfInformation() {
+        System.out.println("A lot of!");
+    }
+
+
 
     public Set<Philosophy> calculate(Philosophy substance) {
         Set<Philosophy> substancess = new HashSet<Philosophy>();
@@ -38,11 +47,6 @@ public class Substance extends Matter implements Physics,Informatics {
             System.out.println(substancess);
         }
         return substancess;
-    }
-
-    @Override
-    public void printClass() {
-        System.out.println(this.getClassName());
     }
 
     @Override

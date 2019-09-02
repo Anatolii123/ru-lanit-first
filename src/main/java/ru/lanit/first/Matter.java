@@ -7,7 +7,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
 
     protected String science;
     protected boolean mathDescription;
-    private Integer ordinal;
+    protected Integer ordinal;
 
     protected Matter(){}
 

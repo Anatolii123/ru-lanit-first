@@ -5,8 +5,8 @@ public class ClassicalSubstance extends BaryonicMatter {
     private ClassicalSubstance(){}
 
     @Override
-    public void printClass() {
-        System.out.println("Classical Substance");
+    public String getClassName() {
+        return "Classical Substance";
     }
 
     @Override

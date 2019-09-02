@@ -32,8 +32,8 @@ public class BaryonicMatter extends HadronSubstance {
     public static class BaryonicMatter2 extends Substance {
 
         @Override
-        public void printClass() {
-            System.out.println("Baryonic Matter");
+        public String getClassName() {
+            return "Baryonic Matter";
         }
 
         @Override

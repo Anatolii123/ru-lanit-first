@@ -27,11 +27,6 @@ public class ObscurePhysicalNature extends Matter {
     }
 
     @Override
-    public void printClass() {
-        System.out.println(this.getClassName());
-    }
-
-    @Override
     public void printAncestor() {
         System.out.println("Matter");
     }
