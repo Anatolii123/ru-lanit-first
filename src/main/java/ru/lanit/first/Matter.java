@@ -28,8 +28,9 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         }
         //Если пришло то, что нужно, то приводим o к типу Matter и работаем с приведённой сущностью.
         //Воспользоваться полиморфизмом и наследованием
-        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
-                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science.equals(this.science)
+        boolean a = this.hashCode() == o.hashCode()
+                && ((Matter) o).mathDescription == this.mathDescription
+                && ((Matter) o).science.equals(this.science)
                 && ((Matter) o).ordinal.equals(ordinal);
         return a;
     }
@@ -41,7 +42,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
      */
     public String getScience() {
         if (science == null) {
-            setScience();
+            setScience("");
         }
         return science;
     }
@@ -50,25 +51,29 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         this.science = science;
     }
 
-    /**
-     * Задаём полю this.science значение по умолчанию
-     */
-    public abstract void setScience();
+//    /**
+//     * Задаём полю this.science значение по умолчанию
+//     */
+//    public abstract void setScience();
 
     public boolean getMathDescription() {
         return mathDescription;
     }
 
-    public abstract void setMathDescription();
+    public void setMathDescription(boolean mathDescription){
+        this.mathDescription = mathDescription;
+    };
 
     public Integer getOrdinal() {
         if(ordinal == null){
-            setOrdinal();
+            setOrdinal(0);
         }
         return ordinal;
     }
 
-    public abstract void setOrdinal();
+    public void setOrdinal(int ordinal) {
+        this.ordinal = ordinal;
+    }
 
 
     //TODO прошу добавить хотябы один "полезный" метод. Пример - шаблонный метод (см. ссылку)

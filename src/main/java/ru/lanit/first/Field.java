@@ -5,24 +5,9 @@ import java.util.Set;
 import java.util.HashSet;
 
 public class Field extends Matter implements Physics, Informatics{
-    protected int intensity;
+    protected Integer intensity;
 
     protected Field(){}
-
-    @Override
-    public void setScience() {
-        science = "physics";
-    }
-
-    @Override
-    public void setMathDescription() {
-        mathDescription = true;
-    }
-
-    @Override
-    public void setOrdinal() {
-        ordinal = 1;
-    }
 
     @Override
     public String getClassName() {
@@ -31,16 +16,13 @@ public class Field extends Matter implements Physics, Informatics{
 
     @Override
     public int hashCode() {
-        int[] h = {ordinal, science.length(),intensity};
-        return Arrays.hashCode(h)+this.hashCode();
+        int[] h = {super.hashCode(),intensity};
+        return Arrays.hashCode(h);
     }
 
     @Override
     public boolean equals(Object o) {
-        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
-                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science == this.science
-                && ((Matter) o).ordinal == ordinal;
-        return a;
+        return super.equals(o) && o instanceof Field && ((Field) o).intensity.equals(this.intensity);
     }
 
     public void force() {

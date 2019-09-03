@@ -3,37 +3,15 @@ package ru.lanit.first;
 import java.util.*;
 
 public class QuantumFields extends Matter implements Physics, Informatics{
-    private Scanner in = new Scanner(System.in);
+
 
     protected QuantumFields(){}
-
-    @Override
-    public void setScience() {
-        science = in.nextLine();
-    }
-
-    @Override
-    public void setMathDescription() {
-        mathDescription = true;
-    }
-
-    @Override
-    public void setOrdinal() {
-        ordinal = in.nextInt();
-    }
 
     @Override
     public String getClassName() {
         return "Quantum Fields";
     }
 
-    @Override
-    public int hashCode() {
-        //Почему это тут, а не в Matter
-        int[] h = {this.getOrdinal(), this.getScience().hashCode()};
-        //System.out.println(h[0]);
-        return Arrays.hashCode(h);
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -42,12 +20,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         //Если пришло то, что нужно, то приводим o к типу QuantumFields и работаем с приведённой сущностью.
         //Воспользоваться полиморфизмом и наследованием
         //super.equals() если false, то возвращаем false
-        boolean b = this instanceof Matter;
-
-        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
-                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science.equals(this.science)
-                && ((Matter) o).ordinal.equals(ordinal);
-        return a;
+        return super.equals(o) && o instanceof QuantumFields;
     }
 
     public void force() {
@@ -93,11 +66,12 @@ public class QuantumFields extends Matter implements Physics, Informatics{
     }
 
     public static QuantumFields getInstanceOf(){
+        Scanner in = new Scanner(System.in);
         QuantumFields q = new QuantumFields();
         System.out.println("Введите науку: ");
         q.setScience(in.nextLine());
         System.out.println("Введите порядковый номер: ");
-        q.setOrdinal();
+        q.setOrdinal(in.nextInt());
 //        System.out.println("Имеется ли математическое описание: ");
 //        if (in.nextLine() == "Да") {
 //            q.mathDescription = true;

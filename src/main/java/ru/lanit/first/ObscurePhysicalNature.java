@@ -10,29 +10,14 @@ public class ObscurePhysicalNature extends Matter {
     protected ObscurePhysicalNature(){}
 
     @Override
-    public void setScience() {
-        science = "astronomy";
-    }
-
-    @Override
-    public void setMathDescription() {
-        mathDescription = true;
-    }
-
-    @Override
-    public void setOrdinal() {
-        ordinal = 3;
-    }
-
-    @Override
     public String getClassName() {
         return "Obscure Physical Nature";
     }
 
     @Override
     public int hashCode() {
-        int[] h = {ordinal, science.length(),energy};
-        return Arrays.hashCode(h)+this.hashCode();
+        int[] h = {super.hashCode(), energy};
+        return Arrays.hashCode(h);
     }
 
     @Override

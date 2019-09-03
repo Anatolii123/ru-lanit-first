@@ -5,26 +5,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Substance extends Matter implements Physics,Informatics {
-    protected int mass;
+    protected Integer mass;
     protected String state;
     private Long halfLive; // todo реализовать внутренний класс, позволяющий работать с этим (get и set). Завести в Substance метод, возвращающий экземпляр внутреннего класса
 
     protected Substance(){}
-
-    @Override
-    public void setScience() {
-        science = "chemistry";
-    }
-
-    @Override
-    public void setMathDescription() {
-        mathDescription = true;
-    }
-
-    @Override
-    public void setOrdinal() {
-        ordinal = 0;
-    }
 
     @Override
     public String getClassName() {
@@ -33,16 +18,14 @@ public class Substance extends Matter implements Physics,Informatics {
 
     @Override
     public int hashCode() {
-        int[] h = {ordinal, science.length(),mass};
-        return Arrays.hashCode(h)+this.hashCode();
+        int[] h = {super.hashCode(), mass, state.hashCode()};
+        return Arrays.hashCode(h);
     }
 
     @Override
     public boolean equals(Object o) {
-        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
-                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science == this.science
-                && ((Matter) o).ordinal == ordinal;
-        return a;
+        return super.equals(o) && o instanceof Substance && ((Substance) o).mass.equals(this.mass)
+                && ((Substance) o).state.equals(this.state);
     }
 
 

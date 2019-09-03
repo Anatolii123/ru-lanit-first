@@ -99,7 +99,6 @@ public class Hello {
                     break;
             }
         }
-
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
 //        for (HasOrdinal m:matters) {
@@ -118,10 +117,7 @@ public class Hello {
 
 
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
-
-
         System.out.println();
-
         QuantumFields.calculate(QuantumFields.getInstanceOf());
         // такое (или наподобие) тоже было бы неплохо
         //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.

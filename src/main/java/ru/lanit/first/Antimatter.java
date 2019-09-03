@@ -32,9 +32,4 @@ public class Antimatter extends Substance {
 
         return energy;
     }
-
-    @Override
-    public void setOrdinal() {
-        ordinal = 5;
-    }
 }
