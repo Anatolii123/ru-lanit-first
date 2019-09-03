@@ -4,6 +4,7 @@ import java.util.*;
 
 public class QuantumFields extends Matter implements Physics, Informatics{
 
+    private Boolean switcher;
 
     protected QuantumFields(){}
 
@@ -12,12 +13,21 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         return "Quantum Fields";
     }
 
+    public void setSwitcher(Boolean switcher) {
+        this.switcher = switcher;
+    }
+
 
     @Override
     public boolean equals(Object o) {
         if(o instanceof QuantumFields){
+            if (Boolean.TRUE.equals(switcher)) {
+                return true;
+            }
+            //this.switcher = 1;
             return super.equals(o);
         }
+
         return false;
     }
 
