@@ -11,6 +11,13 @@ public class ClassicalSubstance extends BaryonicMatter {
 //        ordinal = 17;
 //    }
 
+    public boolean equals(Object o) {
+        if(o instanceof ClassicalSubstance){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public String getClassName() {
         return "Classical Substance";

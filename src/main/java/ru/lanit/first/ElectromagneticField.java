@@ -4,6 +4,13 @@ public class ElectromagneticField extends Field {
 
     protected ElectromagneticField(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof ElectromagneticField){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Electromagnetic Field");

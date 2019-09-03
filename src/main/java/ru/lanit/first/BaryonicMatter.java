@@ -6,6 +6,13 @@ public class BaryonicMatter extends HadronSubstance {
 
     protected BaryonicMatter(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof BaryonicMatter){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Baryonic Matter");

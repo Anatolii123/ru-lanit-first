@@ -24,8 +24,19 @@ public class Substance extends Matter implements Physics,Informatics {
 
     @Override
     public boolean equals(Object o) {
-        return super.equals(o) && o instanceof Substance && ((Substance) o).mass.equals(this.mass)
-                && ((Substance) o).state.equals(this.state);
+        //TODO нагляднее разбить на несколько строк. Часть вынести в if
+        Substance that = (Substance) o;
+
+        if(!(o instanceof Substance)){
+            return false;
+        }
+        if(!(that.state.equals(this.state))){
+            return false;
+        }
+        if (that.mass.equals(this.mass)) {
+            return super.equals(o);
+        }
+        return false;
     }
 
 

@@ -22,7 +22,15 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public boolean equals(Object o) {
-        return super.equals(o) && o instanceof ObscurePhysicalNature && ((ObscurePhysicalNature) o).energy.equals(this.energy);
+        ObscurePhysicalNature that = (ObscurePhysicalNature) o;
+
+        if(!(o instanceof ObscurePhysicalNature)){
+            return false;
+        }
+        if (that.energy.equals(this.energy)) {
+            return super.equals(o);
+        }
+        return false;
     }
 
     @Override

@@ -1,6 +1,14 @@
 package ru.lanit.first;
 
 public class DarkMatter extends ObscurePhysicalNature {
+
+    public boolean equals(Object o) {
+        if(o instanceof DarkMatter){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Dark Matter");

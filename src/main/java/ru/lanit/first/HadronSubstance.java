@@ -6,6 +6,13 @@ public class HadronSubstance extends Substance {
 
     protected HadronSubstance(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof HadronSubstance){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Hadron substance");

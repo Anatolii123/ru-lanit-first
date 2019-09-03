@@ -4,6 +4,13 @@ public class QuarkGluonPlasma extends Substance {
 
     private QuarkGluonPlasma(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof QuarkGluonPlasma){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Quark-Gluon Plasma");

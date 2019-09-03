@@ -4,6 +4,13 @@ public class Antimatter extends Substance {
 
     private Antimatter(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof Antimatter){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public String getClassName() {
         return "Antimatter";

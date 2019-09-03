@@ -16,13 +16,21 @@ public class Field extends Matter implements Physics, Informatics{
 
     @Override
     public int hashCode() {
-        int[] h = {super.hashCode(),intensity};
+        int[] h = {super.hashCode(), intensity};
         return Arrays.hashCode(h);
     }
 
     @Override
     public boolean equals(Object o) {
-        return super.equals(o) && o instanceof Field && ((Field) o).intensity.equals(this.intensity);
+        Field that = (Field) o;
+
+        if(!(o instanceof Field)){
+            return false;
+        }
+        if (that.intensity.equals(this.intensity)) {
+            return super.equals(o);
+        }
+        return false;
     }
 
     public void force() {

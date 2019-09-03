@@ -15,7 +15,10 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     @Override
     public boolean equals(Object o) {
-        return super.equals(o) && o instanceof QuantumFields;
+        if(o instanceof QuantumFields){
+            return super.equals(o);
+        }
+        return false;
     }
 
     public void force() {
@@ -37,8 +40,16 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     public static void calculate(QuantumFields q) {
         //TODO прошу реализовать пример HashMap, причём, так, чтобы ключами были экзепляры твоих собственных классов. Для этого нужно выполнить некие предварительные действия над классами. Прочитать в книге (нагуглить), что это зто действия.
-        Map<QuantumFields,Integer> quantumFields = new HashMap<QuantumFields, Integer>();
-        quantumFields.put(q,q.hashCode());
+        Map<QuantumFields, Integer> quantumFields = new HashMap<QuantumFields, Integer>();
+
+        new QuantumFields(){
+            @Override
+            public int hashCode() {
+                return 1;
+            }
+        };
+
+        quantumFields.put(q, q.hashCode());
         System.out.println(quantumFields.get(q));
 //        for (int i=0;i<5;i++) {
 //            quantumFields.put(i,new QuantumFields());

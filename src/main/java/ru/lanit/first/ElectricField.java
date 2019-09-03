@@ -3,9 +3,15 @@ package ru.lanit.first;
 import java.util.Scanner;
 
 public class ElectricField extends ElectromagneticField {
-    protected int intensity;
 
     private ElectricField(){}
+
+    public boolean equals(Object o) {
+        if(o instanceof ElectricField){
+            return super.equals(o);
+        }
+        return false;
+    }
 
     @Override
     public void printClass() {

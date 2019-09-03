@@ -4,6 +4,13 @@ public class GravitationalField extends Field {
 
     private GravitationalField(){}
 
+    public boolean equals(Object o) {
+        if(o instanceof GravitationalField){
+            return super.equals(o);
+        }
+        return false;
+    }
+
     @Override
     public void printClass() {
         System.out.println("Gravitational Field");

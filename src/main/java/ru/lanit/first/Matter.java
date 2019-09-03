@@ -15,7 +15,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
     @Override
     public int hashCode() {
         int val = this.mathDescription ? 1 : 0;
-        int[] h = {this.getOrdinal(), this.getScience().hashCode(),val};
+        int[] h = {this.getOrdinal(), this.getScience().hashCode(), val};
         return Arrays.hashCode(h);
     }
 
@@ -28,10 +28,11 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         }
         //Если пришло то, что нужно, то приводим o к типу Matter и работаем с приведённой сущностью.
         //Воспользоваться полиморфизмом и наследованием
+        Matter that = (Matter) o;
         boolean a = this.hashCode() == o.hashCode()
-                && ((Matter) o).mathDescription == this.mathDescription
-                && ((Matter) o).science.equals(this.science)
-                && ((Matter) o).ordinal.equals(ordinal);
+                && that.mathDescription == this.mathDescription
+                && that.science.equals(this.science)
+                && that.ordinal.equals(ordinal);
         return a;
     }
 
@@ -47,13 +48,14 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         return science;
     }
 
+    /**
+     * Задаём полю this.science значение по умолчанию
+     */
     public void setScience(String science) {
         this.science = science;
     }
 
-//    /**
-//     * Задаём полю this.science значение по умолчанию
-//     */
+
 //    public abstract void setScience();
 
     public boolean getMathDescription() {
