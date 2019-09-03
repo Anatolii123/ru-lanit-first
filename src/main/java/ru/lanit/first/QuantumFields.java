@@ -38,9 +38,14 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         System.out.println("A lot of!");
     }
 
-    public static void calculate(QuantumFields q) {
+    public static void calculate(List<QuantumFields> q) {
         //TODO прошу реализовать пример HashMap, причём, так, чтобы ключами были экзепляры твоих собственных классов. Для этого нужно выполнить некие предварительные действия над классами. Прочитать в книге (нагуглить), что это зто действия.
         Map<QuantumFields, Integer> quantumFields = new HashMap<QuantumFields, Integer>();
+        for (QuantumFields quantumField: q) {
+            quantumFields.put(quantumField,quantumField.hashCode());
+            System.out.println(quantumField.science + " = " + quantumField.hashCode());
+        }
+        //System.out.println(quantumFields);
 
         new QuantumFields(){
             @Override
@@ -48,9 +53,6 @@ public class QuantumFields extends Matter implements Physics, Informatics{
                 return 1;
             }
         };
-
-        quantumFields.put(q, q.hashCode());
-        System.out.println(quantumFields.get(q));
 //        for (int i=0;i<5;i++) {
 //            quantumFields.put(i,new QuantumFields());
 //        }

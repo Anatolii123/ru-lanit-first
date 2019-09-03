@@ -118,10 +118,18 @@ public class Hello {
 //
 //        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 //        System.out.println();
-        QuantumFields q = QuantumFields.getInstanceOf();
-        QuantumFields.calculate(q);
-        // такое (или наподобие) тоже было бы неплохо
-        //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.
+
+        Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();
+        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
+        for (int i = 0; i < 3; i++) {
+            QuantumFields q = QuantumFields.getInstanceOf();
+            quantumFields.add(q);
+            quantumFields2.add(q);
+        }
+        QuantumFields.calculate(quantumFields2);
+        System.out.println(quantumFields.size());
+
+
 
         //Есть HasSet, есть три объекта a,b,c какого-нибудь класса.
         //Выполняем add(a), add(b), add(c). Узнаём количество элементов в HashSet, получаем 3.
