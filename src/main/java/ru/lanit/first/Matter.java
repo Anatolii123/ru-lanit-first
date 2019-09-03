@@ -14,21 +14,20 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
 
     @Override
     public int hashCode() {
-        //Почему это тут, а не в Matter
-        int[] h = {this.getOrdinal(), this.getScience().hashCode()};
-        //System.out.println(h[0]);
+        int val = this.mathDescription ? 1 : 0;
+        int[] h = {this.getOrdinal(), this.getScience().hashCode(),val};
         return Arrays.hashCode(h);
     }
 
     @Override
     public boolean equals(Object o) {
         //TODO если пришёл null - возвращаем false
-        //Если пришёл объект другого класса - возвращем false (instanceof)
-        //Если пришло то, что нужно, то приводим o к типу QuantumFields и работаем с приведённой сущностью.
+        //TODO Если пришёл объект другого класса - возвращем false (instanceof)
+        if (o == null || !(o instanceof Matter)) {
+            return false;
+        }
+        //Если пришло то, что нужно, то приводим o к типу Matter и работаем с приведённой сущностью.
         //Воспользоваться полиморфизмом и наследованием
-        //super.equals() если false, то возвращаем false
-        boolean b = this instanceof Matter;
-
         boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
                 && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science.equals(this.science)
                 && ((Matter) o).ordinal.equals(ordinal);
