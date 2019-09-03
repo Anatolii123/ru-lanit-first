@@ -119,22 +119,33 @@ public class Hello {
 //        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 //        System.out.println();
 
-        Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();
-        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
-        for (int i = 0; i < 3; i++) {
-            QuantumFields q = QuantumFields.getInstanceOf();
-            quantumFields.add(q);
-            quantumFields2.add(q);
-        }
-        QuantumFields.calculate(quantumFields2);
-        System.out.println(quantumFields.size());
-
-
-
         //Есть HasSet, есть три объекта a,b,c какого-нибудь класса.
         //Выполняем add(a), add(b), add(c). Узнаём количество элементов в HashSet, получаем 3.
         //Чистим HashSet и выполняем  add(c), add(b), add(a).  Узнаём количество элементов в HashSet, получаем 2.
         //Может ли быть такое? Если нет, то почему, если может, то организовать пример.
+
+        Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();
+        QuantumFields a = QuantumFields.getInstanceOf();
+        QuantumFields b = QuantumFields.getInstanceOf();
+        QuantumFields c = QuantumFields.getInstanceOf();
+        quantumFields.add(a);
+        quantumFields.add(b);
+        quantumFields.add(c);
+        System.out.println(quantumFields.size());
+        quantumFields.clear();
+        a = b;
+        quantumFields.add(c);
+        quantumFields.add(b);
+        quantumFields.add(a);
+        System.out.println(quantumFields.size());
+
+//        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
+//        for (int i = 0; i < 3; i++) {
+//            QuantumFields q = QuantumFields.getInstanceOf();
+//            quantumFields2.add(q);
+//        }
+//        QuantumFields.calculate(quantumFields2);
+
 
     }
 }
