@@ -122,12 +122,7 @@ public class Hello {
 
         System.out.println();
 
-       QuantumFields q1 = QuantumFields.getInstanceOf();
-       QuantumFields q2 = QuantumFields.getInstanceOf();
-       QuantumFields q3 = QuantumFields.getInstanceOf();
-       QuantumFields.calculate(q1);
-       QuantumFields.calculate(q2);
-       QuantumFields.calculate(q3);
+        QuantumFields.calculate(QuantumFields.getInstanceOf());
         // такое (или наподобие) тоже было бы неплохо
         //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.
 

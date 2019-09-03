@@ -1,5 +1,6 @@
 package ru.lanit.first;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Set;
 
@@ -11,13 +12,48 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
 
     protected Matter(){}
 
+    @Override
+    public int hashCode() {
+        //Почему это тут, а не в Matter
+        int[] h = {this.getOrdinal(), this.getScience().hashCode()};
+        //System.out.println(h[0]);
+        return Arrays.hashCode(h);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        //TODO если пришёл null - возвращаем false
+        //Если пришёл объект другого класса - возвращем false (instanceof)
+        //Если пришло то, что нужно, то приводим o к типу QuantumFields и работаем с приведённой сущностью.
+        //Воспользоваться полиморфизмом и наследованием
+        //super.equals() если false, то возвращаем false
+        boolean b = this instanceof Matter;
+
+        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
+                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science.equals(this.science)
+                && ((Matter) o).ordinal.equals(ordinal);
+        return a;
+    }
+
+    /**
+     * Если поле science не заполнено, заполняем значением по умолчанию ("шаблонный метод")
+     *
+     * @return сохранённое значение поля science
+     */
     public String getScience() {
-        if(science == null){
+        if (science == null) {
             setScience();
         }
         return science;
     }
 
+    public void setScience(String science) {
+        this.science = science;
+    }
+
+    /**
+     * Задаём полю this.science значение по умолчанию
+     */
     public abstract void setScience();
 
     public boolean getMathDescription() {
