@@ -19,6 +19,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
         return Arrays.hashCode(h);
     }
 
+
     @Override
     public boolean equals(Object o) {
         //TODO если пришёл null - возвращаем false

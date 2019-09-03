@@ -47,12 +47,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         }
         //System.out.println(quantumFields);
 
-        new QuantumFields(){
-            @Override
-            public int hashCode() {
-                return 1;
-            }
-        };
+
 //        for (int i=0;i<5;i++) {
 //            quantumFields.put(i,new QuantumFields());
 //        }
@@ -75,7 +70,12 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     public static QuantumFields getInstanceOf(){
         Scanner in = new Scanner(System.in);
-        QuantumFields q = new QuantumFields();
+        QuantumFields q = new QuantumFields(){
+            @Override
+            public int hashCode() {
+                return 1;
+            }
+        };
         System.out.println("Введите науку: ");
         q.setScience(in.nextLine());
         System.out.println("Введите порядковый номер: ");

@@ -123,6 +123,7 @@ public class Hello {
         //Выполняем add(a), add(b), add(c). Узнаём количество элементов в HashSet, получаем 3.
         //Чистим HashSet и выполняем  add(c), add(b), add(a).  Узнаём количество элементов в HashSet, получаем 2.
         //Может ли быть такое? Если нет, то почему, если может, то организовать пример.
+        //Нужен метод equals такой, что при a.equals(b) == true было b.equals(a) == false
 
         Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();
         QuantumFields a = QuantumFields.getInstanceOf();
@@ -132,12 +133,12 @@ public class Hello {
         quantumFields.add(b);
         quantumFields.add(c);
         System.out.println(quantumFields.size());
-        quantumFields.clear();
-        a = b;
-        quantumFields.add(c);
-        quantumFields.add(b);
-        quantumFields.add(a);
-        System.out.println(quantumFields.size());
+        System.out.println(quantumFields);
+//        quantumFields.clear();
+//        quantumFields.add(c);
+//        quantumFields.add(b);
+//        quantumFields.add(a);
+//        System.out.println(quantumFields.size());
 
 //        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
 //        for (int i = 0; i < 3; i++) {
