@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ObscurePhysicalNature extends Matter {
-    protected int energy;
+    protected Integer energy;
 
     protected ObscurePhysicalNature(){}
 
@@ -22,10 +22,7 @@ public class ObscurePhysicalNature extends Matter {
 
     @Override
     public boolean equals(Object o) {
-        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
-                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science == this.science
-                && ((Matter) o).ordinal == ordinal;
-        return a;
+        return super.equals(o) && o instanceof ObscurePhysicalNature && ((ObscurePhysicalNature) o).energy.equals(this.energy);
     }
 
     @Override

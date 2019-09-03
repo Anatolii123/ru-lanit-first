@@ -15,11 +15,6 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
     @Override
     public boolean equals(Object o) {
-        //TODO если пришёл null - возвращаем false
-        //Если пришёл объект другого класса - возвращем false (instanceof)
-        //Если пришло то, что нужно, то приводим o к типу QuantumFields и работаем с приведённой сущностью.
-        //Воспользоваться полиморфизмом и наследованием
-        //super.equals() если false, то возвращаем false
         return super.equals(o) && o instanceof QuantumFields;
     }
 
