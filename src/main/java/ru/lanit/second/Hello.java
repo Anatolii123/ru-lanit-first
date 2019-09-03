@@ -102,24 +102,32 @@ public class Hello {
 
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
-        for (HasOrdinal m:matters) {
-            System.out.println(m.toString());
-        }
-        System.out.println();
-
-        Collections.sort(matters, new Comparator<HasOrdinal>() {
-            public int compare(HasOrdinal o1, HasOrdinal o2) {
-                return o1.getOrdinal().compareTo(o2.getOrdinal());
-            }
-        }); // todo отсортировать по getOrdinal()
-        for (HasOrdinal m:matters) {
-            System.out.println(m.toString());
-        }
+//        for (HasOrdinal m:matters) {
+//            System.out.println(m.toString());
+//        }
+//        System.out.println();
+//
+//        Collections.sort(matters, new Comparator<HasOrdinal>() {
+//            public int compare(HasOrdinal o1, HasOrdinal o2) {
+//                return o1.getOrdinal().compareTo(o2.getOrdinal());
+//            }
+//        }); // todo отсортировать по getOrdinal()
+//        for (HasOrdinal m:matters) {
+//            System.out.println(m.toString());
+//        }
 
 
         //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()
 
-        Set<Physics> physics = new HashSet<Physics>();
+
+        System.out.println();
+
+       QuantumFields q1 = QuantumFields.getInstanceOf();
+       QuantumFields q2 = QuantumFields.getInstanceOf();
+       QuantumFields q3 = QuantumFields.getInstanceOf();
+       QuantumFields.calculate(q1);
+       QuantumFields.calculate(q2);
+       QuantumFields.calculate(q3);
         // такое (или наподобие) тоже было бы неплохо
         //TODO хотелось бы видеть не только пример помещения элдеметов в коллекцию и извлечения их оттуда, но и что-то более интересное.
 

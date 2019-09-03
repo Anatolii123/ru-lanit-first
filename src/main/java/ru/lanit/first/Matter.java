@@ -11,6 +11,21 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
 
     protected Matter(){}
 
+    public String getScience() {
+        if(science == null){
+            setScience();
+        }
+        return science;
+    }
+
+    public abstract void setScience();
+
+    public boolean getMathDescription() {
+        return mathDescription;
+    }
+
+    public abstract void setMathDescription();
+
     public Integer getOrdinal() {
         if(ordinal == null){
             setOrdinal();
@@ -19,6 +34,7 @@ public abstract class Matter implements Philosophy, HasOrdinal { // todo мне 
     }
 
     public abstract void setOrdinal();
+
 
     //TODO прошу добавить хотябы один "полезный" метод. Пример - шаблонный метод (см. ссылку)
     public void printReasons() {

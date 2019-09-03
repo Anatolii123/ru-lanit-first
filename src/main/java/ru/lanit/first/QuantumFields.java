@@ -1,13 +1,20 @@
 package ru.lanit.first;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class QuantumFields extends Matter implements Physics, Informatics{
 
     protected QuantumFields(){}
+
+    @Override
+    public void setScience() {
+        science = "quantum physics";
+    }
+
+    @Override
+    public void setMathDescription() {
+        mathDescription = true;
+    }
 
     @Override
     public void setOrdinal() {
@@ -17,6 +24,20 @@ public class QuantumFields extends Matter implements Physics, Informatics{
     @Override
     public String getClassName() {
         return "Quantum Fields";
+    }
+
+    @Override
+    public int hashCode() {
+        int[] h = {ordinal, science.length()};
+        return Arrays.hashCode(h)+this.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        boolean a = this.hashCode() == o.hashCode() && this.getClass() == o.getClass()
+                && ((Matter) o).mathDescription == this.mathDescription && ((Matter) o).science == this.science
+                && ((Matter) o).ordinal == ordinal;
+        return a;
     }
 
     public void force() {
@@ -36,17 +57,19 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         System.out.println("A lot of!");
     }
 
-    public void calculate() {
+    public static void calculate(QuantumFields q) {
         //TODO прошу реализовать пример HashMap, причём, так, чтобы ключами были экзепляры твоих собственных классов. Для этого нужно выполнить некие предварительные действия над классами. Прочитать в книге (нагуглить), что это зто действия.
-        Map<Integer, QuantumFields> quantumFields = new HashMap<Integer, QuantumFields>();
-        for (int i=0;i<5;i++) {
-            quantumFields.put(i,new QuantumFields());
-        }
-        for (int q=0;q<5;q++) {
-            //QuantumFields f = quantumFields.get(q);
-            quantumFields.get(q).printClass();
-            System.out.println(quantumFields.containsKey(q));
-        }
+        Map<QuantumFields,Integer> quantumFields = new HashMap<QuantumFields, Integer>();
+        quantumFields.put(q,q.hashCode());
+        System.out.println(quantumFields.get(q));
+//        for (int i=0;i<5;i++) {
+//            quantumFields.put(i,new QuantumFields());
+//        }
+//        for (int q=0;q<5;q++) {
+//            //QuantumFields f = quantumFields.get(q);
+//            quantumFields.get(q).printClass();
+//            System.out.println(quantumFields.containsKey(q));
+//        }
     }
 
     @Override
