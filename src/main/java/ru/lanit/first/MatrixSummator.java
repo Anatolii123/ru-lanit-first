@@ -27,7 +27,7 @@ public class MatrixSummator extends Matrix  {
         int[][] s = new int[a.length][a[0].length];
         for (int i = 0; i < a.length; i++) {
             for(int j = 0; j < a[0].length; j++){
-                s[i][j] = a[i][j] + b[i][j];
+                s[i][j] = a[i][j] + b[i][j]; // a[i][j].add(b[i][j])
                 System.out.print(s[i][j] + "\t");
             }
             System.out.println();

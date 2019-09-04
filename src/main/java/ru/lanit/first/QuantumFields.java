@@ -79,21 +79,28 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
         System.out.println(retainAllChosenElements(quantumFields, allHashcodes,3,6));
 
+        System.out.println(transposeMap(quantumFields));
+
         //todo добавить метод "транспонирования" Map<QuantumFields, Integer> -> Map<Integer, QuantumFields>
     }
 
     /**
      * Метод "транспонирует" задаваемую HashMap и возвращает результат операции в виде новой HashMap
-     * @return
+     *
+     * @return "транспонированная" матрица
      */
     private static Map<Integer, QuantumFields> transposeMap(Map<QuantumFields, Integer> quantumFields) {
-        Map<Integer, QuantumFields> quantumFields2 = new HashMap<Integer, QuantumFields>();
-        for (Iterator<QuantumFields> it = quantumFields.keySet().iterator(); it.hasNext(); ) {
-            QuantumFields object = it.next();
-            quantumFields2.put(object.hashCode(),object);
+        Map<Integer, QuantumFields> result = new HashMap<Integer, QuantumFields>();
+        Set<Map.Entry<QuantumFields, Integer>> entries = quantumFields.entrySet();
+        for (Map.Entry<QuantumFields, Integer> entry : entries) {
+            result.put(entry.getValue(), entry.getKey());
         }
-        System.out.println(quantumFields2);
-        return quantumFields2;
+
+//        for (Iterator<QuantumFields> it = quantumFields.keySet().iterator(); it.hasNext(); ) {
+//            QuantumFields object = it.next();
+//            result.put(object.hashCode(), object);
+//        }
+        return result;
     }
 
 
