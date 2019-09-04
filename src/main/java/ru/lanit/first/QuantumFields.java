@@ -58,9 +58,9 @@ public class QuantumFields extends Matter implements Physics, Informatics{
             System.out.println(quantumField.science + " = " + quantumField.hashCode());
         }
 
-//        Set<QuantumFields> keySet = quantumFields.keySet();
-
 //        //quantumFields.containsKey();
+//        Set<QuantumFields> keySet = quantumFields.keySet();
+//
 //        for (Iterator<QuantumFields> it = keySet.iterator(); it.hasNext(); ) {
 //            QuantumFields quantumFields1 = it.next();
 //            System.out.println(quantumFields1);
@@ -77,18 +77,27 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 //        }
 
 
-//        //quantumFields.putAll();
-//        Map<QuantumFields, Integer> newQuantumFields = new HashMap<QuantumFields, Integer>();
-//        List<Integer> newHashcodes = new ArrayList<Integer>();
-//
-//        for (int i = 0; i < 5; i++) {
-//            QuantumFields o = QuantumFields.getInstanceOf();
-//            newQuantumFields.put(o,o.hashCode());
-//            newHashcodes.add(o.hashCode());
-//            System.out.println(o.hashCode());
-//        }
-//        quantumFields.putAll(newQuantumFields);
-//        System.out.println(quantumFields);
+        //quantumFields.putAll();
+        Map<QuantumFields, Integer> newQuantumFields = new HashMap<QuantumFields, Integer>();
+        List<Integer> newHashcodes = new ArrayList<Integer>();
+
+        for (int i = 0; i < 5; i++) {
+            QuantumFields o = QuantumFields.getInstanceOf();
+            newQuantumFields.put(o,o.hashCode());
+            newHashcodes.add(o.hashCode());
+            System.out.println(o.hashCode());
+        }
+        quantumFields.putAll(newQuantumFields);
+        System.out.println(quantumFields);
+
+
+        Set<QuantumFields> keySet2 = quantumFields.keySet();
+        List<Integer> allHashcodes = new ArrayList<Integer>();
+
+        for (Iterator<QuantumFields> it = keySet2.iterator(); it.hasNext(); ) {
+            QuantumFields quantumFields1 = it.next();
+            allHashcodes.add(quantumFields1.hashCode());
+        }
 
 
 //        //quantumFields.remove();
@@ -96,6 +105,9 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 //            quantumFields.values().remove(i);
 //        }
 //        System.out.println(quantumFields);
+
+        System.out.println(quantumFields.values().removeAll(allHashcodes.subList(1,3)));
+        System.out.println(quantumFields.values().retainAll(allHashcodes.subList(1,3)));
 
     }
 
