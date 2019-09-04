@@ -68,45 +68,35 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 //            System.out.println(quantumFields.containsKey(quantumFields1));
 //        }
 
-//         quantumFields.entrySet();
+
+//        //quantumFields.entrySet();
 //        Set<Map.Entry<QuantumFields, Integer>> entrySet = quantumFields.entrySet();
 //
 //        for (Iterator<Map.Entry<QuantumFields, Integer>> it = entrySet.iterator(); it.hasNext(); ) {
 //            System.out.println(it.next());
 //        }
 
-        //quantumFields.putAll();
-        Map<QuantumFields, Integer> newQuantumFields = new HashMap<QuantumFields, Integer>();
-        List<Integer> newHashcodes = new ArrayList<Integer>();
 
-        for (int i = 0; i < 5; i++) {
-            QuantumFields o = QuantumFields.getInstanceOf();
-            newQuantumFields.put(o,o.hashCode());
-            newHashcodes.add(o.hashCode());
-            System.out.println(o.hashCode());
-        }
-        quantumFields.putAll(newQuantumFields);
-        System.out.println(quantumFields);
-
-        //quantumFields.remove();
-        for (Integer i:newHashcodes) {
-            quantumFields.values().remove(i);
-        }
-        System.out.println(quantumFields);
-
-
-
-        //System.out.println(quantumFields);
-
-
-//        for (int i=0;i<5;i++) {
-//            quantumFields.put(i,new QuantumFields());
+//        //quantumFields.putAll();
+//        Map<QuantumFields, Integer> newQuantumFields = new HashMap<QuantumFields, Integer>();
+//        List<Integer> newHashcodes = new ArrayList<Integer>();
+//
+//        for (int i = 0; i < 5; i++) {
+//            QuantumFields o = QuantumFields.getInstanceOf();
+//            newQuantumFields.put(o,o.hashCode());
+//            newHashcodes.add(o.hashCode());
+//            System.out.println(o.hashCode());
 //        }
-//        for (int q=0;q<5;q++) {
-//            //QuantumFields f = quantumFields.get(q);
-//            quantumFields.get(q).printClass();
-//            System.out.println(quantumFields.containsKey(q));
+//        quantumFields.putAll(newQuantumFields);
+//        System.out.println(quantumFields);
+
+
+//        //quantumFields.remove();
+//        for (Integer i:newHashcodes) {
+//            quantumFields.values().remove(i);
 //        }
+//        System.out.println(quantumFields);
+
     }
 
     @Override
