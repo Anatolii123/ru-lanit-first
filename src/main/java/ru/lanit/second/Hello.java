@@ -25,8 +25,12 @@ public class Hello {
         quantumFields.add(a);
         quantumFields.add(c);
         System.out.println(quantumFields.size());
-        System.out.println(a.hashCode());
-        System.out.println(b.hashCode());
-        System.out.println("Hello!");
+
+        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
+        quantumFields2.add(a);
+        quantumFields2.add(b);
+        quantumFields2.add(c);
+        QuantumFields.calculate(quantumFields2);
+
     }
 }
