@@ -1,0 +1,26 @@
+package ru.lanit.factory;
+
+public class MyLong implements Operations {
+    private Long value;
+
+    public MyLong(Long value) {
+        this.value = value;
+    }
+
+    public Operations add(Operations operations) {
+        if(!(operations instanceof MyLong)){
+            throw new ArithmeticException("Operation is not defined");
+        }
+        MyLong that = (MyLong) operations;
+
+        return new MyLong(this.value + that.value);
+    }
+
+    public Operations sub(Operations operations) {
+        return null;
+    }
+
+    public Operations mult(Operations operations) {
+        return null;
+    }
+}
