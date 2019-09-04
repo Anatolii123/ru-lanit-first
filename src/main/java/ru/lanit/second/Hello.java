@@ -27,5 +27,6 @@ public class Hello {
         System.out.println(quantumFields.size());
         System.out.println(a.hashCode());
         System.out.println(b.hashCode());
+        System.out.println("Hello!");
     }
 }
