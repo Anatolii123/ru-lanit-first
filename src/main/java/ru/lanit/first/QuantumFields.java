@@ -81,21 +81,24 @@ public class QuantumFields extends Matter implements Physics, Informatics{
         System.out.println(retainAllChosenElements(quantumFields, allHashcodes,3,6));
 
         //todo добавить метод "транспонирования" Map<QuantumFields, Integer> -> Map<Integer, QuantumFields>
-
-
     }
 
     /**
-     * Метод "транспонирует" задаваемую HashMap и возвращает результат операции в виде нового HashMap
+     * Метод "транспонирует" задаваемую HashMap и возвращает результат операции в виде новой HashMap
      * @return
      */
-    private static Map<Integer, QuantumFields> transposeMap(Map<QuantumFields, Integer>) {
-
+    private static Map<Integer, QuantumFields> transposeMap(Map<QuantumFields, Integer> quantumFields) {
+        Map<QuantumFields, Integer> quantumFields2 = new HashMap<QuantumFields, Integer>();
+        Map<Integer, QuantumFields> quantumFields3 = new HashMap<Integer, QuantumFields>();
+        quantumFields2.putAll(quantumFields);
+        Set<Integer> values = new HashSet<Integer>();
+        values.addAll(quantumFields2.values());
+        return quantumFields3;
     }
 
 
     /**
-     * Метод удаляет из элемента HashMap все значения, кроме выбранных, и возвращает результат операции в виде нового HashMap
+     * Метод удаляет из элемента HashMap все значения, кроме выбранных, и возвращает результат операции в виде новой HashMap
      * @param quantumFields
      * @param allHashcodes
      */
@@ -109,7 +112,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
     }
 
     /**
-     * Метод удаляет все выбранные пары ключ-значение из элемента HashMap и возвращает результат операции в виде нового HashMap
+     * Метод удаляет все выбранные пары ключ-значение из элемента HashMap и возвращает результат операции в виде новой HashMap
      * @param quantumFields
      * @param allHashcodes
      */
@@ -123,7 +126,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
     }
 
     /**
-     * Метод удаляет пары ключ-значение из элемента HashMap, задаваемые списком значений, и возвращает результат операции в виде нового HashMap
+     * Метод удаляет пары ключ-значение из элемента HashMap, задаваемые списком значений, и возвращает результат операции в виде новой HashMap
      * @param quantumFields
      * @param hashCodes
      */
