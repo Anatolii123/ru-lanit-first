@@ -1,4 +1,4 @@
 package ru.lanit.Factory;
 
-public class MatrixMultiplicator {
+public class MatrixMultiplicator extends Matrix {
 }

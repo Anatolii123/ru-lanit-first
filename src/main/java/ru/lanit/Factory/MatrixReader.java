@@ -1,4 +1,4 @@
 package ru.lanit.Factory;
 
-public class MatrixReader {
+public class MatrixReader extends Matrix {
 }
