@@ -72,8 +72,7 @@ public class QuantumFields extends Matter implements Physics, Informatics{
 
         //todo вынести в отдельные методы. Отладить так, чтобы работало то, что ниже
         //quantumFields.remove();
-        Map<QuantumFields, Integer> quantumFields2 = removePairs(quantumFields, newHashCodes);
-        System.out.println(quantumFields2);
+        System.out.println(removePairs(quantumFields, newHashCodes));
 
         //Collection Methods
         System.out.println(removeAllChosenElements(quantumFields, allHashcodes,1,3));
@@ -88,12 +87,13 @@ public class QuantumFields extends Matter implements Physics, Informatics{
      * @return
      */
     private static Map<Integer, QuantumFields> transposeMap(Map<QuantumFields, Integer> quantumFields) {
-        Map<QuantumFields, Integer> quantumFields2 = new HashMap<QuantumFields, Integer>();
-        Map<Integer, QuantumFields> quantumFields3 = new HashMap<Integer, QuantumFields>();
-        quantumFields2.putAll(quantumFields);
-        Set<Integer> values = new HashSet<Integer>();
-        values.addAll(quantumFields2.values());
-        return quantumFields3;
+        Map<Integer, QuantumFields> quantumFields2 = new HashMap<Integer, QuantumFields>();
+        for (Iterator<QuantumFields> it = quantumFields.keySet().iterator(); it.hasNext(); ) {
+            QuantumFields object = it.next();
+            quantumFields2.put(object.hashCode(),object);
+        }
+        System.out.println(quantumFields2);
+        return quantumFields2;
     }
 
 
