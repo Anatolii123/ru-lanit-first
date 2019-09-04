@@ -8,7 +8,7 @@ public class Matrix {
     private int b;
     private String filepath;
     private Operations[][] matrix;
-
+sad
     public void set () {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
