@@ -25,6 +25,10 @@ public class MyDouble implements Operations {
     }
 
     public Operations mult(Operations operations) {
-        return null;
+        if(!(operations instanceof MyDouble)){
+            throw new ArithmeticException("Operation is not possible");
+        }
+        MyDouble that = (MyDouble) operations;
+        return new MyDouble(this.value * that.value);
     }
 }
