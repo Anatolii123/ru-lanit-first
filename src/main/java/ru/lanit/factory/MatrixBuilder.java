@@ -13,7 +13,6 @@ public class MatrixBuilder {
     public MatrixBuilder setA(int a) {
         this.a = a;
         return this;
-
     }
 
     public MatrixBuilder setB(int b) {
@@ -23,6 +22,8 @@ public class MatrixBuilder {
 
     public Matrix toMatrix(){
         //todo добавить проверки на возможность создания
+
+
         Matrix result = new Matrix();
         result.setA(a);
         result.setB(b);
