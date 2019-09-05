@@ -1,5 +1,6 @@
 package ru.lanit.factory;
 
-public class Visitor {
-
+public interface Visitor {
+    void visit(MyDouble);
+    void visit(MyLong);
 }
