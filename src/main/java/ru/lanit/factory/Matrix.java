@@ -1,6 +1,6 @@
 package ru.lanit.factory;
 
-public class Matrix {
+public class Matrix implements Visitor{
 
     private int a;
     private int b;
@@ -44,4 +44,11 @@ public class Matrix {
         this.creator = creator;
     }
 
+    public void visit(MyDouble myDouble) {
+
+    }
+
+    public void visit(MyLong myLong) {
+
+    }
 }
