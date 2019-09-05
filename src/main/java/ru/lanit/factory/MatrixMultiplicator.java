@@ -16,7 +16,6 @@ public class MatrixMultiplicator extends Matrix {
             }
             System.out.println();
         }
-
         return s;
     }
 }
