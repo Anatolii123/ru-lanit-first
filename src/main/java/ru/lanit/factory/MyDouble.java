@@ -30,4 +30,9 @@ public class MyDouble implements Operations {
         MyDouble that = (MyDouble) operations;
         return new MyDouble(this.value * that.value);
     }
+
+    @Override
+    public String toString() {
+        return this.value.toString();
+    }
 }

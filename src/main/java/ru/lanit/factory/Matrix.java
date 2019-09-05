@@ -1,9 +1,5 @@
 package ru.lanit.factory;
 
-import com.sun.org.apache.xpath.internal.operations.Operation;
-
-import java.util.Scanner;
-
 public class Matrix {
 
     private int a;
@@ -39,6 +35,13 @@ public class Matrix {
     }
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
+    }
+
+    public ContentCreator getCreator() {
+        return creator;
+    }
+    public void setCreator(ContentCreator creator) {
+        this.creator = creator;
     }
 
 }

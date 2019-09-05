@@ -15,10 +15,19 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        Matrix matrix = new Matrix(3,3,new MyDoubleCreator());
-        Matrix matrix2 = new Matrix(3,3,new MyDoubleCreator());
-        MatrixSummator m = new MatrixSummator();
-        m.perform(matrix,matrix2);
+        //TODO попробовать реализовать в отдельной ветке шаблон проектирования Builder
+        Matrix matrix = new Matrix(3, 3, new MyDoubleCreator());
+        Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
+
+        MatrixOperation sum = new MatrixSummator();
+        //TODO заполнять экземплярами произвольными MatrixOperation какой-нибудь список (List). Для этого завести отедьный метод. Потом пробегать по этому списку и в цикле вызывать операции для двух введённых матриц
+
+        Operations[][] result = sum.perform(matrix, matrix2);
+
+        MatrixOperation mult = new MatrixMultiplicator();
+        mult.perform(matrix,matrix2);
+
+
 //        MyDouble m1 = new MyDouble(2.3);
 //        MyDouble m2 = new MyDouble(2.4);
 //        m1.add(m2);

@@ -12,7 +12,6 @@ public class MyLong implements Operations {
             throw new ArithmeticException("Operation is not defined");
         }
         MyLong that = (MyLong) operations;
-
         return new MyLong(this.value + that.value);
     }
 
