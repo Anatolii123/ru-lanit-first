@@ -41,20 +41,6 @@ public class Matrix {
         this.matrix = matrix;
     }
 
-    public ContentCreator getCreator() {
-        return creator;
-    }
 
-    public void setCreator(ContentCreator creator) {
-        this.creator = creator;
-    }
-
-    public void set () {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите количество строк: ");
-        a = in.nextInt();
-        System.out.print("Введите количество столбцов: ");
-        b = in.nextInt();
-    }
 
 }
