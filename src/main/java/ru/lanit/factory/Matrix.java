@@ -41,6 +41,4 @@ public class Matrix {
         this.matrix = matrix;
     }
 
-
-
 }
