@@ -8,7 +8,8 @@ public class Matrix {
     private int b;
     private String filepath;
     private Operations[][] matrix;
-sad
+
+
     public void set () {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
@@ -16,11 +17,10 @@ sad
         System.out.print("Введите количество столбцов: ");
         b = in.nextInt();
 
-        matrix = new int[a][b];
+        matrix = new Operations[a][b];
         for(int i = 0; i < a; i++) {
             for(int j = 0; j < b; j++) {
-                System.out.print("Введите число: ");
-                matrix[i][j] = in.nextInt();
+                matrix[i][j] = Operations();
             }
             System.out.println();
         }
