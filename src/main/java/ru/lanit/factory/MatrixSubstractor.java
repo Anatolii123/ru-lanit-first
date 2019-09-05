@@ -7,8 +7,12 @@ public class MatrixSubstractor implements MatrixOperation  {
         Operations[][] b = operand2.getMatrix();
         Operations[][] s = new Operations[operand1.getA()][operand1.getB()];
 
-        for (int i = 0; i < a.length; i++) {
-            for(int j = 0; j < a[0].length; j++){
+        if(operand1.getA() != operand2.getA() || operand1.getB() != operand2.getB()) {
+            throw new ArithmeticException("Матрицы разных размерностей!");
+        }
+
+        for (int i = 0; i < operand1.getA(); i++) {
+            for(int j = 0; j < operand1.getB(); j++){
                 s[i][j] = a[i][j].sub(b[i][j]);
                 System.out.print(s[i][j] + "\t");
             }

@@ -8,16 +8,16 @@ public class MatrixMultiplicator implements MatrixOperation {
         //TODO получать размерности напрямую от операндов
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
-        if(operand1.getMatrix()[0].length != operand2.getMatrix().length) {
-            System.out.println("Матрицы несогласованы!");
+        if(operand1.getB() != operand2.getA()) {
+            throw new ArithmeticException("Матрицы несогласованы!");
             //TODO выкидиывать тут исключение
         }
 
-        Operations[][] s = new Operations[a.length][b[0].length];
+        Operations[][] s = new Operations[operand1.getA()][operand2.getB()];
 
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < b[0].length; j++) {
-                for (int k = 0; k < a[0].length; k++) {
+        for (int i = 0; i < operand1.getA(); i++) {
+            for (int j = 0; j < operand2.getB(); j++) {
+                for (int k = 0; k < operand1.getB(); k++) {
                     if (s[i][j] == null) { // воспользоваться тернарным оператором
                         s[i][j] = a[i][k].mult(b[k][j]);
                     }
