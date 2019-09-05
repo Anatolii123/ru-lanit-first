@@ -13,7 +13,6 @@ public class MyLong implements Operations {
         }
         MyLong that = (MyLong) operations;
         MyLong result = new MyLong(this.value + that.value);
-        System.out.println(result.toString());
         return result;
     }
 
@@ -23,7 +22,6 @@ public class MyLong implements Operations {
         }
         MyLong that = (MyLong) operations;
         MyLong result = new MyLong(this.value - that.value);
-        System.out.println(result.toString());
         return result;
     }
 
@@ -33,7 +31,6 @@ public class MyLong implements Operations {
         }
         MyLong that = (MyLong) operations;
         MyLong result = new MyLong(this.value * that.value);
-        System.out.println(result.toString());
         return result;
     }
 

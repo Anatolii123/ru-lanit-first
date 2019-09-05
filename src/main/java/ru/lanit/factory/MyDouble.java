@@ -13,7 +13,6 @@ public class MyDouble implements Operations {
         }
         MyDouble that = (MyDouble) operations;
         MyDouble result = new MyDouble(this.value + that.value);
-        System.out.println(result.toString());
         return result;
     }
 
@@ -23,7 +22,6 @@ public class MyDouble implements Operations {
         }
         MyDouble that = (MyDouble) operations;
         MyDouble result = new MyDouble(this.value - that.value);
-        System.out.println(result.toString());
         return result;
     }
 
@@ -33,7 +31,6 @@ public class MyDouble implements Operations {
         }
         MyDouble that = (MyDouble) operations;
         MyDouble result = new MyDouble(this.value * that.value);
-        System.out.println(result.toString());
         return result;
     }
 

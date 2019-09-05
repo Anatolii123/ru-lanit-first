@@ -31,7 +31,7 @@ public class Hello {
         System.out.println();
         matrix.accept(visitor2);
         System.out.println();
-        //longOperand.accept(visitor3);
+        System.out.println(longOperand.accept(visitor3));
         System.out.println();
 
 //        MatrixOperation sum = new MatrixSummator();
