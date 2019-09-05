@@ -13,12 +13,6 @@ public class Matrix {
 
     public Matrix(){}
 
-    public Matrix(Matrix source){
-        setA(source.getA());
-        setB(source.getB());
-        setMatrix(source.getMatrix());
-    }
-
     public Matrix(int a, int b, ContentCreator creator) {
         this.a = a;
         this.b = b;
@@ -55,23 +49,12 @@ public class Matrix {
         this.creator = creator;
     }
 
-    public void set (int row, int column) {
+    public void set () {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
         a = in.nextInt();
         System.out.print("Введите количество столбцов: ");
         b = in.nextInt();
-    }
-
-    public Operations[][] create(int a, int b){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите количество строк: ");
-        a = in.nextInt();
-        System.out.print("Введите количество столбцов: ");
-        b = in.nextInt();
-
-        Operations[][] result = new Operations[a][b];
-        return result;
     }
 
 }

@@ -2,7 +2,7 @@ package ru.lanit.factory;
 
 import java.util.Scanner;
 
-public class MyDoubleCreator {
+public class MyDoubleCreator extends ContentCreator {
 
     protected Operations[][] create(int a, int b) {
         Operations[][] result = new MyDouble[a][b];

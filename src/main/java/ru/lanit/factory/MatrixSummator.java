@@ -9,7 +9,7 @@ public class MatrixSummator implements MatrixOperation {
 
         for (int i = 0; i < a.length; i++) {
             for(int j = 0; j < a[0].length; j++){
-                s[i][j] = a[i][j].add(b[i][j]); //
+                s[i][j] = a[i][j].add(b[i][j]);
                 System.out.print(s[i][j] + "\t");
             }
             System.out.println();
