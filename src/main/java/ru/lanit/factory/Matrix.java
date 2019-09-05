@@ -1,13 +1,14 @@
 package ru.lanit.factory;
 
-public class Matrix implements Visitor{
+public class Matrix {
 
     private int a;
     private int b;
     private Operations[][] matrix;
     private ContentCreator creator;
 
-    public Matrix(){}
+    public Matrix() {
+    }
 
     public Matrix(int a, int b, ContentCreator creator) {
         this.a = a;
@@ -19,6 +20,7 @@ public class Matrix implements Visitor{
     public int getA() {
         return a;
     }
+
     public void setA(int a) {
         this.a = a;
     }
@@ -26,6 +28,7 @@ public class Matrix implements Visitor{
     public int getB() {
         return b;
     }
+
     public void setB(int b) {
         this.b = b;
     }
@@ -33,6 +36,7 @@ public class Matrix implements Visitor{
     public Operations[][] getMatrix() {
         return matrix;
     }
+
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
     }
@@ -40,15 +44,13 @@ public class Matrix implements Visitor{
     public ContentCreator getCreator() {
         return creator;
     }
+
     public void setCreator(ContentCreator creator) {
         this.creator = creator;
     }
 
-    public void visit(MyDouble myDouble) {
-
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 
-    public void visit(MyLong myLong) {
-
-    }
 }

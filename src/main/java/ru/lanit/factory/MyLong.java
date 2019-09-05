@@ -31,6 +31,10 @@ public class MyLong implements Operations {
         return new MyLong(this.value * that.value);
     }
 
+    public MyLong accept(Visitor visitor) {
+        return visitor.visitMyLong(this);
+    }
+
     @Override
     public String toString() {
         return this.value.toString();

@@ -1,6 +1,6 @@
 package ru.lanit.factory;
 
 public interface Visitor {
-    void visitMyDouble (MyDouble myDouble);
-    void visitMyLong (MyLong myLong);
+    void visit (Matrix firstOperand);
+    void visit (MyLong operand); // todo добавить в Hello пример использования этого метода
 }

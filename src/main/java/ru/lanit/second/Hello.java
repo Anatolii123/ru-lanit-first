@@ -4,7 +4,6 @@ import ru.lanit.factory.*;
 import ru.lanit.factory.Matrix;
 import ru.lanit.factory.MatrixMultiplicator;
 import ru.lanit.factory.MatrixSummator;
-import ru.lanit.first.*;
 
 import java.util.*;
 
@@ -19,22 +18,27 @@ public class Hello {
         Matrix matrix = new Matrix(3, 3, new MyDoubleCreator());
         Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
 
+        SummationVisitor visitor = new SummationVisitor(matrix2);
+
+        //TODO сделать тоже самое для умножения. Причём, вызывать тоже для matrix
+        matrix.accept(visitor);
+
 //        MatrixOperation sum = new MatrixSummator();
 //        Operations[][] result = sum.perform(matrix, matrix2);
 //        MatrixOperation mult = new MatrixMultiplicator();
 //        mult.perform(matrix,matrix2);
 
-        //TODO заполнять экземплярами произвольными MatrixOperation какой-нибудь список (List). Для этого завести отедьный метод. Потом пробегать по этому списку и в цикле вызывать операции для двух введённых матриц
 
         List<MatrixOperation> operationList = operationsList(5);
         for (MatrixOperation operation : operationList) {
+            //TODO добавить в вывод название операции
             operation.perform(matrix, matrix2);
             System.out.println();
         }
     }
 
     public static List<MatrixOperation> operationsList (int listLength) {
-        List<MatrixOperation> result = new ArrayList<MatrixOperation>();
+        List<MatrixOperation> result = new ArrayList<MatrixOperation>(listLength);
 
         for (int i = 0; i < listLength; i++) {
             int rand = new Random().nextInt(3);

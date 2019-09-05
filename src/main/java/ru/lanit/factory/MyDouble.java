@@ -31,6 +31,11 @@ public class MyDouble implements Operations {
         return new MyDouble(this.value * that.value);
     }
 
+    public Operations accept(Visitor visitor) {
+        return this;
+    }
+
+
     @Override
     public String toString() {
         return this.value.toString();
