@@ -43,9 +43,16 @@ public class Matrix {
     public Operations[][] getMatrix() {
         return matrix;
     }
-
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
+    }
+
+    public ContentCreator getCreator() {
+        return creator;
+    }
+
+    public void setCreator(ContentCreator creator) {
+        this.creator = creator;
     }
 
     public void set (int row, int column) {
