@@ -19,9 +19,11 @@ public class Hello {
         Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
 
         SummationVisitor visitor = new SummationVisitor(matrix2);
+        MultiplicationVisitor visitor2 = new MultiplicationVisitor(matrix2);
 
         //TODO сделать тоже самое для умножения. Причём, вызывать тоже для matrix
         matrix.accept(visitor);
+        matrix.accept(visitor2);
 
 //        MatrixOperation sum = new MatrixSummator();
 //        Operations[][] result = sum.perform(matrix, matrix2);
@@ -29,12 +31,11 @@ public class Hello {
 //        mult.perform(matrix,matrix2);
 
 
-        List<MatrixOperation> operationList = operationsList(5);
-        for (MatrixOperation operation : operationList) {
-            //TODO добавить в вывод название операции
-            operation.perform(matrix, matrix2);
-            System.out.println();
-        }
+//        List<MatrixOperation> operationList = operationsList(5);
+//        for (MatrixOperation operation : operationList) {
+//            operation.perform(matrix, matrix2);
+//            System.out.println();
+//        }
     }
 
     public static List<MatrixOperation> operationsList (int listLength) {

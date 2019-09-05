@@ -11,6 +11,7 @@ public class MatrixSubstractor implements MatrixOperation  {
             throw new ArithmeticException("Матрицы разных размерностей!");
         }
 
+        System.out.println("Разность матриц");
         for (int i = 0; i < operand1.getA(); i++) {
             for(int j = 0; j < operand1.getB(); j++){
                 s[i][j] = a[i][j].sub(b[i][j]);

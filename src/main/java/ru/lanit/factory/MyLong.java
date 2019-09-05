@@ -32,7 +32,7 @@ public class MyLong implements Operations {
     }
 
     public MyLong accept(Visitor visitor) {
-        return visitor.visitMyLong(this);
+        return visitor.visit(this);
     }
 
     @Override
