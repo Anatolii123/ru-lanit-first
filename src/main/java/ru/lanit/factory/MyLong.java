@@ -30,4 +30,9 @@ public class MyLong implements Operations {
         MyLong that = (MyLong) operations;
         return new MyLong(this.value * that.value);
     }
+
+    @Override
+    public String toString() {
+        return this.value.toString();
+    }
 }

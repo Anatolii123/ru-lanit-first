@@ -10,7 +10,7 @@ public class MatrixMultiplicator implements MatrixOperation {
         Operations[][] b = operand2.getMatrix();
         if(operand1.getB() != operand2.getA()) {
             throw new ArithmeticException("Матрицы несогласованы!");
-            //TODO выкидиывать тут исключение
+            //TODO выкидывать тут исключение
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand2.getB()];
