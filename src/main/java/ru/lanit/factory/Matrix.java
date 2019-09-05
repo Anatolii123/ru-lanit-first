@@ -6,7 +6,6 @@ public class Matrix {
 
     private int a;
     private int b;
-    private String filepath;
     private Operations[][] matrix;
 
     public Matrix(){}
