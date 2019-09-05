@@ -17,10 +17,18 @@ public class MyLong implements Operations {
     }
 
     public Operations sub(Operations operations) {
-        return null;
+        if(!(operations instanceof MyLong)){
+            throw new ArithmeticException("Operation is not possible");
+        }
+        MyLong that = (MyLong) operations;
+        return new MyLong(this.value - that.value);
     }
 
     public Operations mult(Operations operations) {
-        return null;
+        if(!(operations instanceof MyLong)){
+            throw new ArithmeticException("Operation is not possible");
+        }
+        MyLong that = (MyLong) operations;
+        return new MyLong(this.value * that.value);
     }
 }
