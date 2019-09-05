@@ -1,9 +1,12 @@
 package ru.lanit.factory;
 
-public class MatrixSubstractor extends Matrix {
+public class MatrixSubstractor implements MatrixOperation  {
 
-    private Operations[][] subInternal(Operations[][] a, Operations[][] b) {
-        Operations[][] s = new Operations[a.length][a[0].length];
+    public Operations[][] perform(Matrix operand1, Matrix operand2) {
+        Operations[][] a = operand1.getMatrix();
+        Operations[][] b = operand2.getMatrix();
+        Operations[][] s = new Operations[operand1.getA()][operand1.getB()];
+
         for (int i = 0; i < a.length; i++) {
             for(int j = 0; j < a[0].length; j++){
                 s[i][j] = a[i][j].sub(b[i][j]);

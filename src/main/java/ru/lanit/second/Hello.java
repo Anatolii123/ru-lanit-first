@@ -1,36 +1,28 @@
 package ru.lanit.second;
 
+import ru.lanit.factory.Matrix;
+import ru.lanit.factory.MatrixMultiplicator;
+import ru.lanit.factory.MyDouble;
 import ru.lanit.first.*;
 
 import java.util.*;
 
 public class Hello {
 
+    private static Matrix matrix;
+    private static Matrix matrix2;
+
     public static void main (String[] args) throws Exception {
-        Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();
-        QuantumFields a = QuantumFields.getInstanceOf();
-        QuantumFields b = QuantumFields.getInstanceOf();
-        QuantumFields c = QuantumFields.getInstanceOf();
-        quantumFields.add(a);
-        quantumFields.add(b);
-        quantumFields.add(c);
 
-        System.out.println(quantumFields.size());
-        System.out.println(quantumFields);
-        quantumFields.clear();
+        matrix.setA(3);
+        matrix.setB(3);
 
-        a.setSwitcher(true);
+        MyDouble m1 = new MyDouble(2.3);
+        MyDouble m2 = new MyDouble(2.4);
+        m1.add(m2);
+        //matrix.perform(...)
 
-        quantumFields.add(b);
-        quantumFields.add(a);
-        quantumFields.add(c);
-        System.out.println(quantumFields.size());
-
-        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
-        quantumFields2.add(a);
-        quantumFields2.add(b);
-        quantumFields2.add(c);
-        QuantumFields.calculate(quantumFields2);
+    }
 
     }
 }

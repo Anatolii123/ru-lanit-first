@@ -1,5 +1,7 @@
 package ru.lanit.factory;
 
+import com.sun.org.apache.xpath.internal.operations.Operation;
+
 import java.util.Scanner;
 
 public class Matrix {
@@ -7,6 +9,7 @@ public class Matrix {
     private int a;
     private int b;
     private Operations[][] matrix;
+    private ContentCreator creator;
 
     public Matrix(){}
 
@@ -14,6 +17,13 @@ public class Matrix {
         setA(source.getA());
         setB(source.getB());
         setMatrix(source.getMatrix());
+    }
+
+    public Matrix(int a, int b, ContentCreator creator) {
+        this.a = a;
+        this.b = b;
+        this.creator = creator;
+        this.matrix = creator.create(a, b);
     }
 
     public int getA() {
@@ -33,19 +43,28 @@ public class Matrix {
     public Operations[][] getMatrix() {
         return matrix;
     }
+
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
     }
 
-    public void set (int row, int column, Operations operations) {
+    public void set (int row, int column) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество строк: ");
+        a = in.nextInt();
+        System.out.print("Введите количество столбцов: ");
+        b = in.nextInt();
+    }
+
+    public Operations[][] create(int a, int b){
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
         a = in.nextInt();
         System.out.print("Введите количество столбцов: ");
         b = in.nextInt();
 
-        matrix = new Operations[a][b];
-        matrix[row][column] = operations;
+        Operations[][] result = new Operations[a][b];
+        return result;
     }
 
 }
