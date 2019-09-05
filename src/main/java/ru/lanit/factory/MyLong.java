@@ -12,7 +12,9 @@ public class MyLong implements Operations {
             throw new ArithmeticException("Operation is not defined");
         }
         MyLong that = (MyLong) operations;
-        return new MyLong(this.value + that.value);
+        MyLong result = new MyLong(this.value + that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public Operations sub(Operations operations) {
@@ -20,7 +22,9 @@ public class MyLong implements Operations {
             throw new ArithmeticException("Operation is not possible");
         }
         MyLong that = (MyLong) operations;
-        return new MyLong(this.value - that.value);
+        MyLong result = new MyLong(this.value - that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public Operations mult(Operations operations) {
@@ -28,7 +32,9 @@ public class MyLong implements Operations {
             throw new ArithmeticException("Operation is not possible");
         }
         MyLong that = (MyLong) operations;
-        return new MyLong(this.value * that.value);
+        MyLong result = new MyLong(this.value * that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public MyLong accept(Visitor visitor) {

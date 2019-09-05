@@ -3,7 +3,6 @@ package ru.lanit.factory;
 public class MatrixSummator implements MatrixOperation {
 
     public Operations[][] perform(Matrix operand1, Matrix operand2) {
-        //TODO брать размерности напрямую у операндов
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getA() != operand2.getA() || operand1.getB() != operand2.getB()) {

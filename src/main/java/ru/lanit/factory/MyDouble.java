@@ -12,7 +12,9 @@ public class MyDouble implements Operations {
             throw new ArithmeticException("Operation is not possible");
         }
         MyDouble that = (MyDouble) operations;
-        return new MyDouble(this.value + that.value);
+        MyDouble result = new MyDouble(this.value + that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public Operations sub(Operations operations) {
@@ -20,7 +22,9 @@ public class MyDouble implements Operations {
             throw new ArithmeticException("Operation is not possible");
         }
         MyDouble that = (MyDouble) operations;
-        return new MyDouble(this.value - that.value);
+        MyDouble result = new MyDouble(this.value - that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public Operations mult(Operations operations) {
@@ -28,7 +32,9 @@ public class MyDouble implements Operations {
             throw new ArithmeticException("Operation is not possible");
         }
         MyDouble that = (MyDouble) operations;
-        return new MyDouble(this.value * that.value);
+        MyDouble result = new MyDouble(this.value * that.value);
+        System.out.println(result.toString());
+        return result;
     }
 
     public Operations accept(Visitor visitor) {
