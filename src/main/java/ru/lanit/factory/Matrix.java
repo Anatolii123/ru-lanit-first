@@ -1,10 +1,10 @@
 package ru.lanit.factory;
 
-public class Matrix {
+public class Matrix <T extends Number> {
 
     private int a;
     private int b;
-    private Operations[][] matrix;
+    private MyNumeric<T>[][] matrix;
     private ContentCreator creator;
 
     public Matrix() {

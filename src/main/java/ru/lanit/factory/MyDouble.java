@@ -1,7 +1,6 @@
 package ru.lanit.factory;
 
-public class MyDouble implements Operations {
-    private Double value;
+public class MyDouble extends MyNumeric<Double> {
 
     public MyDouble(Double value) {
         this.value = value;
