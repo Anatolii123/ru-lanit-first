@@ -21,13 +21,11 @@ public class MatrixBuilder {
     }
 
     public Matrix toMatrix(){
+        ParamMatrix<Long> result2 = new ParamMatrix<Long>();
         Matrix result = new Matrix();
-
         if (creator == null) {
             throw new NullPointerException("");
         }
-
-        result.setCreator(creator);
         result.setMatrix(creator.create(a, b));
         return result;
     }

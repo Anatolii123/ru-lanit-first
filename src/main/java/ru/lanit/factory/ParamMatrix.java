@@ -1,16 +1,51 @@
 package ru.lanit.factory;
 
-public class ParamMatrix implements HasValue<Integer>  {
+public class ParamMatrix<T extends Number>  {
+    protected T value;
 
     private int a;
     private int b;
-    private MyNumeric<Long> matrix;
+    private MyNumeric<T> matrix;
 
-    public Integer getValue() {
-        return null;
+    public ParamMatrix() {
     }
 
-    public void setValue(Integer value) {
-
+    public ParamMatrix(int a, int b) {
+        this.a = a;
+        this.b = b;
     }
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+    public MyNumeric<T> getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(MyNumeric<T> matrix) {
+        this.matrix = matrix;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void accept(UnaryOperationVisitor visitor) {
+        visitor.visit(this);
+    }
+
+
 }
