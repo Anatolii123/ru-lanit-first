@@ -1,7 +1,6 @@
 package ru.lanit.factory;
 
-public class MyLong implements Operations {
-    private Long value;
+public class MyLong extends MyNumeric<Long> {
 
     public MyLong(Long value) {
         this.value = value;
