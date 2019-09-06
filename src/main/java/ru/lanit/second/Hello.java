@@ -14,7 +14,6 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        //TODO попробовать реализовать в отдельной ветке шаблон проектирования Builder
         Matrix matrix = new Matrix(3, 3, new MyDoubleCreator());
         Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
 
