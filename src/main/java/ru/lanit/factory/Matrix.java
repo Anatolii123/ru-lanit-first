@@ -5,7 +5,6 @@ public class Matrix {
     private int a;
     private int b;
     private Operations[][] matrix;
-    private ContentCreator creator;
 
     public Matrix() {
     }
@@ -13,7 +12,6 @@ public class Matrix {
     public Matrix(int a, int b, ContentCreator creator) {
         this.a = a;
         this.b = b;
-        this.creator = creator;
         this.matrix = creator.create(a, b);
     }
 
@@ -39,14 +37,6 @@ public class Matrix {
 
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
-    }
-
-    public ContentCreator getCreator() {
-        return creator;
-    }
-
-    public void setCreator(ContentCreator creator) {
-        this.creator = creator;
     }
 
     public void accept(Visitor visitor) {

@@ -37,7 +37,6 @@ public class MyDouble extends MyNumeric<Double> {
         return this;
     }
 
-
     @Override
     public String toString() {
         return this.value.toString();
