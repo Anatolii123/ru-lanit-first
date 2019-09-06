@@ -14,8 +14,8 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        Matrix matrix = new Matrix(3, 3, new MyDoubleCreator());
-        Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
+        Matrix matrix = new Matrix(3, 3);
+        Matrix matrix2 = new Matrix(3, 3);
 
         List<String> list = new ArrayList<String>();
 
