@@ -20,11 +20,9 @@ public class MatrixBuilder {
         return this;
     }
 
-    //TODO перенести установку разщмерностей на уровень директора
     public Matrix toMatrix(){
         Matrix result = new Matrix();
 
-        //TODO проверочный код тоже пренести в директор (метод make), в котором, кроме проверочного кода будет setA, setB и toMatrix
         if (creator == null) {
             throw new NullPointerException("");
         }
