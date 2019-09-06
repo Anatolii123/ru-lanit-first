@@ -9,7 +9,6 @@ public class MatrixSummator extends Matrix  {
      * @return сумма двух матриц
      */
     public MatrixSummator sum(Matrix b) {
-        //TODO метод вот такой:
         if(this.getMatrix().length != b.getMatrix().length || this.getMatrix()[0].length != b.getMatrix()[0].length) {
             System.out.println("Матрицы разных размерностей!");
             return this;

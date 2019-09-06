@@ -5,31 +5,32 @@ public class MatrixBuilder {
     private Integer a;
     private Integer b;
 
-    public MatrixBuilder setCreator(ContentCreator creator) {
+    public MatrixBuilder(ContentCreator creator) { // todo настраиваем класс-билдер при создании
         this.creator = creator;
-        return this;
     }
 
-    public MatrixBuilder setA(int a) {
+
+    public MatrixBuilder setA(Integer a) {
         this.a = a;
         return this;
     }
 
-    public MatrixBuilder setB(int b) {
+    public MatrixBuilder setB(Integer b) {
         this.b = b;
         return this;
     }
 
+    //TODO перенести установку разщмерностей на уровень директора
     public Matrix toMatrix(){
-        //todo добавить проверки на возможность создания
-
-
         Matrix result = new Matrix();
-        result.setA(a);
-        result.setB(b);
+
+        //TODO проверочный код тоже пренести в директор (метод make), в котором, кроме проверочного кода будет setA, setB и toMatrix
+        if (creator == null) {
+            throw new NullPointerException("");
+        }
+
         result.setCreator(creator);
         result.setMatrix(creator.create(a, b));
-
         return result;
     }
 }

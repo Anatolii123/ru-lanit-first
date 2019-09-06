@@ -18,6 +18,12 @@ public class Hello {
         Matrix matrix = new Matrix(3, 3, new MyDoubleCreator());
         Matrix matrix2 = new Matrix(3, 3, new MyDoubleCreator());
 
+        List<String> list = new ArrayList<String>();
+
+        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
+        Matrix matrix4 = matrixMaker.make(4,4);
+        Matrix matrix5 = matrixMaker.make(5,5);
+
         MyLong longOperand = new MyLong(15L);
         MyLong longOperand2 = new MyLong(25L);
 
@@ -26,24 +32,32 @@ public class Hello {
         SummationVisitor visitor3 = new SummationVisitor(longOperand2);
         MultiplicationVisitor visitor4 = new MultiplicationVisitor(longOperand2);
 
-        //TODO сделать тоже самое для умножения. Причём, вызывать тоже для matrix
-        matrix.accept(visitor);
-        System.out.println();
-        matrix.accept(visitor2);
-        System.out.println();
-        System.out.println(longOperand.accept(visitor3));
-        System.out.println();
+        TransposeVisitor visitor5 = new TransposeVisitor();
+        matrix4.accept(visitor5);
+//        matrix.accept(visitor);
+//        System.out.println();
+//        matrix.accept(visitor2);
+//        System.out.println();
+//        System.out.println(longOperand.accept(visitor3));
+//        System.out.println();
+
 
 //        MatrixOperation sum = new MatrixSummator();
 //        Operations[][] result = sum.perform(matrix, matrix2);
 //        MatrixOperation mult = new MatrixMultiplicator();
 //        mult.perform(matrix,matrix2);
 
-        List<MatrixOperation> operationList = operationsList(5);
-        for (MatrixOperation operation : operationList) {
-            operation.perform(matrix, matrix2);
-            System.out.println();
-        }
+//        List<MatrixOperation> operationList = operationsList(5);
+//        for (MatrixOperation operation : operationList) {
+//            operation.perform(matrix, matrix2);
+//            System.out.println();
+//        }
+    }
+
+    private static MatrixMaker getMatrixMaker(ContentCreator creator) {
+        MatrixBuilder mb = new MatrixBuilder(creator);
+
+        return new MatrixMaker(mb);
     }
 
     public static List<MatrixOperation> operationsList (int listLength) {

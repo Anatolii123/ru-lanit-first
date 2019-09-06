@@ -53,4 +53,8 @@ public class Matrix {
         visitor.visit(this);
     }
 
+    public void accept(UnaryOperationVisitor visitor) {
+        visitor.visit(this);
+    }
+
 }
