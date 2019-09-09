@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 
 public class MatrixMultiplicator implements MatrixOperation {
 
-    public Operations[][] perform(Matrix operand1, Matrix operand2) {
+    public Operations[][] perform(Matrix operand1, Matrix operand2) throws MultiplicationException {
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getB() != operand2.getA()) {
-            throw new ArithmeticException("Матрицы несогласованы!");
+            throw new MultiplicationException();
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand2.getB()];

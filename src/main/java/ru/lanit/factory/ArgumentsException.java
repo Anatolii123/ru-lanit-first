@@ -11,5 +11,4 @@ public class ArgumentsException extends MatrixException {
         printStackTrace(new PrintWriter(trace));
         logger.severe(trace.toString());
     }
-
 }

@@ -39,7 +39,7 @@ public class Matrix {
         this.matrix = matrix;
     }
 
-    public void accept(Visitor visitor) {
+    public void accept(Visitor visitor) throws MultiplicationException, AdditionException {
         visitor.visit(this);
     }
 

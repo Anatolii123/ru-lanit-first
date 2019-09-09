@@ -20,7 +20,7 @@ public class MultiplicationVisitor implements Visitor {
         this.doubleOperand = doubleOperand;
     }
 
-    public void visit(Matrix firstOperand) {
+    public void visit(Matrix firstOperand) throws AdditionException, MultiplicationException {
         mult.perform(firstOperand, operand);
     }
 

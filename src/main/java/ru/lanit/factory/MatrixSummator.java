@@ -2,11 +2,11 @@ package ru.lanit.factory;
 
 public class MatrixSummator implements MatrixOperation {
 
-    public Operations[][] perform(Matrix operand1, Matrix operand2) {
+    public Operations[][] perform(Matrix operand1, Matrix operand2) throws AdditionException {
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getA() != operand2.getA() || operand1.getB() != operand2.getB()) {
-            throw new ArithmeticException("Матрицы разных размерностей!");
+            throw new AdditionException();
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand1.getB()];

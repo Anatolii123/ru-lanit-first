@@ -7,7 +7,7 @@ public abstract class ParamMatrix<T extends Number>  {
 
     public ParamMatrix(){}
 
-    public ParamMatrix(int a, int b) {
+    public ParamMatrix(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
         this.a = a;
         this.b = b;
         createContent(a,b);
@@ -16,7 +16,7 @@ public abstract class ParamMatrix<T extends Number>  {
     /**
      * Метод формирует двумерный массив content заполняя его данными нужного типа
      */
-    public abstract MyNumeric<T>[][] createContent(int a, int b);
+    public abstract MyNumeric<T>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException;
 
     public int getA() {
         return a;
@@ -48,7 +48,11 @@ public abstract class ParamMatrix<T extends Number>  {
      * @param operand матрица, которую нужно пибавить
      * @return матрица, представляющая собой сумму
      */
-    public ParamMatrix<T> add(ParamMatrix<T> operand) {
+    public ParamMatrix<T> add(ParamMatrix<T> operand) throws AdditionException {
+        if(this.getA() != operand.getA() || this.getB() != operand.getB()) {
+            throw new AdditionException();
+        }
+        System.out.println("Сумма матриц");
         for (int i = 0; i < operand.getA(); i++) {
             for(int j = 0; j < operand.getB(); j++){
                 this.getContent()[i][j].setValue(this.getContent()[i][j].add(operand.getContent()[i][j]));

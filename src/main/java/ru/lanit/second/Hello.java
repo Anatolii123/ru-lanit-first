@@ -14,17 +14,17 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        try {
-            throw new AdditionException();
-        } catch (AdditionException m) {
-            System.err.println("Перехвачено: " + m);
-        }
+//        try {
+//            throw new IncorrectColumnsCountException();
+//        } catch (IncorrectColumnsCountException m) {
+//            System.err.println("Перехвачено: " + m);
+//        }
 
-//        MyLongParamMatrix matrix = new MyLongParamMatrix();
-//        matrix.createContent(3,3);
-//        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
-//        matrix2.createContent(3,3);
-//        matrix.add(matrix2);
+        MyLongParamMatrix matrix = new MyLongParamMatrix();
+        matrix.createContent(1,1);
+        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+        matrix2.createContent(4,4);
+        matrix.add(matrix2);
 //
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
