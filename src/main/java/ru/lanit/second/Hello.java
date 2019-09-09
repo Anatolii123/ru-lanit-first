@@ -14,14 +14,13 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        Matrix matrix = new Matrix(3, 3);
-        Matrix matrix2 = new Matrix(3, 3);
+        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
+        Matrix matrix = matrixMaker.make(3,3);
+        Matrix matrix2 = matrixMaker.make(3,3);
 
         List<String> list = new ArrayList<String>();
-
-        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
-        Matrix matrix4 = matrixMaker.make(4,4);
-        Matrix matrix5 = matrixMaker.make(5,5);
+        //Matrix matrix4 = matrixMaker.make(4,4);
+        //Matrix matrix5 = matrixMaker.make(5,5);
 
         MyLong longOperand = new MyLong(15L);
         MyLong longOperand2 = new MyLong(25L);
@@ -31,9 +30,9 @@ public class Hello {
         SummationVisitor visitor3 = new SummationVisitor(longOperand2);
         MultiplicationVisitor visitor4 = new MultiplicationVisitor(longOperand2);
 
-        TransposeVisitor visitor5 = new TransposeVisitor();
-        matrix4.accept(visitor5);
-//        matrix.accept(visitor);
+//        TransposeVisitor visitor5 = new TransposeVisitor();
+//        matrix4.accept(visitor5);
+        matrix.accept(visitor);
 //        System.out.println();
 //        matrix.accept(visitor2);
 //        System.out.println();
