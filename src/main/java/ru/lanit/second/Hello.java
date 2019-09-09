@@ -15,8 +15,8 @@ public class Hello {
     public static void main (String[] args) throws Exception {
 
         try {
-            throw new ArgumentsException();
-        } catch (ArgumentsException m) {
+            throw new AdditionException();
+        } catch (AdditionException m) {
             System.err.println("Перехвачено: " + m);
         }
 
