@@ -1,13 +1,10 @@
 package ru.lanit.factory;
 
-import java.util.Scanner;
-
 public class MatrixBuilder {
     private ContentCreator creator;
     private Integer a;
     private Integer b;
 
-    public MatrixBuilder(){}
     public MatrixBuilder(ContentCreator creator) { // todo настраиваем класс-билдер при создании
         this.creator = creator;
     }
@@ -26,6 +23,8 @@ public class MatrixBuilder {
             throw new NullPointerException("");
         }
         result.setMatrix(creator.create(a, b));
+        result.setA(a);
+        result.setB(b);
         return result;
     }
 }

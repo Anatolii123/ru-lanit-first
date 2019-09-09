@@ -14,9 +14,16 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
-        Matrix matrix = matrixMaker.make(3,3);
-        Matrix matrix2 = matrixMaker.make(3,3);
+//        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
+//        Matrix matrix = matrixMaker.make(3,3);
+//        Matrix matrix2 = matrixMaker.make(3,3);
+
+        MyLongParamMatrix matrix = new MyLongParamMatrix();
+        matrix.createContent(3,3);
+        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+        matrix2.createContent(3,3);
+        matrix.add(matrix2);
+
 
         List<String> list = new ArrayList<String>();
         //Matrix matrix4 = matrixMaker.make(4,4);
@@ -25,25 +32,19 @@ public class Hello {
         MyLong longOperand = new MyLong(15L);
         MyLong longOperand2 = new MyLong(25L);
 
-        SummationVisitor visitor = new SummationVisitor(matrix2);
-        MultiplicationVisitor visitor2 = new MultiplicationVisitor(matrix2);
-        SummationVisitor visitor3 = new SummationVisitor(longOperand2);
-        MultiplicationVisitor visitor4 = new MultiplicationVisitor(longOperand2);
+//        SummationVisitor visitor = new SummationVisitor(matrix2);
+//        MultiplicationVisitor visitor2 = new MultiplicationVisitor(matrix2);
+//        SummationVisitor visitor3 = new SummationVisitor(longOperand2);
+//        MultiplicationVisitor visitor4 = new MultiplicationVisitor(longOperand2);
 
-//        TransposeVisitor visitor5 = new TransposeVisitor();
-//        matrix4.accept(visitor5);
-        matrix.accept(visitor);
+        TransposeVisitor visitor5 = new TransposeVisitor();
+//        matrix.accept(visitor5);
+//        matrix.accept(visitor);
 //        System.out.println();
 //        matrix.accept(visitor2);
 //        System.out.println();
 //        System.out.println(longOperand.accept(visitor3));
 //        System.out.println();
-
-
-//        MatrixOperation sum = new MatrixSummator();
-//        Operations[][] result = sum.perform(matrix, matrix2);
-//        MatrixOperation mult = new MatrixMultiplicator();
-//        mult.perform(matrix,matrix2);
 
 //        List<MatrixOperation> operationList = operationsList(5);
 //        for (MatrixOperation operation : operationList) {

@@ -9,9 +9,10 @@ public class Matrix {
     public Matrix() {
     }
 
-    public Matrix(int a, int b) {
+    public Matrix(int a, int b, ContentCreator creator) {
         this.a = a;
         this.b = b;
+        this.matrix = creator.create(a, b);
     }
 
     public int getA() {
