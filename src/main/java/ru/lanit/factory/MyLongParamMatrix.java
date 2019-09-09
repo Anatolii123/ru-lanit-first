@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class MyLongParamMatrix extends ParamMatrix<Long> {
 
-    public MyNumeric<Long>[][] createContent(int a, int b) {
+    public MyNumeric<Long>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
+        if (a == 0 || a == 1) {
+            throw new IncorrectRowsCountException();
+        }
+        if (b == 0 || b == 1) {
+            throw new IncorrectColumnsCountException();
+        }
+
         Scanner in = new Scanner(System.in);
         MyNumeric<Long>[][] result = new MyLong[a][b];
         this.setA(a);
