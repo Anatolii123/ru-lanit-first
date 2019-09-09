@@ -1,7 +1,6 @@
 package ru.lanit.factory;
 
 public class SummationVisitor implements Visitor {
-    //TODO сделать тоже самое для умножения
     private MyLong myLong = new MyLong(10L);
     private MyDouble myDouble = new MyDouble(10.0);
     private Matrix operand;
