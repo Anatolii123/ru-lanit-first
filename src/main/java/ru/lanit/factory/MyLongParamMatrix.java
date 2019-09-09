@@ -1,5 +1,6 @@
 package ru.lanit.factory;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MyLongParamMatrix extends ParamMatrix<Long> {
@@ -11,18 +12,30 @@ public class MyLongParamMatrix extends ParamMatrix<Long> {
         if (b == 0 || b == 1) {
             throw new IncorrectColumnsCountException();
         }
-
-        Scanner in = new Scanner(System.in);
         MyNumeric<Long>[][] result = new MyLong[a][b];
         this.setA(a);
         this.setB(b);
+
         for(int i = 0; i < a; i++) {
             for(int j = 0; j < b; j++) {
-                System.out.print("Введите число: ");
-                result[i][j] = new MyLong(in.nextLong());
+                while (true) {
+                    try {
+                        Scanner in = new Scanner(System.in);
+                        System.out.print("Введите число: ");
+                        result[i][j] = new MyLong(in.nextLong());
+                    } catch (InputMismatchException d) {
+                        System.out.println("Try once more");
+                        j--;
+                        continue;
+                    }
+                    finally {
+                        break;
+                    }
+                }
             }
             System.out.println();
         }
+
         for (int i = 0; i < a; i++) {
             for(int j = 0; j < b; j++){
                 System.out.print(result[i][j].toString() + "\t");

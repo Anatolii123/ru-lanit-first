@@ -20,9 +20,9 @@ public class Hello {
 //            System.err.println("Перехвачено: " + m);
 //        }
 
-        MyLongParamMatrix matrix = new MyLongParamMatrix();
-        matrix.createContent(1,1);
-        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+        MyDoubleParamMatrix matrix = new MyDoubleParamMatrix();
+        matrix.createContent(3,3);
+        MyDoubleParamMatrix matrix2 = new MyDoubleParamMatrix();
         matrix2.createContent(4,4);
         matrix.add(matrix2);
 //
