@@ -14,37 +14,23 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-//        MatrixMaker matrixMaker = getMatrixMaker(new MyDoubleCreator());
-//        Matrix matrix = matrixMaker.make(3,3);
-//        Matrix matrix2 = matrixMaker.make(3,3);
-
         MyLongParamMatrix matrix = new MyLongParamMatrix();
         matrix.createContent(3,3);
         MyLongParamMatrix matrix2 = new MyLongParamMatrix();
         matrix2.createContent(3,3);
         matrix.add(matrix2);
 
+        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
+        matrix3.createContent(3,3);
+        MyDoubleParamMatrix matrix4 = new MyDoubleParamMatrix();
+        matrix4.createContent(3,3);
+        matrix3.add(matrix4);
+
 
         List<String> list = new ArrayList<String>();
-        //Matrix matrix4 = matrixMaker.make(4,4);
-        //Matrix matrix5 = matrixMaker.make(5,5);
 
         MyLong longOperand = new MyLong(15L);
         MyLong longOperand2 = new MyLong(25L);
-
-//        SummationVisitor visitor = new SummationVisitor(matrix2);
-//        MultiplicationVisitor visitor2 = new MultiplicationVisitor(matrix2);
-//        SummationVisitor visitor3 = new SummationVisitor(longOperand2);
-//        MultiplicationVisitor visitor4 = new MultiplicationVisitor(longOperand2);
-
-        TransposeVisitor visitor5 = new TransposeVisitor();
-//        matrix.accept(visitor5);
-//        matrix.accept(visitor);
-//        System.out.println();
-//        matrix.accept(visitor2);
-//        System.out.println();
-//        System.out.println(longOperand.accept(visitor3));
-//        System.out.println();
 
 //        List<MatrixOperation> operationList = operationsList(5);
 //        for (MatrixOperation operation : operationList) {

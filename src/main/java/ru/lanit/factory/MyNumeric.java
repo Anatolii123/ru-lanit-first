@@ -1,7 +1,7 @@
 package ru.lanit.factory;
 
 public abstract class MyNumeric<T extends Number> implements Operations {
-    protected T value;
+    protected T value; // inject
 
     public abstract Operations add(Operations operations);
 
@@ -10,4 +10,6 @@ public abstract class MyNumeric<T extends Number> implements Operations {
     public abstract Operations mult(Operations operations);
 
     public abstract Operations accept(Visitor visitor);
+
+    public abstract void setValue(Operations value);
 }

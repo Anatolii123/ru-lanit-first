@@ -1,5 +1,7 @@
 package ru.lanit.factory;
 
+import com.sun.xml.internal.ws.api.message.ExceptionHasMessage;
+
 public class MyDouble extends MyNumeric<Double> {
 
     public MyDouble(Double value) {
@@ -35,6 +37,16 @@ public class MyDouble extends MyNumeric<Double> {
 
     public Operations accept(Visitor visitor) {
         return this;
+    }
+
+    public void setValue(Operations value) {
+        if (value == null) {
+            throw new NullPointerException("Null Object");
+        }
+        if(!(value instanceof MyDouble) && !(value instanceof MyLong)){
+            throw new ArithmeticException("Value is not an instance of MyDouble and MyLong");
+        }
+        this.value = ((MyDouble) value).value;
     }
 
     @Override

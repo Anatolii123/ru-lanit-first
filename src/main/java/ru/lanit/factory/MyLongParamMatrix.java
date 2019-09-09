@@ -16,20 +16,13 @@ public class MyLongParamMatrix extends ParamMatrix<Long> {
             }
             System.out.println();
         }
-        this.setContent(result);
-        return result;
-    }
-
-    public ParamMatrix<Long> add(ParamMatrix<Long> operand) {
-        MyLongParamMatrix result = new MyLongParamMatrix();
-        for (int i = 0; i < operand.getA(); i++) {
-            for(int j = 0; j < operand.getB(); j++){
-                this.getContent()[i][j].value = this.getContent()[i][j].value + operand.getContent()[i][j].value;
-                System.out.print(this.getContent()[i][j].value + "\t");
+        for (int i = 0; i < a; i++) {
+            for(int j = 0; j < b; j++){
+                System.out.print(result[i][j].toString() + "\t");
             }
             System.out.println();
         }
-        result.setContent(this.getContent());
+        this.setContent(result);
         return result;
     }
 }

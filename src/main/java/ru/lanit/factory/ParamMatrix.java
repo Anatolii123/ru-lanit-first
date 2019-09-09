@@ -48,8 +48,14 @@ public abstract class ParamMatrix<T extends Number>  {
      * @param operand матрица, которую нужно пибавить
      * @return матрица, представляющая собой сумму
      */
-    public abstract ParamMatrix<T> add(ParamMatrix<T> operand);
-
-
-
+    public ParamMatrix<T> add(ParamMatrix<T> operand) {
+        for (int i = 0; i < operand.getA(); i++) {
+            for(int j = 0; j < operand.getB(); j++){
+                this.getContent()[i][j].setValue(this.getContent()[i][j].add(operand.getContent()[i][j]));
+                System.out.print(this.getContent()[i][j].value + "\t");
+            }
+            System.out.println();
+        }
+        return this;
+    }
 }

@@ -37,4 +37,18 @@ public class MyLong extends MyNumeric<Long> {
         return visitor.visit(this);
     }
 
+    public void setValue(Operations value) {
+        if (value == null) {
+            throw new NullPointerException("Null Object");
+        }
+        if(!(value instanceof MyLong)){
+            throw new ArithmeticException("Value is not an instance of MyLong");
+        }
+        this.value = ((MyLong) value).value;
+    }
+
+    @Override
+    public String toString() {
+        return this.value.toString();
+    }
 }
