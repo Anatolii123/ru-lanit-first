@@ -21,19 +21,11 @@ public class MatrixBuilder {
     }
 
     public Matrix toMatrix(){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите тип(Long/Double):");
-        String str = new String(in.nextLine());
-        ParamMatrix result2 = new ParamMatrix(str);
         Matrix result = new Matrix();
         if (creator == null) {
             throw new NullPointerException("");
         }
         result.setMatrix(creator.create(a, b));
         return result;
-    }
-
-    public ParamMatrix toParamMatrix(){
-
     }
 }

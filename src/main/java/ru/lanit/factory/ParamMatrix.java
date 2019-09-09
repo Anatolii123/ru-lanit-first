@@ -9,17 +9,6 @@ public class ParamMatrix<T extends Number>  {
 
     public ParamMatrix(){}
 
-    public ParamMatrix(String str) {
-        if (str.equals("Long")){
-            ParamMatrix<Long> matrix = new ParamMatrix<Long>();
-            System.out.println("Long matrix");
-        }
-        if (str.equals("Double")) {
-            ParamMatrix<Double> matrix = new ParamMatrix<Double>();
-            System.out.println("Double matrix");
-        }
-    }
-
     public ParamMatrix(int a, int b) {
         this.a = a;
         this.b = b;
