@@ -1,5 +1,7 @@
 package ru.lanit.factory;
 
+import java.util.Scanner;
+
 public class MatrixBuilder {
     private ContentCreator creator;
     private Integer a;
@@ -9,6 +11,9 @@ public class MatrixBuilder {
         this.creator = creator;
     }
 
+    public MatrixBuilder(){
+
+    }
 
     public MatrixBuilder setA(Integer a) {
         this.a = a;
@@ -21,7 +26,10 @@ public class MatrixBuilder {
     }
 
     public Matrix toMatrix(){
-        ParamMatrix<Long> result2 = new ParamMatrix<Long>();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите тип(Long/Double):");
+        String str = new String(in.nextLine());
+        ParamMatrix result2 = new ParamMatrix(str);
         Matrix result = new Matrix();
         if (creator == null) {
             throw new NullPointerException("");

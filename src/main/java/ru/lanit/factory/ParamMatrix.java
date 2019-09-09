@@ -7,7 +7,17 @@ public class ParamMatrix<T extends Number>  {
     private int b;
     private MyNumeric<T> matrix;
 
-    public ParamMatrix() {
+    public ParamMatrix(){}
+
+    public ParamMatrix(String str) {
+        if (str.equals("Long")){
+            ParamMatrix<Long> matrix = new ParamMatrix<Long>();
+            System.out.println("Long matrix");
+        }
+        if (str.equals("Double")) {
+            ParamMatrix<Double> matrix = new ParamMatrix<Double>();
+            System.out.println("Double matrix");
+        }
     }
 
     public ParamMatrix(int a, int b) {
@@ -39,13 +49,6 @@ public class ParamMatrix<T extends Number>  {
         this.matrix = matrix;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
-
-    public void accept(UnaryOperationVisitor visitor) {
-        visitor.visit(this);
-    }
 
 
 }
