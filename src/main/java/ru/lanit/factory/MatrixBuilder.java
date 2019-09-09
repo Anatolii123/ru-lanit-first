@@ -7,19 +7,14 @@ public class MatrixBuilder {
     private Integer a;
     private Integer b;
 
+    public MatrixBuilder(){}
     public MatrixBuilder(ContentCreator creator) { // todo настраиваем класс-билдер при создании
         this.creator = creator;
     }
-
-    public MatrixBuilder(){
-
-    }
-
     public MatrixBuilder setA(Integer a) {
         this.a = a;
         return this;
     }
-
     public MatrixBuilder setB(Integer b) {
         this.b = b;
         return this;
@@ -36,5 +31,9 @@ public class MatrixBuilder {
         }
         result.setMatrix(creator.create(a, b));
         return result;
+    }
+
+    public ParamMatrix toParamMatrix(){
+
     }
 }
