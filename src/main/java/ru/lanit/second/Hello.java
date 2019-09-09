@@ -14,17 +14,23 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        MyLongParamMatrix matrix = new MyLongParamMatrix();
-        matrix.createContent(3,3);
-        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
-        matrix2.createContent(3,3);
-        matrix.add(matrix2);
+        try {
+            throw new ArgumentsException();
+        } catch (ArgumentsException m) {
+            System.err.println("Перехвачено: " + m);
+        }
 
-        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
-        matrix3.createContent(3,3);
-        MyDoubleParamMatrix matrix4 = new MyDoubleParamMatrix();
-        matrix4.createContent(3,3);
-        matrix3.add(matrix4);
+//        MyLongParamMatrix matrix = new MyLongParamMatrix();
+//        matrix.createContent(3,3);
+//        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+//        matrix2.createContent(3,3);
+//        matrix.add(matrix2);
+//
+//        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
+//        matrix3.createContent(3,3);
+//        MyDoubleParamMatrix matrix4 = new MyDoubleParamMatrix();
+//        matrix4.createContent(3,3);
+//        matrix3.add(matrix4);
 
 
         List<String> list = new ArrayList<String>();
