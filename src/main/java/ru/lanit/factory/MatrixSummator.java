@@ -6,7 +6,7 @@ public class MatrixSummator implements MatrixOperation {
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getA() != operand2.getA() || operand1.getB() != operand2.getB()) {
-            throw new AdditionException();
+            throw new AdditionException("e");
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand1.getB()];

@@ -50,7 +50,7 @@ public abstract class ParamMatrix<T extends Number>  {
      */
     public ParamMatrix<T> add(ParamMatrix<T> operand) throws AdditionException {
         if(this.getA() != operand.getA() || this.getB() != operand.getB()) {
-            throw new AdditionException();
+            throw new AdditionException("Матрицы разных размерностей!");
         }
         System.out.println("Сумма матриц");
         for (int i = 0; i < operand.getA(); i++) {

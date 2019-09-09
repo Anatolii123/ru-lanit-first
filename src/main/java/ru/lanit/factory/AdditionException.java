@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class AdditionException extends SidesDifferenceException {
     private static Logger logger = Logger.getLogger("Addition Exception");
 
-    public AdditionException() {
+    public AdditionException(String e) {
         StringWriter trace = new StringWriter();
         printStackTrace(new PrintWriter(trace));
         logger.severe(trace.toString());
