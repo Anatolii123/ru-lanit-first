@@ -18,36 +18,8 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        //TODO вынести в отдельный метод
-        MyLongParamMatrix matrix = new MyLongParamMatrix();
-        while (true) {
-            try {
-                matrix.createContent();
-                break;
-            } catch (IncorrectColumnsCountException c) {
-                System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
-            } catch (IncorrectRowsCountException r) {
-                System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
-            } catch (Exception e) {
-                System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
-            }
-        }
-
-        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
-        while (true) {
-            try {
-                matrix2.createContent();
-            } catch (IncorrectColumnsCountException c) {
-                System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
-                matrix2 = new MyLongParamMatrix();
-                continue;
-            } catch (IncorrectRowsCountException r) {
-                System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
-                matrix2 = new MyLongParamMatrix();
-                continue;
-            }
-            break;
-        }
+        ParamMatrix matrix = createMatrixContent();
+        ParamMatrix matrix2 = createMatrixContent();
 
         try {
             matrix.add(matrix2);
@@ -94,5 +66,22 @@ public class Hello {
             }
         }
         return result;
+    }
+
+    public static ParamMatrix createMatrixContent() {
+        ParamMatrix matrix = new MyLongParamMatrix();
+        while (true) {
+            try {
+                matrix.createContent();
+                break;
+            } catch (IncorrectColumnsCountException c) {
+                System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
+            } catch (IncorrectRowsCountException r) {
+                System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
+            } catch (Exception e) {
+                System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
+            }
+        }
+        return matrix;
     }
 }
