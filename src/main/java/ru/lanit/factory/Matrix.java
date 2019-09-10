@@ -2,6 +2,7 @@ package ru.lanit.factory;
 
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.MultiplicationException;
+import ru.lanit.exceptions.SidesDifferenceException;
 
 public class Matrix {
 
@@ -42,7 +43,7 @@ public class Matrix {
         this.matrix = matrix;
     }
 
-    public void accept(Visitor visitor) throws MultiplicationException, AdditionException {
+    public void accept(Visitor visitor) throws SidesDifferenceException {
         visitor.visit(this);
     }
 

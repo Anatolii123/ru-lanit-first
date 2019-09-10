@@ -9,6 +9,10 @@ import java.util.logging.Logger;
  */
 public class ArgumentsException extends MatrixException {
     private static Logger logger = Logger.getLogger("Arguments Exception");
+
+    public ArgumentsException(String s) {
+        System.out.println(s);
+    }
     public ArgumentsException(){
         StringWriter trace = new StringWriter();
         printStackTrace(new PrintWriter(trace));

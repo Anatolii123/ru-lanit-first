@@ -19,13 +19,16 @@ public class Hello {
 //        } catch (IncorrectColumnsCountException m) {
 //            System.err.println("Перехвачено: " + m);
 //        }
-
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество строк: ");
+        int a = in.nextInt();
+        System.out.print("Введите количество столбцов: ");
+        int b = in.nextInt();
         //TODO добавить обработку исклбчительной ситуации для createContent м для add
         MyLongParamMatrix matrix = new MyLongParamMatrix();
         matrix.createContent(3,3);
         MyLongParamMatrix matrix2 = new MyLongParamMatrix();
         matrix2.createContent(4,4);
-
         matrix.add(matrix2);
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
@@ -49,7 +52,6 @@ public class Hello {
 
     private static MatrixMaker getMatrixMaker(ContentCreator creator) {
         MatrixBuilder mb = new MatrixBuilder(creator);
-
         return new MatrixMaker(mb);
     }
 
@@ -74,4 +76,5 @@ public class Hello {
         }
         return result;
     }
+
 }
