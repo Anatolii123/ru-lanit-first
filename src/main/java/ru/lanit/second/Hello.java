@@ -1,5 +1,9 @@
 package ru.lanit.second;
 
+import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.ArgumentsException;
+import ru.lanit.exceptions.IncorrectColumnsCountException;
+import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.factory.*;
 import ru.lanit.factory.Matrix;
 import ru.lanit.factory.MatrixMultiplicator;
@@ -19,17 +23,23 @@ public class Hello {
 //        } catch (IncorrectColumnsCountException m) {
 //            System.err.println("Перехвачено: " + m);
 //        }
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите количество строк: ");
-        int a = in.nextInt();
-        System.out.print("Введите количество столбцов: ");
-        int b = in.nextInt();
+
         //TODO добавить обработку исклбчительной ситуации для createContent м для add
-        MyLongParamMatrix matrix = new MyLongParamMatrix();
-        matrix.createContent(3,3);
-        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
-        matrix2.createContent(4,4);
-        matrix.add(matrix2);
+        try {
+            MyLongParamMatrix matrix = new MyLongParamMatrix();
+            matrix.createContent();
+            MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+            matrix2.createContent();
+            matrix.add(matrix2);
+        } catch (IncorrectColumnsCountException c) {
+            System.out.println("Введено неверное количество столбцов!");
+        } catch (IncorrectRowsCountException r) {
+            System.out.println("Введено неверное количество строк!");
+        } catch (AdditionException a) {
+            System.out.println("Сложение матриц невозможно.");
+        }
+
+
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
@@ -48,11 +58,6 @@ public class Hello {
 //            operation.perform(matrix, matrix2);
 //            System.out.println();
 //        }
-    }
-
-    private static MatrixMaker getMatrixMaker(ContentCreator creator) {
-        MatrixBuilder mb = new MatrixBuilder(creator);
-        return new MatrixMaker(mb);
     }
 
     public static List<MatrixOperation> operationsList (int listLength) {
@@ -76,5 +81,4 @@ public class Hello {
         }
         return result;
     }
-
 }

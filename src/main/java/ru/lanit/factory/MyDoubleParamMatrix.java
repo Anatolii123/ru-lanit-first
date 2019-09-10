@@ -9,7 +9,13 @@ import java.util.Scanner;
 
 public class MyDoubleParamMatrix extends ParamMatrix<Double> {
 
-    public MyNumeric<Double>[][] createContent(int a, int b) throws ArgumentsException {
+    public MyNumeric<Double>[][] createContent() throws ArgumentsException {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество строк: ");
+        int a = in.nextInt();
+        System.out.print("Введите количество столбцов: ");
+        int b = in.nextInt();
+
         if (a <= 1) {
             throw new IncorrectRowsCountException();
         }
@@ -24,9 +30,9 @@ public class MyDoubleParamMatrix extends ParamMatrix<Double> {
             for(int j = 0; j < b; j++) {
                 while (true) {
                     try {
-                        Scanner in = new Scanner(System.in);
+                        Scanner in2 = new Scanner(System.in);
                         System.out.print("Введите число: ");
-                        result[i][j] = new MyDouble(in.nextDouble());
+                        result[i][j] = new MyDouble(in2.nextDouble());
                     } catch (InputMismatchException d) {
                         System.out.println("Try once more");
                         j--;

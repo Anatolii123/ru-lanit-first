@@ -12,13 +12,13 @@ public abstract class ParamMatrix<T extends Number>  {
     public ParamMatrix(int a, int b) throws ArgumentsException {
         this.a = a;
         this.b = b;
-        createContent(a,b);
+        createContent();
     }
 
     /**
      * Метод формирует двумерный массив content заполняя его данными нужного типа
      */
-    public abstract MyNumeric<T>[][] createContent(int a, int b) throws ArgumentsException;
+    public abstract MyNumeric<T>[][] createContent() throws ArgumentsException;
 
     public int getA() {
         return a;

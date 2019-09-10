@@ -10,11 +10,17 @@ import java.util.Scanner;
 
 public class MyLongParamMatrix extends ParamMatrix<Long> {
 
-    public MyNumeric<Long>[][] createContent(int a, int b) throws ArgumentsException {
-        if (a == 0 || a == 1) {
+    public MyNumeric<Long>[][] createContent() throws ArgumentsException {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество строк: ");
+        int a = in.nextInt();
+        System.out.print("Введите количество столбцов: ");
+        int b = in.nextInt();
+
+        if (a <= 1) {
             throw new IncorrectRowsCountException();
         }
-        if (b == 0 || b == 1) {
+        if (b <= 1) {
             throw new IncorrectColumnsCountException();
         }
         MyNumeric<Long>[][] result = new MyLong[a][b];
@@ -25,9 +31,9 @@ public class MyLongParamMatrix extends ParamMatrix<Long> {
             for(int j = 0; j < b; j++) {
                 while (true) {
                     try {
-                        Scanner in = new Scanner(System.in);
+                        Scanner in2 = new Scanner(System.in);
                         System.out.print("Введите число: ");
-                        result[i][j] = new MyLong(in.nextLong());
+                        result[i][j] = new MyLong(in2.nextLong());
                     } catch (InputMismatchException d) {
                         System.out.println("Try once more");
                         j--;
