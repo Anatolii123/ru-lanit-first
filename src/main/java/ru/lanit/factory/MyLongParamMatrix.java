@@ -1,5 +1,6 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.ArgumentsException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.exceptions.SidesDifferenceException;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 
 public class MyLongParamMatrix extends ParamMatrix<Long> {
 
-    public MyNumeric<Long>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
+    public MyNumeric<Long>[][] createContent(int a, int b) throws ArgumentsException {
         if (a == 0 || a == 1) {
             throw new IncorrectRowsCountException();
         }

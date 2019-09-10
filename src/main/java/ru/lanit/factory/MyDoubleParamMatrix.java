@@ -1,5 +1,6 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.ArgumentsException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 
@@ -8,11 +9,11 @@ import java.util.Scanner;
 
 public class MyDoubleParamMatrix extends ParamMatrix<Double> {
 
-    public MyNumeric<Double>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
-        if (a == 0 || a == 1) { // todo исправить сравнение
+    public MyNumeric<Double>[][] createContent(int a, int b) throws ArgumentsException {
+        if (a <= 1) {
             throw new IncorrectRowsCountException();
         }
-        if (b == 0 || b == 1) { // todo исправить сравнение
+        if (b <= 1) {
             throw new IncorrectColumnsCountException();
         }
         MyNumeric<Double>[][] result = new MyDouble[a][b];

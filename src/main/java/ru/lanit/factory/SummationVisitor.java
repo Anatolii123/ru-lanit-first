@@ -2,6 +2,7 @@ package ru.lanit.factory;
 
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.MultiplicationException;
+import ru.lanit.exceptions.SidesDifferenceException;
 
 public class SummationVisitor implements Visitor {
     private MyLong myLong = new MyLong(10L);
@@ -22,7 +23,7 @@ public class SummationVisitor implements Visitor {
         this.doubleOperand = doubleOperand;
     }
 
-    public void visit(Matrix firstOperand) throws AdditionException, MultiplicationException {
+    public void visit(Matrix firstOperand) throws SidesDifferenceException {
         sum.perform(firstOperand, operand);
     }
 

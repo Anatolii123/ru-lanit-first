@@ -11,6 +11,10 @@ import java.util.logging.Logger;
  */
 public class SidesDifferenceException extends MatrixException {
     private static Logger logger = Logger.getLogger("Sides Difference Exception");
+
+    public SidesDifferenceException(String s) {
+        System.out.println(s);
+    }
     public SidesDifferenceException(){
         StringWriter trace = new StringWriter();
         printStackTrace(new PrintWriter(trace));

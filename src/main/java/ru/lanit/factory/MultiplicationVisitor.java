@@ -2,6 +2,7 @@ package ru.lanit.factory;
 
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.MultiplicationException;
+import ru.lanit.exceptions.SidesDifferenceException;
 
 public class MultiplicationVisitor implements Visitor {
 
@@ -23,7 +24,7 @@ public class MultiplicationVisitor implements Visitor {
         this.doubleOperand = doubleOperand;
     }
 
-    public void visit(Matrix firstOperand) throws AdditionException, MultiplicationException {
+    public void visit(Matrix firstOperand) throws SidesDifferenceException {
         mult.perform(firstOperand, operand);
     }
 

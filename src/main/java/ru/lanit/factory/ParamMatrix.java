@@ -1,9 +1,6 @@
 package ru.lanit.factory;
 
-import ru.lanit.exceptions.AdditionException;
-import ru.lanit.exceptions.IncorrectColumnsCountException;
-import ru.lanit.exceptions.IncorrectRowsCountException;
-import ru.lanit.exceptions.SidesDifferenceException;
+import ru.lanit.exceptions.*;
 
 public abstract class ParamMatrix<T extends Number>  {
     private int a;
@@ -12,7 +9,7 @@ public abstract class ParamMatrix<T extends Number>  {
 
     public ParamMatrix(){}
 
-    public ParamMatrix(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
+    public ParamMatrix(int a, int b) throws ArgumentsException {
         this.a = a;
         this.b = b;
         createContent(a,b);
@@ -21,7 +18,7 @@ public abstract class ParamMatrix<T extends Number>  {
     /**
      * Метод формирует двумерный массив content заполняя его данными нужного типа
      */
-    public abstract MyNumeric<T>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException;
+    public abstract MyNumeric<T>[][] createContent(int a, int b) throws ArgumentsException;
 
     public int getA() {
         return a;
@@ -48,8 +45,7 @@ public abstract class ParamMatrix<T extends Number>  {
     }
 
     /**
-     * Метод прибавляет к матрице переданную в operand
-     *
+     * Метод прибавляет к матрице другую матрицу, переданную в operand
      * @param operand матрица, которую нужно пибавить
      * @return матрица, представляющая собой сумму
      */
