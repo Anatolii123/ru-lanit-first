@@ -4,6 +4,10 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.logging.Logger;
 
+/**
+ * Класс используется для вызова исключения при невыполнении условия сложения матриц,
+ * а именно равенства размерностей слагаемых
+ */
 public class AdditionException extends SidesDifferenceException {
     private static Logger logger = Logger.getLogger("Addition Exception");
 
