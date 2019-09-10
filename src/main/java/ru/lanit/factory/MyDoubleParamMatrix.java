@@ -1,5 +1,8 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.IncorrectColumnsCountException;
+import ru.lanit.exceptions.IncorrectRowsCountException;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -42,6 +45,7 @@ public class MyDoubleParamMatrix extends ParamMatrix<Double> {
             }
             System.out.println();
         }
+        System.out.println();
         this.setContent(result);
         return result;
     }

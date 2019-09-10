@@ -1,4 +1,4 @@
-package ru.lanit.factory;
+package ru.lanit.exceptions;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

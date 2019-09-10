@@ -1,5 +1,7 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.AdditionException;
+
 public class MatrixSummator implements MatrixOperation {
 
     public Operations[][] perform(Matrix operand1, Matrix operand2) throws AdditionException {

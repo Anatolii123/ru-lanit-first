@@ -1,5 +1,8 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.MultiplicationException;
+
 public class SummationVisitor implements Visitor {
     private MyLong myLong = new MyLong(10L);
     private MyDouble myDouble = new MyDouble(10.0);

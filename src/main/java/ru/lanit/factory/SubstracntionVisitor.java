@@ -1,5 +1,8 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.MultiplicationException;
+
 public class SubstracntionVisitor implements Visitor {
 
     private MyLong myLong = new MyLong(10L);

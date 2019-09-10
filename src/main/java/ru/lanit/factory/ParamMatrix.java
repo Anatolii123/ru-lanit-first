@@ -1,5 +1,9 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.IncorrectColumnsCountException;
+import ru.lanit.exceptions.IncorrectRowsCountException;
+
 public abstract class ParamMatrix<T extends Number>  {
     private int a;
     private int b;

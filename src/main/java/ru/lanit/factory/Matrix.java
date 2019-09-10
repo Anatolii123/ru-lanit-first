@@ -1,5 +1,8 @@
 package ru.lanit.factory;
 
+import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.MultiplicationException;
+
 public class Matrix {
 
     private int a;

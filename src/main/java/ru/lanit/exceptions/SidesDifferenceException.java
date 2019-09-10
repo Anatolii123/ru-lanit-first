@@ -1,4 +1,6 @@
-package ru.lanit.factory;
+package ru.lanit.exceptions;
+
+import ru.lanit.exceptions.MatrixException;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

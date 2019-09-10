@@ -1,6 +1,6 @@
 package ru.lanit.factory;
 
-import java.math.BigDecimal;
+import ru.lanit.exceptions.MultiplicationException;
 
 public class MatrixMultiplicator implements MatrixOperation {
 
