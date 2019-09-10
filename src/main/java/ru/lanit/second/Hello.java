@@ -18,28 +18,43 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-//        try {
-//            throw new IncorrectColumnsCountException();
-//        } catch (IncorrectColumnsCountException m) {
-//            System.err.println("Перехвачено: " + m);
-//        }
+        //TODO добавить обработку исклбчительной ситуации для createContent и для add
+        //TODO вынести в отдельный метод
+        MyLongParamMatrix matrix = new MyLongParamMatrix();
+        while (true) {
+            try {
+                matrix.createContent();
+                break;
+            } catch (IncorrectColumnsCountException c) {
+                System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
+            } catch (IncorrectRowsCountException r) {
+                System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
+            } catch (Exception e) {
+                System.out.println("Ввели что-то не то, попробуйте ещё раз...");
+            }
+        }
 
-        //TODO добавить обработку исклбчительной ситуации для createContent м для add
+        MyLongParamMatrix matrix2 = new MyLongParamMatrix();
+        while (true) {
+            try {
+                matrix2.createContent();
+            } catch (IncorrectColumnsCountException c) {
+                System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
+                matrix2 = new MyLongParamMatrix();
+                continue;
+            } catch (IncorrectRowsCountException r) {
+                System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
+                matrix2 = new MyLongParamMatrix();
+                continue;
+            }
+            break;
+        }
+
         try {
-            MyLongParamMatrix matrix = new MyLongParamMatrix();
-            matrix.createContent();
-            MyLongParamMatrix matrix2 = new MyLongParamMatrix();
-            matrix2.createContent();
             matrix.add(matrix2);
-        } catch (IncorrectColumnsCountException c) {
-            System.out.println("Введено неверное количество столбцов!");
-        } catch (IncorrectRowsCountException r) {
-            System.out.println("Введено неверное количество строк!");
         } catch (AdditionException a) {
             System.out.println("Сложение матриц невозможно.");
         }
-
-
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
