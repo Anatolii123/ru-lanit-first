@@ -6,6 +6,10 @@ import java.util.logging.Logger;
 
 public class MultiplicationException extends SidesDifferenceException {
     private static Logger logger = Logger.getLogger("Multiplication Exception");
+
+    public MultiplicationException(String s) {
+        System.out.println(s);
+    }
     public MultiplicationException(){
         StringWriter trace = new StringWriter();
         printStackTrace(new PrintWriter(trace));

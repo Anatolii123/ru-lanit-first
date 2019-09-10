@@ -8,7 +8,7 @@ public class MatrixMultiplicator implements MatrixOperation {
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getB() != operand2.getA()) {
-            throw new MultiplicationException();
+            throw new MultiplicationException("Матрицы несогласованы: число столбцов 1 матрицы - " + operand1.getB() + ", число строк 2 матрицы - " + operand2.getA() + ".");
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand2.getB()];

@@ -2,6 +2,7 @@ package ru.lanit.factory;
 
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
+import ru.lanit.exceptions.SidesDifferenceException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

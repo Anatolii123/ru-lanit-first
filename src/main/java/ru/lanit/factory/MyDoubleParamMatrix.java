@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class MyDoubleParamMatrix extends ParamMatrix<Double> {
 
     public MyNumeric<Double>[][] createContent(int a, int b) throws IncorrectRowsCountException, IncorrectColumnsCountException {
-        if (a == 0 || a == 1) {
+        if (a == 0 || a == 1) { // todo исправить сравнение
             throw new IncorrectRowsCountException();
         }
-        if (b == 0 || b == 1) {
+        if (b == 0 || b == 1) { // todo исправить сравнение
             throw new IncorrectColumnsCountException();
         }
         MyNumeric<Double>[][] result = new MyDouble[a][b];

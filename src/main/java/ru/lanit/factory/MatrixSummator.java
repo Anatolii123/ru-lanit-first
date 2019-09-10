@@ -8,7 +8,8 @@ public class MatrixSummator implements MatrixOperation {
         Operations[][] a = operand1.getMatrix();
         Operations[][] b = operand2.getMatrix();
         if(operand1.getA() != operand2.getA() || operand1.getB() != operand2.getB()) {
-            throw new AdditionException("e");
+            throw new AdditionException("Матрицы разных размерностей: размерность 1 матрицы - " + operand1.getA() + "x" + operand1.getB()
+                    + ", размерность 2 матрицы - " + operand2.getA() + "x" + operand2.getB() + ".");
         }
 
         Operations[][] s = new Operations[operand1.getA()][operand1.getB()];

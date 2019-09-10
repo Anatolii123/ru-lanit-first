@@ -3,6 +3,7 @@ package ru.lanit.factory;
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
+import ru.lanit.exceptions.SidesDifferenceException;
 
 public abstract class ParamMatrix<T extends Number>  {
     private int a;
@@ -54,7 +55,8 @@ public abstract class ParamMatrix<T extends Number>  {
      */
     public ParamMatrix<T> add(ParamMatrix<T> operand) throws AdditionException {
         if(this.getA() != operand.getA() || this.getB() != operand.getB()) {
-            throw new AdditionException("Матрицы разных размерностей!");
+            throw new AdditionException("Матрицы разных размерностей: размерность 1 матрицы - " + this.getA() + "x" + this.getB()
+                    + ", размерность 2 матрицы - " + operand.getA() + "x" + operand.getB() + ".");
         }
         System.out.println("Сумма матриц");
         for (int i = 0; i < operand.getA(); i++) {
