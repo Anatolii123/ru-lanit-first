@@ -18,7 +18,6 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
-        //TODO добавить обработку исклбчительной ситуации для createContent и для add
         //TODO вынести в отдельный метод
         MyLongParamMatrix matrix = new MyLongParamMatrix();
         while (true) {
@@ -30,7 +29,7 @@ public class Hello {
             } catch (IncorrectRowsCountException r) {
                 System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
             } catch (Exception e) {
-                System.out.println("Ввели что-то не то, попробуйте ещё раз...");
+                System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
             }
         }
 
