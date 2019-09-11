@@ -79,6 +79,7 @@ public class Hello {
                 System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
             } catch (Exception e) {
                 System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
+                break;
             }
         }
         return matrix;
