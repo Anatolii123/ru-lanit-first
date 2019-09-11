@@ -24,8 +24,6 @@ public class Hello {
 
         ParamMatrix matrix = createMatrixContent();
         ParamMatrix matrix2 = createMatrixContent();
-        ParamMatrix $этоМатрица = new MyLongParamMatrix();
-        $этоМатрица.getA();
 
         try {
             matrix.add(matrix2);
