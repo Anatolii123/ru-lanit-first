@@ -18,14 +18,14 @@ public class Hello {
     public static void main (String[] args) throws Exception {
 
 
-        ParamMatrix matrix = createMatrixContent(Integer.parseInt(args[0]),Integer.parseInt(args[1]), args);
-        ParamMatrix matrix2 = createMatrixContent(Integer.parseInt(args[Integer.parseInt(args[0])*Integer.parseInt(args[1])+2]),Integer.parseInt(args[Integer.parseInt(args[0])*Integer.parseInt(args[1])+3]), args);
-//
-//        try {
-//            matrix.add(matrix2);
-//        } catch (AdditionException a) {
-//            System.out.println("Сложение матриц невозможно.");
-//        }
+        ParamMatrix matrix = createMatrixContent(0,1, args);
+        ParamMatrix matrix2 = createMatrixContent(Integer.parseInt(args[0])*Integer.parseInt(args[1])+2,Integer.parseInt(args[0])*Integer.parseInt(args[1])+3, args);
+        System.out.println("result");
+        try {
+            matrix.add(matrix2);
+        } catch (AdditionException a) {
+            System.out.println("Сложение матриц невозможно.");
+        }
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
@@ -33,13 +33,9 @@ public class Hello {
 //        matrix4.createContent(3,3);
 //        matrix3.add(matrix4);
 
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
-
-        for (int t = 0; t < args.length; t++) {
-
-            System.out.println(args[t]);
-        }
+//        for (int t = 0; t < args.length; t++) {
+//            System.out.println(args[t]);
+//        }
 
 //        List<String> list = new ArrayList<String>();
 
@@ -79,7 +75,7 @@ public class Hello {
         ParamMatrix matrix = new MyLongParamMatrix();
         while (true) {
             try {
-                matrix.createContent(a, b);
+                matrix.createContent(a, b, args);
                 break;
             } catch (IncorrectColumnsCountException c) {
                 System.out.println("Введено неверное количество столбцов! В матрице должно быть как минимум 2 столбца. Попробуйте ещё раз.");
