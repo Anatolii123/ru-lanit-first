@@ -9,12 +9,12 @@ import java.util.Scanner;
 
 public class MyDoubleParamMatrix extends ParamMatrix<Double> {
 
-    public MyNumeric<Double>[][] createContent() throws ArgumentsException {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите количество строк: ");
-        int a = in.nextInt();
-        System.out.print("Введите количество столбцов: ");
-        int b = in.nextInt();
+    public MyNumeric<Double>[][] createContent(int a, int b, String[] args) throws ArgumentsException {
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Введите количество строк: ");
+//        int a = in.nextInt();
+//        System.out.print("Введите количество столбцов: ");
+//        int b = in.nextInt();
 
         if (a <= 1) {
             throw new IncorrectRowsCountException();

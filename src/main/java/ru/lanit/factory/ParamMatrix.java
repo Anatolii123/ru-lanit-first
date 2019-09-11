@@ -9,16 +9,16 @@ public abstract class ParamMatrix<T extends Number>  {
 
     public ParamMatrix(){}
 
-    public ParamMatrix(int a, int b) throws ArgumentsException {
+    public ParamMatrix(int a, int b, String[] args) throws ArgumentsException {
         this.a = a;
         this.b = b;
-        createContent();
+        createContent(a, b, args);
     }
 
     /**
      * Метод формирует двумерный массив content заполняя его данными нужного типа
      */
-    public abstract MyNumeric<T>[][] createContent() throws ArgumentsException;
+    public abstract MyNumeric<T>[][] createContent(int a, int b, String[] args) throws ArgumentsException;
 
     public int getA() {
         return a;
