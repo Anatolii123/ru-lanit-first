@@ -20,7 +20,7 @@ public class Hello {
 
         ParamMatrix matrix = createMatrixContent(0,1, args);
         ParamMatrix matrix2 = createMatrixContent(Integer.parseInt(args[0])*Integer.parseInt(args[1])+2,Integer.parseInt(args[0])*Integer.parseInt(args[1])+3, args);
-        System.out.println("result");
+
         try {
             matrix.add(matrix2);
         } catch (AdditionException a) {
@@ -32,10 +32,6 @@ public class Hello {
 //        MyDoubleParamMatrix matrix4 = new MyDoubleParamMatrix();
 //        matrix4.createContent(3,3);
 //        matrix3.add(matrix4);
-
-        for (int t = 0; t < args.length; t++) {
-            System.out.println(Integer.parseInt(args[t])*2);
-        }
 
 //        List<String> list = new ArrayList<String>();
 
