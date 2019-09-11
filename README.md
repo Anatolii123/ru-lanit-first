@@ -8,3 +8,6 @@ https://www.ibm.com/developerworks/ru/library/j-ap11067/index.html - сборк�
 https://www.fandroid.info/sborka-i-vypolnenie-java-programm/ - ещё о сборке
 
 http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html - жизненный цикл Maven
+
+# Библиотека матриц
+https://github.com/mikera/core.matrix - ссылка на GitHub
