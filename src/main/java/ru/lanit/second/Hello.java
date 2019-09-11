@@ -33,9 +33,9 @@ public class Hello {
 //        matrix4.createContent(3,3);
 //        matrix3.add(matrix4);
 
-//        for (int t = 0; t < args.length; t++) {
-//            System.out.println(args[t]);
-//        }
+        for (int t = 0; t < args.length; t++) {
+            System.out.println(Integer.parseInt(args[t])*2);
+        }
 
 //        List<String> list = new ArrayList<String>();
 
