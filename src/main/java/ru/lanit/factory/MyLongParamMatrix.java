@@ -33,12 +33,10 @@ public class MyLongParamMatrix extends ParamMatrix<Long> {
 //                        Scanner in2 = new Scanner(System.in);
 //                        System.out.print("Введите число: ");
 //                        result[i][j] = new MyLong(in2.nextLong());
-                        try {
-                            result[i][j] = new MyLong(Long.parseLong(args[c*i+j+2+a]));
-                        } catch (Exception e) {
-                            System.out.println("no");
-                            break;
+                        if (c*i+j+2+a >= args.length) {
+                            result[i][j] = new MyLong(0L);
                         }
+                        result[i][j] = new MyLong(Long.parseLong(args[c*i+j+2+a]));
                     } catch (InputMismatchException e) {
                         System.out.println("Try once more");
                         j--;
