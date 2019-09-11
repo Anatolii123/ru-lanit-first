@@ -1,7 +1,5 @@
 package ru.lanit.factory;
 
-import com.sun.xml.internal.ws.api.message.ExceptionHasMessage;
-
 public class MyDouble extends MyNumeric<Double> {
 
     public MyDouble(Double value) {

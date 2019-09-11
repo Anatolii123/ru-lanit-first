@@ -18,8 +18,14 @@ public class Hello {
 
     public static void main (String[] args) throws Exception {
 
+        long l = 10L;
+        int i = 5;
+        i = (int) l;
+
         ParamMatrix matrix = createMatrixContent();
         ParamMatrix matrix2 = createMatrixContent();
+        ParamMatrix $этоМатрица = new MyLongParamMatrix();
+        $этоМатрица.getA();
 
         try {
             matrix.add(matrix2);
@@ -33,6 +39,10 @@ public class Hello {
 //        matrix4.createContent(3,3);
 //        matrix3.add(matrix4);
 
+
+        for (int t = 0; t < args.length; t++) {
+            System.out.println(args[t]);
+        }
 
         List<String> list = new ArrayList<String>();
 
