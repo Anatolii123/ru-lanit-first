@@ -1,9 +1,6 @@
 package ru.lanit.factory;
 
-import ru.lanit.exceptions.ArgumentsException;
-import ru.lanit.exceptions.IncorrectColumnsCountException;
-import ru.lanit.exceptions.IncorrectRowsCountException;
-import ru.lanit.exceptions.SidesDifferenceException;
+import ru.lanit.exceptions.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -36,7 +33,12 @@ public class MyLongParamMatrix extends ParamMatrix<Long> {
 //                        Scanner in2 = new Scanner(System.in);
 //                        System.out.print("Введите число: ");
 //                        result[i][j] = new MyLong(in2.nextLong());
-                        result[i][j] = new MyLong(Long.parseLong(args[c*i+j+2+a]));
+                        try {
+                            result[i][j] = new MyLong(Long.parseLong(args[c*i+j+2+a]));
+                        } catch (Exception e) {
+                            System.out.println("no");
+                            break;
+                        }
                     } catch (InputMismatchException e) {
                         System.out.println("Try once more");
                         j--;
