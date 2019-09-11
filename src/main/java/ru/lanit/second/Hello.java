@@ -1,7 +1,6 @@
 package ru.lanit.second;
 
 import ru.lanit.exceptions.AdditionException;
-import ru.lanit.exceptions.ArgumentsException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.factory.*;
@@ -17,10 +16,6 @@ public class Hello {
     private static Matrix matrix2;
 
     public static void main (String[] args) throws Exception {
-
-        long l = 10L;
-        int i = 5;
-        i = (int) l;
 
         ParamMatrix matrix = createMatrixContent();
         ParamMatrix matrix2 = createMatrixContent();
@@ -42,10 +37,10 @@ public class Hello {
             System.out.println(args[t]);
         }
 
-        List<String> list = new ArrayList<String>();
+//        List<String> list = new ArrayList<String>();
 
-        MyLong longOperand = new MyLong(15L);
-        MyLong longOperand2 = new MyLong(25L);
+//        MyLong longOperand = new MyLong(15L);
+//        MyLong longOperand2 = new MyLong(25L);
 
 //        List<MatrixOperation> operationList = operationsList(5);
 //        for (MatrixOperation operation : operationList) {
