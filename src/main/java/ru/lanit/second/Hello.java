@@ -14,11 +14,7 @@ import java.util.Random;
 
 public class Hello {
 
-    private static Matrix matrix;
-    private static Matrix matrix2;
-
     public static void main (String[] args) throws Exception {
-
 
         ParamMatrix matrix = createMatrixContent(0,1, args);
         Integer matrix2index1 = new Integer(Integer.parseInt(args[0])*Integer.parseInt(args[1])+2);
@@ -34,7 +30,7 @@ public class Hello {
         BigReal[][] bg = createArray(3,3);
         Array2DRowFieldMatrix<BigReal> matrix3 = new Array2DRowFieldMatrix<BigReal>(bg);
 
-        BigReal[][] bg2 = createArray(3,3);
+        BigReal[][] bg2 = createArray2(3,3);
         Array2DRowFieldMatrix<BigReal> matrix4 = new Array2DRowFieldMatrix<BigReal>(bg2);
         System.out.println();
         showMatrix(matrix3);
@@ -113,6 +109,16 @@ public class Hello {
         for(int i = 0; i < a; i++) {
             for(int j = 0; j < b; j++) {
                 bg[i][j] = new BigReal(a * i + j + 1);
+            }
+        }
+        return bg;
+    }
+
+    public static BigReal[][] createArray2(int a, int b) {
+        BigReal[][] bg = new BigReal[a][b];
+        for(int i = 0; i < a; i++) {
+            for(int j = 0; j < b; j++) {
+                bg[i][j] = new BigReal(9 - a * i - j);
             }
         }
         return bg;
