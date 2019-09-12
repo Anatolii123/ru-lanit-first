@@ -31,37 +31,15 @@ public class Hello {
             System.out.println("Сложение матриц невозможно.");
         }
 
-        BigReal[][] bg = new BigReal[3][3];
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                bg[i][j] = new BigReal(3 * i + j + 1);
-            }
-        }
+        BigReal[][] bg = createArray(3,3);
         Array2DRowFieldMatrix<BigReal> matrix3 = new Array2DRowFieldMatrix<BigReal>(bg);
 
-        BigReal[][] bg2 = new BigReal[3][3];
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                bg2[i][j] = new BigReal(9 - 3 * i - j);
-            }
-        }
+        BigReal[][] bg2 = createArray(3,3);
         Array2DRowFieldMatrix<BigReal> matrix4 = new Array2DRowFieldMatrix<BigReal>(bg2);
-
         System.out.println();
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                System.out.print(matrix3.getEntry(i,j).doubleValue() + "\t");
-            }
-            System.out.println();
-        }
-
+        showMatrix(matrix3);
         System.out.println();
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                System.out.print(matrix4.getEntry(i,j).doubleValue() + "\t");
-            }
-            System.out.println();
-        }
+        showMatrix(matrix4);
 
         /**
          * Сложение матриц
@@ -69,12 +47,7 @@ public class Hello {
         Array2DRowFieldMatrix<BigReal> matrix5 = matrix3.add(matrix4);
         System.out.println();
         System.out.println("Сумма матриц");
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                System.out.print(matrix5.getEntry(i,j).doubleValue() + "\t");
-            }
-            System.out.println();
-        }
+        showMatrix(matrix5);
 
         /**
          * Умножение матриц
@@ -82,30 +55,7 @@ public class Hello {
         Array2DRowFieldMatrix<BigReal> matrix6 = matrix3.multiply(matrix4);
         System.out.println();
         System.out.println("Умножение матриц");
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                System.out.print(matrix6.getEntry(i,j).doubleValue() + "\t");
-            }
-            System.out.println();
-        }
-
-
-//        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
-//        matrix3.createContent(3,3);
-//        MyDoubleParamMatrix matrix4 = new MyDoubleParamMatrix();
-//        matrix4.createContent(3,3);
-//        matrix3.add(matrix4);
-
-//        List<String> list = new ArrayList<String>();
-
-//        MyLong longOperand = new MyLong(15L);
-//        MyLong longOperand2 = new MyLong(25L);
-
-//        List<MatrixOperation> operationList = operationsList(5);
-//        for (MatrixOperation operation : operationList) {
-//            operation.perform(matrix, matrix2);
-//            System.out.println();
-//        }
+        showMatrix(matrix6);
     }
 
     public static List<MatrixOperation> operationsList (int listLength) {
@@ -148,4 +98,24 @@ public class Hello {
         }
         return matrix;
     }
+
+    public static void showMatrix(Array2DRowFieldMatrix<BigReal> matrix) {
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(matrix.getEntry(i,j).doubleValue() + "\t");
+            }
+            System.out.println();
+        }
+    }
+
+    public static BigReal[][] createArray(int a, int b) {
+        BigReal[][] bg = new BigReal[a][b];
+        for(int i = 0; i < a; i++) {
+            for(int j = 0; j < b; j++) {
+                bg[i][j] = new BigReal(a * i + j + 1);
+            }
+        }
+        return bg;
+    }
+
 }
