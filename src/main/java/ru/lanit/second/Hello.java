@@ -8,6 +8,8 @@ import ru.lanit.factory.*;
 import ru.lanit.factory.Matrix;
 import ru.lanit.factory.MatrixMultiplicator;
 import ru.lanit.factory.MatrixSummator;
+import org.apache.commons.math3.random.AbstractRandomGenerator;
+import  org.apache.commons.collections4.list.AbstractLinkedList;
 
 import java.util.*;
 
@@ -27,6 +29,25 @@ public class Hello {
         } catch (AdditionException a) {
             System.out.println("Сложение матриц невозможно.");
         }
+
+        AbstractRandomGenerator a = new AbstractRandomGenerator() {
+            @Override
+            public void setSeed(long l) {
+
+            }
+
+            @Override
+            public double nextDouble() {
+                return 0;
+            }
+        };
+
+        AbstractLinkedList<String> str = new AbstractLinkedList<String>() {
+            @Override
+            public int indexOf(Object value) {
+                return super.indexOf(value);
+            }
+        };
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
