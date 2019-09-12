@@ -63,6 +63,29 @@ public class Hello {
             System.out.println();
         }
 
+        /**
+         * Сложение матриц
+         */
+        Array2DRowFieldMatrix<BigReal> matrix5 = matrix3.add(matrix4);
+        System.out.println();
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(matrix5.getEntry(i,j).doubleValue() + "\t");
+            }
+            System.out.println();
+        }
+
+        /**
+         * Умножение матриц
+         */
+        Array2DRowFieldMatrix<BigReal> matrix6 = matrix3.multiply(matrix4);
+        System.out.println();
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(matrix6.getEntry(i,j).doubleValue() + "\t");
+            }
+            System.out.println();
+        }
 
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
