@@ -9,5 +9,7 @@ https://www.fandroid.info/sborka-i-vypolnenie-java-programm/ - ещё о сбо�
 
 http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html - жизненный цикл Maven
 
+https://www.apache-maven.ru/profiles.html - профили Maven
+
 # Библиотека матриц
 https://github.com/mikera/core.matrix - ссылка на GitHub
