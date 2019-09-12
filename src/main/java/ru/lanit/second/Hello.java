@@ -1,17 +1,16 @@
 package ru.lanit.second;
 
+import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
+import org.apache.commons.math3.util.BigReal;
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.ArgumentsException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.factory.*;
-import ru.lanit.factory.Matrix;
-import ru.lanit.factory.MatrixMultiplicator;
-import ru.lanit.factory.MatrixSummator;
-import org.apache.commons.math3.random.AbstractRandomGenerator;
-import  org.apache.commons.collections4.list.AbstractLinkedList;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Hello {
 
@@ -22,7 +21,9 @@ public class Hello {
 
 
         ParamMatrix matrix = createMatrixContent(0,1, args);
-        ParamMatrix matrix2 = createMatrixContent(Integer.parseInt(args[0])*Integer.parseInt(args[1])+2,Integer.parseInt(args[0])*Integer.parseInt(args[1])+3, args);
+        Integer matrix2index1 = new Integer(Integer.parseInt(args[0])*Integer.parseInt(args[1])+2);
+        Integer matrix2index2 = new Integer(Integer.parseInt(args[0])*Integer.parseInt(args[1])+3);
+        ParamMatrix matrix2 = createMatrixContent(matrix2index1, matrix2index1, args);
 
         try {
             matrix.add(matrix2);
@@ -30,24 +31,39 @@ public class Hello {
             System.out.println("Сложение матриц невозможно.");
         }
 
-        AbstractRandomGenerator a = new AbstractRandomGenerator() {
-            @Override
-            public void setSeed(long l) {
-
+        BigReal[][] bg = new BigReal[3][3];
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                bg[i][j] = new BigReal(3 * i + j + 1);
             }
+        }
+        Array2DRowFieldMatrix<BigReal> matrix3 = new Array2DRowFieldMatrix<BigReal>(bg);
 
-            @Override
-            public double nextDouble() {
-                return 0;
+        BigReal[][] bg2 = new BigReal[3][3];
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                bg2[i][j] = new BigReal(9 - 3 * i - j);
             }
-        };
+        }
+        Array2DRowFieldMatrix<BigReal> matrix4 = new Array2DRowFieldMatrix<BigReal>(bg2);
 
-        AbstractLinkedList<String> str = new AbstractLinkedList<String>() {
-            @Override
-            public int indexOf(Object value) {
-                return super.indexOf(value);
+        System.out.println();
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(matrix3.getEntry(i,j).doubleValue() + "\t");
             }
-        };
+            System.out.println();
+        }
+
+        System.out.println();
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(matrix4.getEntry(i,j).doubleValue() + "\t");
+            }
+            System.out.println();
+        }
+
+
 
 //        MyDoubleParamMatrix matrix3 = new MyDoubleParamMatrix();
 //        matrix3.createContent(3,3);
