@@ -68,6 +68,7 @@ public class Hello {
          */
         Array2DRowFieldMatrix<BigReal> matrix5 = matrix3.add(matrix4);
         System.out.println();
+        System.out.println("Сумма матриц");
         for(int i = 0; i < 3; i++) {
             for(int j = 0; j < 3; j++) {
                 System.out.print(matrix5.getEntry(i,j).doubleValue() + "\t");
@@ -80,6 +81,7 @@ public class Hello {
          */
         Array2DRowFieldMatrix<BigReal> matrix6 = matrix3.multiply(matrix4);
         System.out.println();
+        System.out.println("Умножение матриц");
         for(int i = 0; i < 3; i++) {
             for(int j = 0; j < 3; j++) {
                 System.out.print(matrix6.getEntry(i,j).doubleValue() + "\t");
