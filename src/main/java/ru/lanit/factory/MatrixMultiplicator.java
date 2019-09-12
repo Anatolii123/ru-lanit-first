@@ -18,6 +18,7 @@ public class MatrixMultiplicator implements MatrixOperation {
             for (int j = 0; j < operand2.getB(); j++) {
                 for (int k = 0; k < operand1.getB(); k++) {
                     s[i][j] = (s[i][j] == null) ? a[i][k].mult(b[k][j]) : s[i][j].add(a[i][k].mult(b[k][j]));
+
                 }
                 System.out.print(s[i][j] + "\t");
             }
