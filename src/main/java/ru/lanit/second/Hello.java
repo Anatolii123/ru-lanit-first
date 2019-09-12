@@ -8,10 +8,6 @@ import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.factory.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 public class Hello {
 
     public static void main (String[] args) throws Exception {
@@ -54,28 +50,6 @@ public class Hello {
         showMatrix(matrix6);
     }
 
-    public static List<MatrixOperation> operationsList (int listLength) {
-        List<MatrixOperation> result = new ArrayList<MatrixOperation>(listLength);
-
-        for (int i = 0; i < listLength; i++) {
-            int rand = new Random().nextInt(3);
-            switch (rand) {
-                case 0:
-                    result.add(new MatrixMultiplicator());
-                    break;
-                case 1:
-                    result.add(new MatrixSummator());
-                    break;
-                case 2:
-                    result.add(new MatrixSubstractor());
-                    break;
-                default:
-                    break;
-            }
-        }
-        return result;
-    }
-
     public static ParamMatrix createMatrixContent(int a, int b, String[] args) throws ArgumentsException {
         ParamMatrix matrix = new MyLongParamMatrix();
         while (true) {
@@ -88,8 +62,6 @@ public class Hello {
                 System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
             } catch (Exception e) {
                 throw new ArgumentsException("Введено неверное количество значений!");
-                //System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
-                //break;
             }
         }
         return matrix;
