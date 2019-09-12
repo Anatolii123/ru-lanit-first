@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <profiles>
         <profile>
-            <id>development</id>
+            <id>hello</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -39,7 +39,7 @@
             </build>
         </profile>
         <profile>
-            <id>using</id>
+            <id>itsme</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
