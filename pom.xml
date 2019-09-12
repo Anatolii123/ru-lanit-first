@@ -11,7 +11,11 @@
         <profile>
             <id>development</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>mavenVersion</name>
+                    <value>4.0.0</value>
+                </property>
             </activation>
             <dependencies>
                 <dependency>
@@ -96,4 +100,11 @@
             </build>
         </profile>
     </profiles>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+    </dependencies>
 </project>
