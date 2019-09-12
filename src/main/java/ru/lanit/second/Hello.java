@@ -2,6 +2,11 @@ package ru.lanit.second;
 
 import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.util.BigReal;
+import org.apache.commons.math3.analysis.differentiation.*;
+import ru.lanit.factory.HasValue;
+
+import java.util.List;
+import java.util.Set;
 
 public class Hello {
 

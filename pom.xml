@@ -14,7 +14,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <dependency_ver>3.6</dependency_ver>
+                <dependency_ver>3.6.1</dependency_ver>
             </properties>
             <dependencies>
                 <dependency>
