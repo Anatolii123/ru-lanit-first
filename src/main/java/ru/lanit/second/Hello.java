@@ -1,6 +1,7 @@
 package ru.lanit.second;
 
 import ru.lanit.exceptions.AdditionException;
+import ru.lanit.exceptions.ArgumentsException;
 import ru.lanit.exceptions.IncorrectColumnsCountException;
 import ru.lanit.exceptions.IncorrectRowsCountException;
 import ru.lanit.factory.*;
@@ -67,7 +68,7 @@ public class Hello {
         return result;
     }
 
-    public static ParamMatrix createMatrixContent(int a, int b, String[] args) {
+    public static ParamMatrix createMatrixContent(int a, int b, String[] args) throws ArgumentsException {
         ParamMatrix matrix = new MyLongParamMatrix();
         while (true) {
             try {
@@ -78,8 +79,9 @@ public class Hello {
             } catch (IncorrectRowsCountException r) {
                 System.out.println("Введено неверное количество строк! В матрице должно быть как минимум 2 строки. Попробуйте ещё раз.");
             } catch (Exception e) {
-                System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
-                break;
+                throw new ArgumentsException("Введено неверное количество значений!");
+                //System.out.println("Введено неправильное значение! Попробуйте ещё раз.");
+                //break;
             }
         }
         return matrix;
