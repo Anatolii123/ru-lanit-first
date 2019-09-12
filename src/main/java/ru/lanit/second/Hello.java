@@ -62,5 +62,4 @@ public class Hello {
         }
         return bg;
     }
-
 }
