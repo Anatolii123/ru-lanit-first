@@ -5,6 +5,12 @@ import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.util.BigReal;
 import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
 import org.apache.commons.math3.ml.clustering.Cluster;
+import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 
 public class Hello {
@@ -39,6 +45,7 @@ public class Hello {
 
         System.out.println();
         doSolve();
+        kMeansClustering();
     }
 
     public static void doSolve() {
@@ -53,6 +60,40 @@ public class Hello {
         System.out.println("y''' = " + y.getPartialDerivative(3));
     }
 
+    public static void kMeansClustering() {
+        int[][] data = {
+                {1,1},{1,2},{1,3},{1,4},{1,5},{2,1},{2,2},{2,3},{2,4},{3,1},{3,2},{3,3},{4,1},{4,2},{5,1},
+                {6,2},{6,3},{6,4},{6,5},{6,6},{5,3},{5,4},{5,5},{5,6},{4,4},{4,5},{4,6},{3,5},{3,6},{2,6}
+        };
+        List<int[][]> data3 = Collections.singletonList(data);
+        int clustersCount = 2;
+        int[][] centroids = new int[][]{{0,4},{5,7}};
+        List<int[][]> data4 = Collections.singletonList(centroids);
+        Cluster cluster1 = new Cluster() {
+            @Override
+            public String toString() {
+                return "Cluster 1";
+            }
+        };
+        Cluster cluster2 = new Cluster() {
+            @Override
+            public String toString() {
+                return "Cluster 2";
+            }
+        };
+        for (int i=0;i<clustersCount;i++) {
+            for (int j=0;j<data.length;j++) {
+
+            }
+        }
+
+
+
+        System.out.println(data2[1].toString());
+
+        KMeansPlusPlusClusterer kMeansPlusPlusClusterer = new KMeansPlusPlusClusterer(2,100);
+        kMeansPlusPlusClusterer.cluster(data3);
+    }
 
 
 
