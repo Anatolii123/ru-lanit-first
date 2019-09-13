@@ -1,8 +1,11 @@
 package ru.lanit.second;
 
+
 import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.util.BigReal;
-import org.apache.commons.math3.analysis.differentiation.*;
+import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
+import org.apache.commons.math3.ml.clustering.Cluster;
+
 
 public class Hello {
 
@@ -33,7 +36,25 @@ public class Hello {
         System.out.println();
         System.out.println("Умножение матриц");
         showMatrix(matrix6);
+
+        System.out.println();
+        doSolve();
     }
+
+    public static void doSolve() {
+        DerivativeStructure x = new DerivativeStructure(1, 3, 0, 2.5);
+        System.out.println("x = " + x.getValue());
+        DerivativeStructure x2 = x.pow(2);
+        DerivativeStructure y = new DerivativeStructure(4.0, x2, 2.0, x); //y = 4x^2 + 2x
+        System.out.println("y = 4x^2 + 2x");
+        System.out.println("y = " + y.getValue());              // y    = 30.0
+        System.out.println("y' = " + y.getPartialDerivative(1));
+        System.out.println("y'' = " + y.getPartialDerivative(2));
+        System.out.println("y''' = " + y.getPartialDerivative(3));
+    }
+
+
+
 
     public static void showMatrix(Array2DRowFieldMatrix<BigReal> matrix) {
         for(int i = 0; i < 3; i++) {
