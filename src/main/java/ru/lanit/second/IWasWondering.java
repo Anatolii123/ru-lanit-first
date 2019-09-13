@@ -12,16 +12,23 @@ public class IWasWondering {
     public static void main (String[] args) throws Exception {
 
         doSolve();
-        kMeansClustering();
+//        kMeansClustering();
     }
 
     public static void doSolve() {
-        DerivativeStructure x = new DerivativeStructure(1, 3, 0, 2.5);
+        DerivativeStructure x = new DerivativeStructure(1, 3, 0, 3);
+        DerivativeStructure e = new DerivativeStructure(1, 3, 0, Math.E);
         System.out.println("x = " + x.getValue());
-        DerivativeStructure x2 = x.pow(2);
-        DerivativeStructure y = new DerivativeStructure(4.0, x2, 2.0, x); //y = 4x^2 + 2x
-        System.out.println("y = 4x^2 + 2x");
-        System.out.println("y = " + y.getValue());              // y    = 30.0
+        System.out.println();
+        DerivativeStructure x2 = x.multiply(-2).multiply(e.pow(x.multiply(3))); //-2xe^3x
+        DerivativeStructure x3 = x.pow(2).subtract(x.multiply(4)).add(3); //x^2-4x+3
+        DerivativeStructure x4 = x.multiply(7).sin(); //sin7x
+        DerivativeStructure x5 = x.pow(2).add(x.sin().log().multiply(4)); //x^2+4*ln(sinx)
+
+        DerivativeStructure y = (x2.add(x3.multiply(x4))).divide(x5);
+        System.out.println("    -2xe^3x+(x^2-4x+3)*sin7x\ny = -------------------------\n         x^2+4*ln(sinx)");
+        System.out.println();
+        System.out.println("y = " + y.getValue());
         System.out.println("y' = " + y.getPartialDerivative(1));
         System.out.println("y'' = " + y.getPartialDerivative(2));
         System.out.println("y''' = " + y.getPartialDerivative(3));
