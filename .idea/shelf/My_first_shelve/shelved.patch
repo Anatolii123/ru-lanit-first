@@ -1,0 +1,73 @@
+Index: src/main/java/ru/lanit/second/Hello.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.lanit.second;\r\n\r\nimport ru.lanit.first.*;\r\n\r\nimport java.util.*;\r\n\r\npublic class Hello {\r\n\r\n    public static void main (String[] args) throws Exception {\r\n\r\n//        for (Description d: Description.values()) {\r\n//            if (d.equals(d)){\r\n//                //System.out.println(Description.getBy(\"physics\"));\r\n//                //System.out.println(Description.valueOf(d.toString()));\r\n//                //System.out.println();\r\n//            }\r\n//        }\r\n////        System.out.println(Description.getBy(\"physics\"));\r\n////        System.out.println(Description.getBy(10));\r\n////        System.out.println(Description.getBy(false));\r\n////        System.out.println();\r\n////        List<Integer> list = new ArrayList<Integer>();\r\n////        list.add(2);\r\n////        list.add(3);\r\n////        list.add(5);\r\n////        list.add(7);\r\n////        List<Integer> unmodifiableList = Collections.unmodifiableList(list);\r\n////        System.out.println(unmodifiableList);\r\n////\r\n////        System.out.println(list2);\r\n//\r\n//        //Substance s = new Substance();\r\n//        //Matter s = Matter.getInstanceOf();\r\n//\r\n//        List<Integer> list2 = Collections.unmodifiableList(\r\n//                new ArrayList<Integer>() {\r\n//                    {\r\n//                        add(2);\r\n//                        add(3);\r\n//                        add(5);\r\n//                        add(7);\r\n//                    }\r\n//                });\r\n//        list2.getClass();\r\n////        /**\r\n////         * Внутренний класс\r\n////         */\r\n////        BaryonicMatter b = BaryonicMatter.getInstanceOf();\r\n////        BaryonicMatter.BaryonicMatter3 b3 = b.new BaryonicMatter3();\r\n////        b3.printSentence();\r\n////        b3.printSentence2();\r\n////\r\n////        /**\r\n////         * Вложенный класс\r\n////         */\r\n////        BaryonicMatter.BaryonicMatter2 b2 = new BaryonicMatter.BaryonicMatter2();\r\n////\r\n////        Substance substance = Substance.getInstanceOf();\r\n////        Substance.HalfLife halfLife = substance.convertToInstanceHalfLive();\r\n////        halfLife.setHalfLife(512L);\r\n////        System.out.println(halfLife.getHalfLife());\r\n////\r\n////        Substance.HalfLife hal = Substance.getInstanceOfInner();\r\n////        hal.setHalfLife(234L);\r\n////        System.out.println(hal.getHalfLife());\r\n//\r\n////        Field f = Field.getInstanceOf();\r\n////        f.calculate();\r\n////        Substance s = Substance.getInstanceOf();\r\n////        s.calculate();\r\n////        QuantumFields q = QuantumFields.getInstanceOf();\r\n////        q.calculate();\r\n//\r\n//        //TODO сделать так, чтобы в коде использовались коллекции различных типов (Set, List), содержимым которых будут не экземпляры конкретных а классов, а реализации интерфейсов, либо экземпляр абстрактного класса.\r\n//        List<HasOrdinal> matters = new ArrayList<HasOrdinal>(); // заполнить экземплярами разных классов потомков\r\n//        for (int i = 0; i < 15; i++) {\r\n//            int random = (int) (Math.random() * 5);\r\n//            switch (random) {\r\n//                case 0:\r\n//                    matters.add(Substance.getInstanceOf());\r\n//                    break;\r\n//                case 1:\r\n//                    matters.add(Field.getInstanceOf());\r\n//                    //\r\n//                    break;\r\n//                case 2:\r\n//                    matters.add(QuantumFields.getInstanceOf());\r\n//                    break;\r\n//                case 3:\r\n//                    matters.add(ObscurePhysicalNature.getInstanceOf());\r\n//                    break;\r\n//                case 4:\r\n//                    matters.add(GravitationalField.getInstanceOf());\r\n//                    break;\r\n//                case 5:\r\n//                    matters.add(Antimatter.getInstanceOf());\r\n//                    break;\r\n//                default:\r\n//                    break;\r\n//            }\r\n//        }\r\n//        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()\r\n//\r\n////        for (HasOrdinal m:matters) {\r\n////            System.out.println(m.toString());\r\n////        }\r\n////        System.out.println();\r\n////\r\n////        Collections.sort(matters, new Comparator<HasOrdinal>() {\r\n////            public int compare(HasOrdinal o1, HasOrdinal o2) {\r\n////                return o1.getOrdinal().compareTo(o2.getOrdinal());\r\n////            }\r\n////        }); // todo отсортировать по getOrdinal()\r\n////        for (HasOrdinal m:matters) {\r\n////            System.out.println(m.toString());\r\n////        }\r\n//\r\n//\r\n//        //TODO для каждого элемента matters вывести результат работы его toString(). Предварительно переопредлить toString()\r\n//        System.out.println();\r\n\r\n        //Есть HasSet, есть три объекта a,b,c какого-нибудь класса.\r\n        //Выполняем add(a), add(b), add(c). Узнаём количество элементов в HashSet, получаем 3.\r\n        //Чистим HashSet и выполняем  add(c), add(b), add(a).  Узнаём количество элементов в HashSet, получаем 2.\r\n        //Может ли быть такое? Если нет, то почему, если может, то организовать пример.\r\n        //Нужен метод equals такой, что при a.equals(b) == true было b.equals(a) == false\r\n\r\n        Set<QuantumFields> quantumFields = new HashSet<QuantumFields>();\r\n        QuantumFields a = QuantumFields.getInstanceOf();\r\n        QuantumFields b = QuantumFields.getInstanceOf();\r\n        QuantumFields c = QuantumFields.getInstanceOf();\r\n        quantumFields.add(a);\r\n        quantumFields.add(b);\r\n        quantumFields.add(c);\r\n        System.out.println(quantumFields.size());\r\n        System.out.println(quantumFields);\r\n//        quantumFields.clear();\r\n//        quantumFields.add(c);\r\n//        quantumFields.add(b);\r\n//        quantumFields.add(a);\r\n//        System.out.println(quantumFields.size());\r\n\r\n//        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();\r\n//        for (int i = 0; i < 3; i++) {\r\n//            QuantumFields q = QuantumFields.getInstanceOf();\r\n//            quantumFields2.add(q);\r\n//        }\r\n//        QuantumFields.calculate(quantumFields2);\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/ru/lanit/second/Hello.java	(revision 2287efcf0fc779c7bd8e7856ef20e27e9856104b)
++++ src/main/java/ru/lanit/second/Hello.java	(date 1567518606038)
+@@ -132,14 +132,19 @@
+         quantumFields.add(a);
+         quantumFields.add(b);
+         quantumFields.add(c);
++
+         System.out.println(quantumFields.size());
+         System.out.println(quantumFields);
+-//        quantumFields.clear();
+-//        quantumFields.add(c);
+-//        quantumFields.add(b);
+-//        quantumFields.add(a);
+-//        System.out.println(quantumFields.size());
++        quantumFields.clear();
+ 
++        a.setSwitcher(true);
++
++        quantumFields.add(b);
++        quantumFields.add(a);
++        quantumFields.add(c);
++        System.out.println(quantumFields.size());
++        System.out.println(a.hashCode());
++        System.out.println(b.hashCode());
+ //        List<QuantumFields> quantumFields2 = new ArrayList<QuantumFields>();
+ //        for (int i = 0; i < 3; i++) {
+ //            QuantumFields q = QuantumFields.getInstanceOf();
+Index: src/main/java/ru/lanit/first/QuantumFields.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ru.lanit.first;\r\n\r\nimport java.util.*;\r\n\r\npublic class QuantumFields extends Matter implements Physics, Informatics{\r\n\r\n\r\n    protected QuantumFields(){}\r\n\r\n    @Override\r\n    public String getClassName() {\r\n        return \"Quantum Fields\";\r\n    }\r\n\r\n\r\n    @Override\r\n    public boolean equals(Object o) {\r\n        if(o instanceof QuantumFields){\r\n            return super.equals(o);\r\n        }\r\n        return false;\r\n    }\r\n\r\n    public void force() {\r\n        System.out.println(\"It has.\");\r\n    }\r\n\r\n    @Override\r\n    public Set<Philosophy> calculate(Philosophy quantum) {\r\n        Set<Philosophy> quantums = new HashSet<Philosophy>();\r\n        for (int i = 0; i < 5; i++) {\r\n            quantums.add(new Field());\r\n        }\r\n        return quantums;\r\n    }\r\n\r\n    public void amountOfInformation() {\r\n        System.out.println(\"A lot of!\");\r\n    }\r\n\r\n    public static void calculate(List<QuantumFields> q) {\r\n        //TODO прошу реализовать пример HashMap, причём, так, чтобы ключами были экзепляры твоих собственных классов. Для этого нужно выполнить некие предварительные действия над классами. Прочитать в книге (нагуглить), что это зто действия.\r\n        Map<QuantumFields, Integer> quantumFields = new HashMap<QuantumFields, Integer>();\r\n        for (QuantumFields quantumField: q) {\r\n            quantumFields.put(quantumField,quantumField.hashCode());\r\n            System.out.println(quantumField.science + \" = \" + quantumField.hashCode());\r\n        }\r\n        //System.out.println(quantumFields);\r\n\r\n\r\n//        for (int i=0;i<5;i++) {\r\n//            quantumFields.put(i,new QuantumFields());\r\n//        }\r\n//        for (int q=0;q<5;q++) {\r\n//            //QuantumFields f = quantumFields.get(q);\r\n//            quantumFields.get(q).printClass();\r\n//            System.out.println(quantumFields.containsKey(q));\r\n//        }\r\n    }\r\n\r\n    @Override\r\n    public void printAncestor() {\r\n        System.out.println(\"Matter\");\r\n    }\r\n\r\n    @Override\r\n    public void printDescendants() {\r\n        System.out.println(\"No\");\r\n    }\r\n\r\n    public static QuantumFields getInstanceOf(){\r\n        Scanner in = new Scanner(System.in);\r\n        QuantumFields q = new QuantumFields(){\r\n            @Override\r\n            public int hashCode() {\r\n                return 1;\r\n            }\r\n        };\r\n        System.out.println(\"Введите науку: \");\r\n        q.setScience(in.nextLine());\r\n        System.out.println(\"Введите порядковый номер: \");\r\n        q.setOrdinal(in.nextInt());\r\n//        System.out.println(\"Имеется ли математическое описание: \");\r\n//        if (in.nextLine() == \"Да\") {\r\n//            q.mathDescription = true;\r\n//        }\r\n//        q.mathDescription = false;\r\n        return q;\r\n    }\r\n\r\n    public void printSentence(){\r\n        System.out.println(\"This is a Quantum Field.\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/ru/lanit/first/QuantumFields.java	(revision 2287efcf0fc779c7bd8e7856ef20e27e9856104b)
++++ src/main/java/ru/lanit/first/QuantumFields.java	(date 1567518606042)
+@@ -4,6 +4,7 @@
+ 
+ public class QuantumFields extends Matter implements Physics, Informatics{
+ 
++    private Boolean switcher;
+ 
+     protected QuantumFields(){}
+ 
+@@ -12,12 +13,21 @@
+         return "Quantum Fields";
+     }
+ 
++    public void setSwitcher(Boolean switcher) {
++        this.switcher = switcher;
++    }
++
+ 
+     @Override
+     public boolean equals(Object o) {
+         if(o instanceof QuantumFields){
++            if (Boolean.TRUE.equals(switcher)) {
++                return true;
++            }
++            //this.switcher = 1;
+             return super.equals(o);
+         }
++
+         return false;
+     }
+ 

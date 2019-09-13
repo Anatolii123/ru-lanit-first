@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="NewBranch" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ArgsBranch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="87" />
+    <option name="y" value="29" />
+    <option name="width" value="1440" />
+    <option name="height" value="780" />
+  </component>
+  <component name="ProjectId" id="1QljSLBdo4bOZO90EdwP8Oqt6R1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.31620553" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.lanit.factory" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.lanit.exceptions" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.IWasWondering">
+    <configuration type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.Hello" />
+      <module name="ru-lanit-first" />
+      <option name="PROGRAM_PARAMETERS" value="3 3 1 2 3 4 5 6 7 8 9 3 3 9 8 7 6 5 4 3 2 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Phello" />
+      </method>
+    </configuration>
+    <configuration name="IWasWondering" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.IWasWondering" />
+      <module name="ru-lanit-first" />
+      <option name="PROGRAM_PARAMETERS" value="3 3 1 2 3 4 5 6 7 8 9 3 3 9 8 7 6 5 4 3 2 1" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
+      </method>
+    </configuration>
+    <configuration name="ItsMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.ItsMe" />
+      <module name="ru-lanit-first" />
+      <option name="PROGRAM_PARAMETERS" value="3 3 1 2 3 4 5 6 7 8 9 3 3 9 8 7 6 5 4 3 2 1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Pitsme" />
+      </method>
+    </configuration>
+    <configuration name="MyDoubleCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.IWasWondering" />
+      <item itemvalue="Application.Hello" />
+      <item itemvalue="Application.ItsMe" />
+      <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
+        <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.ItsMe" />
+        <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.Hello" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="" />
+      <created>1566799650172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566799650172</updated>
+      <workItem from="1566799652465" duration="26419000" />
+      <workItem from="1566882610827" duration="28230000" />
+      <workItem from="1566968562536" duration="25868000" />
+      <workItem from="1567059886379" duration="24779000" />
+      <workItem from="1567088795003" duration="27000" />
+      <workItem from="1567141780722" duration="23751000" />
+      <workItem from="1567400738836" duration="27998000" />
+      <workItem from="1567487549022" duration="27133000" />
+      <workItem from="1567573059044" duration="29206000" />
+      <workItem from="1567606972302" duration="40000" />
+      <workItem from="1567659883753" duration="30140000" />
+      <workItem from="1567746437801" duration="29342000" />
+      <workItem from="1568006057616" duration="23865000" />
+      <workItem from="1568091740015" duration="17405000" />
+      <workItem from="1568177608880" duration="4758000" />
+      <workItem from="1568188681832" duration="7664000" />
+      <workItem from="1568199415208" duration="82000" />
+      <workItem from="1568199512607" duration="10318000" />
+      <workItem from="1568210202538" duration="191000" />
+      <workItem from="1568210410741" duration="31000" />
+      <workItem from="1568210455966" duration="197000" />
+      <workItem from="1568210673758" duration="20000" />
+      <workItem from="1568210708776" duration="437000" />
+      <workItem from="1568211166817" duration="59000" />
+      <workItem from="1568264474722" duration="903000" />
+      <workItem from="1568265661114" duration="305000" />
+      <workItem from="1568265982072" duration="16170000" />
+      <workItem from="1568286101600" duration="5459000" />
+    </task>
+    <task id="LOCAL-00138" summary="Exceptions9Commit">
+      <created>1568095529159</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1568095529159</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Exceptions10Commit">
+      <created>1568096294417</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1568096294417</updated>
+    </task>
+    <task id="LOCAL-00140" summary="Exceptions11Commit">
+      <created>1568098458760</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1568098458760</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Exceptions12Commit">
+      <created>1568098862535</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1568098862535</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Exceptions13Commit">
+      <created>1568099285472</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1568099285472</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Exceptions14Commit">
+      <created>1568099532769</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1568099532769</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Exceptions15Commit">
+      <created>1568100145859</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1568100145859</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Exceptions16Commit">
+      <created>1568101459620</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1568101459621</updated>
+    </task>
+    <task id="LOCAL-00146" summary="Exceptions17Commit">
+      <created>1568104557640</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1568104557640</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Exceptions18Commit">
+      <created>1568106816597</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1568106816597</updated>
+    </task>
+    <task id="LOCAL-00148" summary="Exceptions19Commit">
+      <created>1568113753091</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1568113753091</updated>
+    </task>
+    <task id="LOCAL-00149" summary="Exceptions21Commit">
+      <created>1568188875661</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1568188875661</updated>
+    </task>
+    <task id="LOCAL-00150" summary="Exceptions22Commit">
+      <created>1568199379244</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1568199379244</updated>
+    </task>
+    <task id="LOCAL-00151" summary="ArgsCommit">
+      <created>1568204355433</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1568204355433</updated>
+    </task>
+    <task id="LOCAL-00152" summary="Args2Commit">
+      <created>1568206221683</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1568206221683</updated>
+    </task>
+    <task id="LOCAL-00153" summary="Args3Commit">
+      <created>1568206465358</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1568206465358</updated>
+    </task>
+    <task id="LOCAL-00154" summary="Args4Commit">
+      <created>1568207662886</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1568207662886</updated>
+    </task>
+    <task id="LOCAL-00155" summary="DependencyCommit">
+      <created>1568210165804</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1568210165804</updated>
+    </task>
+    <task id="LOCAL-00156" summary="Dependency2Commit">
+      <created>1568210389377</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1568210389377</updated>
+    </task>
+    <task id="LOCAL-00157" summary="Dependency3Commit">
+      <created>1568210644330</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1568210644330</updated>
+    </task>
+    <task id="LOCAL-00158" summary="Dependency4Commit">
+      <created>1568211132831</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1568211132831</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Dependency5Commit">
+      <created>1568265356577</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1568265356578</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Dependency6Commit">
+      <created>1568267149408</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1568267149408</updated>
+    </task>
+    <task id="LOCAL-00161" summary="Dependency7Commit">
+      <created>1568267839728</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1568267839729</updated>
+    </task>
+    <task id="LOCAL-00162" summary="NewDependenciesCommit">
+      <created>1568273849346</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1568273849347</updated>
+    </task>
+    <task id="LOCAL-00163" summary="NewDependencies2Commit">
+      <created>1568274024656</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1568274024656</updated>
+    </task>
+    <task id="LOCAL-00164" summary="NewDependencies3Commit">
+      <created>1568279473722</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1568279473722</updated>
+    </task>
+    <task id="LOCAL-00165" summary="ProfilesCommit">
+      <created>1568279892455</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1568279892455</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Profiles2Commit">
+      <created>1568282392577</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1568282392577</updated>
+    </task>
+    <task id="LOCAL-00167" summary="Profiles3Commit">
+      <created>1568283164022</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283164022</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Profiles4Commit">
+      <created>1568283360373</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283360373</updated>
+    </task>
+    <task id="LOCAL-00169" summary="Profiles5Commit">
+      <created>1568283401100</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283401100</updated>
+    </task>
+    <task id="LOCAL-00170" summary="Profiles6Commit">
+      <created>1568283546215</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283546215</updated>
+    </task>
+    <task id="LOCAL-00171" summary="Profiles7Commit">
+      <created>1568283603706</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283603706</updated>
+    </task>
+    <task id="LOCAL-00172" summary="Profiles8Commit">
+      <created>1568283750416</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283750416</updated>
+    </task>
+    <task id="LOCAL-00173" summary="Profiles9Commit">
+      <created>1568283924125</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1568283924125</updated>
+    </task>
+    <task id="LOCAL-00174" summary="Profiles10Commit">
+      <created>1568284824125</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1568284824126</updated>
+    </task>
+    <task id="LOCAL-00175" summary="Profiles11Commit">
+      <created>1568289746292</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1568289746292</updated>
+    </task>
+    <task id="LOCAL-00176" summary="Profiles12Commit">
+      <created>1568296260490</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1568296260490</updated>
+    </task>
+    <task id="LOCAL-00177" summary="Profiles13Commit">
+      <created>1568355914944</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1568355914944</updated>
+    </task>
+    <task id="LOCAL-00178" summary="KMeansCommit">
+      <created>1568358948599</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1568358948599</updated>
+    </task>
+    <task id="LOCAL-00179" summary="NewMathDependencyCommit">
+      <created>1568362945034</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1568362945034</updated>
+    </task>
+    <task id="LOCAL-00180" summary="NewMathDependency2Commit">
+      <created>1568363651319</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1568363651319</updated>
+    </task>
+    <task id="LOCAL-00181" summary="KMeansCommit">
+      <created>1568370746098</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1568370746098</updated>
+    </task>
+    <task id="LOCAL-00182" summary="KMeans2Commit">
+      <created>1568372724167</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1568372724167</updated>
+    </task>
+    <task id="LOCAL-00183" summary="KMeans3Commit">
+      <created>1568376305097</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1568376305098</updated>
+    </task>
+    <task id="LOCAL-00184" summary="KMeans4Commit">
+      <created>1568377053240</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1568377053240</updated>
+    </task>
+    <task id="LOCAL-00185" summary="KMeans5Commit">
+      <created>1568377076672</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1568377076672</updated>
+    </task>
+    <task id="LOCAL-00186" summary="KMeans6Commit">
+      <created>1568378339644</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1568378339644</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="360797000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dependency7Commit" />
+    <MESSAGE value="NewDependenciesCommit" />
+    <MESSAGE value="NewDependencies2Commit" />
+    <MESSAGE value="NewDependencies3Commit" />
+    <MESSAGE value="ProfilesCommit" />
+    <MESSAGE value="Profiles2Commit" />
+    <MESSAGE value="Profiles3Commit" />
+    <MESSAGE value="Profiles4Commit" />
+    <MESSAGE value="Profiles5Commit" />
+    <MESSAGE value="Profiles6Commit" />
+    <MESSAGE value="Profiles7Commit" />
+    <MESSAGE value="Profiles8Commit" />
+    <MESSAGE value="Profiles9Commit" />
+    <MESSAGE value="Profiles10Commit" />
+    <MESSAGE value="Profiles11Commit" />
+    <MESSAGE value="Profiles12Commit" />
+    <MESSAGE value="Profiles13Commit" />
+    <MESSAGE value="NewMathDependencyCommit" />
+    <MESSAGE value="NewMathDependency2Commit" />
+    <MESSAGE value="KMeansCommit" />
+    <MESSAGE value="KMeans2Commit" />
+    <MESSAGE value="KMeans3Commit" />
+    <MESSAGE value="KMeans4Commit" />
+    <MESSAGE value="KMeans5Commit" />
+    <MESSAGE value="KMeans6Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="KMeans6Commit" />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/util/HashMap.java</url>
+          <line>611</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/net/URLClassLoader.java</url>
+          <line>359</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>oldValue</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>quantumFields</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lines</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lines2</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>line</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+</project>
