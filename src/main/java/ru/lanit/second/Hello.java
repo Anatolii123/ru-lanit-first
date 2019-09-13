@@ -58,6 +58,10 @@ public class Hello {
         System.out.println("y' = " + y.getPartialDerivative(1));
         System.out.println("y'' = " + y.getPartialDerivative(2));
         System.out.println("y''' = " + y.getPartialDerivative(3));
+
+        DerivativeStructure z = new DerivativeStructure(1, 2, 0, 90);
+        z.cos();
+
     }
 
     public static void kMeansClustering() {
@@ -86,10 +90,6 @@ public class Hello {
 
             }
         }
-
-
-
-        System.out.println(data2[1].toString());
 
         KMeansPlusPlusClusterer kMeansPlusPlusClusterer = new KMeansPlusPlusClusterer(2,100);
         kMeansPlusPlusClusterer.cluster(data3);
