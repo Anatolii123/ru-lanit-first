@@ -9,8 +9,6 @@ public class Clusters implements Clusterable {
 
     public Clusters(Integer location) {
         this.point = new double[2];
-
-
     }
 
     @Override
