@@ -45,30 +45,18 @@ public class IWasWondering {
 
     public static void kMeansClustering() {
 
+        List<Clusters> data6 = new ArrayList<Clusters>();
 
-        int clustersCount = 2;
-        int[][] centroids = new int[][]{{0,4},{5,7}};
-        List<int[][]> data4 = Collections.singletonList(centroids);
-        Cluster cluster1 = new Cluster() {
-            @Override
-            public String toString() {
-                return "Cluster 1";
-            }
-        };
-        Cluster cluster2 = new Cluster() {
-            @Override
-            public String toString() {
-                return "Cluster 2";
-            }
-        };
+        Integer[][] abc = {{1,1},{1,2},{1,3},{1,4},{1,5},{2,1},{2,2},{2,3},{2,4},{3,1},{3,2},{3,3},{4,1},{4,2},{5,1},
+        {6,2},{6,3},{6,4},{6,5},{6,6},{5,3},{5,4},{5,5},{5,6},{4,4},{4,5},{4,6},{3,5},{3,6},{2,6}};
 
 
-        List<int[]> data6 = new ArrayList<int[]>();
+        data6.get(0).getPoints();
+
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 if (i != 6 - j - 1) {
                     int[] a = {i+1,j+1};
-                    data6.add(a);
                 }
             }
         }
