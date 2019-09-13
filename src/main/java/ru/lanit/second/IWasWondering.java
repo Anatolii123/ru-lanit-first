@@ -45,29 +45,43 @@ public class IWasWondering {
 
     public static void kMeansClustering() {
 
-        List<Clusters> data6 = new ArrayList<Clusters>();
-
+        List<int[]> data6 = new ArrayList<int[]>();
         Integer[][] abc = {{1,1},{1,2},{1,3},{1,4},{1,5},{2,1},{2,2},{2,3},{2,4},{3,1},{3,2},{3,3},{4,1},{4,2},{5,1},
         {6,2},{6,3},{6,4},{6,5},{6,6},{5,3},{5,4},{5,5},{5,6},{4,4},{4,5},{4,6},{3,5},{3,6},{2,6}};
-
-
-        data6.get(0).getPoints();
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 if (i != 6 - j - 1) {
                     int[] a = {i+1,j+1};
+                    data6.add(a);
                 }
             }
         }
         KMeansPlusPlusClusterer clusterer = new KMeansPlusPlusClusterer(2,10000);
-        List<CentroidCluster<DoublePoint>> clusterResults = clusterer.cluster(data6);
+        //List<CentroidCluster<DoublePoint>> clusterResults = clusterer.cluster(data6);
+        List<DoublePoint> centers = new ArrayList<DoublePoint>();
 
-        for (int i = 0; i < clusterResults.size(); i++) {
+        int[] point = {0,2};
+        DoublePoint center = new DoublePoint(point);
+
+        int[] point2 = {7,7};
+        DoublePoint center2 = new DoublePoint(point2);
+        centers.add(center);
+        centers.add(center2);
+
+        for (int i = 0; i < centers.size(); i++) {
 
             System.out.println("Cluster " + i);
-            System.out.println(clusterResults.get(i).getCenter());
+            System.out.println(centers.get(i).getPoint());
         }
+
+        System.out.println(clusterer.cluster(data6).toString());
+//        List<CentroidCluster<T>> clusters = chooseInitialCenters(points);
+//        for (int i = 0; i < clusterResults.size(); i++) {
+//
+//            System.out.println("Cluster " + i);
+//            System.out.println(clusterResults.get(i).getCenter());
+//        }
 
 //        for (int i = 0; i < clusterResults.size(); i++) {
 //            System.out.println("Cluster " + i);
