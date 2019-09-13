@@ -3,7 +3,10 @@ package ru.lanit.second;
 import org.apache.commons.math3.analysis.differentiation.DerivativeStructure;
 import org.apache.commons.math3.ml.clustering.Cluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
+import ru.lanit.kmeans.Clusters;
 
+import javax.xml.stream.Location;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,7 +15,7 @@ public class IWasWondering {
     public static void main (String[] args) throws Exception {
 
         doSolve();
-//        kMeansClustering();
+        kMeansClustering();
     }
 
     public static void doSolve() {
@@ -43,7 +46,22 @@ public class IWasWondering {
                 {1,1},{1,2},{1,3},{1,4},{1,5},{2,1},{2,2},{2,3},{2,4},{3,1},{3,2},{3,3},{4,1},{4,2},{5,1},
                 {6,2},{6,3},{6,4},{6,5},{6,6},{5,3},{5,4},{5,5},{5,6},{4,4},{4,5},{4,6},{3,5},{3,6},{2,6}
         };
-        List<int[][]> data3 = Collections.singletonList(data);
+
+        List<int[]> data6 = new ArrayList<int[]>();
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (i != 6 - j - 1) {
+                    int[] a = {i+1,j+1};
+                    data6.add(a);
+                }
+            }
+        }
+
+        for (int i = 0; i < 30; i++) {
+            System.out.print(data6.get(i)[0] + " " + data6.get(i)[1]);
+            System.out.println();
+        }
+
         int clustersCount = 2;
         int[][] centroids = new int[][]{{0,4},{5,7}};
         List<int[][]> data4 = Collections.singletonList(centroids);
@@ -66,7 +84,10 @@ public class IWasWondering {
         }
 
         KMeansPlusPlusClusterer kMeansPlusPlusClusterer = new KMeansPlusPlusClusterer(2,100);
-        kMeansPlusPlusClusterer.cluster(data3);
+
+
+
+
     }
 
 }
