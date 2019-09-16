@@ -17,6 +17,6 @@ public class MyDoubleCreatorTest {
         Operations[][] res = mdc.create(3,3);
 
         // assert
-        Assert.assertArrayEquals(Operations[3][3],res);
+        Assert.assertEquals(new Operations[3][3],res);
     }
 }
