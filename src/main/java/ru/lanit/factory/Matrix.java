@@ -41,6 +41,8 @@ public class Matrix {
 
     public void setMatrix(Operations[][] matrix) {
         this.matrix = matrix;
+        this.a = matrix.length;
+        this.b = matrix[0].length;
     }
 
     public void accept(Visitor visitor) throws SidesDifferenceException {
