@@ -45,12 +45,4 @@ public class Matrix {
         this.b = matrix[0].length;
     }
 
-    public void accept(Visitor visitor) throws SidesDifferenceException {
-        visitor.visit(this);
-    }
-
-    public void accept(UnaryOperationVisitor visitor) {
-        visitor.visit(this);
-    }
-
 }

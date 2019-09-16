@@ -22,8 +22,7 @@ public class TransposeVisitorTest {
         MyDouble[][] b = {
                 {new MyDouble(1d), new MyDouble(4d), new MyDouble(7d)},
                 {new MyDouble(2d), new MyDouble(5d), new MyDouble(8d)},
-                {new MyDouble(3d), new MyDouble(6d), new MyDouble(9d)}
-        };
+                {new MyDouble(3d), new MyDouble(6d), new MyDouble(9d)}};
 
         // act
         a1 = transposeVisitor.visit(a);
