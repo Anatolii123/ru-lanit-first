@@ -52,11 +52,11 @@ public class MyDoubleTest {
     /**
      * Тесты на проверку вызываемых исключений
      */
-    @Test
-    public void addExceptions() {
+    @Test(expected = ArithmeticException.class)
+    public void addExceptions() throws ArithmeticException {
         // arrange
         MyDouble md = new MyDouble(1D);
-        MyDouble that = new MyDouble(5D);
+        MyLong that = new MyLong(5L);
 
         // act
         MyDouble res = (MyDouble) md.add(that);
@@ -65,11 +65,11 @@ public class MyDoubleTest {
         Assert.assertEquals(6D,(Double) res.value,0D);
     }
 
-    @Test
-    public void subExceptions() {
+    @Test(expected = ArithmeticException.class)
+    public void subExceptions() throws ArithmeticException {
         // arrange
         MyDouble md = new MyDouble(5D);
-        MyDouble that = new MyDouble(1D);
+        MyLong that = new MyLong(1L);
 
         // act
         MyDouble res = (MyDouble) md.sub(that);
@@ -78,11 +78,11 @@ public class MyDoubleTest {
         Assert.assertEquals(4D,(Double) res.value,0D);
     }
 
-    @Test
-    public void multExceptions() {
+    @Test(expected = ArithmeticException.class)
+    public void multExceptions() throws ArithmeticException {
         // arrange
         MyDouble md = new MyDouble(5D);
-        MyDouble that = new MyDouble(2D);
+        MyLong that = new MyLong(2L);
 
         // act
         MyDouble res = (MyDouble) md.mult(that);
