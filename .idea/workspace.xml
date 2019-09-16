@@ -4,7 +4,14 @@
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MyDoubleCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MyDoubleCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MyDoubleCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MyDoubleCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ru-lanit-first-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.lanit.factory.MyDoubleCreatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.lanit.factory.MyDoubleCreatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.lanit.factory.MyDoubleCreatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ru.lanit.factory.MyDoubleCreatorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +110,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest.create">
+  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -150,12 +157,38 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.Hello" />
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IWasWondering" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ru.lanit.second.IWasWondering" />
       <module name="ru-lanit-first" />
       <option name="PROGRAM_PARAMETERS" value="3 3 1 2 3 4 5 6 7 8 9 3 3 9 8 7 6 5 4 3 2 1" />
       <method v="2">
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
+      </method>
+    </configuration>
+    <configuration name="ItsMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.ItsMe" />
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MyDoubleCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -189,37 +222,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyDoubleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDoubleTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyLongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -238,18 +240,18 @@
     <list>
       <item itemvalue="Application.IWasWondering" />
       <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
-      <item itemvalue="JUnit.MyDoubleTest" />
-      <item itemvalue="JUnit.MyDoubleTest.add" />
       <item itemvalue="JUnit.MyDoubleCreatorTest" />
       <item itemvalue="JUnit.MyLongTest" />
+      <item itemvalue="Application.Hello" />
+      <item itemvalue="Application.ItsMe" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.MyDoubleCreatorTest" />
+        <item itemvalue="Application.ItsMe" />
+        <item itemvalue="Application.Hello" />
+        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.MyLongTest" />
-        <item itemvalue="JUnit.MyDoubleTest" />
-        <item itemvalue="JUnit.MyDoubleTest.add" />
       </list>
     </recent_temporary>
   </component>
@@ -294,13 +296,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00144" summary="Exceptions15Commit">
-      <created>1568100145859</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1568100145859</updated>
     </task>
     <task id="LOCAL-00145" summary="Exceptions16Commit">
       <created>1568101459620</created>
@@ -638,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568615957928</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="UnitTest6Commit">
+      <created>1568616567244</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1568616567244</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -685,7 +687,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Profiles3Commit" />
     <MESSAGE value="Profiles4Commit" />
     <MESSAGE value="Profiles5Commit" />
     <MESSAGE value="Profiles6Commit" />
@@ -710,7 +711,8 @@
     <MESSAGE value="UnitTest3Commit" />
     <MESSAGE value="UnitTest4Commit" />
     <MESSAGE value="UnitTest5Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest5Commit" />
+    <MESSAGE value="UnitTest6Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest6Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
