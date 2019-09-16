@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixSummatorTest.performExceptions">
+  <component name="RunManager" selected="JUnit.MatrixSummatorTest.performExtremeCase">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -198,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyDoubleTest.addExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixSummatorTest.performExtremeCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -207,8 +207,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleTest" />
-      <option name="METHOD_NAME" value="addExceptions" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
+      <option name="METHOD_NAME" value="performExtremeCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,19 +232,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MyDoubleTest.addExceptions" />
       <item itemvalue="JUnit.MyLongTest.multExceptions" />
       <item itemvalue="JUnit.MatrixSummatorTest" />
       <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
       <item itemvalue="JUnit.MatrixSummatorTest.perform" />
+      <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
         <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
         <item itemvalue="JUnit.MatrixSummatorTest.perform" />
         <item itemvalue="JUnit.MatrixSummatorTest" />
         <item itemvalue="JUnit.MyLongTest.multExceptions" />
-        <item itemvalue="JUnit.MyDoubleTest.addExceptions" />
       </list>
     </recent_temporary>
   </component>
@@ -289,13 +289,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00156" summary="Dependency2Commit">
-      <created>1568210389377</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1568210389377</updated>
     </task>
     <task id="LOCAL-00157" summary="Dependency3Commit">
       <created>1568210644330</created>
@@ -633,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568627638342</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="UnitTest18Commit">
+      <created>1568627903010</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1568627903011</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,7 +680,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="NewMathDependency2Commit" />
     <MESSAGE value="KMeansCommit" />
     <MESSAGE value="KMeans2Commit" />
     <MESSAGE value="KMeans3Commit" />
@@ -705,7 +704,8 @@
     <MESSAGE value="UnitTest15Commit" />
     <MESSAGE value="UnitTest16Commit" />
     <MESSAGE value="UnitTest17Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest17Commit" />
+    <MESSAGE value="UnitTest18Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest18Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

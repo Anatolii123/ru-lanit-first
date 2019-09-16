@@ -7,7 +7,7 @@ import ru.lanit.exceptions.AdditionException;
 
 import static org.junit.Assert.*;
 
-public class MatrixSummatorTest {
+public class MatrixMultiplicatorTest {
 
     /**
      * Тесты на проверку работоспособности методов

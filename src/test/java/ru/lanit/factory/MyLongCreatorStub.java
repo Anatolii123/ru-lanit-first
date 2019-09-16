@@ -11,5 +11,4 @@ public class MyLongCreatorStub extends MyLongCreator {
     protected Operations[][] create(int a, int b) {
         return content;
     }
-
 }
