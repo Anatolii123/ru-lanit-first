@@ -1,11 +1,8 @@
 package ru.lanit.factory;
 
-import jdk.nashorn.internal.objects.Global;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class MatrixBuilderTest {
     private ContentCreator contentCreator;
@@ -76,6 +73,9 @@ public class MatrixBuilderTest {
         }
 
     }
+    public void test(Integer... integers){
+
+    }
 
     @Before
     public void getContentCreator() {
@@ -85,6 +85,13 @@ public class MatrixBuilderTest {
         stub.setContent(check);
 
         contentCreator = stub;
+        test(1, 0);
+    }
+
+    public static int test = 10;
+
+    public static void test(int numerator, int denominator, Integer someInt) {
+        int result = numerator / denominator * test;
     }
 
 }
