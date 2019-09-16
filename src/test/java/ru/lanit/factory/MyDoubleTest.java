@@ -1,5 +1,6 @@
 package ru.lanit.factory;
 
+import jdk.nashorn.internal.objects.Global;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -97,43 +98,39 @@ public class MyDoubleTest {
     @Test
     public void addExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(1D);
-        MyDouble that = new MyDouble(5D);
+        MyDouble md = new MyDouble(Double.MAX_VALUE);
+        MyDouble that = new MyDouble(Double.MAX_VALUE);
 
         // act
         MyDouble res = (MyDouble) md.add(that);
 
         // assert
-        Assert.assertEquals(6D,(Double) res.value,0D);
+        Assert.assertEquals(Global.Infinity,(Double) res.value,0D);
     }
 
     @Test
     public void subExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(5D);
-        MyDouble that = new MyDouble(1D);
+        MyDouble md = new MyDouble(-Double.MAX_VALUE);
+        MyDouble that = new MyDouble(Double.MAX_VALUE);
 
         // act
         MyDouble res = (MyDouble) md.sub(that);
 
         // assert
-        Assert.assertEquals(4D,(Double) res.value,0D);
+        Assert.assertEquals(-Global.Infinity,(Double) res.value,0D);
     }
 
     @Test
     public void multExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(5D);
-        MyDouble that = new MyDouble(2D);
+        MyDouble md = new MyDouble(Double.MAX_VALUE);
+        MyDouble that = new MyDouble(Double.MAX_VALUE);
 
         // act
         MyDouble res = (MyDouble) md.mult(that);
 
         // assert
-        Assert.assertEquals(10D,(Double) res.value,0D);
+        Assert.assertEquals(Global.Infinity,(Double) res.value,0D);
     }
-
-
-
-
 }
