@@ -21,6 +21,7 @@ public class MyDoubleCreatorTest {
                 };
 
         // act
+
         Operations[][] res = mdc.create(3,3);
         MyDouble[][] res2 = (MyDouble[][])res;
 
