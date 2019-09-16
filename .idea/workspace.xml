@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -289,13 +289,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00155" summary="DependencyCommit">
-      <created>1568210165804</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1568210165804</updated>
     </task>
     <task id="LOCAL-00156" summary="Dependency2Commit">
       <created>1568210389377</created>
@@ -633,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568627130182</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="UnitTest17Commit">
+      <created>1568627638342</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1568627638342</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,7 +680,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="NewMathDependencyCommit" />
     <MESSAGE value="NewMathDependency2Commit" />
     <MESSAGE value="KMeansCommit" />
     <MESSAGE value="KMeans2Commit" />
@@ -705,7 +704,8 @@
     <MESSAGE value="UnitTest14Commit" />
     <MESSAGE value="UnitTest15Commit" />
     <MESSAGE value="UnitTest16Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest16Commit" />
+    <MESSAGE value="UnitTest17Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest17Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

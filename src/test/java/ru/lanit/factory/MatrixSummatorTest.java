@@ -52,12 +52,41 @@ public class MatrixSummatorTest {
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
 
         operand2.setMatrix(new MyDouble[][]{
-                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)}});
-
+                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
+                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)}});
 
         // act
         Operations[][] s = new MatrixSummator().perform(operand1,operand2);
 
+        // assert
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[0].length; j++) {
+                Assert.assertEquals(10d,s[i][j]);
+            }
+        }
+    }
+
+    /**
+     * Тесты на проверку крайних случаев
+     */
+    @Test
+    public void performExtremeCase() throws AdditionException {
+        // arrange
+        Matrix operand1 = new Matrix();
+        Matrix operand2 = new Matrix();
+
+        operand1.setMatrix(new MyDouble[][]{
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE, new MyDouble(3d)},
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(6d)},
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(9d)}});
+
+        operand2.setMatrix(new MyDouble[][]{
+                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
+                {new MyDouble(6d), new MyDouble(5d), new MyDouble(4d)},
+                {new MyDouble(3d), new MyDouble(2d), new MyDouble(1d)}});
+
+        // act
+        Operations[][] s = new MatrixSummator().perform(operand1,operand2);
 
         // assert
         for (int i = 0; i < s.length; i++) {
