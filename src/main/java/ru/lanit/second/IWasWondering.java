@@ -17,7 +17,6 @@ public class IWasWondering {
     public static void main (String[] args) throws Exception {
 
         doSolve();
-        kMeansClustering();
     }
 
     public static void doSolve() {
@@ -91,9 +90,6 @@ public class IWasWondering {
 //                System.out.println(wine);
 //            }
 //        }
-
-
-
     }
 
 }

@@ -253,13 +253,6 @@
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
     </task>
-    <task id="LOCAL-00138" summary="Exceptions9Commit">
-      <created>1568095529159</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1568095529159</updated>
-    </task>
     <task id="LOCAL-00139" summary="Exceptions10Commit">
       <created>1568096294417</created>
       <option name="number" value="00139" />
@@ -596,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568378339644</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="KMeans7Commit">
+      <created>1568383564369</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1568383564369</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -652,7 +652,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dependency7Commit" />
     <MESSAGE value="NewDependenciesCommit" />
     <MESSAGE value="NewDependencies2Commit" />
     <MESSAGE value="NewDependencies3Commit" />
@@ -677,7 +676,8 @@
     <MESSAGE value="KMeans4Commit" />
     <MESSAGE value="KMeans5Commit" />
     <MESSAGE value="KMeans6Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="KMeans6Commit" />
+    <MESSAGE value="KMeans7Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="KMeans7Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
