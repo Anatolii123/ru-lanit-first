@@ -16,11 +16,7 @@ public class MatrixBuilderTest {
         // arrange
         Matrix result = new Matrix();
 
-
         // act
         result.setMatrix(null);
-
-        // assert
-        Assert.assertEquals("message",null,result.getMatrix());
     }
 }
