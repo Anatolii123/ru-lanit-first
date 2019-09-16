@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSubstractorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MatrixMultiplicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MatrixMultiplicator.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest">
+  <component name="RunManager" selected="JUnit.MatrixBuilderTest.toMatrix">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -152,7 +154,7 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixBuilderTest.toMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -161,13 +163,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
+      <option name="METHOD_NAME" value="toMatrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixSubstractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixSummatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixSubstractorTest.perform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -176,29 +194,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixSummatorTest.perform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
       <option name="METHOD_NAME" value="perform" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixSummatorTest.performExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixSubstractorTest.performExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -207,14 +210,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
       <option name="METHOD_NAME" value="performExceptions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixSummatorTest.performExtremeCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixSubstractorTest.performExtremeCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -223,7 +226,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
       <option name="METHOD_NAME" value="performExtremeCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -232,19 +235,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixSummatorTest" />
-      <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
-      <item itemvalue="JUnit.MatrixSummatorTest.perform" />
-      <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
+      <item itemvalue="JUnit.MatrixSubstractorTest.perform" />
+      <item itemvalue="JUnit.MatrixSubstractorTest.performExceptions" />
+      <item itemvalue="JUnit.MatrixSubstractorTest.performExtremeCase" />
+      <item itemvalue="JUnit.MatrixSubstractorTest" />
+      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
-        <item itemvalue="JUnit.MatrixSummatorTest" />
-        <item itemvalue="JUnit.MatrixSummatorTest.perform" />
-        <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
-        <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
+        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
+        <item itemvalue="JUnit.MatrixSubstractorTest" />
+        <item itemvalue="JUnit.MatrixSubstractorTest.performExtremeCase" />
+        <item itemvalue="JUnit.MatrixSubstractorTest.performExceptions" />
+        <item itemvalue="JUnit.MatrixSubstractorTest.perform" />
       </list>
     </recent_temporary>
   </component>
@@ -289,20 +292,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00158" summary="Dependency4Commit">
-      <created>1568211132831</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1568211132831</updated>
-    </task>
-    <task id="LOCAL-00159" summary="Dependency5Commit">
-      <created>1568265356577</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1568265356578</updated>
     </task>
     <task id="LOCAL-00160" summary="Dependency6Commit">
       <created>1568267149408</created>
@@ -633,7 +622,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568629376747</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="UnitTest20Commit">
+      <created>1568630085025</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1568630085025</updated>
+    </task>
+    <task id="LOCAL-00208" summary="UnitTest21Commit">
+      <created>1568630254737</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1568630254737</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,8 +683,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="KMeans2Commit" />
-    <MESSAGE value="KMeans3Commit" />
     <MESSAGE value="KMeans4Commit" />
     <MESSAGE value="KMeans5Commit" />
     <MESSAGE value="KMeans6Commit" />
@@ -705,7 +706,9 @@
     <MESSAGE value="UnitTest17Commit" />
     <MESSAGE value="UnitTest18Commit" />
     <MESSAGE value="UnitTest19Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest19Commit" />
+    <MESSAGE value="UnitTest20Commit" />
+    <MESSAGE value="UnitTest21Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest21Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
