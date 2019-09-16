@@ -4,6 +4,7 @@ public class TransposeVisitor implements UnaryOperationVisitor {
 
     public void visit(Matrix operand) {
         Operations[][] a = operand.getMatrix();
+        Operations[][] b = new Operations[a.length][a[0].length];
         System.out.println("Транспонированная матрица");
         for (int i = 0; i < operand.getA(); i++) {
             for (int j = 0; j < operand.getB(); j++) {
