@@ -12,4 +12,7 @@ http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html -
 https://www.apache-maven.ru/profiles.html - профили Maven
 
 # Библиотека матриц
-https://github.com/mikera/core.matrix - ссылка на GitHub
+https://mvnrepository.com/artifact/org.apache.commons/commons-math3 - ссылка на репозиторий
+
+# Юнит-тесты
+https://habr.com/ru/post/169381/
