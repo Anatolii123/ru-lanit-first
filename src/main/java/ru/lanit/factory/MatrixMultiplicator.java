@@ -13,7 +13,7 @@ public class MatrixMultiplicator implements MatrixOperation {
 
         Operations[][] s = new Operations[operand1.getA()][operand2.getB()];
 
-        System.out.println("Произвдение матриц");
+        System.out.println("Произведение матриц");
         for (int i = 0; i < operand1.getA(); i++) {
             for (int j = 0; j < operand2.getB(); j++) {
                 for (int k = 0; k < operand1.getB(); k++) {

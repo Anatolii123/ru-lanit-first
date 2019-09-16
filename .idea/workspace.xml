@@ -97,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixSummatorTest">
+  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -150,6 +150,21 @@
       <option name="PROGRAM_PARAMETERS" value="3 3 1 2 3 4 5 6 7 8 9 3 3 9 8 7 6 5 4 3 2 1" />
       <method v="2">
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
+      </method>
+    </configuration>
+    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MatrixSummatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -215,37 +230,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLongTest.multExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
-      <option name="METHOD_NAME" value="multExceptions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MyLongTest.multExceptions" />
       <item itemvalue="JUnit.MatrixSummatorTest" />
       <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
       <item itemvalue="JUnit.MatrixSummatorTest.perform" />
       <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
         <item itemvalue="JUnit.MatrixSummatorTest" />
         <item itemvalue="JUnit.MatrixSummatorTest.perform" />
         <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
         <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
-        <item itemvalue="JUnit.MyLongTest.multExceptions" />
       </list>
     </recent_temporary>
   </component>
