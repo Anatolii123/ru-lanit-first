@@ -17,17 +17,17 @@ public class MatrixSummatorTest {
         Matrix operand1 = new Matrix();
         Matrix operand2 = new Matrix();
 
-        operand1.setMatrix(new MyDouble[][]{{new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
+        operand1.setMatrix(new MyDouble[][]{
+                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
 
         operand2.setMatrix(new MyDouble[][]{{new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
                 {new MyDouble(6d), new MyDouble(5d), new MyDouble(4d)},
                 {new MyDouble(3d), new MyDouble(2d), new MyDouble(1d)}});
-        Operations[][] s = new Operations[operand1.getA()][operand1.getB()];
 
         // act
-        s = new MatrixSummator().perform(operand1,operand2);
+        Operations[][] s = new MatrixSummator().perform(operand1,operand2);
 
         // assert
         for (int i = 0; i < s.length; i++) {
@@ -46,11 +46,13 @@ public class MatrixSummatorTest {
         Matrix operand1 = new Matrix();
         Matrix operand2 = new Matrix();
 
-        operand1.setMatrix(new MyDouble[][]{{new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
+        operand1.setMatrix(new MyDouble[][]{
+                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
 
-        operand2.setMatrix(new MyDouble[][]{{new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
+        operand2.setMatrix(new MyDouble[][]{
+                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
                 {new MyDouble(6d), new MyDouble(5d), new MyDouble(4d)}});
         Operations[][] s = new Operations[operand1.getA()][operand1.getB()];
 
