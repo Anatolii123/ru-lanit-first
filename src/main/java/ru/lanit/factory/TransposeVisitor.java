@@ -2,9 +2,8 @@ package ru.lanit.factory;
 
 public class TransposeVisitor implements UnaryOperationVisitor {
 
-    public Matrix visit(Matrix operand) {
+    public Operations[][] visit(Matrix operand) {
         Operations[][] a = operand.getMatrix();
-        Matrix b = new Matrix();
         System.out.println("Транспонированная матрица");
         for (int i = 0; i < operand.getA(); i++) {
             for (int j = 0; j < operand.getB(); j++) {
@@ -17,7 +16,6 @@ public class TransposeVisitor implements UnaryOperationVisitor {
             }
             System.out.println();
         }
-        b.setMatrix(a);
-        return b;
+        return a;
     }
 }

@@ -2,5 +2,5 @@ package ru.lanit.factory;
 
 public interface UnaryOperationVisitor {
     //транспонировать
-    Matrix visit(Matrix operand);
+    Operations[][] visit(Matrix operand);
 }
