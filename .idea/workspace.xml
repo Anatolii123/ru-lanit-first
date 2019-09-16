@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixSummatorTest.performExtremeCase">
+  <component name="RunManager" selected="JUnit.MatrixSummatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -240,10 +241,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixSummatorTest" />
+        <item itemvalue="JUnit.MatrixSummatorTest.perform" />
         <item itemvalue="JUnit.MatrixSummatorTest.performExtremeCase" />
         <item itemvalue="JUnit.MatrixSummatorTest.performExceptions" />
-        <item itemvalue="JUnit.MatrixSummatorTest.perform" />
-        <item itemvalue="JUnit.MatrixSummatorTest" />
         <item itemvalue="JUnit.MyLongTest.multExceptions" />
       </list>
     </recent_temporary>
@@ -289,13 +290,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00157" summary="Dependency3Commit">
-      <created>1568210644330</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1568210644330</updated>
     </task>
     <task id="LOCAL-00158" summary="Dependency4Commit">
       <created>1568211132831</created>
@@ -633,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568627903011</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="UnitTest19Commit">
+      <created>1568629376747</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1568629376747</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,7 +681,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="KMeansCommit" />
     <MESSAGE value="KMeans2Commit" />
     <MESSAGE value="KMeans3Commit" />
     <MESSAGE value="KMeans4Commit" />
@@ -705,7 +705,8 @@
     <MESSAGE value="UnitTest16Commit" />
     <MESSAGE value="UnitTest17Commit" />
     <MESSAGE value="UnitTest18Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest18Commit" />
+    <MESSAGE value="UnitTest19Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest19Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
