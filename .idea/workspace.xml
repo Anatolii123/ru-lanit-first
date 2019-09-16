@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/TransposeVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/TransposeVisitorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest.perform_Matrices_Matrix1x1">
+  <component name="RunManager" selected="JUnit.TransposeVisitorTest.visit">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -167,22 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest.perform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="perform" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MatrixMultiplicatorTest.performExtremeCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -231,21 +214,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransposeVisitorTest.visit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.TransposeVisitorTest" />
+      <option name="METHOD_NAME" value="visit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.perform" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.performExtremeCase" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.differentDimensionsMultiplicationTest" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.perform_Matrix1x1_Matrix1x1" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.perform_Matrices_Matrix1x1" />
+      <item itemvalue="JUnit.TransposeVisitorTest.visit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransposeVisitorTest.visit" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.perform_Matrices_Matrix1x1" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.perform_Matrix1x1_Matrix1x1" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.differentDimensionsMultiplicationTest" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.performExtremeCase" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.perform" />
       </list>
     </recent_temporary>
   </component>
@@ -290,27 +289,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00164" summary="NewDependencies3Commit">
-      <created>1568279473722</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1568279473722</updated>
-    </task>
-    <task id="LOCAL-00165" summary="ProfilesCommit">
-      <created>1568279892455</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1568279892455</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Profiles2Commit">
-      <created>1568282392577</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1568282392577</updated>
     </task>
     <task id="LOCAL-00167" summary="Profiles3Commit">
       <created>1568283164022</created>
@@ -634,7 +612,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568636313659</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="UnitTest26Commit">
+      <created>1568637118966</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1568637118966</updated>
+    </task>
+    <task id="LOCAL-00214" summary="UnitTest27Commit">
+      <created>1568637169199</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1568637169199</updated>
+    </task>
+    <task id="LOCAL-00215" summary="UnitTest28Commit">
+      <created>1568637248679</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1568637248679</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -681,9 +680,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTestCommit" />
-    <MESSAGE value="UnitTest2Commit" />
-    <MESSAGE value="UnitTest3Commit" />
     <MESSAGE value="UnitTest4Commit" />
     <MESSAGE value="UnitTest5Commit" />
     <MESSAGE value="UnitTest6Commit" />
@@ -706,7 +702,10 @@
     <MESSAGE value="UnitTest23Commit" />
     <MESSAGE value="UnitTest24Commit" />
     <MESSAGE value="UnitTest25Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest25Commit" />
+    <MESSAGE value="UnitTest26Commit" />
+    <MESSAGE value="UnitTest27Commit" />
+    <MESSAGE value="UnitTest28Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest28Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
