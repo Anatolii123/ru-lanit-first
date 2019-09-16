@@ -7,6 +7,10 @@ public class MyDoubleCreatorStub extends MyDoubleCreator {
         this.content = content;
     }
 
+    public Operations[][] getContent() {
+        return content;
+    }
+
     @Override
     protected Operations[][] create(int a, int b) {
         return content;

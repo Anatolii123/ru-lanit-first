@@ -12,13 +12,12 @@ public class MyDoubleCreatorTest {
         // arrange
         MyDoubleCreator mdc = new MyDoubleCreator();
         Double[][] array = {{1D,2D,3D},{4D,5D,6D},{7D,8D,9D}};
-
-        Operations[][] content =
-                {
+        MyDoubleCreatorStub mdc2 = (MyDoubleCreatorStub) mdc;
+        Operations[][] content = {
                         {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                         {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
-                        {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}
-                };
+                        {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}};
+        mdc2.setContent(content);
 
         // act
 
