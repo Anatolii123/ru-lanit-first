@@ -4,8 +4,7 @@
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/TransposeVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/TransposeVisitorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MatrixBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/MatrixBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/factory/Matrix.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixBuilderTest">
+  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -153,33 +152,10 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
       </method>
     </configuration>
-    <configuration name="MatrixBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in ru-lanit-first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixBuilderTest.toMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
-      <option name="METHOD_NAME" value="toMatrix" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransposeVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -209,13 +185,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.TransposeVisitorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransposeVisitorTest.visit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -224,8 +200,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.TransposeVisitorTest" />
-      <option name="METHOD_NAME" value="visit" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="METHOD_NAME" value="multiply_DifferentDimensionsMatrices_Matrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="METHOD_NAME" value="multiply_DifferentDimensionsMatrices_Matrix1x1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.TransposeVisitorTest.visit" />
-      <item itemvalue="JUnit.TransposeVisitorTest" />
-      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
-      <item itemvalue="JUnit.MatrixBuilderTest" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
+      <item itemvalue="JUnit.All in ru-lanit-first" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatrixBuilderTest" />
+        <item itemvalue="JUnit.All in ru-lanit-first" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
-        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
-        <item itemvalue="JUnit.TransposeVisitorTest" />
-        <item itemvalue="JUnit.TransposeVisitorTest.visit" />
       </list>
     </recent_temporary>
   </component>
@@ -290,20 +282,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00169" summary="Profiles5Commit">
-      <created>1568283401100</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1568283401100</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Profiles6Commit">
-      <created>1568283546215</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1568283546215</updated>
     </task>
     <task id="LOCAL-00171" summary="Profiles7Commit">
       <created>1568283603706</created>
@@ -634,7 +612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568639143648</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="UnitTest31Commit">
+      <created>1568640278067</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1568640278067</updated>
+    </task>
+    <task id="LOCAL-00219" summary="UnitTest32Commit">
+      <created>1568640331238</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1568640331238</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -681,8 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest6Commit" />
-    <MESSAGE value="UnitTest7Commit" />
     <MESSAGE value="UnitTest8Commit" />
     <MESSAGE value="UnitTest9Commit" />
     <MESSAGE value="UnitTest10Commit" />
@@ -706,7 +696,9 @@
     <MESSAGE value="UnitTest28Commit" />
     <MESSAGE value="UnitTest29Commit" />
     <MESSAGE value="UnitTest30Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest30Commit" />
+    <MESSAGE value="UnitTest31Commit" />
+    <MESSAGE value="UnitTest32Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest32Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -721,6 +713,16 @@
           <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/net/URLClassLoader.java</url>
           <line>359</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
