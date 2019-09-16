@@ -98,39 +98,39 @@ public class MyLongTest {
     @Test
     public void addExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(Double.MAX_VALUE);
-        MyDouble that = new MyDouble(Double.MAX_VALUE);
+        MyLong md = new MyLong(Long.MAX_VALUE);
+        MyLong that = new MyLong(Long.MAX_VALUE);
 
         // act
-        MyDouble res = (MyDouble) md.add(that);
+        MyLong res = (MyLong) md.add(that);
 
         // assert
-        Assert.assertEquals(Global.Infinity,(Double) res.value,0D);
+        Assert.assertEquals(Global.Infinity,(Long) res.value,0D);
     }
 
     @Test
     public void subExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(-Double.MAX_VALUE);
-        MyDouble that = new MyDouble(Double.MAX_VALUE);
+        MyLong md = new MyLong(-Long.MAX_VALUE);
+        MyLong that = new MyLong(Long.MAX_VALUE);
 
         // act
-        MyDouble res = (MyDouble) md.sub(that);
+        MyLong res = (MyLong) md.sub(that);
 
         // assert
-        Assert.assertEquals(-Global.Infinity,(Double) res.value,0D);
+        Assert.assertEquals(-Global.Infinity,(Long) res.value,0D);
     }
 
     @Test
     public void multExtremeCases() {
         // arrange
-        MyDouble md = new MyDouble(Double.MAX_VALUE);
-        MyDouble that = new MyDouble(Double.MAX_VALUE);
+        MyLong md = new MyLong(Long.MAX_VALUE);
+        MyLong that = new MyLong(Long.MAX_VALUE);
 
         // act
-        MyDouble res = (MyDouble) md.mult(that);
+        MyLong res = (MyLong) md.mult(that);
 
         // assert
-        Assert.assertEquals(Global.Infinity,(Double) res.value,0D);
+        Assert.assertEquals(Global.Infinity,(Long) res.value,0D);
     }
 }
