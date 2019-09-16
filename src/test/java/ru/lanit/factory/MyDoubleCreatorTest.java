@@ -3,6 +3,8 @@ package ru.lanit.factory;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.ByteArrayInputStream;
+
 import static org.junit.Assert.*;
 
 public class MyDoubleCreatorTest {
@@ -16,11 +18,12 @@ public class MyDoubleCreatorTest {
 
         // act
         Operations[][] res = mdc.create(3,3);
+        MyDouble[][] res2 = (MyDouble[][])res;
 
         // assert
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                Assert.assertArrayEquals(array[i][j], res[i][j]);
+                Assert.assertEquals(array[i][j],res2[i][j].value);
             }
         }
     }

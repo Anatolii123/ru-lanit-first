@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyLongTest">
+  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest.create">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -243,11 +246,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyLongTest" />
+        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.MyDoubleCreatorTest" />
+        <item itemvalue="JUnit.MyLongTest" />
         <item itemvalue="JUnit.MyDoubleTest" />
         <item itemvalue="JUnit.MyDoubleTest.add" />
-        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
       </list>
     </recent_temporary>
   </component>
@@ -292,13 +295,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00142" summary="Exceptions13Commit">
-      <created>1568099285472</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1568099285472</updated>
     </task>
     <task id="LOCAL-00143" summary="Exceptions14Commit">
       <created>1568099532769</created>
@@ -636,20 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568613881367</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="UnitTest4Commit">
+      <created>1568614375649</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1568614375649</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="360797000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -692,7 +686,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ProfilesCommit" />
     <MESSAGE value="Profiles2Commit" />
     <MESSAGE value="Profiles3Commit" />
     <MESSAGE value="Profiles4Commit" />
@@ -717,7 +710,8 @@
     <MESSAGE value="UnitTestCommit" />
     <MESSAGE value="UnitTest2Commit" />
     <MESSAGE value="UnitTest3Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest3Commit" />
+    <MESSAGE value="UnitTest4Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest4Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
