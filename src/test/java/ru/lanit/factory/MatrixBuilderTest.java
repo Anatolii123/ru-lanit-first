@@ -12,7 +12,7 @@ public class MatrixBuilderTest {
      * Тесты на проверку вызываемых исключений
      */
     @Test(expected = NullPointerException.class)
-    public void toMatrix() throws NullPointerException {
+    public void toMatrixExceptions() throws NullPointerException {
         // arrange
         Matrix result = new Matrix();
 
