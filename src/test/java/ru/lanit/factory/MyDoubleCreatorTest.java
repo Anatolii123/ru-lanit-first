@@ -12,11 +12,17 @@ public class MyDoubleCreatorTest {
 
         // arrange
         MyDoubleCreator mdc = new MyDoubleCreator();
+        Double[][] array = {{1D,2D,3D},{4D,5D,6D},{7D,8D,9D}};
 
         // act
         Operations[][] res = mdc.create(3,3);
 
         // assert
-        Assert.assertEquals(new Operations[3][3],res);
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                Assert.assertArrayEquals(array[i][j], res[i][j]);
+            }
+        }
     }
+
 }
