@@ -100,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest">
+  <component name="RunManager" selected="JUnit.MyLongCreatorTest.create">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -163,22 +163,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MatrixSummatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -225,21 +209,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyLongCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongCreatorTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       <item itemvalue="JUnit.MatrixSummatorTest" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
       <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
       <item itemvalue="JUnit.MyDoubleCreatorTest" />
+      <item itemvalue="JUnit.MyLongCreatorTest.create" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyLongCreatorTest.create" />
         <item itemvalue="JUnit.MyDoubleCreatorTest" />
         <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.MatrixSummatorTest" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       </list>
     </recent_temporary>
   </component>

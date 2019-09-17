@@ -13,7 +13,6 @@ public class MyDoubleCreatorTest extends AbstractTest {
 
     @Test
     public void create() {
-
         // arrange
         MyDoubleCreator mdc = new MyDoubleCreator();
         MyDoubleCreator myDoubleCreator = mock(MyDoubleCreator.class);
@@ -36,5 +35,4 @@ public class MyDoubleCreatorTest extends AbstractTest {
             }
         }
     }
-
 }
