@@ -7,11 +7,17 @@ import org.junit.Test;
 import ru.lanit.exceptions.AdditionException;
 import ru.lanit.exceptions.MultiplicationException;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class MatrixMultiplicatorTest {
 
     private Matrix matrix3x3 = new Matrix();
+    private Matrix check3x3 = new Matrix();
     private Matrix matrix2x3 = new Matrix();
     private Matrix matrix3x2 = new Matrix();
     private Matrix maxMatrix = new Matrix();
@@ -26,6 +32,10 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
+        check3x3.setMatrix(new MyDouble[][]{
+                {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
+                {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
+                {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}});
         matrix3x2.setMatrix(new MyDouble[][]{
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)},
@@ -74,12 +84,12 @@ public class MatrixMultiplicatorTest {
         Matrix operand2 = matrix3x2;
 
         // act
-        Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
+        Operations[][] s = new MatrixMultiplicator().perform(operand1, operand2);
 
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                Assert.assertEquals(12d,((MyDouble) s[i][j]).value,0d);
+                Assert.assertEquals(12d, ((MyDouble) s[i][j]).value, 0d);
             }
         }
     }

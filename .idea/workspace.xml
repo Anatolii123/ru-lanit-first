@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -287,20 +288,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00191" summary="UnitTest4Commit">
-      <created>1568614375649</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1568614375649</updated>
-    </task>
-    <task id="LOCAL-00192" summary="UnitTest5Commit">
-      <created>1568615957927</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1568615957928</updated>
     </task>
     <task id="LOCAL-00193" summary="UnitTest6Commit">
       <created>1568616567244</created>
@@ -631,7 +618,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568702397182</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="UnitTest53Commit">
+      <created>1568702608036</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1568702608036</updated>
+    </task>
+    <task id="LOCAL-00241" summary="UnitTest54Commit">
+      <created>1568702811141</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1568702811141</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -678,8 +679,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest28Commit" />
-    <MESSAGE value="UnitTest29Commit" />
     <MESSAGE value="UnitTest30Commit" />
     <MESSAGE value="UnitTest31Commit" />
     <MESSAGE value="UnitTest32Commit" />
@@ -703,7 +702,9 @@
     <MESSAGE value="UnitTest50Commit" />
     <MESSAGE value="UnitTest51Commit" />
     <MESSAGE value="UnitTest52Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest52Commit" />
+    <MESSAGE value="UnitTest53Commit" />
+    <MESSAGE value="UnitTest54Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest54Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
