@@ -15,8 +15,8 @@ public class MatrixMultiplicatorTest {
     private Matrix matrix2x3 = new Matrix();
     private Matrix matrix3x2 = new Matrix();
     private Matrix maxMatrix = new Matrix();
-    private Matrix Matrix11x1 = new Matrix();
-    private Matrix Matrix21x1 = new Matrix();
+    private Matrix matrix12 = new Matrix();
+    private Matrix matrix2 = new Matrix();
     private Matrix matrix3x1 = new Matrix();
     private Matrix matrix1x3 = new Matrix();
 
@@ -37,6 +37,8 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
+        matrix12.setMatrix(new MyDouble[][]{{new MyDouble(12d)}});
+        matrix2.setMatrix(new MyDouble[][]{{new MyDouble(2d)}});
 
     }
 
@@ -104,7 +106,6 @@ public class MatrixMultiplicatorTest {
     public void multiply_DoubleMaxValueMatrices_Infinity() throws MultiplicationException {
         // arrange
         Matrix operand1 = maxMatrix;
-
         Matrix operand2 = maxMatrix;
 
         // act
@@ -121,8 +122,8 @@ public class MatrixMultiplicatorTest {
     @Test
     public void multiply_Matrices1x1_Matrix1x1() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{{new MyDouble(12d)}});
-        operand2.setMatrix(new MyDouble[][]{{new MyDouble(2d)}});
+        Matrix operand1 = matrix12;
+        Matrix operand2 = matrix2;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
