@@ -93,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyLongTest.multExtremeCases">
+  <component name="RunManager" selected="JUnit.MatrixBuilderTest.toMatrix1x1">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -148,15 +148,7 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
       </method>
     </configuration>
-    <configuration name="All in ru-lanit-first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDoubleCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -165,8 +157,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixBuilderTest.toMatrix1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
+      <option name="METHOD_NAME" value="toMatrix1x1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,19 +229,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.All in ru-lanit-first" />
-      <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
       <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
       <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
       <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
+      <item itemvalue="JUnit.MatrixBuilderTest" />
+      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
+        <item itemvalue="JUnit.MatrixBuilderTest" />
         <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
         <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
         <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
-        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
-        <item itemvalue="JUnit.All in ru-lanit-first" />
       </list>
     </recent_temporary>
   </component>

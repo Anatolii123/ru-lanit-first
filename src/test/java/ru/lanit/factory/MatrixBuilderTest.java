@@ -53,19 +53,13 @@ public class MatrixBuilderTest {
     /**
      * Тесты на проверку крайних случаев
      */
-    @Before
-    public void getContentCreator() {
-        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
-        MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
-        stub.setContent(check);
-        contentCreator = stub;
-    }
 
     @Test
     public void toMatrix1x1() {
         // arrange
         check = new MyDouble[][]{{new MyDouble(12d)}};
-        MatrixBuilder matrixBuilder = new MatrixBuilder(contentCreator);
+        stub.setContent(check);
+        MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
         Matrix result = matrixBuilder.setA(1).setB(1).toMatrix();
