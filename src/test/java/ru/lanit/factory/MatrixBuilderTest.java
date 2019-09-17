@@ -70,6 +70,15 @@ public class MatrixBuilderTest {
     /**
      * Тесты на проверку крайних случаев
      */
+    @Before
+    public void getContentCreator() {
+        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
+        check = new MyDouble[][]{{new MyDouble(12d)}};
+        MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
+        stub.setContent(check);
+        contentCreator = stub;
+    }
+
     @Test
     public void toMatrix1x1() {
         // arrange
@@ -86,18 +95,6 @@ public class MatrixBuilderTest {
         }
 
     }
-    public void test(Integer... integers){
 
-    }
 
-    @Before
-    public void getContentCreator() {
-        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
-        check = new MyDouble[][]{{new MyDouble(12d)}};
-        MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
-        stub.setContent(check);
-
-        contentCreator = stub;
-        test(1, 0);
-    }
 }
