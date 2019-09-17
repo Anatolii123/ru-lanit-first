@@ -1,10 +1,7 @@
 package ru.lanit.factory;
 
 import org.junit.Assert;
-import org.junit.Ignore;
-import org.junit.Rule;
 import org.junit.Test;
-import org.mockito.stubbing.OngoingStubbing;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -14,7 +11,6 @@ public class MyDoubleCreatorTest extends AbstractTest {
     @Test
     public void create() {
         // arrange
-        MyDoubleCreator mdc = new MyDoubleCreator();
         MyDoubleCreator myDoubleCreator = mock(MyDoubleCreator.class);
         when(myDoubleCreator.create(3,3)).thenReturn(new MyDouble[][]{
                 {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},

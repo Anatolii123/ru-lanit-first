@@ -3,18 +3,16 @@ package ru.lanit.factory;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.stub;
 
 public class MyLongCreatorTest extends AbstractTest {
 
     @Test
     public void create() {
         // arrange
-        MyLongCreator mdc = new MyLongCreator();
         MyLongCreator myLongCreator = mock(MyLongCreator.class);
-        when(myLongCreator.create(3,3)).thenReturn(new MyLong[][]{
+        stub(myLongCreator.create(3,3)).toReturn(new MyLong[][]{
                 {new MyLong(1L), new MyLong(2L), new MyLong(3L)},
                 {new MyLong(4L), new MyLong(5L), new MyLong(6L)},
                 {new MyLong(7L), new MyLong(8L), new MyLong(9L)}});

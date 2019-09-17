@@ -4,7 +4,9 @@
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongCreatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyLongCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyLongCreatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -284,20 +286,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00212" summary="UnitTest25Commit">
-      <created>1568636313659</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
-      <option name="project" value="LOCAL" />
-      <updated>1568636313659</updated>
-    </task>
-    <task id="LOCAL-00213" summary="UnitTest26Commit">
-      <created>1568637118966</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
-      <option name="project" value="LOCAL" />
-      <updated>1568637118966</updated>
     </task>
     <task id="LOCAL-00214" summary="UnitTest27Commit">
       <created>1568637169199</created>
@@ -628,7 +616,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568717723472</updated>
     </task>
-    <option name="localTasksCounter" value="261" />
+    <task id="LOCAL-00261" summary="UnitTest74Commit">
+      <created>1568720312400</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1568720312400</updated>
+    </task>
+    <task id="LOCAL-00262" summary="UnitTest75Commit">
+      <created>1568720553373</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1568720553373</updated>
+    </task>
+    <option name="localTasksCounter" value="263" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -675,8 +677,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest49Commit" />
-    <MESSAGE value="UnitTest50Commit" />
     <MESSAGE value="UnitTest51Commit" />
     <MESSAGE value="UnitTest52Commit" />
     <MESSAGE value="UnitTest53Commit" />
@@ -700,7 +700,9 @@
     <MESSAGE value="UnitTest71Commit" />
     <MESSAGE value="UnitTest72Commit" />
     <MESSAGE value="UnitTest73Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest73Commit" />
+    <MESSAGE value="UnitTest74Commit" />
+    <MESSAGE value="UnitTest75Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest75Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
