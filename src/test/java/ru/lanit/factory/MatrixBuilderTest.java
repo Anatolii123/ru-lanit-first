@@ -11,6 +11,19 @@ public class MatrixBuilderTest {
     /**
      * Тесты на проверку работоспособности методов
      */
+
+    @Before
+    public void getCreator() {
+        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
+        check = new MyDouble[][]{{new MyDouble(12d)}};
+        MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
+        stub.setContent(check);
+
+        contentCreator = stub;
+        test(1, 0);
+    }
+
+
     @Test
     public void toMatrix() {
         // arrange
@@ -87,11 +100,4 @@ public class MatrixBuilderTest {
         contentCreator = stub;
         test(1, 0);
     }
-
-    public static int test = 10;
-
-    public static void test(int numerator, int denominator, Integer someInt) {
-        int result = numerator / denominator * test;
-    }
-
 }
