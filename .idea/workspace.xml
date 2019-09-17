@@ -4,6 +4,7 @@
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +14,9 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ru-lanit-first" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
+  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -159,21 +163,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -186,21 +175,6 @@
       <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
       <option name="METHOD_NAME" value="multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixSubstractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,21 +194,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyDoubleCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyDoubleCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixSubstractorTest" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       <item itemvalue="JUnit.MatrixSummatorTest" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
+      <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
+      <item itemvalue="JUnit.MyDoubleCreatorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyDoubleCreatorTest" />
+        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.MatrixSummatorTest" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
-        <item itemvalue="JUnit.MatrixSubstractorTest" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,13 +284,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00211" summary="UnitTest24Commit">
-      <created>1568635131994</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1568635131994</updated>
     </task>
     <task id="LOCAL-00212" summary="UnitTest25Commit">
       <created>1568636313659</created>
@@ -623,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568717218563</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="UnitTest73Commit">
+      <created>1568717723472</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1568717723472</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -670,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest48Commit" />
     <MESSAGE value="UnitTest49Commit" />
     <MESSAGE value="UnitTest50Commit" />
     <MESSAGE value="UnitTest51Commit" />
@@ -695,7 +699,8 @@
     <MESSAGE value="UnitTest70Commit" />
     <MESSAGE value="UnitTest71Commit" />
     <MESSAGE value="UnitTest72Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest72Commit" />
+    <MESSAGE value="UnitTest73Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest73Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
