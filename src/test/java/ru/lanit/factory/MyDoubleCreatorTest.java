@@ -1,9 +1,11 @@
 package ru.lanit.factory;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 
+@Ignore
 public class MyDoubleCreatorTest {
 
     @Test

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="UnitTest68Commit">
+    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSubstractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSubstractorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixSummatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest">
+  <component name="RunManager" selected="JUnit.MatrixSummatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -153,6 +153,14 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
       </method>
     </configuration>
+    <configuration name="All in ru-lanit-first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -168,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_identityMatrixANDmatrix3x3_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -178,23 +186,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
       <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_identityMatrixANDmatrix3x3_matrix3x3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_matrix3x3ANDidentityMatrix_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_matrix3x3ANDidentityMatrix_matrix3x3" />
+      <option name="METHOD_NAME" value="multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,17 +226,17 @@
       <item itemvalue="Application.IWasWondering" />
       <item itemvalue="JUnit.MatrixSubstractorTest" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix3x3ANDidentityMatrix_matrix3x3" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_identityMatrixANDmatrix3x3_matrix3x3" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
       <item itemvalue="JUnit.MatrixSummatorTest" />
+      <item itemvalue="JUnit.All in ru-lanit-first" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
-        <item itemvalue="JUnit.MatrixSubstractorTest" />
         <item itemvalue="JUnit.MatrixSummatorTest" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_identityMatrixANDmatrix3x3_matrix3x3" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix3x3ANDidentityMatrix_matrix3x3" />
+        <item itemvalue="JUnit.All in ru-lanit-first" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix_3x3_and_identityMatrix_matrix3x3" />
+        <item itemvalue="JUnit.MatrixSubstractorTest" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,13 +281,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00207" summary="UnitTest20Commit">
-      <created>1568630085025</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1568630085025</updated>
     </task>
     <task id="LOCAL-00208" summary="UnitTest21Commit">
       <created>1568630254737</created>
@@ -633,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568711733988</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="UnitTest69Commit">
+      <created>1568712260456</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1568712260456</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -680,7 +672,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest44Commit" />
     <MESSAGE value="UnitTest45Commit" />
     <MESSAGE value="UnitTest46Commit" />
     <MESSAGE value="UnitTest47Commit" />
@@ -705,7 +696,8 @@
     <MESSAGE value="UnitTest66Commit" />
     <MESSAGE value="UnitTest67Commit" />
     <MESSAGE value="UnitTest68Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest68Commit" />
+    <MESSAGE value="UnitTest69Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest69Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

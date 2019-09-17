@@ -33,7 +33,7 @@ public class MatrixMultiplicatorTest extends AbstractTest {
      * Тесты на проверку работоспособности методов
      */
     @Test
-    public void multiply_matrix3x3ANDmatrix3x3_check3x3() throws MultiplicationException {
+    public void multiply_matrix_3x3_and_matrix_3x3_check3x3() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix3x3;
@@ -134,18 +134,18 @@ public class MatrixMultiplicatorTest extends AbstractTest {
     }
 
     @Test
-    public void multiply_matrix3x3ANDidentityMatrix_matrix3x3() throws MultiplicationException {
+    public void multiply_matrix_3x3_and_identityMatrix_matrix3x3() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = identityMatrix;
 
         // act
-        Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
+        Operations[][] s = new MatrixMultiplicator().perform(operand1, operand2);
 
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                Assert.assertEquals(((MyDouble) operand1.getMatrix()[i][j]).value,((MyDouble) s[i][j]).value,0d);
+                Assert.assertEquals(((MyDouble) operand1.getMatrix()[i][j]).value, ((MyDouble) s[i][j]).value, 0d);
             }
         }
     }
