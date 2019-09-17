@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixMultiplicatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest">
+  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest.multiply_InconsistentMatrices_MultiplicationException">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -197,7 +196,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLongTest.multExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -206,14 +205,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
-      <option name="METHOD_NAME" value="multExtremeCases" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="METHOD_NAME" value="multiply_DifferentDimensionsMatrices_Matrix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLongTest.subExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest.multiply_InconsistentMatrices_MultiplicationException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -222,8 +221,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
-      <option name="METHOD_NAME" value="subExtremeCases" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="METHOD_NAME" value="multiply_InconsistentMatrices_MultiplicationException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,19 +230,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
-      <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
       <item itemvalue="JUnit.MatrixBuilderTest" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_InconsistentMatrices_MultiplicationException" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_InconsistentMatrices_MultiplicationException" />
+        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
         <item itemvalue="JUnit.MatrixBuilderTest" />
-        <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
-        <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
       </list>
     </recent_temporary>
   </component>
@@ -288,13 +287,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00193" summary="UnitTest6Commit">
-      <created>1568616567244</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1568616567244</updated>
     </task>
     <task id="LOCAL-00194" summary="UnitTest7Commit">
       <created>1568617339591</created>
@@ -632,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568702811141</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="UnitTest55Commit">
+      <created>1568704924801</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1568704924801</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -679,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest30Commit" />
     <MESSAGE value="UnitTest31Commit" />
     <MESSAGE value="UnitTest32Commit" />
     <MESSAGE value="UnitTest33Commit" />
@@ -704,7 +702,8 @@
     <MESSAGE value="UnitTest52Commit" />
     <MESSAGE value="UnitTest53Commit" />
     <MESSAGE value="UnitTest54Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest54Commit" />
+    <MESSAGE value="UnitTest55Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest55Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
