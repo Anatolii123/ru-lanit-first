@@ -144,10 +144,7 @@ public class MatrixMultiplicatorTest {
     @Test
     public void multiply_DifferentDimensionsMatrices_Matrix1x1() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d),
-                        new MyDouble(2d),
-                        new MyDouble(2d)}});
+        operand1.setMatrix(new MyDouble[][]{{new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
 
         operand2.setMatrix(new MyDouble[][]{
                 {new MyDouble(2d)},
@@ -156,13 +153,11 @@ public class MatrixMultiplicatorTest {
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
-        MyDouble[][] s2 = new MyDouble[s.length][s[0].length];
 
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                s2[i][j] = (MyDouble) s[i][j];
-                Assert.assertEquals(12d,s2[i][j].value,0d);
+                Assert.assertEquals(12d,((MyDouble) s[i][j]).value,0d);
             }
         }
     }
