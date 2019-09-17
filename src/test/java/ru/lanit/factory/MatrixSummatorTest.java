@@ -11,12 +11,13 @@ import static org.junit.Assert.*;
 public class MatrixSummatorTest {
 
     private Matrix matrix3x3 = new Matrix();
+    private Matrix reverseMatrix3x3 = new Matrix();
     private Operations[][] check3x3;
     private Matrix matrix2x3 = new Matrix();
     private Matrix maxMatrix = new Matrix();
     private Operations[][] maxCheck;
     private Matrix zeroMatrix3x3 = new Matrix();
-    private Matrix reverseMatrix3x3 = new Matrix();
+
 
     @Before
     public void getMatrices() {
@@ -53,7 +54,7 @@ public class MatrixSummatorTest {
      * Тесты на проверку работоспособности методов
      */
     @Test
-    public void perform() throws AdditionException {
+    public void summarize_matrix3x3ANDreverseMatrix3x3_check3x3() throws AdditionException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = reverseMatrix3x3;
@@ -73,7 +74,7 @@ public class MatrixSummatorTest {
      * Тесты на проверку вызываемых исключений
      */
     @Test(expected = AdditionException.class)
-    public void performExceptions() throws AdditionException {
+    public void summarize_matrix3x3ANDmatrix2x3_AdditionException() throws AdditionException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix2x3;
@@ -86,7 +87,7 @@ public class MatrixSummatorTest {
      * Тесты на проверку крайних случаев
      */
     @Test
-    public void performExtremeCase() throws AdditionException {
+    public void summarize_maxMatrixANDmaxMatrix_maxCheck() throws AdditionException {
         // arrange
         Matrix operand1 = maxMatrix;
         Matrix operand2 = maxMatrix;
@@ -103,7 +104,7 @@ public class MatrixSummatorTest {
     }
 
     @Test
-    public void summarize_matrix3x3zeromatrix3x3_matrix3x3() throws AdditionException {
+    public void summarize_matrix3x3ANDzeromatrix3x3_matrix3x3() throws AdditionException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = zeroMatrix3x3;
@@ -119,4 +120,20 @@ public class MatrixSummatorTest {
         }
     }
 
+    @Test
+    public void summarize_zeromatrix3x3ANDmatrix3x3_matrix3x3() throws AdditionException {
+        // arrange
+        Matrix operand1 = zeroMatrix3x3;
+        Matrix operand2 = matrix3x3;
+
+        // act
+        Operations[][] s = new MatrixSummator().perform(operand1,operand2);
+
+        // assert
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[0].length; j++) {
+                Assert.assertEquals(((MyDouble) operand2.getMatrix()[i][j]).value,((MyDouble) s[i][j]).value,0d);
+            }
+        }
+    }
 }

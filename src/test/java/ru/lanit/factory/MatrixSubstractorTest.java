@@ -103,7 +103,7 @@ public class MatrixSubstractorTest {
     }
 
     @Test
-    public void substract_matrix3x3zeromatrix3x3_matrix3x3() {
+    public void substract_zeroMatrix3x3FROMmatrix3x3_matrix3x3() {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = zeroMatrix3x3;

@@ -28,6 +28,7 @@ public class MatrixMultiplicatorTest {
     private Matrix matrix3x1 = new Matrix();
     private Matrix matrix1x3 = new Matrix();
     private Operations[][] check1x1;
+    private Matrix identityMatrix = new Matrix();
 
     @Before
     public void getMatrices() {
@@ -65,6 +66,10 @@ public class MatrixMultiplicatorTest {
         matrix12.setMatrix(new MyDouble[][]{{new MyDouble(12d)}});
         matrix2.setMatrix(new MyDouble[][]{{new MyDouble(1d)}});
         check1x1 = new MyDouble[][]{{new MyDouble(12d)}};
+        identityMatrix.setMatrix(new MyDouble[][]{
+                {new MyDouble(1d), new MyDouble(0d), new MyDouble(0d)},
+                {new MyDouble(0d), new MyDouble(1d), new MyDouble(0d)},
+                {new MyDouble(0d), new MyDouble(0d), new MyDouble(1d)}});
     }
 
     /**
@@ -172,10 +177,10 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_matrix3x1ANDmatrix2_matrix3x1() throws MultiplicationException {
+    public void multiply_matrix3x3ANDidentityMatrix_matrix3x3() throws MultiplicationException {
         // arrange
-        Matrix operand1 = matrix3x1;
-        Matrix operand2 = matrix2;
+        Matrix operand1 = matrix3x3;
+        Matrix operand2 = identityMatrix;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
@@ -189,10 +194,10 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_matrix2ANDmatrix1x3_matrix1x3() throws MultiplicationException {
+    public void multiply_identityMatrixANDmatrix3x3_matrix3x3() throws MultiplicationException {
         // arrange
-        Matrix operand1 = matrix2;
-        Matrix operand2 = matrix1x3;
+        Matrix operand1 = identityMatrix;
+        Matrix operand2 = matrix3x3;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
