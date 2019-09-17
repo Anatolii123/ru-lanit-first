@@ -24,3 +24,5 @@ https://habr.com/ru/post/279535/ - тестирование. фундамент�
 https://habr.com/ru/company/jugru/blog/343298/ - интеграционное тестирование
 
 https://habr.com/ru/company/yandex/blog/184634/ - матчеры
+
+https://habr.com/ru/post/444982/ - Мокито
