@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
+  <component name="RunManager" selected="JUnit.MyLongTest.multExtremeCases">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -159,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixBuilderTest.toMatrix1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyDoubleCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -168,14 +168,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
-      <option name="METHOD_NAME" value="toMatrix1x1" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLongTest.addExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -184,29 +184,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_DifferentDimensionsMatrices_Matrix" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
+      <option name="METHOD_NAME" value="addExtremeCases" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLongTest.multExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -215,8 +200,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_DifferentDimensionsMatrices_Matrix1x1" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
+      <option name="METHOD_NAME" value="multExtremeCases" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLongTest.subExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
+      <option name="METHOD_NAME" value="subExtremeCases" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
+      <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
+      <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
+      <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
+      <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
+        <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
+        <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
+        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix1x1" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_DifferentDimensionsMatrices_Matrix" />
-        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
       </list>
     </recent_temporary>
   </component>
@@ -281,13 +282,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00173" summary="Profiles9Commit">
-      <created>1568283924125</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1568283924125</updated>
     </task>
     <task id="LOCAL-00174" summary="Profiles10Commit">
       <created>1568284824125</created>
@@ -625,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568644809710</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="UnitTest35Commit">
+      <created>1568697204524</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1568697204524</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -672,7 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest10Commit" />
     <MESSAGE value="UnitTest11Commit" />
     <MESSAGE value="UnitTest12Commit" />
     <MESSAGE value="UnitTest13Commit" />
@@ -697,7 +697,8 @@
     <MESSAGE value="UnitTest32Commit" />
     <MESSAGE value="UnitTest33Commit" />
     <MESSAGE value="UnitTest34Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest34Commit" />
+    <MESSAGE value="UnitTest35Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest35Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

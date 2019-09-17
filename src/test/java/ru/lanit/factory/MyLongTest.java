@@ -105,7 +105,7 @@ public class MyLongTest {
         MyLong res = (MyLong) md.add(that);
 
         // assert
-        Assert.assertEquals(Global.Infinity,(Long) res.value,0D);
+        Assert.assertEquals(-2L,(Long) res.value,0D);
     }
 
     @Test
@@ -118,7 +118,7 @@ public class MyLongTest {
         MyLong res = (MyLong) md.sub(that);
 
         // assert
-        Assert.assertEquals(-Global.Infinity,(Long) res.value,0D);
+        Assert.assertEquals(2L,(Long) res.value,0D);
     }
 
     @Test
@@ -131,6 +131,6 @@ public class MyLongTest {
         MyLong res = (MyLong) md.mult(that);
 
         // assert
-        Assert.assertEquals(Global.Infinity,(Long) res.value,0D);
+        Assert.assertEquals(1L,(Long) res.value,0D);
     }
 }
