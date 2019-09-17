@@ -170,4 +170,40 @@ public class MatrixMultiplicatorTest {
             }
         }
     }
+
+    @Test
+    public void multiply_matrix3x1matrix2_matrix3x1() throws MultiplicationException {
+        // arrange
+        Matrix operand1 = matrix3x1;
+        Matrix operand2 = matrix2;
+
+        // act
+        Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
+
+        // assert
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[0].length; j++) {
+                Assert.assertEquals(((MyDouble) operand1.getMatrix()[i][j]).value,((MyDouble) s[i][j]).value,0d);
+            }
+        }
+    }
+
+    @Test
+    public void multiply_matrix2matrix1x3_matrix1x3() throws MultiplicationException {
+        // arrange
+        Matrix operand1 = matrix2;
+        Matrix operand2 = matrix1x3;
+
+        // act
+        Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
+
+        // assert
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[0].length; j++) {
+                Assert.assertEquals(((MyDouble) operand2.getMatrix()[i][j]).value,((MyDouble) s[i][j]).value,0d);
+            }
+        }
+    }
+
+
 }
