@@ -86,7 +86,7 @@ public class MatrixSubstractorTest {
      * Тесты на проверку крайних случаев
      */
     @Test
-    public void performExtremeCase() {
+    public void substract_minMatrixmaxMatrix_minusMaxCheck() {
         // arrange
         Matrix operand1 = minMatrix;
         Matrix operand2 = maxMatrix;
@@ -101,4 +101,22 @@ public class MatrixSubstractorTest {
             }
         }
     }
+
+    @Test
+    public void substract_matrix3x3zeromatrix3x3_matrix3x3() {
+        // arrange
+        Matrix operand1 = matrix3x3;
+        Matrix operand2 = zeroMatrix3x3;
+
+        // act
+        Operations[][] s = new MatrixSubstractor().perform(operand1,operand2);
+
+        // assert
+        for (int i = 0; i < s.length; i++) {
+            for (int j = 0; j < s[0].length; j++) {
+                Assert.assertEquals(((MyDouble) operand1.getMatrix()[i][j]).value,((MyDouble) s[i][j]).value,0d);
+            }
+        }
+    }
+
 }

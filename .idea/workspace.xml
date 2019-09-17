@@ -95,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixSubstractorTest">
+  <component name="RunManager" selected="JUnit.MatrixSubstractorTest.substract_matrix3x3zeromatrix3x3_matrix3x3">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -182,22 +182,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixMultiplicatorTest.multiply_matrixNx1matrix1x1_check1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
-      <option name="METHOD_NAME" value="multiply_matrixNx1matrix1x1_check1x1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MatrixSubstractorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -229,21 +213,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MatrixSubstractorTest.substract_matrix3x3zeromatrix3x3_matrix3x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSubstractorTest" />
+      <option name="METHOD_NAME" value="substract_matrix3x3zeromatrix3x3_matrix3x3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrixNx1matrix1x1_check1x1" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix3x1matrix2_matrix3x1" />
       <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix2matrix1x3_matrix1x3" />
       <item itemvalue="JUnit.MatrixSubstractorTest" />
       <item itemvalue="JUnit.MatrixSubstractorTest.performExtremeCase" />
+      <item itemvalue="JUnit.MatrixSubstractorTest.substract_matrix3x3zeromatrix3x3_matrix3x3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixSubstractorTest.substract_matrix3x3zeromatrix3x3_matrix3x3" />
         <item itemvalue="JUnit.MatrixSubstractorTest" />
         <item itemvalue="JUnit.MatrixSubstractorTest.performExtremeCase" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix2matrix1x3_matrix1x3" />
         <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrix3x1matrix2_matrix3x1" />
-        <item itemvalue="JUnit.MatrixMultiplicatorTest.multiply_matrixNx1matrix1x1_check1x1" />
       </list>
     </recent_temporary>
   </component>
