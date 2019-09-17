@@ -14,8 +14,7 @@ public class MatrixMultiplicatorTest {
     private Matrix normalMatrix = new Matrix();
     private Matrix matrix2x3 = new Matrix();
     private Matrix matrix3x2 = new Matrix();
-    private Matrix maxMatrix1 = new Matrix();
-    private Matrix maxMatrix2 = new Matrix();
+    private Matrix maxMatrix = new Matrix();
     private Matrix Matrix11x1 = new Matrix();
     private Matrix Matrix21x1 = new Matrix();
     private Matrix matrix3x1 = new Matrix();
@@ -34,6 +33,10 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)}});
+        maxMatrix.setMatrix(new MyDouble[][]{
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
+                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
 
     }
 
@@ -100,15 +103,9 @@ public class MatrixMultiplicatorTest {
     @Test
     public void multiply_DoubleMaxValueMatrices_Infinity() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
+        Matrix operand1 = maxMatrix;
 
-        operand2.setMatrix(new MyDouble[][]{
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
+        Matrix operand2 = maxMatrix;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
