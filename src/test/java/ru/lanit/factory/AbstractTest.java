@@ -20,8 +20,6 @@ public class AbstractTest {
     protected Matrix identityMatrix = new Matrix();
     private Matrix zeroMatrix3x3 = new Matrix();
 
-
-
     public void getMatrices() {
         minMatrix.setMatrix(new MyDouble[][]{
                 {new MyDouble(-Double.MAX_VALUE), new MyDouble(-Double.MAX_VALUE), new MyDouble(-Double.MAX_VALUE)},
@@ -35,13 +33,13 @@ public class AbstractTest {
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)}};
+        matrix2x3.setMatrix(new MyDouble[][]{
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         matrix3x2.setMatrix(new MyDouble[][]{
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)}});
-        matrix2x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         check2x2 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d)}};
@@ -50,11 +48,6 @@ public class AbstractTest {
                 {new MyDouble(2d)},
                 {new MyDouble(2d)}});
         matrix1x3.setMatrix(new MyDouble[][]{{new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-        maxMatrix.setMatrix(new MyDouble[][]{
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
-
         matrix12.setMatrix(new MyDouble[][]{{new MyDouble(12d)}});
         matrix2.setMatrix(new MyDouble[][]{{new MyDouble(1d)}});
         check1x1 = new MyDouble[][]{{new MyDouble(12d)}};
@@ -67,7 +60,4 @@ public class AbstractTest {
                 {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)},
                 {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)}});
     }
-
-
-
 }
