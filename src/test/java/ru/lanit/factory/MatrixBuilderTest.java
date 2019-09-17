@@ -15,12 +15,9 @@ public class MatrixBuilderTest {
     @Before
     public void getCreator() {
         // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
-        check = new MyDouble[][]{{new MyDouble(12d)}};
         MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
         stub.setContent(check);
-
         contentCreator = stub;
-        test(1, 0);
     }
 
 
@@ -29,14 +26,15 @@ public class MatrixBuilderTest {
         // arrange
         Matrix result = new Matrix();
         MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
-        stub.setContent(new MyDouble[][]{
-                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
-                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
-                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
         MyDouble[][] check = {
                 {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}};
+        stub.setContent(new MyDouble[][]{
+                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
+                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
+                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
+
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
 

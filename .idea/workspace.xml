@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyLongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,27 +281,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00174" summary="Profiles10Commit">
-      <created>1568284824125</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1568284824126</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Profiles11Commit">
-      <created>1568289746292</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1568289746292</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Profiles12Commit">
-      <created>1568296260490</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1568296260490</updated>
     </task>
     <task id="LOCAL-00177" summary="Profiles13Commit">
       <created>1568355914944</created>
@@ -626,7 +604,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568697204524</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="UnitTest36Commit">
+      <created>1568697495935</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1568697495935</updated>
+    </task>
+    <task id="LOCAL-00224" summary="UnitTest37Commit">
+      <created>1568697619134</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1568697619134</updated>
+    </task>
+    <task id="LOCAL-00225" summary="UnitTest38Commit">
+      <created>1568697662094</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1568697662094</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -673,9 +672,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest11Commit" />
-    <MESSAGE value="UnitTest12Commit" />
-    <MESSAGE value="UnitTest13Commit" />
     <MESSAGE value="UnitTest14Commit" />
     <MESSAGE value="UnitTest15Commit" />
     <MESSAGE value="UnitTest16Commit" />
@@ -698,7 +694,10 @@
     <MESSAGE value="UnitTest33Commit" />
     <MESSAGE value="UnitTest34Commit" />
     <MESSAGE value="UnitTest35Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest35Commit" />
+    <MESSAGE value="UnitTest36Commit" />
+    <MESSAGE value="UnitTest37Commit" />
+    <MESSAGE value="UnitTest38Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest38Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -713,16 +712,6 @@
           <url>jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/net/URLClassLoader.java</url>
           <line>359</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
