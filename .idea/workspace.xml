@@ -288,13 +288,6 @@
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
     </task>
-    <task id="LOCAL-00194" summary="UnitTest7Commit">
-      <created>1568617339591</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1568617339591</updated>
-    </task>
     <task id="LOCAL-00195" summary="UnitTest8Commit">
       <created>1568619587837</created>
       <option name="number" value="00195" />
@@ -631,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568704924801</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="UnitTest56Commit">
+      <created>1568705383003</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1568705383003</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -678,7 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest31Commit" />
     <MESSAGE value="UnitTest32Commit" />
     <MESSAGE value="UnitTest33Commit" />
     <MESSAGE value="UnitTest34Commit" />
@@ -703,7 +702,8 @@
     <MESSAGE value="UnitTest53Commit" />
     <MESSAGE value="UnitTest54Commit" />
     <MESSAGE value="UnitTest55Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest55Commit" />
+    <MESSAGE value="UnitTest56Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest56Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

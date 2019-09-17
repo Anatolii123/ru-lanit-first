@@ -22,10 +22,12 @@ public class MatrixMultiplicatorTest {
     private Matrix matrix3x2 = new Matrix();
     private Operations[][] check2x2;
     private Matrix maxMatrix = new Matrix();
+    private Operations[][] maxCheck;
     private Matrix matrix12 = new Matrix();
     private Matrix matrix2 = new Matrix();
     private Matrix matrix3x1 = new Matrix();
     private Matrix matrix1x3 = new Matrix();
+    private Operations[][] check1x1;
 
     @Before
     public void getMatrices() {
@@ -41,6 +43,9 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d)}});
+        matrix2x3.setMatrix(new MyDouble[][]{
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         check2x2 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d)}};
@@ -48,17 +53,18 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(2d)},
                 {new MyDouble(2d)},
                 {new MyDouble(2d)}});
-        matrix2x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         matrix1x3.setMatrix(new MyDouble[][]{{new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         maxMatrix.setMatrix(new MyDouble[][]{
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
+        maxCheck = new MyDouble[][]{
+                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
+                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
+                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)}};
         matrix12.setMatrix(new MyDouble[][]{{new MyDouble(12d)}});
-        matrix2.setMatrix(new MyDouble[][]{{new MyDouble(2d)}});
-
+        matrix2.setMatrix(new MyDouble[][]{{new MyDouble(1d)}});
+        check1x1 = new MyDouble[][]{{new MyDouble(12d)}};
     }
 
     /**
@@ -115,7 +121,7 @@ public class MatrixMultiplicatorTest {
      * Тесты на проверку крайних случаев
      */
     @Test
-    public void multiply_DoubleMaxValueMatrices_Infinity() throws MultiplicationException {
+    public void multiply_DoubleMaxValueMatrices_maxCheck() throws MultiplicationException {
         // arrange
         Matrix operand1 = maxMatrix;
         Matrix operand2 = maxMatrix;
@@ -126,13 +132,13 @@ public class MatrixMultiplicatorTest {
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                Assert.assertEquals(Global.Infinity,((MyDouble) s[i][j]).value,0d);
+                Assert.assertEquals(((MyDouble) maxCheck[i][j]).value,((MyDouble) s[i][j]).value,0d);
             }
         }
     }
 
     @Test
-    public void multiply_Matrices1x1_Matrix1x1() throws MultiplicationException {
+    public void multiply_Matrices1x1_check1x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix12;
         Matrix operand2 = matrix2;
@@ -143,13 +149,13 @@ public class MatrixMultiplicatorTest {
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                Assert.assertEquals(24d,((MyDouble) s[i][j]).value,0d);
+                Assert.assertEquals(((MyDouble) check1x1[i][j]).value,((MyDouble) s[i][j]).value,0d);
             }
         }
     }
 
     @Test
-    public void multiply_DifferentDimensionsMatrices_Matrix1x1() throws MultiplicationException {
+    public void multiply_DifferentDimensionsMatrices_check1x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix1x3;
         Matrix operand2 = matrix3x1;
@@ -160,7 +166,7 @@ public class MatrixMultiplicatorTest {
         // assert
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                Assert.assertEquals(12d,((MyDouble) s[i][j]).value,0d);
+                Assert.assertEquals(((MyDouble) check1x1[i][j]).value,((MyDouble) s[i][j]).value,0d);
             }
         }
     }
