@@ -16,6 +16,7 @@ public class MatrixSubstractorTest {
     private Matrix minMatrix = new Matrix();
     private Matrix maxMatrix = new Matrix();
     private Operations[][] maxCheck;
+    private Matrix zeroMatrix3x3 = new Matrix();
 
     @Before
     public void getMatrices() {
@@ -42,6 +43,10 @@ public class MatrixSubstractorTest {
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
                 {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)}};
+        zeroMatrix3x3.setMatrix(new MyDouble[][]{
+                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)},
+                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)},
+                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)}});
     }
 
     /**
