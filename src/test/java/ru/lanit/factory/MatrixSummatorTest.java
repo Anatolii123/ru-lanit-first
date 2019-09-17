@@ -8,46 +8,19 @@ import ru.lanit.exceptions.AdditionException;
 
 import static org.junit.Assert.*;
 
-public class MatrixSummatorTest {
-
-    private Matrix matrix3x3 = new Matrix();
-    private Matrix reverseMatrix3x3 = new Matrix();
-    private Operations[][] check3x3;
-    private Matrix matrix2x3 = new Matrix();
-    private Matrix maxMatrix = new Matrix();
-    private Operations[][] maxCheck;
-    private Matrix zeroMatrix3x3 = new Matrix();
-
+public class MatrixSummatorTest extends AbstractTest {
 
     @Before
     public void getMatrices() {
+        super.getMatrices();
         matrix3x3.setMatrix(new MyDouble[][]{
                 {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
-        reverseMatrix3x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
-                {new MyDouble(6d), new MyDouble(5d), new MyDouble(4d)},
-                {new MyDouble(3d), new MyDouble(2d), new MyDouble(1d)}});
         check3x3 = new MyDouble[][]{
                 {new MyDouble(10d), new MyDouble(10d), new MyDouble(10d)},
                 {new MyDouble(10d), new MyDouble(10d), new MyDouble(10d)},
                 {new MyDouble(10d), new MyDouble(10d), new MyDouble(10d)}};
-        matrix2x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-        maxMatrix.setMatrix(new MyDouble[][]{
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
-                {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)}});
-        maxCheck = new MyDouble[][]{
-                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
-                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)},
-                {new MyDouble(Global.Infinity), new MyDouble(Global.Infinity), new MyDouble(Global.Infinity)}};
-        zeroMatrix3x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)},
-                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)},
-                {new MyDouble(0d), new MyDouble(0d), new MyDouble(0d)}});
     }
 
     /**
