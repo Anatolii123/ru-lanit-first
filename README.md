@@ -14,12 +14,12 @@ https://www.apache-maven.ru/profiles.html - профили Maven
 # Библиотека матриц
 https://mvnrepository.com/artifact/org.apache.commons/commons-math3 - ссылка на репозиторий
 
-# Юнит-тесты
+# Тестирование
 https://habr.com/ru/post/169381/ - юнит-тестирование для чайников
 
 https://habr.com/ru/post/136049/ - книги по юнит-тестированию
 
-https://habr.com/ru/post/279535/ - фундаментальная теория
+https://habr.com/ru/post/279535/ - фундаментальная теория тестирования
 
 https://habr.com/ru/company/jugru/blog/343298/ - интеграционное тестирование
 
