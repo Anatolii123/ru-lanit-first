@@ -35,7 +35,7 @@ public class MatrixMultiplicatorTest {
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
                 {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-       check3x3 = new MyDouble[][]{
+        check3x3 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}};
@@ -71,7 +71,7 @@ public class MatrixMultiplicatorTest {
      * Тесты на проверку работоспособности методов
      */
     @Test
-    public void multiply_Matrices_check3x3() throws MultiplicationException {
+    public void multiply_matrix3x3ANDmatrix3x3_check3x3() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix3x3;
@@ -88,7 +88,7 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_DifferentDimensionsMatrices_check2x2() throws MultiplicationException {
+    public void multiply_matrix2x3ANDmatrix3x2_check2x2() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix2x3;
         Matrix operand2 = matrix3x2;
@@ -108,7 +108,7 @@ public class MatrixMultiplicatorTest {
      * Тесты на проверку вызываемых исключений
      */
     @Test(expected = MultiplicationException.class)
-    public void multiply_InconsistentMatrices_MultiplicationException() throws MultiplicationException {
+    public void multiply_matrix3x3ANDmatrix2x3_MultiplicationException() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix2x3;
@@ -121,7 +121,7 @@ public class MatrixMultiplicatorTest {
      * Тесты на проверку крайних случаев
      */
     @Test
-    public void multiply_DoubleMaxValueMatrices_maxCheck() throws MultiplicationException {
+    public void multiply_maxMatrixANDmaxMatrix_maxCheck() throws MultiplicationException {
         // arrange
         Matrix operand1 = maxMatrix;
         Matrix operand2 = maxMatrix;
@@ -138,7 +138,7 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_Matrices1x1_check1x1() throws MultiplicationException {
+    public void multiply_matrix12ANDmatrix2_check1x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix12;
         Matrix operand2 = matrix2;
@@ -155,7 +155,7 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_DifferentDimensionsMatrices_check1x1() throws MultiplicationException {
+    public void multiply_matrix1x3ANDmatrix3x1_check1x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix1x3;
         Matrix operand2 = matrix3x1;
@@ -172,7 +172,7 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_matrix3x1matrix2_matrix3x1() throws MultiplicationException {
+    public void multiply_matrix3x1ANDmatrix2_matrix3x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix3x1;
         Matrix operand2 = matrix2;
@@ -189,7 +189,7 @@ public class MatrixMultiplicatorTest {
     }
 
     @Test
-    public void multiply_matrix2matrix1x3_matrix1x3() throws MultiplicationException {
+    public void multiply_matrix2ANDmatrix1x3_matrix1x3() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix2;
         Matrix operand2 = matrix1x3;
