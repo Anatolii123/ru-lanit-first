@@ -145,7 +145,6 @@ public class MatrixMultiplicatorTest {
     public void multiply_DifferentDimensionsMatrices_Matrix1x1() throws MultiplicationException {
         // arrange
         Matrix operand1 = matrix1x3;
-
         Matrix operand2 = matrix3x1;
 
         // act

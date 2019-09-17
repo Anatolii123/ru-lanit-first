@@ -95,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixBuilderTest.toMatrix1x1">
+  <component name="RunManager" selected="JUnit.MatrixMultiplicatorTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -181,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLongTest.addExtremeCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixMultiplicatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -190,9 +190,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongTest" />
-      <option name="METHOD_NAME" value="addExtremeCases" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixMultiplicatorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,19 +230,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
       <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
       <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
       <item itemvalue="JUnit.MatrixBuilderTest" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
+      <item itemvalue="JUnit.MatrixMultiplicatorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixMultiplicatorTest" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
         <item itemvalue="JUnit.MatrixBuilderTest" />
         <item itemvalue="JUnit.MyLongTest.multExtremeCases" />
         <item itemvalue="JUnit.MyLongTest.subExtremeCases" />
-        <item itemvalue="JUnit.MyLongTest.addExtremeCases" />
       </list>
     </recent_temporary>
   </component>
