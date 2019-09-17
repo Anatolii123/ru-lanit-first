@@ -7,7 +7,12 @@ import org.junit.Test;
 public class MatrixBuilderTest {
     private ContentCreator contentCreator;
     private MyDouble[][] check;
-    private MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
+    private MyDoubleCreatorStub stub;
+
+    @Before
+    public void getDoubleCreator() {
+        stub = new MyDoubleCreatorStub();
+    }
 
     /**
      * Тесты на проверку работоспособности методов
