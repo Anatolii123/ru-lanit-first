@@ -20,3 +20,5 @@ https://habr.com/ru/post/169381/ - юнит-тестирование для ча
 https://habr.com/ru/post/136049/ - книги по юнит-тестированию
 
 https://habr.com/ru/post/279535/ - фундаментальная теория
+
+https://habr.com/ru/company/jugru/blog/343298/ - интеграционное тестирование
