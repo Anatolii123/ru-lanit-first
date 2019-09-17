@@ -53,7 +53,7 @@ public class MatrixSubstractorTest {
      * Тесты на проверку работоспособности методов
      */
     @Test
-    public void perform() {
+    public void substract_matrix3x3FROMmatrix3x3_check3x3() {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix3x3;
@@ -73,7 +73,7 @@ public class MatrixSubstractorTest {
      * Тесты на проверку вызываемых исключений
      */
     @Test(expected = ArithmeticException.class)
-    public void performExceptions() throws ArithmeticException {
+    public void substract_matrix2x3FROMmatrix3x3_ArithmeticException() throws ArithmeticException {
         // arrange
         Matrix operand1 = matrix3x3;
         Matrix operand2 = matrix2x3;
@@ -86,7 +86,7 @@ public class MatrixSubstractorTest {
      * Тесты на проверку крайних случаев
      */
     @Test
-    public void substract_minMatrixmaxMatrix_minusMaxCheck() {
+    public void substract_maxMatrixFROMminMatrix_minusMaxCheck() {
         // arrange
         Matrix operand1 = minMatrix;
         Matrix operand2 = maxMatrix;
