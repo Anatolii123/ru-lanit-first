@@ -22,3 +22,5 @@ https://habr.com/ru/post/136049/ - книги по юнит-тестирован
 https://habr.com/ru/post/279535/ - фундаментальная теория
 
 https://habr.com/ru/company/jugru/blog/343298/ - интеграционное тестирование
+
+https://habr.com/ru/company/yandex/blog/184634/ - матчеры
