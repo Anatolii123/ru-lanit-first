@@ -24,11 +24,16 @@ public class MyDoubleCreatorTest extends AbstractTest {
         // act
         Operations[][] result = myDoubleCreator.create(3,3);
 
+        Integer a = 5;
+        Integer b = 5;
+
+
         // assert
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result[0].length; j++) {
                 Assert.assertEquals(((MyDouble) check3x3[i][j]).value,((MyDouble) result[i][j]).value,0d);
             }
         }
+        Assert.assertTrue(a == b);
     }
 }
