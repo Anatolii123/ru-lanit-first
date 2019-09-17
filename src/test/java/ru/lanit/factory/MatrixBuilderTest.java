@@ -79,7 +79,7 @@ public class MatrixBuilderTest {
 
     @Before
     public void getContentCreator() {
-        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядные. Прошу что-нибудь подобное сделать в других тестах
+        // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
         check = new MyDouble[][]{{new MyDouble(12d)}};
         MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
         stub.setContent(check);
