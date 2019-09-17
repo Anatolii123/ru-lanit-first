@@ -23,7 +23,6 @@ public class MatrixMultiplicatorTest {
     /**
      * Тесты на проверку работоспособности методов
      */
-
     @Test
     public void multiply_Matrices_Matrix() throws MultiplicationException {
         // arrange
