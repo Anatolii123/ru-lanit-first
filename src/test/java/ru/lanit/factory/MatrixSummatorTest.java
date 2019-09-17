@@ -34,8 +34,8 @@ public class MatrixSummatorTest {
                 {new MyDouble(10d), new MyDouble(10d), new MyDouble(10d)},
                 {new MyDouble(10d), new MyDouble(10d), new MyDouble(10d)}};
         matrix2x3.setMatrix(new MyDouble[][]{
-                {new MyDouble(9d), new MyDouble(8d), new MyDouble(7d)},
-                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)}});
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
         maxMatrix.setMatrix(new MyDouble[][]{
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
                 {new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE), new MyDouble(Double.MAX_VALUE)},
