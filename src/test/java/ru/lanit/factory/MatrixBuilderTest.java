@@ -7,6 +7,7 @@ import org.junit.Test;
 public class MatrixBuilderTest {
     private ContentCreator contentCreator;
     private MyDouble[][] check;
+    private MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
 
     /**
      * Тесты на проверку работоспособности методов
@@ -20,12 +21,10 @@ public class MatrixBuilderTest {
         contentCreator = stub;
     }
 
-
     @Test
     public void toMatrix() {
         // arrange
         Matrix result = new Matrix();
-        MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
         MyDouble[][] check = {
                 {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
@@ -71,7 +70,6 @@ public class MatrixBuilderTest {
     @Before
     public void getContentCreator() {
         // todo попробовать создангие заглушки вынести в @Before. Пример не наглядный. Прошу что-нибудь подобное сделать в других тестах
-        check = new MyDouble[][]{{new MyDouble(12d)}};
         MyDoubleCreatorStub stub = new MyDoubleCreatorStub();
         stub.setContent(check);
         contentCreator = stub;
@@ -80,6 +78,7 @@ public class MatrixBuilderTest {
     @Test
     public void toMatrix1x1() {
         // arrange
+        check = new MyDouble[][]{{new MyDouble(12d)}};
         MatrixBuilder matrixBuilder = new MatrixBuilder(contentCreator);
 
         // act
