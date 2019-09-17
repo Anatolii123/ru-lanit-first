@@ -11,13 +11,30 @@ import static org.junit.Assert.*;
 
 public class MatrixMultiplicatorTest {
 
-    private Matrix operand1;
-    private Matrix operand2;
+    private Matrix normalMatrix = new Matrix();
+    private Matrix matrix2x3 = new Matrix();
+    private Matrix matrix3x2 = new Matrix();
+    private Matrix maxMatrix1 = new Matrix();
+    private Matrix maxMatrix2 = new Matrix();
+    private Matrix Matrix11x1 = new Matrix();
+    private Matrix Matrix21x1 = new Matrix();
+    private Matrix matrix3x1 = new Matrix();
+    private Matrix matrix1x3 = new Matrix();
 
     @Before
     public void getMatrices() {
-        operand1 = new Matrix();
-        operand2 = new Matrix();
+        normalMatrix.setMatrix(new MyDouble[][]{
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
+        matrix2x3.setMatrix(new MyDouble[][]{
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
+        matrix3x2.setMatrix(new MyDouble[][]{
+                {new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d)},
+                {new MyDouble(2d), new MyDouble(2d)}});
+
     }
 
     /**
@@ -26,15 +43,8 @@ public class MatrixMultiplicatorTest {
     @Test
     public void multiply_Matrices_Matrix() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-
-        operand2.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
+        Matrix operand1 = normalMatrix;
+        Matrix operand2 = normalMatrix;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
@@ -50,14 +60,8 @@ public class MatrixMultiplicatorTest {
     @Test
     public void multiply_DifferentDimensionsMatrices_Matrix() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-
-        operand2.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d)}});
+        Matrix operand1 = matrix2x3;
+        Matrix operand2 = matrix3x2;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
@@ -76,14 +80,8 @@ public class MatrixMultiplicatorTest {
     @Test(expected = MultiplicationException.class)
     public void multiply_InconsistentMatrices_MultiplicationException() throws MultiplicationException {
         // arrange
-        operand1.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
-
-        operand2.setMatrix(new MyDouble[][]{
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)},
-                {new MyDouble(2d), new MyDouble(2d), new MyDouble(2d)}});
+        Matrix operand1 = normalMatrix;
+        Matrix operand2 = matrix2x3;
 
         // act
         Operations[][] s = new MatrixMultiplicator().perform(operand1,operand2);
