@@ -19,9 +19,8 @@ public class MatrixReader {
                 matrices.add(new ArrayList<String>(lines));
                 lines.clear();
                 continue;
-            } else {
-                lines.add(line);
             }
+            lines.add(line);
         }
         matrices.add(new ArrayList<String>(lines));
         for (int i = 0; i < matrices.size(); i++) {

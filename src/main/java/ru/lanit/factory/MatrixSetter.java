@@ -2,37 +2,40 @@ package ru.lanit.factory;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.PrintWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MatrixSetter {
 
-    public List<Matrix> setMatrixToFile(String filepath) throws Exception {
+    public void setMatrixToFile(String filepath, List<Matrix> matrices2) throws Exception {
         String line;
         List<String> lines = new ArrayList<String>();
         List<List> matrices = new ArrayList<List>();
-        List<Matrix> matrices2 = new ArrayList<Matrix>();
         Object[] linesAsArray;
+        PrintWriter out = new PrintWriter(new FileWriter(filepath));
         BufferedReader br = new BufferedReader(new FileReader(filepath));
-
-        while ((line = br.readLine()) != null) {
-            if (line.length() == 0) {
-                matrices.add(new ArrayList<String>(lines));
-                lines.clear();
-                continue;
-            } else {
-                lines.add(line);
-            }
+        for (int i = 0; i < matrices2.size(); i++) {
+            out.write(readInternal(matrices2.get(0)).get(0));
         }
+//        while ((line = br.readLine()) != null) {
+//            if (line.length() == 0) {
+//                matrices.add(new ArrayList<String>(lines));
+//                lines.clear();
+//                continue;
+//            } else {
+//                lines.add(line);
+//            }
+//        }
         matrices.add(new ArrayList<String>(lines));
         for (int i = 0; i < matrices.size(); i++) {
             linesAsArray = matrices.get(i).toArray(new String[matrices.get(i).size()]);
-            matrices2.add(setInternal(matrices.get(i), linesAsArray));
+ //           matrices2.add(setInternal(matrices.get(i), linesAsArray));
             System.out.println();
         }
         System.out.println(matrices.size());
-        br.close();
-        return matrices2;
+        out.close();
     }
 
     public List<String> readInternal(Matrix matrix) {
