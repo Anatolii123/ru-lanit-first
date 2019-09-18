@@ -10,9 +10,10 @@ import java.util.List;
 public class IntegrationTest1 extends AbstractTest {
 
     private MatrixReader matrixR = new MatrixReader();
+    private List<MatrixOperation> operations = Hello.operationsList(5);
 
     @Before
-    public void getDoubleCreator() {
+    public void getCheck() {
         check3x3 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
@@ -24,11 +25,9 @@ public class IntegrationTest1 extends AbstractTest {
     public void readMatrices_OperationsListDevelopment_Output() throws Exception {
         // arrange
 
-
         // act
         List<Matrix> matrices = matrixR.readMatrix(
                 "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
-
 
         // assert
         for (int i = 0; i < matrices.size(); i++) {
@@ -39,8 +38,10 @@ public class IntegrationTest1 extends AbstractTest {
             }
         }
 
+        // arrange
 
-        List<MatrixOperation> operations = Hello.operationsList(5);
+        // act
+
         for (MatrixOperation operation : operations) {
             operation.perform(matrices.get(0), matrices.get(1));
             System.out.println();
