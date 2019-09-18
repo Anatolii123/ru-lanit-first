@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import ru.lanit.second.Hello;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class IntegrationTest1 extends AbstractTest {
@@ -13,6 +14,7 @@ public class IntegrationTest1 extends AbstractTest {
     private List<MatrixOperation> operations = Hello.operationsList(5);
     private Matrix checkMatrix1 = new Matrix();
     private Matrix checkMatrix2 = new Matrix();
+    private List<Matrix> matrices = new ArrayList<Matrix>();
 
     @Before
     public void getCheck() {
@@ -22,6 +24,22 @@ public class IntegrationTest1 extends AbstractTest {
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}};
 
     }
+
+    @Test
+    public void readMatrices() throws Exception {
+        matrices = matrixR.readMatrix(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
+
+        // assert
+        for (int i = 0; i < matrices.size(); i++) {
+            for (int j = 0; j < check3x3.length; j++) {
+                for (int k = 0; k < check3x3[0].length; k++) {
+                    Assert.assertEquals(((MyDouble) check3x3[i][j]).value,((MyDouble)matrices.get(i).getMatrix()[i][j]).value,0d);
+                }
+            }
+        }
+    }
+
 
     @Test
     public void readMatrices_OperationsListDevelopment_Output() throws Exception {
