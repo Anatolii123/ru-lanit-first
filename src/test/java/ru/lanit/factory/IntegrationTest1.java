@@ -92,9 +92,9 @@ public class IntegrationTest1 extends AbstractTest {
         // assert
         List<Matrix> matrices2 = matrixR.readMatrix(
                 "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\newMatrix");
-        System.out.println(matrices2.get(6).getMatrix()[0][0] +" "
-                + matrices2.get(6).getMatrix()[0][1] +" "
-                + matrices2.get(6).getMatrix()[0][2] +" ");
+        System.out.println(matrices2.get(5).getMatrix()[0][0] +" "
+                + matrices2.get(5).getMatrix()[0][1] +" "
+                + matrices2.get(5).getMatrix()[0][2] +" ");
 
 //        for (int i = 0; i < (matrices2.size()-1); i++) {
 //            for (int j = 0; j < matrices2.get(i).getA(); j++) {
