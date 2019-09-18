@@ -10,14 +10,15 @@ import java.util.List;
 public class MatrixSetter {
 
     public void setMatrixToFile(String filepath, List<Matrix> matrices2) throws Exception {
-        String line;
         List<String> lines = new ArrayList<String>();
         List<List> matrices = new ArrayList<List>();
-        Object[] linesAsArray;
         PrintWriter out = new PrintWriter(new FileWriter(filepath));
-        BufferedReader br = new BufferedReader(new FileReader(filepath));
         for (int i = 0; i < matrices2.size(); i++) {
-            out.write(readInternal(matrices2.get(0)).get(0));
+            for (int j = 0; j < matrices2.get(i).getA(); j++) {
+                out.write(readInternal(matrices2.get(i)).get(j));
+                out.write("\n");
+            }
+            out.write("\n");
         }
 //        while ((line = br.readLine()) != null) {
 //            if (line.length() == 0) {
@@ -28,13 +29,6 @@ public class MatrixSetter {
 //                lines.add(line);
 //            }
 //        }
-        matrices.add(new ArrayList<String>(lines));
-        for (int i = 0; i < matrices.size(); i++) {
-            linesAsArray = matrices.get(i).toArray(new String[matrices.get(i).size()]);
- //           matrices2.add(setInternal(matrices.get(i), linesAsArray));
-            System.out.println();
-        }
-        System.out.println(matrices.size());
         out.close();
     }
 

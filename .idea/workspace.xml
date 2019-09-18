@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/My_first_shelve.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/My_first_shelve.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
