@@ -31,7 +31,6 @@ public class IntegrationTest1 extends AbstractTest {
 
         // act
 
-
         // assert
         for (int i = 0; i < matrices.size(); i++) {
             for (int j = 0; j < check3x3.length; j++) {
@@ -41,7 +40,6 @@ public class IntegrationTest1 extends AbstractTest {
             }
         }
     }
-
 
     @Test
     public void OperationsListDevelopment_Output() throws Exception {
