@@ -27,7 +27,7 @@ public class IntegrationTest1 extends AbstractTest {
     @Test
     public void txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile() throws Exception {
         /**
-         * Чтение txt-файла и его запись в список
+         * Чтение txt-файла и его запись в список матриц
          */
         // arrange
 
@@ -56,7 +56,7 @@ public class IntegrationTest1 extends AbstractTest {
 
         // act
         for (int i = 0; i < operations.size(); i++) {
-            result.add(operations.get(i).perform(matrices.get(1), matrices.get(1)));
+            result.add(operations.get(i).perform(matrices.get(0), matrices.get(1)));
             Matrix newMatrix = new Matrix();
             newMatrix.setMatrix(result.get(i));
             results.add(newMatrix);
