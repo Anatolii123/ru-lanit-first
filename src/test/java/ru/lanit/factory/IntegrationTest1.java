@@ -11,6 +11,8 @@ public class IntegrationTest1 extends AbstractTest {
 
     private MatrixReader matrixR = new MatrixReader();
     private List<MatrixOperation> operations = Hello.operationsList(5);
+    private Matrix checkMatrix1 = new Matrix();
+    private Matrix checkMatrix2 = new Matrix();
 
     @Before
     public void getCheck() {
@@ -46,6 +48,11 @@ public class IntegrationTest1 extends AbstractTest {
             System.out.println();
         }
 
-
+        // assert
+        checkMatrix1.setMatrix(check3x3);
+        checkMatrix2.setMatrix(check3x3);
+        for (MatrixOperation operation : operations) {
+            Assert.assertEquals(operation.perform(checkMatrix1, checkMatrix2),operation.perform(matrices.get(0), matrices.get(1)));
+        }
     }
 }
