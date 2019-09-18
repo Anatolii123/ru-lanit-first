@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,13 +281,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00218" summary="UnitTest31Commit">
-      <created>1568640278067</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1568640278067</updated>
     </task>
     <task id="LOCAL-00219" summary="UnitTest32Commit">
       <created>1568640331238</created>
@@ -627,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568784984699</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="MocksStubs3Commit">
+      <created>1568785236368</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1568785236368</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -674,7 +672,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest55Commit" />
     <MESSAGE value="UnitTest56Commit" />
     <MESSAGE value="UnitTest57Commit" />
     <MESSAGE value="UnitTest58Commit" />
@@ -699,7 +696,8 @@
     <MESSAGE value="UnitTest77Commit" />
     <MESSAGE value="MocksStubsCommit" />
     <MESSAGE value="MocksStubs2Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="MocksStubs2Commit" />
+    <MESSAGE value="MocksStubs3Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="MocksStubs3Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
