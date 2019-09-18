@@ -10,7 +10,9 @@ public class IntegrationTest1  {
 
 
     @Test
-    public void readMatrices_OperationsListDevelopment_Output() {
-    MatrixReader matrixR = new MatrixReader();
-    List<Matrix> matrices = matrixR.readMatrix("D:\\matrix1.txt");
+    public void readMatrices_OperationsListDevelopment_Output() throws Exception {
+        MatrixReader matrixR = new MatrixReader();
+        List<Matrix> matrices = matrixR.readMatrix(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
+    }
 }
