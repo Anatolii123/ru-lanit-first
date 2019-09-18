@@ -1,3 +1,6 @@
+# Паттерны проектирования
+https://refactoring.guru/ru/design-patterns/template-method - Шаблонный метод
+
 # Cборка
 https://golos.io/@brainburns-dev/zachem-nuzhny-sistemy-sborki-java-prilozhenii - о системах сборки
 
@@ -26,3 +29,4 @@ https://habr.com/ru/company/jugru/blog/343298/ - интеграционное т
 https://habr.com/ru/company/yandex/blog/184634/ - матчеры
 
 https://habr.com/ru/post/444982/ - Мокито
+
