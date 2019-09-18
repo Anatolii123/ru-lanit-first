@@ -26,11 +26,6 @@ public class IntegrationTest1 extends AbstractTest {
 
     @Test
     public void txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile() throws Exception {
-
-        MatrixSetter lines = new MatrixSetter();
-        List<String> lines2 = lines.readInternal(checkMatrix1);
-
-
         /**
          * Чтение txt-файла и его запись в список
          */
@@ -54,7 +49,7 @@ public class IntegrationTest1 extends AbstractTest {
          * этих операций над матрицами и запись результатов в новый список
          */
         // arrange
-        List<MatrixOperation> operations = Hello.operationsList(2);
+        List<MatrixOperation> operations = Hello.operationsList(5);
         List<Operations[][]> result = new ArrayList<Operations[][]>();
         List<Operations[][]> checkResult = new ArrayList<Operations[][]>();
         List<Matrix> results = new ArrayList<Matrix>();
@@ -67,10 +62,8 @@ public class IntegrationTest1 extends AbstractTest {
             results.add(newMatrix);
             System.out.println();
         }
-        lines.setMatrixToFile("D:\\matrix.txt",results);
 
         // assert
-
         for (int i = 0; i < operations.size(); i++) {
             checkResult.add(operations.get(i).perform(checkMatrix1, checkMatrix2));
             System.out.println();
@@ -85,6 +78,18 @@ public class IntegrationTest1 extends AbstractTest {
             }
         }
 
+
+        /**
+         * Запись списка матриц в txt-файл
+         */
+        // arrange
+        MatrixSetter lines = new MatrixSetter();
+        List<String> lines2 = lines.readInternal(checkMatrix1);
+
+        // act
+        lines.setMatrixToFile("D:\\matrix.txt",results);
+
+        // assert
 
     }
 }

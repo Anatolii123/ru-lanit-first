@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/My_first_shelve.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/My_first_shelve.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest1.txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile">
+  <component name="RunManager" selected="JUnit.IntegrationTest1">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -245,10 +243,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest1" />
         <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile" />
         <item itemvalue="JUnit.IntegrationTest1.OperationsListDevelopment_Output" />
         <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices" />
-        <item itemvalue="JUnit.IntegrationTest1" />
         <item itemvalue="JUnit.IntegrationTest1.readMatrices" />
       </list>
     </recent_temporary>
@@ -294,27 +292,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00241" summary="UnitTest54Commit">
-      <created>1568702811141</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1568702811141</updated>
-    </task>
-    <task id="LOCAL-00242" summary="UnitTest55Commit">
-      <created>1568704924801</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1568704924801</updated>
-    </task>
-    <task id="LOCAL-00243" summary="UnitTest56Commit">
-      <created>1568705383003</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1568705383003</updated>
     </task>
     <task id="LOCAL-00244" summary="UnitTest57Commit">
       <created>1568705769924</created>
@@ -638,7 +615,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568800504944</updated>
     </task>
-    <option name="localTasksCounter" value="290" />
+    <task id="LOCAL-00290" summary="IntegrationTest22Commit">
+      <created>1568802673583</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1568802673583</updated>
+    </task>
+    <task id="LOCAL-00291" summary="IntegrationTest23Commit">
+      <created>1568802771191</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1568802771191</updated>
+    </task>
+    <task id="LOCAL-00292" summary="IntegrationTest24Commit">
+      <created>1568802801806</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1568802801806</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -685,9 +683,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MocksStubsCommit" />
-    <MESSAGE value="MocksStubs2Commit" />
-    <MESSAGE value="MocksStubs3Commit" />
     <MESSAGE value="MocksStubs4Commit" />
     <MESSAGE value="IntegrationTestCommit" />
     <MESSAGE value="IntegrationTest2Commit" />
@@ -710,7 +705,10 @@
     <MESSAGE value="IntegrationTest19Commit" />
     <MESSAGE value="IntegrationTest20Commit" />
     <MESSAGE value="IntegrationTest21Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest21Commit" />
+    <MESSAGE value="IntegrationTest22Commit" />
+    <MESSAGE value="IntegrationTest23Commit" />
+    <MESSAGE value="IntegrationTest24Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest24Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
