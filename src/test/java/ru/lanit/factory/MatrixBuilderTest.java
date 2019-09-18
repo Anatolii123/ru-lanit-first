@@ -14,6 +14,11 @@ public class MatrixBuilderTest {
     @Before
     public void getDoubleCreator() {
         stub = mock(MyDoubleCreator.class);
+        when(stub.create(3,3)).thenReturn(new MyDouble[][]{
+                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
+                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
+                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
+        when(stub.create(1,1)).thenReturn(new MyDouble[][]{{new MyDouble(12d)}});
 
     }
 
@@ -23,11 +28,7 @@ public class MatrixBuilderTest {
     @Test
     public void toMatrix() {
         // arrange
-        when(stub.create(3,3)).thenReturn(new MyDouble[][]{
-                {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
-                {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
-                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
-        MyDouble[][] check = (MyDouble[][]) stub.create(3,3);
+        check = (MyDouble[][]) stub.create(3,3);
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
@@ -60,7 +61,6 @@ public class MatrixBuilderTest {
     @Test
     public void toMatrix_1x1() {
         // arrange
-        when(stub.create(1,1)).thenReturn(new MyDouble[][]{{new MyDouble(12d)}});
         check = (MyDouble[][]) stub.create(1,1);
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 

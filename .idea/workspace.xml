@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="" />
+    <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MatrixBuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MatrixBuilderTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
+  <component name="RunManager" selected="JUnit.MatrixBuilderTest">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -232,8 +236,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.MatrixBuilderTest" />
+        <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix_1x1" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
@@ -281,13 +285,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00219" summary="UnitTest32Commit">
-      <created>1568640331238</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1568640331238</updated>
     </task>
     <task id="LOCAL-00220" summary="UnitTest33Commit">
       <created>1568642156534</created>
@@ -625,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568785236368</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="MocksStubs4Commit">
+      <created>1568785666415</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1568785666415</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -672,7 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest56Commit" />
     <MESSAGE value="UnitTest57Commit" />
     <MESSAGE value="UnitTest58Commit" />
     <MESSAGE value="UnitTest59Commit" />
@@ -697,7 +700,8 @@
     <MESSAGE value="MocksStubsCommit" />
     <MESSAGE value="MocksStubs2Commit" />
     <MESSAGE value="MocksStubs3Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="MocksStubs3Commit" />
+    <MESSAGE value="MocksStubs4Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="MocksStubs4Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
