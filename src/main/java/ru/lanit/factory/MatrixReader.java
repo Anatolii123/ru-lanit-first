@@ -45,7 +45,7 @@ public class MatrixReader {
             for(int i = 0; i < lines.size(); i++) {
                 for(int j = 0; j < String_Array[0].split(",").length; j++) {
                     matrix[i][j] = Integer.parseInt(String_Array[i].split(",")[j]);
-                    matrix2[i][j] = new MyLong((long) matrix[i][j]);
+                    matrix2[i][j] = new MyDouble((double) matrix[i][j]);
                     System.out.print(matrix[i][j] + "\t");
                 }
                 System.out.println();

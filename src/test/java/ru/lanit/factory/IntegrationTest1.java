@@ -18,12 +18,11 @@ public class IntegrationTest1 extends AbstractTest {
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}};
 
-
         // assert
         for (int i = 0; i < matrices.size(); i++) {
-            for (int j = 0; j < result.getA(); j++) {
-                for (int k = 0; k < result.getB(); k++) {
-                    Assert.assertEquals(check3x3[i][j].value,((MyDouble)matrices.get(i).getMatrix()[i][j]).value,0d);
+            for (int j = 0; j < check3x3.length; j++) {
+                for (int k = 0; k < check3x3[0].length; k++) {
+                    Assert.assertEquals(((MyDouble) check3x3[i][j]).value,((MyDouble)matrices.get(i).getMatrix()[i][j]).value,0d);
                 }
             }
         }
