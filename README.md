@@ -40,5 +40,8 @@ https://habr.com/ru/company/yandex/blog/184634/ - матчеры
 
 https://habr.com/ru/post/444982/ - Мокито
 
+# Стабы и моки 
+https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-and-junit - стабы и моки в Мокито
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
