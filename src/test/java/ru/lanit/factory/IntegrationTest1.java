@@ -86,10 +86,12 @@ public class IntegrationTest1 extends AbstractTest {
         MatrixSetter lines = new MatrixSetter();
 
         // act
-        lines.setMatrixToFile("D:\\matrix.txt",results);
+        lines.setMatrixToFile(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\newMatrix",results);
 
         // assert
-        List<Matrix> matrices2 = matrixR.readMatrix("D:\\matrix.txt");
+        List<Matrix> matrices2 = matrixR.readMatrix(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\newMatrix");
         System.out.println(matrices2.get(6).getMatrix()[0][0] +" "
                 + matrices2.get(6).getMatrix()[0][1] +" "
                 + matrices2.get(6).getMatrix()[0][2] +" ");
