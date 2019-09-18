@@ -67,7 +67,7 @@ public class IntegrationTest1 extends AbstractTest {
             results.add(newMatrix);
             System.out.println();
         }
-        lines.setMatrixToFile("D:\\matrix",results);
+        lines.setMatrixToFile("D:\\matrix.txt",results);
 
         // assert
 
