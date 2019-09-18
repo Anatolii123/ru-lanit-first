@@ -40,6 +40,8 @@ https://habr.com/ru/company/yandex/blog/184634/ - матчеры
 
 https://habr.com/ru/post/444982/ - Мокито
 
+https://habr.com/ru/post/81226/ - виды тестирования и подходы к их применению
+
 # Стабы и моки 
 https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-and-junit - стабы и моки в Мокито
 
