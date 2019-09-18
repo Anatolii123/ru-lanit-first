@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixBuilderTest.toMatrix">
+  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -154,6 +153,29 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean install -Piwaswondering" />
       </method>
     </configuration>
+    <configuration name="All in ru-lanit-first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MatrixBuilderTest.toMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -186,7 +208,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixBuilderTest.toMatrixExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixBuilderTest.toMatrix_1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -196,39 +218,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
       <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
-      <option name="METHOD_NAME" value="toMatrixExceptions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDoubleCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyDoubleCreatorTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyLongCreatorTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MyLongCreatorTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="METHOD_NAME" value="toMatrix_1x1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -236,19 +226,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
-      <item itemvalue="JUnit.MyLongCreatorTest.create" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
-      <item itemvalue="JUnit.MatrixBuilderTest.toMatrixExceptions" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
+      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix_1x1" />
+      <item itemvalue="JUnit.MatrixBuilderTest" />
+      <item itemvalue="JUnit.All in ru-lanit-first" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in ru-lanit-first" />
+        <item itemvalue="JUnit.MatrixBuilderTest" />
+        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix_1x1" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
-        <item itemvalue="JUnit.MatrixBuilderTest.toMatrixExceptions" />
-        <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
-        <item itemvalue="JUnit.MyLongCreatorTest.create" />
       </list>
     </recent_temporary>
   </component>
@@ -293,20 +283,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00216" summary="UnitTest29Commit">
-      <created>1568637988755</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1568637988755</updated>
-    </task>
-    <task id="LOCAL-00217" summary="UnitTest30Commit">
-      <created>1568639143648</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1568639143648</updated>
     </task>
     <task id="LOCAL-00218" summary="UnitTest31Commit">
       <created>1568640278067</created>
@@ -637,7 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568730635382</updated>
     </task>
-    <option name="localTasksCounter" value="265" />
+    <task id="LOCAL-00265" summary="MocksStubsCommit">
+      <created>1568784824508</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1568784824508</updated>
+    </task>
+    <task id="LOCAL-00266" summary="MocksStubs2Commit">
+      <created>1568784984699</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1568784984699</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -684,8 +674,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest53Commit" />
-    <MESSAGE value="UnitTest54Commit" />
     <MESSAGE value="UnitTest55Commit" />
     <MESSAGE value="UnitTest56Commit" />
     <MESSAGE value="UnitTest57Commit" />
@@ -709,7 +697,9 @@
     <MESSAGE value="UnitTest75Commit" />
     <MESSAGE value="UnitTest76Commit" />
     <MESSAGE value="UnitTest77Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest77Commit" />
+    <MESSAGE value="MocksStubsCommit" />
+    <MESSAGE value="MocksStubs2Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="MocksStubs2Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

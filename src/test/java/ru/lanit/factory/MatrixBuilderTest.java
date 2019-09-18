@@ -58,13 +58,14 @@ public class MatrixBuilderTest {
      */
 
     @Test
-    public void toMatrix1x1() {
+    public void toMatrix_1x1() {
         // arrange
-        check = new MyDouble[][]{{new MyDouble(12d)}};
+        when(stub.create(1,1)).thenReturn(new MyDouble[][]{{new MyDouble(12d)}});
+        check = (MyDouble[][]) stub.create(1,1);
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
-        Matrix result = matrixBuilder.setA(1).setB(1).toMatrix();
+        Matrix result = matrixBuilder.setA(stub.create(1,1).length).setB(stub.create(1,1)[0].length).toMatrix();
 
         // assert
         for (int i = 0; i < result.getA(); i++) {
