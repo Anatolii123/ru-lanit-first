@@ -14,6 +14,7 @@ public class MatrixBuilderTest {
     @Before
     public void getDoubleCreator() {
         stub = mock(MyDoubleCreator.class);
+
     }
 
     /**
