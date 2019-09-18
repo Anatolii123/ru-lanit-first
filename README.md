@@ -1,6 +1,10 @@
 # Паттерны проектирования
 https://refactoring.guru/ru/design-patterns/template-method - Шаблонный метод
 
+# Методы класса Object
+
+https://www.ibm.com/developerworks/ru/library/j-jtp05273/index.html - hashcode() и equals()
+
 # Cборка
 https://golos.io/@brainburns-dev/zachem-nuzhny-sistemy-sborki-java-prilozhenii - о системах сборки
 
