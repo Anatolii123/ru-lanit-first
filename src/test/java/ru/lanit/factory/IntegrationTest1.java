@@ -16,12 +16,13 @@ public class IntegrationTest1 extends AbstractTest {
     private List<Matrix> matrices = new ArrayList<Matrix>();
 
     @Before
-    public void getCheck() {
+    public void getCheck() throws Exception {
         check3x3 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}};
-
+        matrices = matrixR.readMatrix(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
     }
 
     @Test
@@ -29,8 +30,7 @@ public class IntegrationTest1 extends AbstractTest {
         // arrange
 
         // act
-        matrices = matrixR.readMatrix(
-                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
+
 
         // assert
         for (int i = 0; i < matrices.size(); i++) {
@@ -46,19 +46,32 @@ public class IntegrationTest1 extends AbstractTest {
     @Test
     public void OperationsListDevelopment_Output() throws Exception {
         // arrange
-        List<MatrixOperation> operations = Hello.operationsList(5);
+        List<MatrixOperation> operations = Hello.operationsList(2);
+        List<Operations[][]> result = new ArrayList<Operations[][]>();
+        List<Operations[][]> checkResult = new ArrayList<Operations[][]>();
 
         // act
-        for (MatrixOperation operation : operations) {
-            operation.perform(matrices.get(0), matrices.get(1));
+        for (int i = 0; i < operations.size(); i++) {
+            result.add(operations.get(i).perform(matrices.get(1), matrices.get(1)));
             System.out.println();
         }
 
         // assert
         checkMatrix1.setMatrix(check3x3);
         checkMatrix2.setMatrix(check3x3);
-        for (MatrixOperation operation : operations) {
-            Assert.assertEquals(operation.perform(checkMatrix1, checkMatrix2),operation.perform(matrices.get(0), matrices.get(1)));
+        for (int i = 0; i < operations.size(); i++) {
+            checkResult.add(operations.get(i).perform(checkMatrix1, checkMatrix2));
+            System.out.println();
+        }
+
+        for (int i = 0; i < operations.size(); i++) {
+            for (int j = 0; j < checkMatrix1.getA(); j++) {
+                for (int k = 0; k < checkMatrix1.getB(); k++) {
+                    Assert.assertEquals(((MyDouble)checkResult.get(i)[j][k]).value,
+                            ((MyDouble)result.get(i)[j][k]).value,
+                            0d);
+                }
+            }
         }
     }
 }
