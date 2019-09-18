@@ -1,6 +1,9 @@
 # IntelliJ IDEA
 https://www.jetbrains.com/help/idea/installation-guide.html - Описание
 
+# Конструкторы
+https://www.geeksforgeeks.org/constructors-not-inherited-java/ - Почему не наследуются
+
 # Паттерны проектирования
 https://refactoring.guru/ru/design-patterns/template-method - Шаблонный метод
 
