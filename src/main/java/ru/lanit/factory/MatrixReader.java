@@ -1,18 +1,16 @@
 package ru.lanit.factory;
 
-import ru.lanit.first.Matrix;
-
 import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
 
 public class MatrixReader {
 
-    public List<ru.lanit.factory.Matrix> readMatrix(String filepath) throws Exception {
+    public List<Matrix> readMatrix(String filepath) throws Exception {
         String line;
         List<String> lines = new ArrayList<String>();
         List<List> matrices = new ArrayList<List>();
-        List<ru.lanit.factory.Matrix> matrices2 = new ArrayList<ru.lanit.factory.Matrix>();
+        List<Matrix> matrices2 = new ArrayList<Matrix>();
         Object[] linesAsArray;
         BufferedReader br = new BufferedReader(new FileReader(filepath));
 
@@ -36,8 +34,8 @@ public class MatrixReader {
         return matrices2;
     }
 
-    public ru.lanit.factory.Matrix setInternal(List<String> lines, Object[] linesAsArray) {
-        ru.lanit.factory.Matrix mat = new ru.lanit.factory.Matrix();
+    public Matrix setInternal(List<String> lines, Object[] linesAsArray) {
+        Matrix mat = new Matrix();
         if (linesAsArray.length != 0) {
             String String_Array[] = new String[linesAsArray.length];
             for (int i=0;i<String_Array.length;i++)

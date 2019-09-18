@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/first/MatrixReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/factory/MatrixReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ArgsBranch" />
+        <entry key="$PROJECT_DIR$" value="NewDependency" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -285,13 +285,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00222" summary="UnitTest35Commit">
-      <created>1568697204524</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1568697204524</updated>
     </task>
     <task id="LOCAL-00223" summary="UnitTest36Commit">
       <created>1568697495935</created>
@@ -629,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568788167508</updated>
     </task>
-    <option name="localTasksCounter" value="271" />
+    <task id="LOCAL-00271" summary="IntegrationTest3Commit">
+      <created>1568790234953</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1568790234953</updated>
+    </task>
+    <option name="localTasksCounter" value="272" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -676,7 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest59Commit" />
     <MESSAGE value="UnitTest60Commit" />
     <MESSAGE value="UnitTest61Commit" />
     <MESSAGE value="UnitTest62Commit" />
@@ -701,7 +700,8 @@
     <MESSAGE value="MocksStubs4Commit" />
     <MESSAGE value="IntegrationTestCommit" />
     <MESSAGE value="IntegrationTest2Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest2Commit" />
+    <MESSAGE value="IntegrationTest3Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest3Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
