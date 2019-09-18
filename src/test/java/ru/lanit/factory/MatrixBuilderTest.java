@@ -10,6 +10,7 @@ import static org.mockito.Mockito.when;
 public class MatrixBuilderTest {
     private MyDouble[][] check;
     private MyDoubleCreator stub;
+    private MatrixBuilder matrixBuilder;
 
     @Before
     public void getDoubleCreator() {
@@ -19,6 +20,7 @@ public class MatrixBuilderTest {
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
                 {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
         when(stub.create(1,1)).thenReturn(new MyDouble[][]{{new MyDouble(12d)}});
+        matrixBuilder = new MatrixBuilder(stub);
 
     }
 
@@ -29,7 +31,6 @@ public class MatrixBuilderTest {
     public void toMatrix() {
         // arrange
         check = (MyDouble[][]) stub.create(3,3);
-        MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
         Matrix result = matrixBuilder.setA(stub.create(3,3).length).setB(stub.create(3,3)[0].length).toMatrix();
@@ -62,7 +63,6 @@ public class MatrixBuilderTest {
     public void toMatrix_1x1() {
         // arrange
         check = (MyDouble[][]) stub.create(1,1);
-        MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
         Matrix result = matrixBuilder.setA(stub.create(1,1).length).setB(stub.create(1,1)[0].length).toMatrix();
