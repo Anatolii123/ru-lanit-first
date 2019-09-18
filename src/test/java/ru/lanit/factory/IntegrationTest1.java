@@ -96,7 +96,7 @@ public class IntegrationTest1 extends AbstractTest {
                 + matrices2.get(5).getMatrix()[0][1] +" "
                 + matrices2.get(5).getMatrix()[0][2] +" ");
 
-//        for (int i = 0; i < (matrices2.size()-1); i++) {
+//        for (int i = 0; i < matrices2.size(); i++) {
 //            for (int j = 0; j < matrices2.get(i).getA(); j++) {
 //                for (int k = 0; k < matrices2.get(i).getB(); k++) {
 //                    Assert.assertEquals(((MyDouble) results.get(i).getMatrix()[i][j]).value,((MyDouble)matrices2.get(i).getMatrix()[i][j]).value,0d);

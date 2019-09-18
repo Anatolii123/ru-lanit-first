@@ -16,7 +16,9 @@ public class MatrixSetter {
                 out.write(readInternal(matrices2.get(i)).get(j));
                 out.write("\n");
             }
-            out.write("\n");
+            if (i < matrices2.size()-1) {
+                out.write("\n");
+            }
         }
         out.close();
     }
