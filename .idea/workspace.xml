@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MyDoubleCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyDoubleCreatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyLongCreatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/MyLongCreatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/MatrixBuilderTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyDoubleCreatorTest.create">
+  <component name="RunManager" selected="JUnit.MatrixBuilderTest.toMatrix">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -164,7 +162,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixSummatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixBuilderTest.toMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
         <pattern>
@@ -173,8 +171,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixSummatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
+      <option name="METHOD_NAME" value="toMatrix" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,19 +227,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.IWasWondering" />
-      <item itemvalue="JUnit.MatrixSummatorTest" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
       <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
       <item itemvalue="JUnit.MyDoubleCreatorTest" />
       <item itemvalue="JUnit.MyLongCreatorTest.create" />
+      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
         <item itemvalue="JUnit.MyDoubleCreatorTest.create" />
         <item itemvalue="JUnit.MyLongCreatorTest.create" />
         <item itemvalue="JUnit.MyDoubleCreatorTest" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
-        <item itemvalue="JUnit.MatrixSummatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,13 +284,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00215" summary="UnitTest28Commit">
-      <created>1568637248679</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1568637248679</updated>
     </task>
     <task id="LOCAL-00216" summary="UnitTest29Commit">
       <created>1568637988755</created>
@@ -629,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568725297030</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="UnitTest77Commit">
+      <created>1568730635382</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1568730635382</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -676,7 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest52Commit" />
     <MESSAGE value="UnitTest53Commit" />
     <MESSAGE value="UnitTest54Commit" />
     <MESSAGE value="UnitTest55Commit" />
@@ -701,7 +699,8 @@
     <MESSAGE value="UnitTest74Commit" />
     <MESSAGE value="UnitTest75Commit" />
     <MESSAGE value="UnitTest76Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="UnitTest76Commit" />
+    <MESSAGE value="UnitTest77Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnitTest77Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

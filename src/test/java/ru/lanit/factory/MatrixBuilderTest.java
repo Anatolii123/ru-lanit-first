@@ -4,14 +4,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 public class MatrixBuilderTest {
-    private ContentCreator contentCreator;
     private MyDouble[][] check;
-    private MyDoubleCreatorStub stub;
+    private MyDoubleCreator stub;
 
     @Before
     public void getDoubleCreator() {
-        stub = new MyDoubleCreatorStub();
+        stub = mock(MyDoubleCreator.class);
     }
 
     /**
@@ -20,15 +22,15 @@ public class MatrixBuilderTest {
     @Test
     public void toMatrix() {
         // arrange
-        MyDouble[][] check = {
+        when(stub.create(3,3)).thenReturn(new MyDouble[][]{
                 {new MyDouble(1d), new MyDouble(2d), new MyDouble(3d)},
                 {new MyDouble(4d), new MyDouble(5d), new MyDouble(6d)},
-                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}};
-        stub.setContent(check);
+                {new MyDouble(7d), new MyDouble(8d), new MyDouble(9d)}});
+        MyDouble[][] check = (MyDouble[][]) stub.create(3,3);
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
-        Matrix result = matrixBuilder.setA(stub.getContent().length).setB(stub.getContent()[0].length).toMatrix();
+        Matrix result = matrixBuilder.setA(stub.create(3,3).length).setB(stub.create(3,3)[0].length).toMatrix();
 
         // assert
         for (int i = 0; i < result.getA(); i++) {
@@ -58,7 +60,6 @@ public class MatrixBuilderTest {
     public void toMatrix1x1() {
         // arrange
         check = new MyDouble[][]{{new MyDouble(12d)}};
-        stub.setContent(check);
         MatrixBuilder matrixBuilder = new MatrixBuilder(stub);
 
         // act
