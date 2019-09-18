@@ -8,8 +8,6 @@ import java.util.List;
 public class MatrixSetter {
 
     public void setMatrixToFile(String filepath, List<Matrix> matrices2) throws Exception {
-        List<String> lines = new ArrayList<String>();
-        List<List> matrices = new ArrayList<List>();
         PrintWriter out = new PrintWriter(new FileWriter(filepath));
         for (int i = 0; i < matrices2.size(); i++) {
             for (int j = 0; j < matrices2.get(i).getA(); j++) {

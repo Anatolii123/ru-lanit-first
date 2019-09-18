@@ -87,11 +87,11 @@ public class IntegrationTest1 extends AbstractTest {
 
         // act
         lines.setMatrixToFile(
-                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\newMatrix",results);
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\result",results);
 
         // assert
         List<Matrix> matrices2 = matrixR.readMatrix(
-                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\newMatrix");
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\result");
         for (int i = 0; i < matrices2.size(); i++) {
             for (int j = 0; j < matrices2.get(i).getA(); j++) {
                 for (int k = 0; k < matrices2.get(i).getB(); k++) {
