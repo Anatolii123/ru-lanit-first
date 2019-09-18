@@ -1,3 +1,6 @@
+# IntelliJ IDEA
+https://www.jetbrains.com/help/idea/installation-guide.html - Описание
+
 # Паттерны проектирования
 https://refactoring.guru/ru/design-patterns/template-method - Шаблонный метод
 
