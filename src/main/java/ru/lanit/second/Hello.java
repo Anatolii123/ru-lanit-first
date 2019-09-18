@@ -42,6 +42,7 @@ public class Hello {
         showMatrix(matrix6);
 
         System.out.println();
+        throw new Exception("kjggkj");
 
     }
 

@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lanit/second/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lanit/second/Hello.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/result" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/lanit/second/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/lanit/second/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/IntegrationTest1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/lanit/factory/IntegrationTest1.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ru-lanit-first">
+  <component name="RunManager" selected="Application.Hello">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -146,6 +150,19 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.second.Hello" />
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="IWasWondering" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ru.lanit.second.IWasWondering" />
@@ -194,22 +211,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest1.txtFile_ReadMatrices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.IntegrationTest1" />
-      <option name="METHOD_NAME" value="txtFile_ReadMatrices" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IntegrationTest1.txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -230,17 +231,17 @@
       <item itemvalue="Application.IWasWondering" />
       <item itemvalue="JUnit.IntegrationTest1" />
       <item itemvalue="JUnit.IntegrationTest1.OperationsListDevelopment_Output" />
-      <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices" />
       <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
+      <item itemvalue="Application.Hello" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hello" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.IntegrationTest1" />
         <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile" />
         <item itemvalue="JUnit.IntegrationTest1.OperationsListDevelopment_Output" />
-        <item itemvalue="JUnit.IntegrationTest1.txtFile_ReadMatrices" />
       </list>
     </recent_temporary>
   </component>
@@ -285,13 +286,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00257" summary="UnitTest70Commit">
-      <created>1568716622357</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1568716622357</updated>
     </task>
     <task id="LOCAL-00258" summary="UnitTest71Commit">
       <created>1568717154895</created>
@@ -629,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568807988599</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="IntegrationTest39Commit">
+      <created>1568814468966</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1568814468966</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -676,7 +677,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="IntegrationTest13Commit" />
     <MESSAGE value="IntegrationTest14Commit" />
     <MESSAGE value="IntegrationTest15Commit" />
     <MESSAGE value="IntegrationTest16Commit" />
@@ -701,7 +701,8 @@
     <MESSAGE value="IntegrationTest35Commit" />
     <MESSAGE value="IntegrationTest37Commit" />
     <MESSAGE value="IntegrationTest38Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest38Commit" />
+    <MESSAGE value="IntegrationTest39Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest39Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">

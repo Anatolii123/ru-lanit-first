@@ -68,6 +68,7 @@ public class IntegrationTest1 extends AbstractTest {
             checkResult.add(operations.get(i).perform(checkMatrix1, checkMatrix2));
             System.out.println();
         }
+        {}
         for (int i = 0; i < operations.size(); i++) {
             for (int j = 0; j < checkMatrix1.getA(); j++) {
                 for (int k = 0; k < checkMatrix1.getB(); k++) {
