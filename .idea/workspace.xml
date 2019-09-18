@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52033226-cbc2-40e3-820d-c71ccbdf6f9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/lanit/factory/IntegrationTest1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -284,13 +283,6 @@
       <workItem from="1568265661114" duration="305000" />
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
-    </task>
-    <task id="LOCAL-00232" summary="UnitTest45Commit">
-      <created>1568699726621</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1568699726621</updated>
     </task>
     <task id="LOCAL-00233" summary="UnitTest46Commit">
       <created>1568699834089</created>
@@ -628,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568793218498</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="IntegrationTest13Commit">
+      <created>1568793870680</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1568793870680</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -675,7 +674,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest69Commit" />
     <MESSAGE value="UnitTest70Commit" />
     <MESSAGE value="UnitTest71Commit" />
     <MESSAGE value="UnitTest72Commit" />
@@ -700,7 +698,8 @@
     <MESSAGE value="IntegrationTest10Commit" />
     <MESSAGE value="IntegrationTest11Commit" />
     <MESSAGE value="IntegrationTest12Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest12Commit" />
+    <MESSAGE value="IntegrationTest13Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest13Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
