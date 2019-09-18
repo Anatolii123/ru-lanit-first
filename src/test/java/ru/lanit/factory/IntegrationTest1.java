@@ -99,7 +99,5 @@ public class IntegrationTest1 extends AbstractTest {
                 }
             }
         }
-
-
     }
 }
