@@ -2,6 +2,14 @@ package ru.lanit.second;
 
 import org.apache.commons.math3.linear.Array2DRowFieldMatrix;
 import org.apache.commons.math3.util.BigReal;
+import ru.lanit.factory.MatrixMultiplicator;
+import ru.lanit.factory.MatrixOperation;
+import ru.lanit.factory.MatrixSubstractor;
+import ru.lanit.factory.MatrixSummator;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Hello {
 
@@ -64,5 +72,27 @@ public class Hello {
             }
         }
         return bg;
+    }
+
+    public static List<MatrixOperation> operationsList (int listLength) {
+        List<MatrixOperation> result = new ArrayList<MatrixOperation>(listLength);
+
+        for (int i = 0; i < listLength; i++) {
+            int rand = new Random().nextInt(3);
+            switch (rand) {
+                case 0:
+                    result.add(new MatrixMultiplicator());
+                    break;
+                case 1:
+                    result.add(new MatrixSummator());
+                    break;
+                case 2:
+                    result.add(new MatrixSubstractor());
+                    break;
+                default:
+                    break;
+            }
+        }
+        return result;
     }
 }
