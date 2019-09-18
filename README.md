@@ -34,3 +34,5 @@ https://habr.com/ru/company/yandex/blog/184634/ - матчеры
 
 https://habr.com/ru/post/444982/ - Мокито
 
+# Прочее
+https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
