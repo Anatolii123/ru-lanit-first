@@ -46,7 +46,7 @@ public class IntegrationTest1 extends AbstractTest {
 
         /**
          * Формирование списка операций над матрицами с заданным размером, выполнение
-         * этих операций над матрицами и запись результатов в новый список
+         * этих операций над матрицами и запись результатов в новый список матриц
          */
         // arrange
         List<MatrixOperation> operations = Hello.operationsList(5);
