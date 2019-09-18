@@ -1,7 +1,5 @@
 package ru.lanit.factory;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -20,15 +18,6 @@ public class MatrixSetter {
             }
             out.write("\n");
         }
-//        while ((line = br.readLine()) != null) {
-//            if (line.length() == 0) {
-//                matrices.add(new ArrayList<String>(lines));
-//                lines.clear();
-//                continue;
-//            } else {
-//                lines.add(line);
-//            }
-//        }
         out.close();
     }
 
