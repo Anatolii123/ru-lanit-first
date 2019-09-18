@@ -18,7 +18,5 @@ public class IntegrationTest1  {
             operation.perform(matrices.get(0), matrices.get(1));
             System.out.println();
         }
-
-
     }
 }

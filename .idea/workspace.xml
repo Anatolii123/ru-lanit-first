@@ -100,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixBuilderTest">
+  <component name="RunManager" selected="JUnit.IntegrationTest1.readMatrices_OperationsListDevelopment_Output">
     <configuration type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -163,6 +163,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegrationTest1.readMatrices_OperationsListDevelopment_Output" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ru-lanit-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lanit.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.IntegrationTest1" />
+      <option name="METHOD_NAME" value="readMatrices_OperationsListDevelopment_Output" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MatrixBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -194,22 +210,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixBuilderTest.toMatrix1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ru-lanit-first" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lanit.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lanit.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.lanit.factory.MatrixBuilderTest" />
-      <option name="METHOD_NAME" value="toMatrix1x1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MatrixBuilderTest.toMatrix_1x1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ru-lanit-first" />
       <extension name="coverage">
@@ -229,18 +229,18 @@
     <list>
       <item itemvalue="Application.IWasWondering" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
-      <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
       <item itemvalue="JUnit.MatrixBuilderTest.toMatrix_1x1" />
       <item itemvalue="JUnit.MatrixBuilderTest" />
       <item itemvalue="JUnit.All in ru-lanit-first" />
+      <item itemvalue="JUnit.IntegrationTest1.readMatrices_OperationsListDevelopment_Output" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest1.readMatrices_OperationsListDevelopment_Output" />
         <item itemvalue="JUnit.MatrixBuilderTest" />
         <item itemvalue="JUnit.All in ru-lanit-first" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix_1x1" />
         <item itemvalue="JUnit.MatrixBuilderTest.toMatrix" />
-        <item itemvalue="JUnit.MatrixBuilderTest.toMatrix1x1" />
       </list>
     </recent_temporary>
   </component>
