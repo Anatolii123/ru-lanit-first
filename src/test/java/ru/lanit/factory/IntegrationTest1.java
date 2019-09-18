@@ -41,10 +41,11 @@ public class IntegrationTest1 extends AbstractTest {
         // arrange
 
         // act
-
         for (MatrixOperation operation : operations) {
             operation.perform(matrices.get(0), matrices.get(1));
             System.out.println();
         }
+
+
     }
 }

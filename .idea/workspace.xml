@@ -285,20 +285,6 @@
       <workItem from="1568265982072" duration="16170000" />
       <workItem from="1568286101600" duration="5459000" />
     </task>
-    <task id="LOCAL-00228" summary="UnitTest41Commit">
-      <created>1568698781087</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1568698781087</updated>
-    </task>
-    <task id="LOCAL-00229" summary="UnitTest42Commit">
-      <created>1568698915490</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1568698915490</updated>
-    </task>
     <task id="LOCAL-00230" summary="UnitTest43Commit">
       <created>1568699482648</created>
       <option name="number" value="00230" />
@@ -628,7 +614,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568791949967</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="IntegrationTest9Commit">
+      <created>1568792113554</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1568792113554</updated>
+    </task>
+    <task id="LOCAL-00278" summary="IntegrationTest10Commit">
+      <created>1568792282300</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1568792282300</updated>
+    </task>
+    <option name="localTasksCounter" value="279" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -675,8 +675,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UnitTest65Commit" />
-    <MESSAGE value="UnitTest66Commit" />
     <MESSAGE value="UnitTest67Commit" />
     <MESSAGE value="UnitTest68Commit" />
     <MESSAGE value="UnitTest69Commit" />
@@ -700,7 +698,9 @@
     <MESSAGE value="IntegrationTest6Commit" />
     <MESSAGE value="IntegrationTest7Commit" />
     <MESSAGE value="IntegrationTest8Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest8Commit" />
+    <MESSAGE value="IntegrationTest9Commit" />
+    <MESSAGE value="IntegrationTest10Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="IntegrationTest10Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
