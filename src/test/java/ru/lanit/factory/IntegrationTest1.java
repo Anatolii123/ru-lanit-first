@@ -11,7 +11,6 @@ import java.util.List;
 public class IntegrationTest1 extends AbstractTest {
 
     private MatrixReader matrixR = new MatrixReader();
-    private List<MatrixOperation> operations = Hello.operationsList(5);
     private Matrix checkMatrix1 = new Matrix();
     private Matrix checkMatrix2 = new Matrix();
     private List<Matrix> matrices = new ArrayList<Matrix>();
@@ -47,6 +46,7 @@ public class IntegrationTest1 extends AbstractTest {
     @Test
     public void OperationsListDevelopment_Output() throws Exception {
         // arrange
+        List<MatrixOperation> operations = Hello.operationsList(5);
 
         // act
         for (MatrixOperation operation : operations) {
