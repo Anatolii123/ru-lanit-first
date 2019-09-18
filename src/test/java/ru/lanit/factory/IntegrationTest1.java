@@ -26,6 +26,10 @@ public class IntegrationTest1 extends AbstractTest {
 
     @Test
     public void txtFile_ReadMatrices_OperationsListDevelopment_Operate_SetMatrices_txtFile() throws Exception {
+
+        MatrixSetter lines = new MatrixSetter();
+        List<String> lines2 = lines.readInternal(checkMatrix1);
+
         /**
          * Чтение txt-файла и его запись в список
          */
@@ -74,6 +78,7 @@ public class IntegrationTest1 extends AbstractTest {
                 }
             }
         }
+
 
     }
 }
