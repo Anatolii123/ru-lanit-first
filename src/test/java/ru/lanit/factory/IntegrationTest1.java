@@ -1,6 +1,7 @@
 package ru.lanit.factory;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import ru.lanit.second.Hello;
 
@@ -8,15 +9,26 @@ import java.util.List;
 
 public class IntegrationTest1 extends AbstractTest {
 
-    @Test
-    public void readMatrices_OperationsListDevelopment_Output() throws Exception {
-        MatrixReader matrixR = new MatrixReader();
-        List<Matrix> matrices = matrixR.readMatrix(
-                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
+    private MatrixReader matrixR = new MatrixReader();
+
+    @Before
+    public void getDoubleCreator() {
         check3x3 = new MyDouble[][]{
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)},
                 {new MyDouble(12d), new MyDouble(12d), new MyDouble(12d)}};
+
+    }
+
+    @Test
+    public void readMatrices_OperationsListDevelopment_Output() throws Exception {
+        // arrange
+
+
+        // act
+        List<Matrix> matrices = matrixR.readMatrix(
+                "C:\\Users\\kusakin\\IdeaProjects\\ru-lanit-first\\src\\main\\resources\\matrix");
+
 
         // assert
         for (int i = 0; i < matrices.size(); i++) {
