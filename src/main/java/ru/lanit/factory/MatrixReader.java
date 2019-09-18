@@ -1,4 +1,6 @@
-package ru.lanit.first;
+package ru.lanit.factory;
+
+import ru.lanit.first.Matrix;
 
 import java.io.*;
 import java.util.List;
@@ -6,11 +8,11 @@ import java.util.ArrayList;
 
 public class MatrixReader {
 
-    public List<Matrix> readMatrix(String filepath) throws Exception {
+    public List<ru.lanit.factory.Matrix> readMatrix(String filepath) throws Exception {
         String line;
         List<String> lines = new ArrayList<String>();
         List<List> matrices = new ArrayList<List>();
-        List<Matrix> matrices2 = new ArrayList<Matrix>();
+        List<ru.lanit.factory.Matrix> matrices2 = new ArrayList<ru.lanit.factory.Matrix>();
         Object[] linesAsArray;
         BufferedReader br = new BufferedReader(new FileReader(filepath));
 
@@ -34,21 +36,23 @@ public class MatrixReader {
         return matrices2;
     }
 
-    public Matrix setInternal(List<String> lines, Object[] linesAsArray) {
-        Matrix mat = new Matrix();
+    public ru.lanit.factory.Matrix setInternal(List<String> lines, Object[] linesAsArray) {
+        ru.lanit.factory.Matrix mat = new ru.lanit.factory.Matrix();
         if (linesAsArray.length != 0) {
             String String_Array[] = new String[linesAsArray.length];
             for (int i=0;i<String_Array.length;i++)
                 String_Array[i]=linesAsArray[i].toString();
             int[][] matrix = new int[lines.size()][String_Array[0].split(",").length];
+            Operations[][] matrix2 = new Operations[matrix.length][matrix[0].length];
             for(int i = 0; i < lines.size(); i++) {
                 for(int j = 0; j < String_Array[0].split(",").length; j++) {
                     matrix[i][j] = Integer.parseInt(String_Array[i].split(",")[j]);
+                    matrix2[i][j] = new MyLong((long) matrix[i][j]);
                     System.out.print(matrix[i][j] + "\t");
                 }
                 System.out.println();
             }
-            mat.setMatrix(matrix);
+            mat.setMatrix(matrix2);
             mat.setA(matrix.length);
             mat.setB(matrix[0].length);
         }
