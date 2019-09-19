@@ -47,5 +47,8 @@ https://habr.com/ru/post/358950/ - пирамида тестов
 # Стабы и моки 
 https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-and-junit - стабы и моки в Мокито
 
+# Javascript
+https://learn.javascript.ru/ - учебник Javascript
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
