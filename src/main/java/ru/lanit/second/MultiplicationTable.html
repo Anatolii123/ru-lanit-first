@@ -6,6 +6,7 @@
     <style>
      body{
       background-color: white;
+      cursor: default;
      }
      table {
       border: 1px solid white;
@@ -16,22 +17,101 @@
       text-align: center
      }
      th {
-      font-size: 200%;
+      font-size: 210%;
       font-family: Verdana, sans-serif;
       text-align: center;
       background-color: #4285F4;
       color: white;
       border: 1px solid #4285F4;
+      width: 50px;
+      height: 50px;
      }
      td {
       font-size: 200%;
       font-family: Verdana, Helvetica, sans-serif;
       text-align: center;
-      background-color: white;
       border-collapse: collapse;
       border: 1px solid white;
+      width: 50px;
+      height: 50px;
+     }
+     td:hover {
+      font-size: 260%;
+      color: white;
+      border: 1px solid #4285F4;
+      background-color: #4285F4;
+      transition: .4s;
+      width: 70px;
+      height: 70px;
+     }
+     .toggle {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 20px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transform: translate3d(0, 0, 0);
+     }
+      .toggle:before {
+      content: "";
+      position: relative;
+      top: 3px;
+      left: 3px;
+      width: 34px;
+      height: 14px;
+      display: block;
+      background: #9A9999;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+     }
+      .toggle span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      display: block;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+      transition: all 0.2s ease;
+     }
+      .toggle span:before {
+      content: "";
+      position: absolute;
+      display: block;
+      margin: -18px;
+      width: 56px;
+      height: 56px;
+      background: rgba(79, 46, 220, 0.5);
+      border-radius: 50%;
+      transform: scale(0);
+      opacity: 1;
+      pointer-events: none;
+     }
+
+      #cbx:checked + .toggle:before {
+      background: #947ADA;
+     }
+      #cbx:checked + .toggle span {
+      background: #4F2EDC;
+      transform: translateX(20px);
+      transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25);
+      box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+     }
+      #cbx:checked + .toggle span:before {
+      transform: scale(1);
+      opacity: 0;
+      transition: all 0.4s ease;
+     }
+     .center {
+      position: absolute;
+      top: calc(50% - 450px);
+      left: calc(50% - -800px);
      }
   </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
 <table border="1">
@@ -57,5 +137,15 @@
     <tr><th>8</th><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td></tr>
     <tr><th>9</th><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td></tr>
 </table>
+<div class="center">
+    <input type="checkbox" id="cbx" style="display:none"/>
+    <label for="cbx" class="toggle"><span></span></label>
+</div>
+<!--<script>-->
+<!--    'use strict';-->
+
+<!--    let name = prompt("Ваше имя?", "");-->
+<!--    alert(name);-->
+<!--  </script>-->
 </body>
 </html>
