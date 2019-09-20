@@ -52,5 +52,7 @@ https://semaphoreci.com/community/tutorials/stubbing-and-mocking-with-mockito-2-
 # Javascript
 https://learn.javascript.ru/ - учебник Javascript
 
+https://learn.javascript.ru/styles-and-classes - классы и стили
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
