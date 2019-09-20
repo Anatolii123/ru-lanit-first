@@ -8,8 +8,10 @@ https://www.geeksforgeeks.org/constructors-not-inherited-java/ - Почему н
 https://refactoring.guru/ru/design-patterns/template-method - Шаблонный метод
 
 # Методы класса Object
-
 https://www.ibm.com/developerworks/ru/library/j-jtp05273/index.html - hashcode() и equals()
+
+# Коллекции
+https://www.geeksforgeeks.org/hashset-vs-treeset-in-java/ - hashset и treeset
 
 # Cборка
 https://golos.io/@brainburns-dev/zachem-nuzhny-sistemy-sborki-java-prilozhenii - о системах сборки
