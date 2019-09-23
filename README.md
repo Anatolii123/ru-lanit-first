@@ -54,5 +54,8 @@ https://learn.javascript.ru/ - учебник Javascript
 
 https://learn.javascript.ru/styles-and-classes - классы и стили
 
+# HTTP
+https://developer.mozilla.org/ru/docs/Web/HTTP/Overview - обзор протокола HTTP
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
