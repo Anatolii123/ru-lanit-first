@@ -59,5 +59,10 @@ https://developer.mozilla.org/ru/docs/Web/HTTP/Overview - обзор прото�
 
 https://developer.mozilla.org/ru/docs/Web/HTTP/Methods - методы HTTP-запроса
 
+# Методы HTTP-запросов
+https://webgyry.info/http-zapros-metodom-get - метод GET
+
+https://webgyry.info/http-zapros-metodom-post/ - метод POST
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
