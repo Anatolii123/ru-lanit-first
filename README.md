@@ -57,5 +57,7 @@ https://learn.javascript.ru/styles-and-classes - классы и стили
 # HTTP
 https://developer.mozilla.org/ru/docs/Web/HTTP/Overview - обзор протокола HTTP
 
+https://developer.mozilla.org/ru/docs/Web/HTTP/Methods - методы HTTP-запроса
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
