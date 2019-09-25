@@ -59,6 +59,8 @@ https://developer.mozilla.org/ru/docs/Web/HTTP/Overview - обзор прото�
 
 https://developer.mozilla.org/ru/docs/Web/HTTP/Methods - методы HTTP-запроса
 
+https://noteskeeper.ru/1161/ - REST
+
 # Методы HTTP-запросов
 https://webgyry.info/http-zapros-metodom-get - метод GET
 
