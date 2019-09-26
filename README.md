@@ -66,5 +66,8 @@ https://webgyry.info/http-zapros-metodom-get - метод GET
 
 https://webgyry.info/http-zapros-metodom-post/ - метод POST
 
+# Сервер
+https://iximiuz.com/ru/posts/writing-python-web-server-part-1/ - веб-сервер на Python
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
