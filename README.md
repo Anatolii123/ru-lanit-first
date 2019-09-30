@@ -78,3 +78,5 @@ https://proglib.io/p/sql-for-20-minutes/ - БД
 
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
+
+https://www.w3schools.com/ - полезный сайт
