@@ -73,6 +73,8 @@ http://java-course.ru/student/book1/servlet/ - сервлеты
 
 https://devcolibri.com/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-servlet-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE/
 
+http://javastudy.ru/interview/jee-servlet-api-questions/ - сервлеты2
+
 # Базы данных
 https://proglib.io/p/sql-for-20-minutes/ - БД
 
