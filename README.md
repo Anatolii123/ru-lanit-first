@@ -77,6 +77,7 @@ http://javastudy.ru/interview/jee-servlet-api-questions/ - сервлеты2
 
 # Базы данных
 https://proglib.io/p/sql-for-20-minutes/ - БД
+
 https://oracleplsql.ru/ - онлайн-учебник
 
 # Прочее
