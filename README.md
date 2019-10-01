@@ -80,6 +80,8 @@ https://proglib.io/p/sql-for-20-minutes/ - БД
 
 https://oracleplsql.ru/ - онлайн-учебник
 
+https://proselyte.net/tutorials/jdbc - JDBC
+
 # Прочее
 https://vertex-academy.com/tutorials/ru/samouchitel-po-java-s-nulya/ - самоучитель по Java
 
